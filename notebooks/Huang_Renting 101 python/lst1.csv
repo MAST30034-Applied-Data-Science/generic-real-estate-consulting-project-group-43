@@ -1,3 +1,25 @@
+"2/74 Hawthorn Rd, Caulfield North",CAULFIELD NORTH,3161,Glen Eira Council - Greater Area,ApartmentUnitFlat,2.0,1.0,1,570,-37.87074,145.024948
+"2/6 Elaroo St, Chadstone",CHADSTONE,3148,Monash City - Greater Area,House,4.0,3.0,2,680,-37.87961,145.096741
+"203/538 Glen Huntly Road, Elsternwick",ELSTERNWICK,3185,Glen Eira Council - Greater Area,ApartmentUnitFlat,2.0,2.0,1,530,-37.8859444,145.012024
+"29 Loudon Road, Burwood",BURWOOD,3125,Monash City - Greater Area,House,2.0,1.0,0,480,-37.8480225,145.099274
+"3/97 New Street, South Kingsville",SOUTH KINGSVILLE,3015,Hobsons Bay City Council - Greater Area,ApartmentUnitFlat,2.0,1.0,1,340,-37.8323936,144.866714
+"34/97 Brickworks Drive, Brunswick",BRUNSWICK,3056,Moreland City Council - Greater Area,ApartmentUnitFlat,2.0,1.0,1,450,-37.7695236,144.9528
+"28 Monash Ave, Olinda",OLINDA,3788,Yarra Ranges Shire - Greater Area,House,3.0,1.0,0,495,-37.8530846,145.363983
+"808/2 Claremont Street, South Yarra",SOUTH YARRA,3141,Melbourne City Council - Greater Area,ApartmentUnitFlat,2.0,2.0,1,600,-37.8387833,144.993729
+"403/118 Cairnlea Drive, Cairnlea",CAIRNLEA,3023,Brimbank City Council - Greater Area,House,2.0,2.0,1,390,-37.7574234,144.791077
+"532/631 Victoria Street, Abbotsford",ABBOTSFORD,3067,Yarra City Council - Greater Area,ApartmentUnitFlat,2.0,2.0,1,650,-37.8111572,145.008911
+"1/4 Skipton Court, Wodonga",WODONGA,3690,Wodonga - Greater Area,ApartmentUnitFlat,2.0,1.0,1,330,-36.12886,146.9075
+"1201/55 Queens Road, Melbourne",MELBOURNE,3004,Melbourne City Council - Greater Area,ApartmentUnitFlat,2.0,2.0,2,"1,1",-37.84789,144.978287
+"5/9 Lillimur Rd, Ormond",ORMOND,3204,Glen Eira Council - Greater Area,ApartmentUnitFlat,2.0,1.0,1,360,-37.90274,145.040924
+"3/58 Rankins road, Kensington",KENSINGTON,3031,Melbourne City Council - Greater Area,House,1.0,1.0,0,375,-37.7905769,144.931351
+"105/39 Appleton Street, Richmond",RICHMOND,3121,Yarra City Council - Greater Area,ApartmentUnitFlat,1.0,1.0,1,430,-37.8150558,145.011139
+"2 Narrung Road, Mount Eliza",MOUNT ELIZA,3930,Mornington Peninsula & District - Greater Area,House,4.0,2.0,3,680,-38.18668,145.078934
+"5/419 Waverley Road, Malvern East",MALVERN EAST,3145,Stonnington - Greater Area,ApartmentUnitFlat,2.0,2.0,1,495,-37.8781357,145.067368
+"909/528 Swanston Street, Carlton",CARLTON,3053,Melbourne City Council - Greater Area,ApartmentUnitFlat,1.0,1.0,0,345,-37.80422,144.963608
+"802/3 Young Street, Box Hill",BOX HILL,3128,Whitehorse City Council - Greater Area,ApartmentUnitFlat,2.0,2.0,1,450,-37.81748,145.116455
+"406/89 Atherton Road, Oakleigh",OAKLEIGH,3166,Monash City - Greater Area,ApartmentUnitFlat,2.0,2.0,1,530,-37.8991928,145.09433
+"73 The Crescent, Port Melbourne",PORT MELBOURNE,3207,Melbourne City Council - Greater Area,Townhouse,3.0,2.0,2,100,-37.83843,144.928085
+"67 Little Charles Street, Abbotsford",ABBOTSFORD,3067,Yarra City Council - Greater Area,House,2.0,2.0,1,700,-37.8066063,144.995728
 "4 Allaware Avenue, Croydon",CROYDON,3136,Maroondah City - Greater Area,House,3.0,1.0,2,500,-37.8032074,145.29985
 "38 Kauri Grove, Glen Waverley",GLEN WAVERLEY,3150,Monash City - Greater Area,House,3.0,2.0,1,520,-37.89368,145.157
 "2/61 Little Oxford Street, Collingwood",COLLINGWOOD,3066,Yarra City Council - Greater Area,ApartmentUnitFlat,2.0,1.0,1,550,-37.8046227,144.983887
@@ -176,25 +198,3 @@
 "104/7 Ordnance Reserve, Maribyrnong",MARIBYRNONG,3032,Maribyrnong City Council - Greater Area,ApartmentUnitFlat,2.0,1.0,1,340,-37.77047,144.879883
 "32a Gilarth Street, Highett",HIGHETT,3190,Bayside - Greater Area,Townhouse,3.0,2.0,2,895,-37.9487457,145.0293
 "13/21 Hotham Street, East Melbourne",EAST MELBOURNE,3002,Melbourne City Council - Greater Area,ApartmentUnitFlat,1.0,1.0,1,425,-37.81482,144.989868
-"208/6 Acacia Place, Abbotsford",ABBOTSFORD,3067,Yarra City Council - Greater Area,ApartmentUnitFlat,1.0,1.0,1,430,-37.81151,145.013885
-"18 Amaya Way, Rockbank",ROCKBANK,3335,Melton City - Greater Area,House,3.0,2.0,0,385,-37.7340355,144.660278
-"13/9 Fitzroy Street, St Kilda",ST KILDA,3182,Port Philip City Council - Greater Area,ApartmentUnitFlat,1.0,1.0,1,430,-37.86263,144.973221
-"26 Lygon Street, Caulfield South",CAULFIELD SOUTH,3162,Glen Eira Council - Greater Area,House,2.0,1.0,3,450,-37.89916,145.024
-"2410/45 Haig Street, Southbank",SOUTHBANK,3006,Melbourne City Council - Greater Area,ApartmentUnitFlat,1.0,1.0,1,520,-37.82706,144.957428
-"111/378-390 Saint Georges Road, Fitzroy North",FITZROY NORTH,3068,Moreland City Council - Greater Area,ApartmentUnitFlat,1.0,1.0,1,490,-37.7784843,144.988251
-"3/4 Ovens Street, Box Hill North",BOX HILL NORTH,3129,Whitehorse City Council - Greater Area,ApartmentUnitFlat,3.0,2.0,2,520,-37.80753,145.125046
-"126 Darling Road, Malvern East",MALVERN EAST,3145,Stonnington - Greater Area,House,2.0,1.0,1,620,-37.87251,145.06041
-"1/42a Hawthorn Grove, Hawthorn",HAWTHORN,3122,Boroondara City Council - Greater Area,ApartmentUnitFlat,2.0,1.0,1,450,-37.81576,145.032837
-"14/542- 544 Springvale Road, Springvale South",SPRINGVALE SOUTH,3172,Dandenong - Greater Area,Townhouse,3.0,3.0,1,500,-37.97456,145.146927
-"3/694 Inkerman Road, Caulfield North",CAULFIELD NORTH,3161,Glen Eira Council - Greater Area,ApartmentUnitFlat,2.0,1.0,1,420,-37.8692665,145.024078
-"405/442 St Kilda Road, Melbourne",MELBOURNE,3004,Melbourne City Council - Greater Area,ApartmentUnitFlat,1.0,1.0,1,380,-37.8382378,144.9754
-"88 Brighton Street, Richmond",RICHMOND,3121,Yarra City Council - Greater Area,Townhouse,4.0,3.0,1,"1,0",-37.82955,144.998688
-"1/22 Park Street, Pascoe Vale",PASCOE VALE,3044,Moreland City Council - Greater Area,Townhouse,2.0,2.0,3,450,-37.72694,144.924759
-"73/390 Toorak Road, South Yarra",SOUTH YARRA,3141,Melbourne City Council - Greater Area,ApartmentUnitFlat,2.0,2.0,1,600,-37.8408241,145.004257
-"4/82 Trenerry Crescent, Abbotsford",ABBOTSFORD,3067,Yarra City Council - Greater Area,Townhouse,3.0,1.0,1,720,-37.79793,144.998184
-"57 Westgarth Street, Fitzroy",FITZROY,3065,Yarra City Council - Greater Area,House,3.0,1.0,2,950,-37.79437,144.977554
-"23/214 Kambrook Road, Caulfield",CAULFIELD,3162,Glen Eira Council - Greater Area,ApartmentUnitFlat,1.0,1.0,1,320,-37.8873634,145.033859
-"G01/83 Queens Road, Melbourne",MELBOURNE,3004,Melbourne City Council - Greater Area,ApartmentUnitFlat,2.0,1.0,1,600,-37.85426,144.980423
-"8/375 Hoddle Street, Collingwood",COLLINGWOOD,3066,Yarra City Council - Greater Area,ApartmentUnitFlat,2.0,1.0,1,475,-37.7982559,144.993179
-"105/269 Grange Road, Ormond",ORMOND,3204,Glen Eira Council - Greater Area,ApartmentUnitFlat,2.0,1.0,1,420,-37.9010849,145.0441
-"57/15 Beach Rd, Hampton",HAMPTON,3188,Bayside - Greater Area,ApartmentUnitFlat,2.0,1.0,2,850,-37.934185,144.996216
