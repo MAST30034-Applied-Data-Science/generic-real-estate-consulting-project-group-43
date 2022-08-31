@@ -6360,3 +6360,403 @@
 16061488,Rent,$400pw / $1738pcm,ApartmentUnitFlat,Nillumbik Shire - Greater Area,2.0,1.0,2,"4/10 Broad Gully Road, Diamond Creek",DIAMOND CREEK,3089,-37.6701241,145.1507
 16061446,Rent,$750pw / $3259pcm,House,Nillumbik Shire - Greater Area,6.0,3.0,2,"10 Hillingdon Drive, Diamond Creek",DIAMOND CREEK,3089,-37.66805,145.15921
 15983975,Rent,$800 pw/ $3476 per calendar month,House,Nillumbik Shire - Greater Area,5.0,2.0,0,"164 Yan Yean Road, Plenty",PLENTY,3090,-37.665802,145.125412
+16066203,2022-08-31T14:02:59,Rent,$430 per week,ApartmentUnitFlat,Melbourne City Council - Greater Area,0,0,1.0,1.0,0,"202/9-13 O'Connell Street, North Melbourne",NORTH MELBOURNE,3051,-37.8055878,144.958
+16066201,2022-08-31T14:02:43,Rent,$575 pw,ApartmentUnitFlat,Glen Eira Council - Greater Area,0,0,2.0,1.0,1,"14/31 Sandham Street, Elsternwick",ELSTERNWICK,3185,-37.8820457,145.0057
+14825508,2022-08-31T14:00:52,Rent,$420,ApartmentUnitFlat,Manningham City - Greater Area,0,0,2.0,1.0,1,"104/88 Tram Road, Doncaster",DONCASTER,3108,-37.7893257,145.125381
+16066152,2022-08-31T13:46:36,Rent,$350 per week,ApartmentUnitFlat,Melbourne City Council - Greater Area,0,0,1.0,1.0,0,"421/528 Swanston Street, Carlton",CARLTON,3053,-37.80422,144.963608
+16066134,2022-08-31T13:40:45,Rent,$675.00,ApartmentUnitFlat,Melbourne City Council - Greater Area,0,0,2.0,2.0,1,"8/41 Rockley Road, South Yarra",SOUTH YARRA,3141,-37.83542,144.9999
+16066090,2022-08-31T13:25:13,Rent,"$1,500.00",House,Bayside - Greater Area,0,0,4.0,2.0,2,"11 Olive St, Hampton",HAMPTON,3188,-37.93268,145.02002
+16066062,2022-08-31T13:16:54,Rent,$575.00,ApartmentUnitFlat,Port Philip City Council - Greater Area,0,0,3.0,1.0,1,"8/237 Dandenong Road, Windsor",WINDSOR,3181,-37.85841,144.999954
+16066020,2022-08-31T13:03:53,Rent,"$1,350.00",Townhouse,Hobsons Bay City Council - Greater Area,0,0,4.0,3.0,3,"27 Anzac Crescent, Williamstown",WILLIAMSTOWN,3016,-37.8616142,144.885132
+16066003,2022-08-31T13:00:15,Rent,$320,ApartmentUnitFlat,Melbourne City Council - Greater Area,0,0,1.0,1.0,0,"1007/238 Flinders St, Melbourne",MELBOURNE,3000,-37.8175163,144.966492
+16065999,2022-08-31T12:58:01,Rent,$395.00,ApartmentUnitFlat,Boroondara City Council - Greater Area,0,0,1.0,1.0,1,"207/770B Toorak Road, Glen Iris",GLEN IRIS,3146,-37.84588,145.0466
+16065978,2022-08-31T12:51:08,Rent,$545.00 per week,ApartmentUnitFlat,Port Philip City Council - Greater Area,0,0,1.0,1.0,0,"2/187 Bank Street, South Melbourne",SOUTH MELBOURNE,3205,-37.8341751,144.961533
+16065974,2022-08-31T12:50:55,Rent,$700,ApartmentUnitFlat,Melbourne City Council - Greater Area,0,0,2.0,2.0,0,"1211/260 Spencer Street, Melbourne",MELBOURNE,3000,-37.8145638,144.952286
+16065970,2022-08-31T12:49:29,Rent,$750 per week (Not furnished),House,Port Philip City Council - Greater Area,0,0,2.0,1.0,1,"27 Fern Avenue, Windsor",WINDSOR,3181,-37.85589,145.00032
+16065963,2022-08-31T12:47:18,Rent,$525 per week,House,Melbourne City Council - Greater Area,0,0,2.0,1.0,1,"603 Spencer Street, West Melbourne",WEST MELBOURNE,3003,-37.8069725,144.946152
+16065921,2022-08-31T12:34:17,Rent,$975.00,Townhouse,Bayside - Greater Area,0,0,3.0,3.0,2,"3/22B South Road, Brighton",BRIGHTON,3186,-37.9286079,144.995132
+16065918,2022-08-31T12:33:41,Rent,$360 Per Week,ApartmentUnitFlat,Melbourne City Council - Greater Area,0,0,1.0,1.0,0,"1101/33 Clarke Street, Southbank",SOUTHBANK,3006,-37.8261566,144.959274
+16065911,2022-08-31T12:32:32,Rent,$700.00 per week,House,Port Philip City Council - Greater Area,0,0,2.0,1.0,0,"354B Clarendon Street, South Melbourne",SOUTH MELBOURNE,3205,-37.8349571,144.961182
+16065901,2022-08-31T12:29:22,Rent,$390.00,ApartmentUnitFlat,Darebin City Council - Greater Area,0,0,2.0,1.0,1,"2/9 Rennie Street, Thornbury",THORNBURY,3071,-37.753582,144.993042
+16065885,2022-08-31T12:24:10,Rent,$460,House,Yarra City Council - Greater Area,0,0,2.0,1.0,1,"6 Fordham Court, Richmond",RICHMOND,3121,-37.8202477,144.9952
+16065863,2022-08-31T12:18:46,Rent,$625,ApartmentUnitFlat,Boroondara City Council - Greater Area,0,0,2.0,2.0,1,"UG05 /708 BURWOOD ROAD, Hawthorn East",HAWTHORN EAST,3123,-37.824604,145.050552
+16065852,2022-08-31T12:14:59,Rent,$700.00,House,Bayside - Greater Area,0,0,2.0,1.0,1,"21 Elm Grove, Brighton",BRIGHTON,3186,-37.9010849,145.000671
+16065828,2022-08-31T12:10:26,Rent,$380.00,ApartmentUnitFlat,Geelong & District - Greater Area,0,0,2.0,1.0,1,"1/3 Colville Court, Herne Hill",HERNE HILL,3218,-38.13132,144.32634
+16065822,2022-08-31T12:08:43,Rent,$880 pw,House,Monash City - Greater Area,0,0,5.0,2.0,2,"2 Burramine Road, Glen Waverley",GLEN WAVERLEY,3150,-37.8841476,145.171432
+15856463,2022-08-31T12:05:23,Rent,$695,Townhouse,Manningham City - Greater Area,0,0,3.0,2.0,2,"1/11 Churchill Street, Doncaster East",DONCASTER EAST,3109,-37.7876625,145.159073
+16065793,2022-08-31T12:00:13,Rent,$395 weekly,ApartmentUnitFlat,Port Philip City Council - Greater Area,0,0,2.0,1.0,0,"4/9 Marlton Crescent, St Kilda",ST KILDA,3182,-37.8582039,144.989456
+16065791,2022-08-31T11:58:56,Rent,"$1,400.00",House,Port Philip City Council - Greater Area,0,0,3.0,2.0,2,"14 Henderson Street, South Melbourne",SOUTH MELBOURNE,3205,-37.8402367,144.947784
+16065771,2022-08-31T11:53:19,Rent,$450 per week,ApartmentUnitFlat,Glen Eira Council - Greater Area,0,0,2.0,1.0,1,"18/214 Kambrook Road, Caulfield",CAULFIELD,3162,-37.8873634,145.033859
+16065752,2022-08-31T11:49:16,Rent,$ 995 per week,House,Melbourne City Council - Greater Area,0,0,4.0,2.0,2,"25 Wolseley Parade, Kensington",KENSINGTON,3031,-37.7963562,144.929535
+16065746,2022-08-31T11:47:35,Rent,$500.00 per week,House,Banyule Council - Greater Area,0,0,4.0,1.0,2,"23 Frank Street, Eltham",ELTHAM,3095,-37.70694,145.165909
+16065745,2022-08-31T11:47:05,Rent,"$1,000 weekly",House,Bayside - Greater Area,0,0,4.0,2.0,1,"78 Marriage Rd, Brighton East",BRIGHTON EAST,3187,-37.91996,145.017288
+16065729,2022-08-31T11:44:35,Rent,$530 per week,House,Maroondah City - Greater Area,0,0,3.0,1.0,1,"16 Lilian Parade, Ringwood",RINGWOOD,3134,-37.79274,145.2521
+16065715,2022-08-31T11:40:44,Rent,$550.00,House,Maribyrnong City Council - Greater Area,0,0,2.0,1.0,1,"65 Francis Street, Yarraville",YARRAVILLE,3013,-37.82163,144.8922
+16065631,2022-08-31T11:24:31,Rent,"$450pw/$1,955pcm",ApartmentUnitFlat,Boroondara City Council - Greater Area,0,0,2.0,1.0,1,"3/6 Creswick Street, Glen Iris",GLEN IRIS,3146,-37.8527565,145.044144
+16065601,2022-08-31T11:15:29,Rent,$485.00,ApartmentUnitFlat,Boroondara City Council - Greater Area,0,0,2.0,2.0,1,"G04/48 Pakington Street, Kew",KEW,3101,-37.80171,145.03511
+16065595,2022-08-31T11:13:43,Rent,$625 weekly,ApartmentUnitFlat,Glen Eira Council - Greater Area,0,0,2.0,1.0,1,"2/500 Glen Huntly Road, Elsternwick",ELSTERNWICK,3185,-37.88571,145.009689
+16065583,2022-08-31T11:10:43,Rent,$420,ApartmentUnitFlat,Melbourne City Council - Greater Area,0,0,1.0,1.0,0,"2409/105 Clarendon Street, Southbank",SOUTHBANK,3006,-37.8271255,144.95813
+16065576,2022-08-31T11:08:50,Rent,$600.00,House,Port Philip City Council - Greater Area,0,0,2.0,1.0,0,"6 Tiuna Grove, Elwood",ELWOOD,3184,-37.8837357,144.982849
+16065573,2022-08-31T11:07:05,Rent,$600 per week,ApartmentUnitFlat,Melbourne City Council - Greater Area,0,0,2.0,2.0,1,"202/4 Chapel Mews, South Yarra",SOUTH YARRA,3141,-37.83563,144.997116
+16065530,2022-08-31T10:54:26,Rent,"$450pw/$1,955pcm",ApartmentUnitFlat,Boroondara City Council - Greater Area,0,0,2.0,1.0,1,"2/29 Belmont Avenue North, Glen Iris",GLEN IRIS,3146,-37.8546677,145.048279
+16065529,2022-08-31T10:53:52,Rent,$220,ApartmentUnitFlat,Monash City - Greater Area,0,0,1.0,1.0,0,"222 Burwood Highway, Burwood",BURWOOD,3125,-37.8501663,145.114136
+16065526,2022-08-31T10:52:53,Rent,$410 per week,ApartmentUnitFlat,Port Philip City Council - Greater Area,0,0,2.0,1.0,1,"3/5 Greig Court, Elwood",ELWOOD,3184,-37.8788376,144.989258
+16065510,2022-08-31T10:48:21,Rent,$720 weekly,ApartmentUnitFlat,Port Philip City Council - Greater Area,0,0,2.0,2.0,1,"G01/6 Docker Street, Elwood",ELWOOD,3184,-37.8862953,144.987488
+16065489,2022-08-31T10:42:39,Rent,$480,ApartmentUnitFlat,Melbourne City Council - Greater Area,0,0,1.0,1.0,0,"3511/70 Southbank Boulevard, Southbank",SOUTHBANK,3006,-37.8231926,144.963989
+16065476,2022-08-31T10:40:00,Rent,$550,ApartmentUnitFlat,Melbourne City Council - Greater Area,0,0,2.0,1.0,1,"4/90 Clowes Street, South Yarra",SOUTH YARRA,3141,-37.83035,144.984955
+16065475,2022-08-31T10:39:45,Rent,$425 Per Week,ApartmentUnitFlat,Stonnington - Greater Area,0,0,1.0,1.0,0,"104/139 York Street, Prahran",PRAHRAN,3181,-37.8476334,144.998489
+16065444,2022-08-31T10:30:53,Rent,$950,House,Monash Valley City Council - Greater Area,0,0,4.0,3.0,2,"1 Sanctuary Way, Ascot Vale",ASCOT VALE,3032,-37.7763329,144.903656
+16065438,2022-08-31T10:30:00,Rent,$475 per week,ApartmentUnitFlat,Melbourne City Council - Greater Area,0,0,1.0,1.0,1,"13/86 Hotham Street, East Melbourne",EAST MELBOURNE,3002,-37.81414,144.987473
+16047983,2022-08-31T10:24:14,Rent,$715.00,ApartmentUnitFlat,Stonnington - Greater Area,0,0,2.0,2.0,1,"6 Percy Place, Prahran",PRAHRAN,3181,-37.8505936,144.990723
+15187572,2022-08-31T10:23:56,Rent,$475 PER WEEK,ApartmentUnitFlat,Moreland City Council - Greater Area,0,0,2.0,2.0,1,"316/330 Lygon Street, Brunswick East",BRUNSWICK EAST,3057,-37.76854,144.972427
+15302782,2022-08-31T10:12:30,Rent,$395 per week,ApartmentUnitFlat,Melbourne City Council - Greater Area,0,0,2.0,1.0,0,"504/350 La Trobe Street, Melbourne",MELBOURNE,3000,-37.81068,144.959274
+16065350,2022-08-31T10:10:30,Rent,$320 per week,ApartmentUnitFlat,Monash Valley City Council - Greater Area,0,0,2.0,1.0,1,"2/16 Lyon Street, Essendon",ESSENDON,3040,-37.7526741,144.9047
+16065312,2022-08-31T10:02:10,Rent,$375 per week,ApartmentUnitFlat,Port Philip City Council - Greater Area,0,0,1.0,1.0,1,"201/356 Carlisle Street, Balaclava",BALACLAVA,3183,-37.8689079,144.997314
+16065286,2022-08-31T09:54:12,Rent,$320 weekly,ApartmentUnitFlat,Glen Eira Council - Greater Area,0,0,1.0,1.0,1,"7/22 Sydney Street, Murrumbeena",MURRUMBEENA,3163,-37.88802,145.067734
+16065263,2022-08-31T09:47:09,Rent,$570.00,ApartmentUnitFlat,Port Philip City Council - Greater Area,0,0,2.0,2.0,1,"G10/43-45 The Avenue, Balaclava",BALACLAVA,3183,-37.8719978,144.998154
+16065255,2022-08-31T09:44:28,Rent,$650 per week,ApartmentUnitFlat,Melbourne City Council - Greater Area,0,0,2.0,1.0,1,"4101/245 City Road, Southbank",SOUTHBANK,3006,-37.82664,144.959671
+16065253,2022-08-31T09:44:20,Rent,$400.00,ApartmentUnitFlat,Yarra City Council - Greater Area,0,0,1.0,1.0,0,"104/8 Garfield Street, Richmond",RICHMOND,3121,-37.8121071,144.992554
+16065251,2022-08-31T09:42:55,Rent,$500.00,ApartmentUnitFlat,Bayside - Greater Area,0,0,2.0,1.0,2,"5/522 Bluff Road, Hampton",HAMPTON,3188,-37.936264,145.024521
+16065218,2022-08-31T09:32:37,Rent,$425 per week,ApartmentUnitFlat,Yarra City Council - Greater Area,0,0,1.0,1.0,1,"2/20 Bellevue Street, Richmond",RICHMOND,3121,-37.8243141,145.013474
+16065203,2022-08-31T09:26:24,Rent,$445.00,ApartmentUnitFlat,Moreland City Council - Greater Area,0,0,2.0,1.0,1,"2/20 Lyndhurst Crescent, Brunswick East",BRUNSWICK EAST,3057,-37.7613449,144.978165
+16065200,2022-08-31T09:24:38,Rent,$795.00,Townhouse,Monash City - Greater Area,0,0,4.0,2.0,2,"134C Atherton Road, Oakleigh",OAKLEIGH,3166,-37.9002571,145.098984
+16065197,2022-08-31T09:24:24,Rent,$520 per week,House,Banyule Council - Greater Area,0,0,3.0,2.0,2,"17 Kurrajong Crescent, Watsonia North",WATSONIA NORTH,3087,-37.699,145.088165
+16065188,2022-08-31T09:19:41,Rent,$360 per week,ApartmentUnitFlat,Boroondara City Council - Greater Area,0,0,1.0,1.0,1,"9/20 Denmark Hill Road, Hawthorn East",HAWTHORN EAST,3123,-37.8328857,145.054276
+16065186,2022-08-31T09:19:01,Rent,"$2,500.00",House,Stonnington - Greater Area,0,0,4.0,2.0,2,"21 Iona Avenue, Toorak",TOORAK,3142,-37.8486977,145.016113
+16065163,2022-08-31T09:07:21,Rent,"$1,200.00",ApartmentUnitFlat,Stonnington - Greater Area,0,0,3.0,2.0,2,"502/283 High Street, Prahran",PRAHRAN,3181,-37.85229,144.997681
+16065154,2022-08-31T09:01:23,Rent,$450.00,ApartmentUnitFlat,Stonnington - Greater Area,0,0,1.0,1.0,1,"817/132 Commercial Road, Prahran",PRAHRAN,3181,-37.8466034,144.990829
+16065146,2022-08-31T08:55:29,Rent,$530.00,Townhouse,Moreland City Council - Greater Area,0,0,2.0,1.0,1,"11 Dianella Walkway, Brunswick East",BRUNSWICK EAST,3057,-37.7768478,144.9773
+16065136,2022-08-31T08:49:37,Rent,$680,House,Moreland City Council - Greater Area,0,0,2.0,1.0,0,"62 Clauscen Street, Fitzroy North",FITZROY NORTH,3068,-37.777565,144.980515
+16065129,2022-08-31T08:46:06,Rent,$620 Per Week,ApartmentUnitFlat,Stonnington - Greater Area,0,0,2.0,2.0,0,"1/8 Princes Close, Prahran",PRAHRAN,3181,-37.84938,144.994553
+16065124,2022-08-31T08:39:26,Rent,$795.00,House,Darebin City Council - Greater Area,0,0,4.0,1.0,1,"23 Clyde Street, Thornbury",THORNBURY,3071,-37.7608337,145.007034
+16065119,2022-08-31T08:35:02,Rent,$525 Per Week,ApartmentUnitFlat,Stonnington - Greater Area,0,0,2.0,2.0,1,"201/323 Dandenong Road, Prahran",PRAHRAN,3181,-37.8595619,145.009277
+16065046,2022-08-30T21:09:45,Rent,$600 weekly,ApartmentUnitFlat,Glen Eira Council - Greater Area,0,0,3.0,1.0,1,"5/20 Kooyong Rd, Caulfield North",CAULFIELD NORTH,3161,-37.8641624,145.0195
+16065041,2022-08-30T20:41:54,Rent,$415 weekly,ApartmentUnitFlat,Melbourne City Council - Greater Area,0,0,2.0,1.0,1,"4/121 Wellington St, Flemington",FLEMINGTON,3031,-37.783,144.931824
+16065009,2022-08-30T19:02:20,Rent,$340 per week,ApartmentUnitFlat,Stonnington - Greater Area,0,0,1.0,1.0,1,"Unit 113/153B High St, Prahran",PRAHRAN,3181,-37.8515129,144.992416
+16064963,2022-08-30T17:56:33,Rent,"$695pw/$3,020pcm",House,Manningham City - Greater Area,0,0,4.0,2.0,2,"34 Bellevue Avenue, Doncaster East",DONCASTER EAST,3109,-37.7835732,145.167
+16064956,2022-08-30T17:52:30,Rent,$1000 Per Week,Townhouse,Glen Eira Council - Greater Area,0,0,3.0,3.0,2,"27B Draper Street, Mckinnon",MCKINNON,3204,-37.9092941,145.049545
+16064942,2022-08-30T17:40:26,Rent,$390 Per Week,ApartmentUnitFlat,Boroondara City Council - Greater Area,0,0,2.0,1.0,1,"3/8-10 James Avenue, Kew",KEW,3101,-37.8009377,145.038269
+16064932,2022-08-30T17:36:30,Rent,$500,House,Monash Valley City Council - Greater Area,0,0,2.0,1.0,0,"220 Ascot Vale Road, Ascot Vale",ASCOT VALE,3032,-37.77639,144.923523
+16064912,2022-08-30T17:28:13,Rent,$400 Per Week,ApartmentUnitFlat,Melbourne City Council - Greater Area,0,0,1.0,1.0,1,"15/85 Caroline Street, South Yarra",SOUTH YARRA,3141,-37.8354378,144.988159
+16064860,2022-08-30T17:13:38,Rent,$485.00 per week,House,Glen Eira Council - Greater Area,0,0,2.0,1.0,0,"1/9 Long Street, Elsternwick",ELSTERNWICK,3185,-37.87986,145.005554
+16064855,2022-08-30T17:12:43,Rent,$750,ApartmentUnitFlat,Port Philip City Council - Greater Area,0,0,2.0,1.0,1,"2/9 Vale Street, St Kilda",ST KILDA,3182,-37.8662567,144.9824
+16064837,2022-08-30T17:07:01,Rent,$430 weekly,ApartmentUnitFlat,Port Philip City Council - Greater Area,0,0,2.0,1.0,1,"8/36 Byron Street, Elwood",ELWOOD,3184,-37.87778,144.987823
+16064832,2022-08-30T17:05:02,Rent,$280 weekly,ApartmentUnitFlat,Glen Eira Council - Greater Area,0,0,1.0,1.0,1,"13/40 Lillimur Road, Ormond",ORMOND,3204,-37.9007,145.0422
+15895138,2022-08-30T16:58:09,Rent,$470,ApartmentUnitFlat,Yarra City Council - Greater Area,0,0,1.0,1.0,1,"201/21 Wellington Street, Collingwood",COLLINGWOOD,3066,-37.80823,144.985565
+16064800,2022-08-30T16:57:36,Rent,"$1,100.00",House,Stonnington - Greater Area,0,0,3.0,2.0,2,"6/10 Lalbert Crescent, Prahran",PRAHRAN,3181,-37.85607,145.010162
+16064797,2022-08-30T16:57:00,Rent,$650 weekly,House,Port Philip City Council - Greater Area,0,0,2.0,1.0,2,"18 Kingsley St, Elwood",ELWOOD,3184,-37.8883667,144.990021
+16064791,2022-08-30T16:54:26,Rent,$495 per week,ApartmentUnitFlat,Glen Eira Council - Greater Area,0,0,2.0,1.0,1,"7/1204 Glen Huntly Road, Glen Huntly",GLEN HUNTLY,3163,-37.88984,145.044083
+16064783,2022-08-30T16:53:09,Rent,$995 weekly,House,Glen Eira Council - Greater Area,0,0,4.0,1.0,2,"31 Foster Ave, Glen Huntly",GLEN HUNTLY,3163,-37.8950729,145.039719
+16064776,2022-08-30T16:50:43,Rent,$950 per week,House,Yarra City Council - Greater Area,0,0,3.0,2.0,2,"121 Lord Street, Richmond",RICHMOND,3121,-37.8239822,145.004578
+14720826,2022-08-30T16:30:38,Rent,"$450pw/$1,955pcm",House,Whitehorse City Council - Greater Area,0,0,3.0,1.0,0,"20 Ellesmere Road, Burwood East",BURWOOD EAST,3151,-37.8552856,145.154678
+16064665,2022-08-30T16:21:27,Rent,$550.00,House,Stonnington - Greater Area,0,0,4.0,1.0,2,"33 Nott Street, Malvern East",MALVERN EAST,3145,-37.86549,145.046448
+16064590,2022-08-30T16:04:50,Rent,$725,ApartmentUnitFlat,Port Philip City Council - Greater Area,0,0,3.0,1.0,1,"53/151 Fitzroy Street, St Kilda",ST KILDA,3182,-37.8588448,144.9793
+16064578,2022-08-30T16:02:48,Rent,$460 per week,ApartmentUnitFlat,Darebin City Council - Greater Area,0,0,2.0,1.0,1,"8/4 McCracken Avenue, Northcote",NORTHCOTE,3070,-37.7699547,144.991867
+16064557,2022-08-30T15:57:40,Rent,$430 per week,ApartmentUnitFlat,Port Philip City Council - Greater Area,0,0,2.0,1.0,0,"12/12 May Street, Elwood",ELWOOD,3184,-37.8786774,144.992233
+16064556,2022-08-30T15:57:38,Rent,$550.00,ApartmentUnitFlat,Bayside - Greater Area,0,0,2.0,2.0,1,"209/20 Station Street, Highett",HIGHETT,3190,-37.9501038,145.043716
+16064538,2022-08-30T15:54:33,Rent,$390.00,ApartmentUnitFlat,Glen Eira Council - Greater Area,0,0,2.0,1.0,1,"6/144 Brighton Road, Elsternwick",ELSTERNWICK,3185,-37.88091,144.99559
+16064495,2022-08-30T15:46:45,Rent,$320 per week,ApartmentUnitFlat,Port Philip City Council - Greater Area,0,0,1.0,1.0,0,"8 & 9/12 May Street, Elwood",ELWOOD,3184,-37.8786774,144.992233
+16064463,2022-08-30T15:40:27,Rent,$450 per week,ApartmentUnitFlat,Glen Eira Council - Greater Area,0,0,2.0,1.0,0,"4/25 Cardigan Street, St Kilda East",ST KILDA EAST,3183,-37.8657646,145.002243
+16064447,2022-08-30T15:37:01,Rent,$740.00,House,Glen Eira Council - Greater Area,0,0,3.0,3.0,1,"1B Castles Road, Bentleigh",BENTLEIGH,3204,-37.9314156,145.039673
+16064416,2022-08-30T15:30:56,Rent,$450 per week,ApartmentUnitFlat,Glen Eira Council - Greater Area,0,0,2.0,1.0,1,"4/129-131 Kambrook Road, Caulfield North",CAULFIELD NORTH,3161,-37.8805962,145.034546
+16064409,2022-08-30T15:28:23,Rent,$420 per week,ApartmentUnitFlat,Glen Eira Council - Greater Area,0,0,2.0,1.0,1,"2/155-157 Oakleigh Road, Carnegie",CARNEGIE,3163,-37.89985,145.061142
+16064398,2022-08-30T15:24:30,Rent,$695.00,House,Glen Eira Council - Greater Area,0,0,4.0,2.0,1,"17 Brosnan Road, Bentleigh East",BENTLEIGH EAST,3165,-37.9322243,145.064224
+16064379,2022-08-30T15:20:28,Rent,$370 per week,ApartmentUnitFlat,Melbourne City Council - Greater Area,0,0,1.0,1.0,0,"1106/555 Flinders Street, Melbourne",MELBOURNE,3000,-37.8209724,144.956482
+16064362,2022-08-30T15:18:36,Rent,$1300 pw,Townhouse,Yarra City Council - Greater Area,0,0,3.0,3.0,2,"54 Wellington Street, Cremorne",CREMORNE,3121,-37.82658,144.989426
+16064353,2022-08-30T15:16:33,Rent,"$550pw/$2,390pcm",House,Maroondah City - Greater Area,0,0,4.0,2.0,2,"8 Merry Street, Ringwood East",RINGWOOD EAST,3135,-37.8145561,145.2467
+16064349,2022-08-30T15:15:26,Rent,$670,House,Monash City - Greater Area,0,0,4.0,1.0,4,"32 Dallas Avenue, Hughesdale",HUGHESDALE,3166,-37.90519,145.080887
+16064315,2022-08-30T15:06:51,Rent,$550 per week,ApartmentUnitFlat,Glen Eira Council - Greater Area,0,0,2.0,1.0,1,"2/372 Orrong Road, Caulfield North",CAULFIELD NORTH,3161,-37.8623428,145.010529
+16064313,2022-08-30T15:06:44,Rent,$450 Per Week,ApartmentUnitFlat,Stonnington - Greater Area,0,0,1.0,1.0,0,"48/321 Chapel Street, Prahran",PRAHRAN,3181,-37.8475266,144.993759
+16064305,2022-08-30T15:05:24,Rent,$720 weekly,House,Glen Eira Council - Greater Area,0,0,3.0,2.0,4,"872 Centre Road, Bentleigh East",BENTLEIGH EAST,3165,-37.92333,145.074829
+16064303,2022-08-30T15:04:48,Rent,"$1,500 per week",Townhouse,Yarra City Council - Greater Area,0,0,3.0,2.0,2,"283A Burnley Street, Richmond",RICHMOND,3121,-37.82318,145.007843
+16064243,2022-08-30T14:50:32,Rent,$500 per week,ApartmentUnitFlat,Melbourne City Council - Greater Area,0,0,2.0,1.0,1,"2901/200 Spencer Street, Melbourne",MELBOURNE,3000,-37.816227,144.953247
+16064225,2022-08-30T14:46:14,Rent,$470.00,ApartmentUnitFlat,Monash City - Greater Area,0,0,2.0,1.0,2,"16/114-118 Ferntree Gully Road, Oakleigh East",OAKLEIGH EAST,3166,-37.8986435,145.115784
+16064222,2022-08-30T14:45:17,Rent,$525.00,House,Bayside - Greater Area,0,0,2.0,1.0,1,"2A Granter Street, Brighton East",BRIGHTON EAST,3187,-37.90927,145.0172
+16064188,2022-08-30T14:38:30,Rent,"$1,100.00",Townhouse,Stonnington - Greater Area,0,0,3.0,3.0,2,"3/56 Larnook Street, Prahran",PRAHRAN,3181,-37.8578262,145.010223
+16064123,2022-08-30T14:23:52,Rent,$235 per week,ApartmentUnitFlat,Stonnington - Greater Area,0,0,1.0,1.0,0,"203/72 High Street, Prahran",PRAHRAN,3181,-37.85135,144.98819
+16064100,2022-08-30T14:16:52,Rent,"$1,200 weekly",House,Stonnington - Greater Area,0,0,3.0,2.0,0,"33 Barkly Ave, Armadale",ARMADALE,3143,-37.8599625,145.026535
+16064029,2022-08-30T14:03:25,Rent,$375,ApartmentUnitFlat,Stonnington - Greater Area,0,0,1.0,1.0,1,"104/226 Waverley Road, Malvern East",MALVERN EAST,3145,-37.8768425,145.053253
+16063967,2022-08-30T13:49:08,Rent,$550.00,Townhouse,Maribyrnong City Council - Greater Area,0,0,3.0,2.0,1,"2/248 Francis Street, Yarraville",YARRAVILLE,3013,-37.81941,144.878189
+16063962,2022-08-30T13:48:02,Rent,$595.00,House,Melbourne City Council - Greater Area,0,0,2.0,1.0,0,"120 Nott Street, Port Melbourne",PORT MELBOURNE,3207,-37.8386536,144.940765
+16063960,2022-08-30T13:46:57,Rent,$600.00,ApartmentUnitFlat,Moreland City Council - Greater Area,0,0,3.0,1.0,1,"61/108-124 Union Street, Brunswick",BRUNSWICK,3056,-37.77323,144.953888
+16063950,2022-08-30T13:46:07,Rent,$790.00,House,Bayside - Greater Area,0,0,3.0,1.0,2,"62 Sims Street, Sandringham",SANDRINGHAM,3191,-37.954,145.012543
+16063942,2022-08-30T13:43:07,Rent,$500.00,ApartmentUnitFlat,Bayside - Greater Area,0,0,2.0,1.0,1,"104/427 Hampton Street, Hampton",HAMPTON,3188,-37.934597,145.002716
+15885544,2022-08-30T13:38:22,Rent,"$1,195.00",House,Bayside - Greater Area,0,0,4.0,3.0,2,"33 Landcox Street, Brighton East",BRIGHTON EAST,3187,-37.9050446,145.014481
+16063914,2022-08-30T13:34:35,Rent,$950 per week,House,Glen Eira Council - Greater Area,0,0,4.0,3.0,2,"24 Orrong Crescent, Caulfield North",CAULFIELD NORTH,3161,-37.86658,145.016586
+16063906,2022-08-30T13:33:22,Rent,$550.00,ApartmentUnitFlat,Bayside - Greater Area,0,0,2.0,2.0,1,"105/20 Station Street, Highett",HIGHETT,3190,-37.9501038,145.043716
+16027510,2022-08-30T13:30:46,Rent,$920.00,House,Moreland City Council - Greater Area,0,0,3.0,2.0,2,"100 Union Street, Brunswick",BRUNSWICK,3056,-37.7732735,144.954666
+16063888,2022-08-30T13:29:31,Rent,$520 weekly,ApartmentUnitFlat,Glen Eira Council - Greater Area,0,0,2.0,2.0,1,"1/51 Browns Rd, Bentleigh East",BENTLEIGH EAST,3165,-37.92128,145.056076
+16063884,2022-08-30T13:28:24,Rent,$2500 Per Week,ApartmentUnitFlat,Melbourne City Council - Greater Area,0,0,3.0,3.0,2,"5401/464 Collins Street, Melbourne",MELBOURNE,3000,-37.8175621,144.958588
+16063868,2022-08-30T13:23:49,Rent,$850.00,Townhouse,Monash City - Greater Area,0,0,5.0,3.0,2,"2/47 Briggs Street, Mount Waverley",MOUNT WAVERLEY,3149,-37.896347,145.112625
+16063827,2022-08-30T13:13:10,Rent,"$700pw/$3,042pcm",House,Boroondara City Council - Greater Area,0,0,3.0,2.0,2,"8 Claremont Crescent, Canterbury",CANTERBURY,3126,-37.82884,145.080582
+16010912,2022-08-30T13:07:40,Rent,$360 per week,ApartmentUnitFlat,Melbourne City Council - Greater Area,0,0,1.0,1.0,1,"2/90 Toorak Road West, South Yarra",SOUTH YARRA,3141,-37.8376846,144.9814
+16061683,2022-08-30T13:06:18,Rent,$550 per week,ApartmentUnitFlat,Yarra City Council - Greater Area,0,0,2.0,1.0,1,"2/61 Little Oxford Street, Collingwood",COLLINGWOOD,3066,-37.8046227,144.983887
+16063772,2022-08-30T13:01:47,Rent,$450.00 per week,ApartmentUnitFlat,Melbourne City Council - Greater Area,0,0,1.0,1.0,0,"405/39 Queen Street, Melbourne",MELBOURNE,3000,-37.8178864,144.961731
+14970451,2022-08-30T13:01:25,Rent,$595,ApartmentUnitFlat,Monash City - Greater Area,0,0,5.0,3.0,2,"2/17 Sarton Road, Clayton",CLAYTON,3168,-37.9186974,145.143875
+16063736,2022-08-30T12:56:39,Rent,$600 weekly,ApartmentUnitFlat,Glen Eira Council - Greater Area,0,0,3.0,2.0,2,"1/453 Kooyong Rd, Elsternwick",ELSTERNWICK,3185,-37.89479,145.013123
+16063743,2022-08-30T12:56:23,Rent,$480,House,Ballarat - Greater Area,0,0,4.0,2.0,2,"45 Mullingar Drive, Alfredton",ALFREDTON,3350,-37.56632,143.800323
+16063745,2022-08-30T12:54:13,Rent,$510 weekly,ApartmentUnitFlat,Melbourne City Council - Greater Area,0,0,1.0,1.0,1,"904/50 Claremont Street, South Yarra",SOUTH YARRA,3141,-37.8364449,144.994354
+15635697,2022-08-30T12:52:39,Rent,$440 per week,ApartmentUnitFlat,Stonnington - Greater Area,0,0,2.0,1.0,1,"15/21 Irving Avenue, Prahran",PRAHRAN,3181,-37.8575554,145.006729
+16063679,2022-08-30T12:34:34,Rent,$1500 Per Week,ApartmentUnitFlat,Melbourne City Council - Greater Area,0,0,2.0,3.0,2,"113/350 St Kilda Road, Melbourne",MELBOURNE,3004,-37.8311424,144.970856
+16063644,2022-08-30T12:24:40,Rent,$465 pw,ApartmentUnitFlat,Port Philip City Council - Greater Area,0,0,1.0,1.0,0,"4/29 Marine Parade, St Kilda",ST KILDA,3182,-37.8717842,144.976654
+16063497,2022-08-30T12:23:34,Rent,$650,ApartmentUnitFlat,Stonnington - Greater Area,0,0,2.0,2.0,1,"4/151 Canterbury Road, Toorak",TOORAK,3142,-37.8418236,145.010468
+16063618,2022-08-30T12:16:48,Rent,$425 per week,ApartmentUnitFlat,Melbourne City Council - Greater Area,0,0,1.0,1.0,1,"2/4 Ralston Street, South Yarra",SOUTH YARRA,3141,-37.8404121,144.9867
+16063607,2022-08-30T12:13:15,Rent,$400 pw,ApartmentUnitFlat,Melbourne City Council - Greater Area,0,0,1.0,1.0,0,"511/8 Garden Street, South Yarra",SOUTH YARRA,3141,-37.8430443,144.995575
+16063604,2022-08-30T12:12:53,Rent,$250 weekly,ApartmentUnitFlat,Glen Eira Council - Greater Area,0,0,1.0,1.0,1,"6/28 Ardyne Street, Murrumbeena",MURRUMBEENA,3163,-37.8933144,145.068649
+16063582,2022-08-30T12:06:51,Rent,$550.00,House,Glen Eira Council - Greater Area,0,0,4.0,2.0,2,"11. Plym Street, Bentleigh",BENTLEIGH,3204,-37.93164,145.036133
+16063567,2022-08-30T12:04:22,Rent,$1200 per week,ApartmentUnitFlat,Melbourne City Council - Greater Area,0,0,3.0,1.0,1,"4/67 Walsh Street, South Yarra",SOUTH YARRA,3141,-37.8362656,144.984955
+16063542,2022-08-30T12:00:35,Rent,$2500 Per Week,House,Stonnington - Greater Area,0,0,4.0,3.0,3,"24 Montalto Avenue, Toorak",TOORAK,3142,-37.84391,145.012543
+16063514,2022-08-30T11:54:45,Rent,$360 per week,ApartmentUnitFlat,Port Philip City Council - Greater Area,0,0,2.0,1.0,0,"2/29 Mitford Street, St Kilda",ST KILDA,3182,-37.8726463,144.981766
+16063499,2022-08-30T11:50:12,Rent,"$1,150pw/$4,997pcm",House,Boroondara City Council - Greater Area,0,0,4.0,2.0,2,"3 Ajana Street, Balwyn North",BALWYN NORTH,3104,-37.8027344,145.098251
+16063478,2022-08-30T11:46:19,Rent,$825.00,Townhouse,Boroondara City Council - Greater Area,0,0,3.0,2.0,2,"2/16 Liddiard Street, Hawthorn",HAWTHORN,3122,-37.8193,145.037613
+16063477,2022-08-30T11:46:00,Rent,$480 per week,ApartmentUnitFlat,Glen Eira Council - Greater Area,0,0,2.0,2.0,1,"8/14 Maroona Road, Carnegie",CARNEGIE,3163,-37.88898,145.04747
+14989099,2022-08-30T11:45:59,Rent,$ 410,ApartmentUnitFlat,Maribyrnong City Council - Greater Area,0,0,2.0,1.0,1,"16F/54 La Scala Avenue, Maribyrnong",MARIBYRNONG,3032,-37.78097,144.8939
+16063451,2022-08-30T11:39:12,Rent,$310 weekly,ApartmentUnitFlat,Glen Eira Council - Greater Area,0,0,1.0,1.0,1,"10/18 Gerald Street, Murrumbeena",MURRUMBEENA,3163,-37.895462,145.069885
+16063444,2022-08-30T11:38:35,Rent,$350.00,ApartmentUnitFlat,Port Philip City Council - Greater Area,0,0,1.0,1.0,0,"10/K7 High Street, Windsor",WINDSOR,3181,-37.8506851,144.983292
+16063438,2022-08-30T11:37:47,Rent,$560 weekly,ApartmentUnitFlat,Port Philip City Council - Greater Area,0,0,2.0,1.0,2,"1/29 The Avenue, Windsor",WINDSOR,3181,-37.855,144.9977
+16063437,2022-08-30T11:37:10,Rent,$470.00,ApartmentUnitFlat,Boroondara City Council - Greater Area,0,0,2.0,1.0,1,"29/70 Church Street, Hawthorn",HAWTHORN,3122,-37.8153038,145.021027
+16063432,2022-08-30T11:35:32,Rent,$500,ApartmentUnitFlat,Melbourne City Council - Greater Area,0,0,2.0,2.0,1,"503/9 Dryburgh Street, West Melbourne",WEST MELBOURNE,3003,-37.8066177,144.942413
+16063371,2022-08-30T11:21:00,Rent,$560 per week,ApartmentUnitFlat,Melbourne City Council - Greater Area,0,0,2.0,1.0,0,"9/2 Marne Street, South Yarra",SOUTH YARRA,3141,-37.8378372,144.983948
+16063362,2022-08-30T11:18:57,Rent,$400 per week,ApartmentUnitFlat,Port Philip City Council - Greater Area,0,0,2.0,1.0,1,"3/79 Barkly Street, St Kilda",ST KILDA,3182,-37.86256,144.981812
+16063327,2022-08-30T11:07:58,Rent,$600.00,House,Darebin City Council - Greater Area,0,0,3.0,2.0,2,"6 Rolls Street, Coburg",COBURG,3058,-37.7502632,144.96843
+16063308,2022-08-30T11:03:59,Rent,$440,ApartmentUnitFlat,Glen Eira Council - Greater Area,0,0,2.0,2.0,1,"105/801 Centre Road, Bentleigh East",BENTLEIGH EAST,3165,-37.9210663,145.0596
+16063233,2022-08-30T10:42:53,Rent,$390.00,ApartmentUnitFlat,Bayside - Greater Area,0,0,1.0,1.0,0,"7/138 New Street, Brighton",BRIGHTON,3186,-37.9180641,144.993073
+16063225,2022-08-30T10:39:53,Rent,$530 weekly,ApartmentUnitFlat,Port Philip City Council - Greater Area,0,0,2.0,2.0,1,"9/106 Addison Street, Elwood",ELWOOD,3184,-37.8810539,144.979584
+16063203,2022-08-30T10:33:24,Rent,$625 pw,House,Port Philip City Council - Greater Area,0,0,2.0,1.0,1,"9 Brunning Street, Balaclava",BALACLAVA,3183,-37.87309,144.991241
+16063201,2022-08-30T10:33:19,Rent,$265 pw,ApartmentUnitFlat,Port Philip City Council - Greater Area,0,0,1.0,1.0,0,"4/2 Selwyn Avenue, Elwood",ELWOOD,3184,-37.8844452,144.9849
+16063179,2022-08-30T10:28:23,Rent,$430 weekly,ApartmentUnitFlat,Glen Eira Council - Greater Area,0,0,2.0,1.0,1,"3/4 Orrong Road, Elsternwick",ELSTERNWICK,3185,-37.8900833,145.005447
+16063178,2022-08-30T10:28:08,Rent,$500.00,ApartmentUnitFlat,Melbourne City Council - Greater Area,0,0,2.0,1.0,1,"4/867-883 Drummond Street, Carlton North",CARLTON NORTH,3054,-37.78394,144.971024
+16063155,2022-08-30T10:21:08,Rent,$375.00,ApartmentUnitFlat,Glen Eira Council - Greater Area,0,0,2.0,1.0,1,"6/54 Hill Street, Bentleigh East",BENTLEIGH EAST,3165,-37.92235,145.061188
+16063139,2022-08-30T10:15:45,Rent,$530,ApartmentUnitFlat,Melbourne City Council - Greater Area,0,0,3.0,2.0,0,"625/118 Franklin Street, Melbourne",MELBOURNE,3000,-37.8082047,144.958908
+15426148,2022-08-30T10:13:39,Rent,1912.00 per month,ApartmentUnitFlat,Moreland City Council - Greater Area,0,0,2.0,2.0,1,"614/5 Olive York Way, Brunswick West",BRUNSWICK WEST,3055,-37.7587357,144.939041
+16063116,2022-08-30T10:10:30,Rent,$520 pw,House,Port Philip City Council - Greater Area,0,0,2.0,1.0,0,"53 Duke Street, Windsor",WINDSOR,3181,-37.8540077,144.995636
+16063026,2022-08-30T09:44:53,Rent,$495.00,ApartmentUnitFlat,Melbourne City Council - Greater Area,0,0,2.0,2.0,1,"304/350 Victoria Street, North Melbourne",NORTH MELBOURNE,3051,-37.80552,144.954727
+16062930,2022-08-30T08:58:31,Rent,$375.00,ApartmentUnitFlat,Glen Eira Council - Greater Area,0,0,2.0,1.0,0,"2/1 Palm Court, St Kilda East",ST KILDA EAST,3183,-37.8605728,144.998154
+16062899,2022-08-30T08:24:51,Rent,$400 weekly,ApartmentUnitFlat,Bayside - Greater Area,0,0,1.0,1.0,1,"201/1193 Nepean Hwy, Highett",HIGHETT,3190,-37.9542923,145.050171
+16062867,2022-08-30T00:06:00,Rent,800,ApartmentUnitFlat,Melbourne City Council - Greater Area,0,0,3.0,2.0,1,"503/8 Bowen Crescent, Melbourne",MELBOURNE,3004,-37.83542,144.97258
+16062861,2022-08-29T22:59:03,Rent,$650 per week,House,Yarra City Council - Greater Area,0,0,2.0,1.0,1,"94 Coppin Street, Richmond",RICHMOND,3121,-37.8211174,145.00322
+15503430,2022-08-29T22:50:31,Rent,$675 Per Week,Townhouse,Port Philip City Council - Greater Area,0,0,3.0,1.0,1,"27/16-20 Milton Street, Elwood",ELWOOD,3184,-37.8740463,144.988724
+16062820,2022-08-29T19:20:22,Rent,$350 weekly,ApartmentUnitFlat,Kingston City Council - Greater Area,0,0,1.0,1.0,1,"508/7 Balcombe Rd, Mentone",MENTONE,3194,-37.9821548,145.070328
+16062777,2022-08-29T18:34:25,Rent,$380 per week,ApartmentUnitFlat,Melbourne City Council - Greater Area,0,0,1.0,1.0,1,"702/594 St Kilda Road, Melbourne",MELBOURNE,3004,-37.8496933,144.979645
+14750640,2022-08-29T17:52:45,Rent,$550 per week,ApartmentUnitFlat,Yarra City Council - Greater Area,0,0,2.0,2.0,1,"531/1 Shamrock Street, Abbotsford",ABBOTSFORD,3067,-37.8103561,145.007736
+15039332,2022-08-29T17:39:00,Rent,$350,ApartmentUnitFlat,Monash City - Greater Area,0,0,2.0,1.0,1,"1/4 Cabena Crescent, Chadstone",CHADSTONE,3148,-37.8897171,145.094528
+16062720,2022-08-29T17:38:39,Rent,$550 per week,ApartmentUnitFlat,Melbourne City Council - Greater Area,0,0,2.0,1.0,0,"1206/118 Russell Street, Melbourne",MELBOURNE,3000,-37.8135872,144.968719
+16062712,2022-08-29T17:34:44,Rent,$400 per week,ApartmentUnitFlat,Melbourne City Council - Greater Area,0,0,1.0,1.0,0,"22/123 Millswyn Street, South Yarra",SOUTH YARRA,3141,-37.83443,144.980423
+16062642,2022-08-29T17:15:17,Rent,$650 per week,House,Yarra City Council - Greater Area,0,0,3.0,1.0,1,"57 Baker Street, Richmond",RICHMOND,3121,-37.8117676,145.00325
+16062555,2022-08-29T16:56:21,Rent,$800 Per Week,ApartmentUnitFlat,Stonnington - Greater Area,0,0,3.0,2.0,0,"1/42 Grandview Grove, Prahran",PRAHRAN,3181,-37.8495255,145.008392
+16044504,2022-08-29T16:51:40,Rent,"$1,200.00 Per Week",House,Stonnington - Greater Area,0,0,5.0,3.0,3,"4 Nareeb Court, Toorak",TOORAK,3142,-37.8486938,145.022583
+16062501,2022-08-29T16:45:17,Rent,$520 per week,ApartmentUnitFlat,Boroondara City Council - Greater Area,0,0,2.0,1.0,0,"4/45 Edgar Street, Glen Iris",GLEN IRIS,3146,-37.8542137,145.044876
+16062428,2022-08-29T16:32:47,Rent,$680,ApartmentUnitFlat,Melbourne City Council - Greater Area,0,0,2.0,2.0,0,"1411/120 A Beckett St, Melbourne",MELBOURNE,3000,-37.8093071,144.959732
+15306243,2022-08-29T16:15:45,Rent,$580,Townhouse,Kingston City Council - Greater Area,0,0,3.0,3.0,1,"3/4 Windsor Avenue, Oakleigh South",OAKLEIGH SOUTH,3167,-37.9128,145.098862
+16062335,2022-08-29T16:12:20,Rent,$640 per week,Townhouse,Boroondara City Council - Greater Area,0,0,3.0,2.0,2,"3/12 Thea Avenue, Balwyn North",BALWYN NORTH,3104,-37.7977028,145.098969
+15563252,2022-08-29T16:09:56,Rent,$990,House,Bayside - Greater Area,0,0,4.0,2.0,1,"647 Hawthorn Road, Brighton East",BRIGHTON EAST,3187,-37.903656,145.019089
+16062322,2022-08-29T16:09:39,Rent,$790 per week,House,Glen Eira Council - Greater Area,0,0,4.0,2.0,4,"329 Alma Road, Caulfield North",CAULFIELD NORTH,3161,-37.86487,145.016891
+14989490,2022-08-29T16:06:55,Rent,$470,House,Stonnington - Greater Area,0,0,3.0,1.0,4,"748 Warrigal Road, Malvern East",MALVERN EAST,3145,-37.886734,145.089111
+16062291,2022-08-29T16:03:28,Rent,$360 Per Week,ApartmentUnitFlat,Melbourne City Council - Greater Area,0,0,1.0,1.0,0,"505/296 Flinders Street, Melbourne",MELBOURNE,3000,-37.81804,144.964325
+16062260,2022-08-29T15:50:49,Rent,$450.00,ApartmentUnitFlat,Moreland City Council - Greater Area,0,0,2.0,1.0,1,"107/358 Moreland Road, Brunswick West",BRUNSWICK WEST,3055,-37.7538719,144.949478
+16062077,2022-08-29T15:18:01,Rent,$570 weekly,ApartmentUnitFlat,Glen Eira Council - Greater Area,0,0,2.0,1.0,1,"2/74 Hawthorn Rd, Caulfield North",CAULFIELD NORTH,3161,-37.87074,145.024948
+16062072,2022-08-29T15:17:07,Rent,$680 weekly,House,Monash City - Greater Area,0,0,4.0,3.0,2,"2/6 Elaroo St, Chadstone",CHADSTONE,3148,-37.87961,145.096741
+16062068,2022-08-29T15:16:40,Rent,$530 weekly,ApartmentUnitFlat,Glen Eira Council - Greater Area,0,0,2.0,2.0,1,"203/538 Glen Huntly Road, Elsternwick",ELSTERNWICK,3185,-37.8859444,145.012024
+16062062,2022-08-29T15:14:34,Rent,"$525pw/$2,281pcm",House,Monash City - Greater Area,0,0,2.0,1.0,0,"29 Loudon Road, Burwood",BURWOOD,3125,-37.8480225,145.099274
+16062060,2022-08-29T15:14:22,Rent,$340.00,ApartmentUnitFlat,Hobsons Bay City Council - Greater Area,0,0,2.0,1.0,1,"3/97 New Street, South Kingsville",SOUTH KINGSVILLE,3015,-37.8323936,144.866714
+16062022,2022-08-29T15:01:37,Rent,$450.00,ApartmentUnitFlat,Moreland City Council - Greater Area,0,0,2.0,1.0,1,"34/97 Brickworks Drive, Brunswick",BRUNSWICK,3056,-37.7695236,144.9528
+16062004,2022-08-29T14:56:45,Rent,$495 weekly,House,Yarra Ranges Shire - Greater Area,0,0,3.0,1.0,0,"28 Monash Ave, Olinda",OLINDA,3788,-37.8530846,145.363983
+16061993,2022-08-29T14:52:40,Rent,$600.00 per week,ApartmentUnitFlat,Melbourne City Council - Greater Area,0,0,2.0,2.0,1,"808/2 Claremont Street, South Yarra",SOUTH YARRA,3141,-37.8387833,144.993729
+16061980,2022-08-29T14:48:34,Rent,$390 per week,House,Brimbank City Council - Greater Area,0,0,2.0,2.0,1,"403/118 Cairnlea Drive, Cairnlea",CAIRNLEA,3023,-37.7574234,144.791077
+16061939,2022-08-29T14:36:40,Rent,$650per week,ApartmentUnitFlat,Yarra City Council - Greater Area,0,0,2.0,2.0,1,"532/631 Victoria Street, Abbotsford",ABBOTSFORD,3067,-37.8111572,145.008911
+13841196,2022-08-29T14:34:44,Rent,$330 PER WEEK,ApartmentUnitFlat,Wodonga - Greater Area,0,0,2.0,1.0,1,"1/4 Skipton Court, Wodonga",WODONGA,3690,-36.12886,146.9075
+16061923,2022-08-29T14:31:51,Rent,"$1,100.00",ApartmentUnitFlat,Melbourne City Council - Greater Area,0,0,2.0,2.0,2,"1201/55 Queens Road, Melbourne",MELBOURNE,3004,-37.84789,144.978287
+16061907,2022-08-29T14:26:10,Rent,$360 weekly,ApartmentUnitFlat,Glen Eira Council - Greater Area,0,0,2.0,1.0,1,"5/9 Lillimur Rd, Ormond",ORMOND,3204,-37.90274,145.040924
+16061897,2022-08-29T14:24:13,Rent,$375,House,Melbourne City Council - Greater Area,0,0,1.0,1.0,0,"3/58 Rankins road, Kensington",KENSINGTON,3031,-37.7905769,144.931351
+16061881,2022-08-29T14:21:21,Rent,$430 per week,ApartmentUnitFlat,Yarra City Council - Greater Area,0,0,1.0,1.0,1,"105/39 Appleton Street, Richmond",RICHMOND,3121,-37.8150558,145.011139
+16061854,2022-08-29T14:12:30,Rent,$680.00,House,Mornington Peninsula & District - Greater Area,0,0,4.0,2.0,3,"2 Narrung Road, Mount Eliza",MOUNT ELIZA,3930,-38.18668,145.078934
+16061833,2022-08-29T14:05:22,Rent,$495.00,ApartmentUnitFlat,Stonnington - Greater Area,0,0,2.0,2.0,1,"5/419 Waverley Road, Malvern East",MALVERN EAST,3145,-37.8781357,145.067368
+16061810,2022-08-29T13:56:23,Rent,$345 per week,ApartmentUnitFlat,Melbourne City Council - Greater Area,0,0,1.0,1.0,0,"909/528 Swanston Street, Carlton",CARLTON,3053,-37.80422,144.963608
+16061803,2022-08-29T13:54:57,Rent,$450 per week pw,ApartmentUnitFlat,Whitehorse City Council - Greater Area,0,0,2.0,2.0,1,"802/3 Young Street, Box Hill",BOX HILL,3128,-37.81748,145.116455
+15834554,2022-08-29T13:50:29,Rent,$530,ApartmentUnitFlat,Monash City - Greater Area,0,0,2.0,2.0,1,"406/89 Atherton Road, Oakleigh",OAKLEIGH,3166,-37.8991928,145.09433
+16061763,2022-08-29T13:44:27,Rent,$1000 per week,Townhouse,Melbourne City Council - Greater Area,0,0,3.0,2.0,2,"73 The Crescent, Port Melbourne",PORT MELBOURNE,3207,-37.83843,144.928085
+16061762,2022-08-29T13:44:02,Rent,$700 per week,House,Yarra City Council - Greater Area,0,0,2.0,2.0,1,"67 Little Charles Street, Abbotsford",ABBOTSFORD,3067,-37.8066063,144.995728
+15141770,2022-08-29T13:24:45,Rent,"$500pw/$2,172pcm",House,Maroondah City - Greater Area,0,0,3.0,1.0,2,"4 Allaware Avenue, Croydon",CROYDON,3136,-37.8032074,145.29985
+15889540,2022-08-29T13:24:36,Rent,$520 per week,House,Monash City - Greater Area,0,0,3.0,2.0,1,"38 Kauri Grove, Glen Waverley",GLEN WAVERLEY,3150,-37.89368,145.157
+16061681,2022-08-29T13:23:37,Rent,$750.00,House,Bayside - Greater Area,0,0,3.0,2.0,2,"31A Tweed St, Highett",HIGHETT,3190,-37.944355,145.029984
+16061665,2022-08-29T13:19:23,Rent,$350,ApartmentUnitFlat,Monash City - Greater Area,0,0,2.0,1.0,1,"14/13 Churchill Avenue, Chadstone",CHADSTONE,3148,-37.88813,145.107117
+16061650,2022-08-29T13:15:16,Rent,$500 per week,Townhouse,Yarra City Council - Greater Area,0,0,2.0,1.0,1,"12/59 Westbank Terrace, Richmond",RICHMOND,3121,-37.82272,145.0133
+16061627,2022-08-29T13:07:50,Rent,$530 Per Week,House,Yarra Ranges Shire - Greater Area,0,0,4.0,2.0,2,"39 Belmont Avenue, Upwey",UPWEY,3158,-37.904377,145.325089
+16061618,2022-08-29T13:06:30,Rent,$400 per week,ApartmentUnitFlat,Boroondara City Council - Greater Area,0,0,2.0,1.0,1,"12/2A Brenbeal Street, Balwyn",BALWYN,3103,-37.812767,145.087051
+16061617,2022-08-29T13:05:52,Rent,$890.00,House,Port Philip City Council - Greater Area,0,0,3.0,1.0,0,"175 Richardson Street, Middle Park",MIDDLE PARK,3206,-37.8484459,144.960312
+16061579,2022-08-29T12:53:25,Rent,$475.00,House,Kingston City Council - Greater Area,0,0,2.0,1.0,4,"184 Centre Dandenong Road, Dingley Village",DINGLEY VILLAGE,3172,-37.9787941,145.125443
+15263650,2022-08-29T12:48:04,Rent,$480,ApartmentUnitFlat,Bayside - Greater Area,0,0,2.0,2.0,1,"G04/12 Major Street, Highett",HIGHETT,3190,-37.94731,145.0401
+16061541,2022-08-29T12:46:21,Rent,$520.00,ApartmentUnitFlat,Boroondara City Council - Greater Area,0,0,2.0,1.0,1,"2/474 Glenferrie Road, Hawthorn",HAWTHORN,3122,-37.833828,145.0338
+16061529,2022-08-29T12:43:51,Rent,$890.00,House,Glen Eira Council - Greater Area,0,0,4.0,2.0,3,"12A Bevan Street, Ormond",ORMOND,3204,-37.90551,145.026932
+16061520,2022-08-29T12:41:22,Rent,"$1,250.00",House,Melbourne City Council - Greater Area,0,0,4.0,2.0,0,"114 Evans Street, Port Melbourne",PORT MELBOURNE,3207,-37.8334846,144.9418
+16061518,2022-08-29T12:40:55,Rent,$600.00,ApartmentUnitFlat,Boroondara City Council - Greater Area,0,0,3.0,2.0,2,"6/61 Princess Street, Kew",KEW,3101,-37.8032951,145.029083
+16061485,2022-08-29T12:29:07,Rent,$610.00,House,Hobsons Bay City Council - Greater Area,0,0,4.0,1.0,1,"8 Walker Street, Newport",NEWPORT,3015,-37.8419724,144.882248
+16061469,2022-08-29T12:26:57,Rent,"$1,400",House,Moreland City Council - Greater Area,0,0,7.0,3.0,0,"52-54 Tinning Street, Brunswick",BRUNSWICK,3056,-37.75897,144.959183
+16061452,2022-08-29T12:25:22,Rent,$520.00,ApartmentUnitFlat,Melbourne City Council - Greater Area,0,0,2.0,1.0,1,"2903/151 City Road, Southbank",SOUTHBANK,3006,-37.8236656,144.963165
+16061441,2022-08-29T12:24:13,Rent,$390,House,Wodonga - Greater Area,0,0,3.0,1.0,0,"92 Wilson Street, Wodonga",WODONGA,3690,-36.12957,146.876068
+16061435,2022-08-29T12:22:05,Rent,$425 weekly,ApartmentUnitFlat,Port Philip City Council - Greater Area,0,0,1.0,1.0,1,"206/96 Ormond Road, Elwood",ELWOOD,3184,-37.8855057,144.987457
+16061407,2022-08-29T12:14:57,Rent,$480.00,ApartmentUnitFlat,Bayside - Greater Area,0,0,2.0,1.0,1,"5/310 Beach Road, Black Rock",BLACK ROCK,3193,-37.9768944,145.016891
+16061406,2022-08-29T12:14:50,Rent,$480 per week,ApartmentUnitFlat,Glen Eira Council - Greater Area,0,0,2.0,2.0,1,"101/17 Murrumbeena Road, Murrumbeena",MURRUMBEENA,3163,-37.8858643,145.0668
+16061402,2022-08-29T12:14:23,Rent,$600.00,Townhouse,Hobsons Bay City Council - Greater Area,0,0,3.0,3.0,1,"7/11-15 Basil Street, Newport",NEWPORT,3015,-37.84629,144.865845
+16061391,2022-08-29T12:11:29,Rent,$550 weekly,ApartmentUnitFlat,Boroondara City Council - Greater Area,0,0,2.0,1.0,1,"G02/1309 Toorak Road, Camberwell",CAMBERWELL,3124,-37.8493423,145.0893
+16061379,2022-08-29T12:08:22,Rent,$365,ApartmentUnitFlat,Darebin City Council - Greater Area,0,0,1.0,1.0,1,"417/11 Urquhart Street, Coburg",COBURG,3058,-37.7401161,144.968063
+13441918,2022-08-29T12:07:16,Rent,$550 per week,House,Monash City - Greater Area,0,0,3.0,1.0,2,"26 Austin Street, Hughesdale",HUGHESDALE,3166,-37.9068031,145.078644
+16061362,2022-08-29T12:03:24,Rent,$275.00,ApartmentUnitFlat,Port Philip City Council - Greater Area,0,0,1.0,1.0,0,"6/21 Chusan Street, Balaclava",BALACLAVA,3183,-37.86735,144.998856
+12863768,2022-08-29T11:51:28,Rent,$770 per week,ApartmentUnitFlat,Melbourne City Council - Greater Area,0,0,3.0,2.0,2,"38/400 Victoria Parade, East Melbourne",EAST MELBOURNE,3002,-37.8095627,144.984848
+16061315,2022-08-29T11:49:45,Rent,$500.00,House,Stonnington - Greater Area,0,0,2.0,1.0,0,"1 Watson Street, Armadale",ARMADALE,3143,-37.8502426,145.014877
+16061312,2022-08-29T11:49:19,Rent,$470 per week,ApartmentUnitFlat,Maribyrnong City Council - Greater Area,0,0,2.0,2.0,1,"802/8 Joseph Road, Footscray",FOOTSCRAY,3011,-37.7992134,144.909912
+16061308,2022-08-29T11:48:25,Rent,$295 pw,ApartmentUnitFlat,Port Philip City Council - Greater Area,0,0,1.0,1.0,0,"6/7 Southey Street, Elwood",ELWOOD,3184,-37.87481,144.983841
+16061303,2022-08-29T11:46:50,Rent,$620 per week,House,Glen Eira Council - Greater Area,0,0,3.0,2.0,2,"16 Neville Street, Bentleigh East",BENTLEIGH EAST,3165,-37.9239426,145.055328
+16061297,2022-08-29T11:45:33,Rent,$620 per week,ApartmentUnitFlat,Yarra City Council - Greater Area,0,0,2.0,1.0,2,"24/343 Church Street, Richmond",RICHMOND,3121,-37.8227844,144.998688
+16061269,2022-08-29T11:40:10,Rent,"$1,100.00",Townhouse,Moreland City Council - Greater Area,0,0,3.0,3.0,2,"37 Taylor Street, Fitzroy North",FITZROY NORTH,3068,-37.77453,144.980316
+16061261,2022-08-29T11:38:31,Rent,$1100 pw,House,Mornington Peninsula & District - Greater Area,0,0,3.0,2.0,2,"3764 Point Nepean Road, Portsea",PORTSEA,3944,-38.3199,144.714142
+16061199,2022-08-29T11:26:47,Rent,$650 per week,ApartmentUnitFlat,Melbourne City Council - Greater Area,0,0,2.0,1.0,1,"P08P/191 Powlett Street, East Melbourne",EAST MELBOURNE,3002,-37.8100929,144.986053
+16061186,2022-08-29T11:20:58,Rent,$565 per week,House,Yarra City Council - Greater Area,0,0,2.0,1.0,0,"11 Bennett Street, Richmond",RICHMOND,3121,-37.8121262,145.00647
+16061167,2022-08-29T11:17:21,Rent,$530.00,House,Hobsons Bay City Council - Greater Area,0,0,3.0,1.0,0,"10 Gellibrand Street, Williamstown",WILLIAMSTOWN,3016,-37.8656273,144.891022
+16061113,2022-08-29T11:06:16,Rent,$430 weekly,ApartmentUnitFlat,Glen Eira Council - Greater Area,0,0,2.0,1.0,1,"1/27 Venus St, Caulfield South",CAULFIELD SOUTH,3162,-37.8943176,145.014359
+16061070,2022-08-29T10:53:40,Rent,$550.00,House,Hobsons Bay City Council - Greater Area,0,0,3.0,1.0,1,"69 Speight Street, Newport",NEWPORT,3015,-37.8426,144.8747
+16061068,2022-08-29T10:52:59,Rent,$750.00,Townhouse,Manningham City - Greater Area,0,0,3.0,2.0,2,"47A Turana Street, Doncaster",DONCASTER,3108,-37.7837753,145.132538
+16061056,2022-08-29T10:47:03,Rent,$350 per week,ApartmentUnitFlat,Melbourne City Council - Greater Area,0,0,2.0,1.0,0,"1313/268 Flinders Street, Melbourne",MELBOURNE,3000,-37.8178139,144.965576
+16061003,2022-08-29T10:32:57,Rent,$1800 per week,ApartmentUnitFlat,Melbourne City Council - Greater Area,0,0,3.0,2.0,1,"7/126 Wellington Parade, East Melbourne",EAST MELBOURNE,3002,-37.81621,144.985931
+16060995,2022-08-29T10:28:45,Rent,$540,House,Kingston City Council - Greater Area,0,0,3.0,2.0,2,"5 Bemboka Avenue, Clayton South",CLAYTON SOUTH,3169,-37.93846,145.110672
+16060974,2022-08-29T10:24:21,Rent,$425 per week,ApartmentUnitFlat,Yarra City Council - Greater Area,0,0,2.0,1.0,0,"313/11 Flockhart Street, Abbotsford",ABBOTSFORD,3067,-37.8099747,145.006927
+16060949,2022-08-29T10:16:27,Rent,$510 per week,ApartmentUnitFlat,Maribyrnong City Council - Greater Area,0,0,2.0,2.0,1,"811/2 Joseph Road, Footscray",FOOTSCRAY,3011,-37.80033,144.909653
+16060948,2022-08-29T10:16:18,Rent,$525 per week,ApartmentUnitFlat,Bayside - Greater Area,0,0,2.0,1.0,1,"210/79-81 Asling Street, Brighton",BRIGHTON,3186,-37.8974342,145.002731
+16060882,2022-08-29T09:58:17,Rent,$450.00,ApartmentUnitFlat,Glen Eira Council - Greater Area,0,0,2.0,2.0,1,"111/25 Truganini Road, Carnegie",CARNEGIE,3163,-37.889164,145.054779
+16060867,2022-08-29T09:54:02,Rent,$650,ApartmentUnitFlat,Stonnington - Greater Area,0,0,2.0,2.0,1,"402/1399 Dandenong Road, Malvern East",MALVERN EAST,3145,-37.8907166,145.08374
+16060859,2022-08-29T09:53:04,Rent,THE DEAL: $500 PER WEEK,ApartmentUnitFlat,Boroondara City Council - Greater Area,0,0,2.0,2.0,1,"107/795 Toorak Road, Hawthorn East",HAWTHORN EAST,3123,-37.8452377,145.044662
+16060820,2022-08-29T09:41:38,Rent,$550,ApartmentUnitFlat,Glen Eira Council - Greater Area,0,0,2.0,1.0,1,"4/13 Lillimur Road, Ormond",ORMOND,3204,-37.9024925,145.041046
+14725929,2022-08-29T09:41:23,Rent,$370.00,ApartmentUnitFlat,Melbourne City Council - Greater Area,0,0,1.0,1.0,0,"1309/2 Claremont Street, South Yarra",SOUTH YARRA,3141,-37.8387833,144.993729
+15939404,2022-08-29T09:38:37,Rent,$400.00,House,Melbourne City Council - Greater Area,0,0,3.0,1.0,0,"7 Hardwicke Street, North Melbourne",NORTH MELBOURNE,3051,-37.79816,144.946915
+16060779,2022-08-29T09:23:19,Rent,$665.00,Townhouse,Monash City - Greater Area,0,0,3.0,2.0,2,"1/18 Aloomba Street, Chadstone",CHADSTONE,3148,-37.87984,145.0983
+16060771,2022-08-29T09:19:42,Rent,$480.00,House,Geelong & District - Greater Area,0,0,4.0,2.0,2,"6 Headland Drive, Leopold",LEOPOLD,3224,-38.2017822,144.457443
+16060765,2022-08-29T09:16:06,Rent,$440 weekly,Townhouse,Glen Eira Council - Greater Area,0,0,2.0,1.0,1,"5/12 Wyuna Rd, Caulfield North",CAULFIELD NORTH,3161,-37.8756676,145.032867
+15832683,2022-08-29T09:07:43,Rent,$525 weekly,Townhouse,Bayside - Greater Area,0,0,2.0,2.0,1,"5/3 Stanley Ave, Cheltenham",CHELTENHAM,3192,-37.9683266,145.056168
+16060747,2022-08-29T09:02:48,Rent,"$1,000",House,Moreland City Council - Greater Area,0,0,4.0,3.0,2,"7A Foden Street, Brunswick West",BRUNSWICK WEST,3055,-37.77047,144.9479
+16060700,2022-08-29T08:03:34,Rent,$400,ApartmentUnitFlat,Melbourne City Council - Greater Area,0,0,1.0,1.0,0,"107A/94 Canning Street, Carlton",CARLTON,3053,-37.79685,144.973618
+16060666,2022-08-28T18:10:38,Rent,$250.00 per week,ApartmentUnitFlat,Melbourne City Council - Greater Area,0,0,1.0,1.0,0,"108/24 Barkly Place, Carlton",CARLTON,3053,-37.8030472,144.961548
+16060589,2022-08-27T15:42:22,Rent,$450 per week,ApartmentUnitFlat,Melbourne City Council - Greater Area,0,0,1.0,1.0,1,"Unit 101/170 Albert St, East Melbourne",EAST MELBOURNE,3002,-37.80962,144.985275
+16060501,2022-08-27T09:55:24,Rent,$420,ApartmentUnitFlat,Moreland City Council - Greater Area,0,0,2.0,1.0,0,"2/21-23 Westgate Street, Pascoe Vale South",PASCOE VALE SOUTH,3044,-37.73777,144.942062
+16060446,2022-08-26T20:07:47,Rent,$850,House,Moreland City Council - Greater Area,0,0,3.0,1.0,0,"40 Church Street, Fitzroy North",FITZROY NORTH,3068,-37.78847,144.9784
+16060402,2022-08-26T18:10:20,Rent,$1200 Per Week,Townhouse,Bayside - Greater Area,0,0,3.0,2.0,2,"19/30 Esplanade, Brighton",BRIGHTON,3186,-37.926178,144.98822
+16060371,2022-08-26T17:48:29,Rent,$795 Per Week,ApartmentUnitFlat,Melbourne City Council - Greater Area,0,0,2.0,2.0,2,"301/79 River Street, South Yarra",SOUTH YARRA,3141,-37.8363342,144.997589
+16060352,2022-08-26T17:38:30,Rent,$500,Townhouse,Monash City - Greater Area,0,0,2.0,1.0,2,"2/67 Euston Road, Hughesdale",HUGHESDALE,3166,-37.89479,145.0871
+16060284,2022-08-26T17:12:35,Rent,$460 per Week,ApartmentUnitFlat,Melbourne City Council - Greater Area,0,0,1.0,1.0,1,"1014/65 Dudley Street, West Melbourne",WEST MELBOURNE,3003,-37.8102226,144.9507
+16060215,2022-08-26T16:52:27,Rent,$460,House,Moreland City Council - Greater Area,0,0,2.0,1.0,1,"4 Woodlands Avenue, Pascoe Vale South",PASCOE VALE SOUTH,3044,-37.7494965,144.945663
+16060186,2022-08-26T16:45:28,Rent,$495,ApartmentUnitFlat,Monash City - Greater Area,0,0,3.0,1.0,2,"2/11 Therese Avenue, Mount Waverley",MOUNT WAVERLEY,3149,-37.8927536,145.116
+16060144,2022-08-26T16:34:48,Rent,$380 weekly,ApartmentUnitFlat,Boroondara City Council - Greater Area,0,0,2.0,1.0,2,"2A St Georges Cres, Ashburton",ASHBURTON,3147,-37.8711357,145.069244
+16060121,2022-08-26T16:29:06,Rent,"$1,350.00",House,Bayside - Greater Area,0,0,3.0,2.0,2,"34 Victoria Street, Sandringham",SANDRINGHAM,3191,-37.9568443,145.0153
+16060050,2022-08-26T16:09:24,Rent,$520 per week,ApartmentUnitFlat,Kingston City Council - Greater Area,0,0,3.0,1.0,1,"2/30 Clarendon Avenue, Oakleigh South",OAKLEIGH SOUTH,3167,-37.91241,145.101929
+16060043,2022-08-26T16:08:26,Rent,$700 per week,ApartmentUnitFlat,Stonnington - Greater Area,0,0,2.0,2.0,2,"304/7 Evergreen Mews, Armadale",ARMADALE,3143,-37.851162,145.013382
+16060040,2022-08-26T16:08:06,Rent,$640.00,House,Mornington Peninsula & District - Greater Area,0,0,3.0,2.0,2,"4 Lucerne Avenue, Mornington",MORNINGTON,3931,-38.22081,145.050049
+16060025,2022-08-26T16:05:08,Rent,"$1,200.00",House,Boroondara City Council - Greater Area,0,0,4.0,2.0,2,"30 High Street, Mont Albert",MONT ALBERT,3127,-37.8167229,145.107651
+16060003,2022-08-26T15:57:29,Rent,$750.00,House,Moreland City Council - Greater Area,0,0,2.0,1.0,0,"30 Woodside Street, Fitzroy North",FITZROY NORTH,3068,-37.78483,144.990021
+16059981,2022-08-26T15:50:27,Rent,$400,ApartmentUnitFlat,Monash City - Greater Area,0,0,2.0,1.0,2,"5/265 Clayton Road, Clayton",CLAYTON,3168,-37.92025,145.1203
+16059929,2022-08-26T15:36:04,Rent,$975.00,House,Yarra City Council - Greater Area,0,0,3.0,1.0,0,"42 O'Grady Street, Clifton Hill",CLIFTON HILL,3068,-37.7868538,144.999
+16059918,2022-08-26T15:33:37,Rent,$400,ApartmentUnitFlat,Monash City - Greater Area,0,0,2.0,1.0,1,"5/158 Kangaroo Road, Hughesdale",HUGHESDALE,3166,-37.9005661,145.081085
+16059891,2022-08-26T15:27:02,Rent,$650 per week,ApartmentUnitFlat,Melbourne City Council - Greater Area,0,0,2.0,2.0,1,"305/63 Rouse Street, Port Melbourne",PORT MELBOURNE,3207,-37.8440552,144.942368
+16059890,2022-08-26T15:26:57,Rent,$395 per week,ApartmentUnitFlat,Melbourne City Council - Greater Area,0,0,1.0,1.0,0,"505/25 Nott Street, Port Melbourne",PORT MELBOURNE,3207,-37.8418922,144.9375
+16059839,2022-08-26T15:12:17,Rent,THE DEAL: $880 PER WEEK,House,Port Philip City Council - Greater Area,155.0,332.0,3.0,2.0,2,"22 Union Street, Windsor",WINDSOR,3181,-37.8538132,144.984955
+16059786,2022-08-26T14:58:34,Rent,$320.00,ApartmentUnitFlat,Bayside - Greater Area,0,0,1.0,1.0,1,"115/18 Station Street, Sandringham",SANDRINGHAM,3191,-37.9489746,145.004272
+16059775,2022-08-26T14:55:32,Rent,$560 per week,ApartmentUnitFlat,Glen Eira Council - Greater Area,0,0,3.0,2.0,2,"4/48-50 Ardyne Street, Murrumbeena",MURRUMBEENA,3163,-37.89523,145.06871
+16059741,2022-08-26T14:46:50,Rent,$790.00,ApartmentUnitFlat,Port Philip City Council - Greater Area,0,0,2.0,2.0,2,"12/45 Marine Parade, St Kilda",ST KILDA,3182,-37.87445,144.97702
+16059702,2022-08-26T14:38:24,Rent,$460 pw,ApartmentUnitFlat,Boroondara City Council - Greater Area,0,0,2.0,1.0,1,"1/2 Middlesex Road, Surrey Hills",SURREY HILLS,3127,-37.8256264,145.089828
+16059674,2022-08-26T14:34:08,Rent,$290.00,ApartmentUnitFlat,Stonnington - Greater Area,0,0,1.0,1.0,1,"1/34 Wynnstay Road, Prahran",PRAHRAN,3181,-37.8530426,145.0108
+16059668,2022-08-26T14:31:55,Rent,$470.00,ApartmentUnitFlat,Yarra City Council - Greater Area,0,0,1.0,1.0,1,"206/75 Wellington Street, Collingwood",COLLINGWOOD,3066,-37.80639,144.9859
+16059651,2022-08-26T14:26:44,Rent,"$1,350.00",House,Port Philip City Council - Greater Area,0,0,3.0,2.0,1,"54 O'Grady Street, Albert Park",ALBERT PARK,3206,-37.84281,144.953278
+16059639,2022-08-26T14:22:53,Rent,$380.00,ApartmentUnitFlat,Boroondara City Council - Greater Area,0,0,2.0,1.0,1,"7/47 Pakington Street, Kew",KEW,3101,-37.80126,145.034714
+16059629,2022-08-26T14:20:41,Rent,$680,ApartmentUnitFlat,Melbourne City Council - Greater Area,0,0,2.0,1.0,0,"2807/81 Abeckett Street, Melbourne",MELBOURNE,3000,-37.809227,144.96138
+16059617,2022-08-26T14:15:16,Rent,$650,House,Monash City - Greater Area,0,0,4.0,2.0,2,"28/32 Adrian Street, Chadstone",CHADSTONE,3148,-37.88743,145.107132
+16039292,2022-08-26T14:12:29,Rent,"$1,100.00",House,Bayside - Greater Area,0,0,5.0,2.0,4,"28b Hornby Street, Beaumaris",BEAUMARIS,3193,-37.9802933,145.027649
+16059609,2022-08-26T14:12:08,Rent,$620.00,ApartmentUnitFlat,Bayside - Greater Area,0,0,3.0,2.0,1,"4/16 Manor Street, Brighton",BRIGHTON,3186,-37.91657,144.9898
+16059598,2022-08-26T14:10:43,Rent,$675 per week,ApartmentUnitFlat,Melbourne City Council - Greater Area,0,0,3.0,1.0,1,"5/116 Dodds Street, Southbank",SOUTHBANK,3006,-37.82927,144.966766
+16059601,2022-08-26T14:10:43,Rent,$230,ApartmentUnitFlat,Whitehorse City Council - Greater Area,0,0,1.0,1.0,0,"19/16-18 Poplar Street, Box Hill",BOX HILL,3128,-37.8150864,145.116165
+16059594,2022-08-26T14:10:11,Rent,$400 weekly,ApartmentUnitFlat,Port Philip City Council - Greater Area,0,0,2.0,1.0,1,"8/45 Ruskin Street, Elwood",ELWOOD,3184,-37.8766441,144.98259
+16059561,2022-08-26T13:59:55,Rent,$415 per week,ApartmentUnitFlat,Glen Eira Council - Greater Area,0,0,2.0,1.0,1,"10/26 Lillimur Road, Ormond",ORMOND,3204,-37.9018822,145.041824
+16059502,2022-08-26T13:39:16,Rent,$600 per week,House,Yarra City Council - Greater Area,0,0,2.0,1.0,0,"49 Laity Street, Richmond",RICHMOND,3121,-37.8133125,145.002731
+16059490,2022-08-26T13:36:02,Rent,$540.00,House,Geelong & District - Greater Area,0,0,3.0,2.0,2,"16 Homewood Lane, Highton",HIGHTON,3216,-38.1895981,144.322083
+16059477,2022-08-26T13:31:54,Rent,$420,ApartmentUnitFlat,Melbourne City Council - Greater Area,0,0,1.0,1.0,0,"1903/61-63 Haig Street, Southbank",SOUTHBANK,3006,-37.8276672,144.9567
+16059457,2022-08-26T13:23:19,Rent,$480.00 Per Week,ApartmentUnitFlat,Stonnington - Greater Area,0,0,2.0,1.0,1,"24/746 Orrong Road, Toorak",TOORAK,3142,-37.8382,145.014648
+16059451,2022-08-26T13:20:21,Rent,$950.00,House,Stonnington - Greater Area,0,0,3.0,2.0,1,"90 Sutherland Rd, Armadale",ARMADALE,3143,-37.85593,145.017761
+16059403,2022-08-26T12:59:16,Rent,$520.00,ApartmentUnitFlat,Boroondara City Council - Greater Area,0,0,2.0,2.0,2,"213/102-118 Camberwell Rd, Hawthorn East",HAWTHORN EAST,3123,-37.8279839,145.052231
+16059334,2022-08-26T12:40:36,Rent,$550 Per Week,ApartmentUnitFlat,Port Philip City Council - Greater Area,0,0,1.0,1.0,1,"103/51 Ormond Esplanade, Elwood",ELWOOD,3184,-37.8860931,144.983078
+16059331,2022-08-26T12:39:50,Rent,$435.00,ApartmentUnitFlat,Port Philip City Council - Greater Area,0,0,1.0,1.0,0,"12/22 The Esplanade, St Kilda",ST KILDA,3182,-37.86624,144.975784
+16059313,2022-08-26T12:32:41,Rent,$430.00,ApartmentUnitFlat,Yarra City Council - Greater Area,0,0,1.0,1.0,0,"504/466 Smith Street, Collingwood",COLLINGWOOD,3066,-37.79469,144.985321
+16059303,2022-08-26T12:30:38,Rent,$800.00,House,Bayside - Greater Area,0,0,3.0,1.0,2,"8 Gillies St, Hampton",HAMPTON,3188,-37.94063,145.006989
+16059289,2022-08-26T12:26:44,Rent,"$1,650.00",House,Glen Eira Council - Greater Area,0,0,5.0,2.0,4,"25 Holroyd Avenue, St Kilda East",ST KILDA EAST,3183,-37.8644447,145.007034
+16059230,2022-08-26T12:08:58,Rent,$450,ApartmentUnitFlat,Moreland City Council - Greater Area,0,0,1.0,1.0,1,"51/378-390 St Georges Road, Fitzroy North",FITZROY NORTH,3068,-37.7784843,144.988251
+16059216,2022-08-26T12:05:27,Rent,$700 weekly,Townhouse,Glen Eira Council - Greater Area,0,0,3.0,2.0,2,"17/170 McKinnon Rd, Mckinnon",MCKINNON,3204,-37.911335,145.03923
+16059155,2022-08-26T11:47:40,Rent,$650.00 Per Week,ApartmentUnitFlat,Boroondara City Council - Greater Area,0,0,2.0,2.0,1,"112/55 Camberwell Road, Hawthorn East",HAWTHORN EAST,3123,-37.82587,145.050644
+16059133,2022-08-26T11:42:49,Rent,$420.00 per week,ApartmentUnitFlat,Moreland City Council - Greater Area,0,0,1.0,1.0,1,"603/611 Sydney Road, Brunswick",BRUNSWICK,3056,-37.7626076,144.9626
+16059106,2022-08-26T11:34:34,Rent,$720 per week,House,Darebin City Council - Greater Area,0,0,3.0,1.0,1,"94 Helen Street, Northcote",NORTHCOTE,3070,-37.77007,144.997665
+16059083,2022-08-26T11:31:45,Rent,$790,Townhouse,Yarra City Council - Greater Area,0,0,2.0,2.0,2,"20 Lord Street, Richmond",RICHMOND,3121,-37.8207321,145.004776
+16059042,2022-08-26T11:16:23,Rent,$850 per week.,ApartmentUnitFlat,Melbourne City Council - Greater Area,0,0,2.0,2.0,1,"Level 35, 3501/7 Riverside Quay, Southbank",SOUTHBANK,3006,-37.8213348,144.964691
+16059004,2022-08-26T11:04:13,Rent,$650.00,ApartmentUnitFlat,Glen Eira Council - Greater Area,0,0,3.0,2.0,1,"2/21 Hopkins Street, Mckinnon",MCKINNON,3204,-37.91047,145.026871
+16058983,2022-08-26T10:58:32,Rent,$700.00,ApartmentUnitFlat,Glen Eira Council - Greater Area,0,0,3.0,2.0,2,"1/21 Hopkins Street, Mckinnon",MCKINNON,3204,-37.91054,145.02681
+16058937,2022-08-26T10:45:19,Rent,$285.00,ApartmentUnitFlat,Moreland City Council - Greater Area,0,0,1.0,1.0,0,"4/6 Koormiel Lane, Fitzroy North",FITZROY NORTH,3068,-37.788208,144.9899
+16058926,2022-08-26T10:41:44,Rent,"$1,900 weekly",Townhouse,Port Philip City Council - Greater Area,0,0,4.0,4.0,2,"120 Glen Huntly Road, Elwood",ELWOOD,3184,-37.8831978,144.989426
+16058842,2022-08-26T10:16:32,Rent,$420 per week,ApartmentUnitFlat,Hobsons Bay City Council - Greater Area,0,0,2.0,1.0,1,"13/114 Mason Street, Newport",NEWPORT,3015,-37.84096,144.8739
+16058763,2022-08-26T09:55:18,Rent,"$1,100.00",House,Stonnington - Greater Area,0,0,4.0,2.0,2,"11 Shaftesbury Ave, Malvern",MALVERN,3144,-37.8544731,145.038116
+16058750,2022-08-26T09:49:22,Rent,"$1,300.00",House,Glen Eira Council - Greater Area,0,0,4.0,3.0,2,"26a Bonny Street, Bentleigh East",BENTLEIGH EAST,3165,-37.9319458,145.060654
+16058731,2022-08-26T09:46:09,Rent,$410,House,Melton City - Greater Area,0,0,3.0,2.0,3,"37 Award Crescent, Truganina",TRUGANINA,3029,-37.84844,144.715912
+16058695,2022-08-26T09:39:57,Rent,$550 per week,House,Frankston Council - Greater Area,0,0,3.0,1.0,3,"93 Kirkwood Avenue, Seaford",SEAFORD,3198,-38.1246719,145.130661
+16058688,2022-08-26T09:37:54,Rent,$600.00 per week,ApartmentUnitFlat,Port Philip City Council - Greater Area,0,0,2.0,2.0,1,"605/51 Thislethwaite Street, South Melbourne",SOUTH MELBOURNE,3205,-37.83136,144.952255
+16058681,2022-08-26T09:34:20,Rent,$1300 pw,House,Bayside - Greater Area,0,0,4.0,2.0,2,"55 Durrant Street, Brighton",BRIGHTON,3186,-37.9109573,145.005615
+16058652,2022-08-26T09:25:59,Rent,$595.00,ApartmentUnitFlat,Yarra City Council - Greater Area,0,0,2.0,1.0,2,"312/416 Gore Street, Fitzroy",FITZROY,3065,-37.7968063,144.984024
+16058635,2022-08-26T09:14:33,Rent,$1550 pw,House,Boroondara City Council - Greater Area,0,0,5.0,2.0,2,"24 Gardiner Parade, Glen Iris",GLEN IRIS,3146,-37.8542252,145.064438
+16058606,2022-08-26T09:04:15,Rent,$425.00,ApartmentUnitFlat,Boroondara City Council - Greater Area,0,0,2.0,1.0,1,"3/24 Auburn Grove, Hawthorn East",HAWTHORN EAST,3123,-37.82588,145.0474
+14672522,2022-08-26T08:05:14,Rent,$560 per week,Townhouse,Darebin City Council - Greater Area,0,0,2.0,2.0,1,"1/7 Tiernan Street, Preston",PRESTON,3072,-37.75122,145.016937
+16058549,2022-08-26T07:21:10,Rent,$480 weekly,House,Maribyrnong City Council - Greater Area,0,0,2.0,1.0,0,"31 Buckingham St, Footscray",FOOTSCRAY,3011,-37.80129,144.890121
+16058531,2022-08-25T23:07:36,Rent,"$1,150.00 Per Week",Townhouse,Glen Eira Council - Greater Area,0,0,3.0,3.0,1,"39 Jervois Street, St Kilda East",ST KILDA EAST,3183,-37.86531,144.9951
+16058474,2022-08-25T19:43:37,Rent,$390 weekly,ApartmentUnitFlat,Port Philip City Council - Greater Area,0,0,1.0,1.0,1,"214/181 St Kilda Road, St Kilda",ST KILDA,3182,-37.8608437,144.984
+16058468,2022-08-25T19:29:49,Rent,$670 weekly,Townhouse,Darebin City Council - Greater Area,0,0,5.0,4.0,1,"11/51 Stockade Ave, Coburg",COBURG,3058,-37.73937,144.968887
+16058467,2022-08-25T19:20:25,Rent,$1300 pw,Townhouse,Bayside - Greater Area,0,0,4.0,2.0,2,"1A Erowal Street, Beaumaris",BEAUMARIS,3193,-37.9711151,145.036636
+16058464,2022-08-25T19:10:15,Rent,$600 pw,House,Bayside - Greater Area,0,0,3.0,1.0,3,"4 Waratah Avenue, Beaumaris",BEAUMARIS,3193,-37.978363,145.03067
+16058445,2022-08-25T18:32:03,Rent,$875.00,House,Glen Eira Council - Greater Area,0,0,3.0,2.0,2,"33 Deakin Street, Bentleigh East",BENTLEIGH EAST,3165,-37.9139328,145.065552
+16058418,2022-08-25T18:04:09,Rent,$525.00,Townhouse,Boroondara City Council - Greater Area,0,0,3.0,1.0,1,"2/39 Walpole Street, Kew",KEW,3101,-37.80371,145.0315
+16058377,2022-08-25T17:28:59,Rent,$650.00,ApartmentUnitFlat,Boroondara City Council - Greater Area,0,0,3.0,1.0,2,"1/28 Seymour Grove, Camberwell",CAMBERWELL,3124,-37.835392,145.059113
+16058355,2022-08-25T17:20:29,Rent,$350 per week,ApartmentUnitFlat,Glen Eira Council - Greater Area,0,0,2.0,1.0,1,"1/12 Toward Street, Murrumbeena",MURRUMBEENA,3163,-37.89253,145.070053
+16058347,2022-08-25T17:17:54,Rent,$550 Per Week,ApartmentUnitFlat,Melbourne City Council - Greater Area,0,0,1.0,1.0,1,"5003/464-466 Collins Street, Melbourne",MELBOURNE,3000,-37.8175545,144.958633
+16058308,2022-08-25T17:03:51,Rent,$440 per week,ApartmentUnitFlat,Port Philip City Council - Greater Area,0,0,2.0,1.0,1,"2/9 Dickens Street, Elwood",ELWOOD,3184,-37.871788,144.987564
+16058286,2022-08-25T16:58:23,Rent,"$460pw/$1,999pcm",House,Maroondah City - Greater Area,0,0,3.0,1.0,2,"11 Maggs Street, Croydon",CROYDON,3136,-37.792,145.256546
+16058275,2022-08-25T16:56:37,Rent,$625 per week,House,Yarra City Council - Greater Area,0,0,2.0,1.0,1,"2 Neptune Street, Richmond",RICHMOND,3121,-37.8198471,145.007
+16058273,2022-08-25T16:55:32,Rent,$550 per week,ApartmentUnitFlat,Port Philip City Council - Greater Area,60.0,67.0,2.0,2.0,1,"705/89 Gladstone Street, South Melbourne",SOUTH MELBOURNE,3205,-37.8301544,144.950058
+16058241,2022-08-25T16:48:09,Rent,$370.00,ApartmentUnitFlat,Bayside - Greater Area,0,0,2.0,1.0,0,"4/16 Clive Street, Brighton East",BRIGHTON EAST,3187,-37.91435,145.0195
+16058239,2022-08-25T16:47:46,Rent,$730.00,House,Yarra City Council - Greater Area,0,0,3.0,2.0,1,"163 Keele Street, Collingwood",COLLINGWOOD,3066,-37.7977638,144.992142
+16058214,2022-08-25T16:43:04,Rent,"$3,500.00",House,Bayside - Greater Area,0,0,5.0,4.0,5,"9 Keith Court, Brighton",BRIGHTON,3186,-37.9171829,144.988266
+16058023,2022-08-25T15:57:08,Rent,$585.00,House,Yarra City Council - Greater Area,0,0,2.0,1.0,0,"125 Roseneath Street, Clifton Hill",CLIFTON HILL,3068,-37.79279,144.998947
+15313328,2022-08-25T15:57:08,Rent,$495,ApartmentUnitFlat,Moreland City Council - Greater Area,0,0,2.0,1.0,1,"41/9-19 Miller Street, Fitzroy North",FITZROY NORTH,3068,-37.7761841,144.979645
+16058016,2022-08-25T15:56:06,Rent,$375.00,ApartmentUnitFlat,Boroondara City Council - Greater Area,0,0,1.0,1.0,1,"423/347 Camberwell Rd, Camberwell",CAMBERWELL,3124,-37.8342056,145.060486
+16057978,2022-08-25T15:46:00,Rent,$590 per week,ApartmentUnitFlat,Melbourne City Council - Greater Area,0,0,2.0,1.0,1,"709/77 River Street, South Yarra",SOUTH YARRA,3141,-37.8368378,144.997452
+15138321,2022-08-25T15:34:25,Rent,"$430pw/$1,868pcm",ApartmentUnitFlat,Boroondara City Council - Greater Area,0,0,2.0,1.0,1,"12/126 Wattle Valley Road, Camberwell",CAMBERWELL,3124,-37.8375244,145.081177
+16057923,2022-08-25T15:32:22,Rent,$595,House,Kingston City Council - Greater Area,0,0,3.0,2.0,2,"4 Main Road, Clayton South",CLAYTON SOUTH,3169,-37.9312935,145.127777
+16057897,2022-08-25T15:27:37,Rent,$440 pw,ApartmentUnitFlat,Port Philip City Council - Greater Area,0,0,2.0,1.0,1,"7/127 Hotham Street, Balaclava",BALACLAVA,3183,-37.8719444,144.998764
+15751808,2022-08-25T15:26:08,Rent,$540pw,Townhouse,Casey City - Greater Area,0,0,3.0,2.0,2,"49 Savoy Grove, Cranbourne North",CRANBOURNE NORTH,3977,-38.07178,145.277863
+16057880,2022-08-25T15:24:35,Rent,$700 per week,ApartmentUnitFlat,Melbourne City Council - Greater Area,0,0,2.0,2.0,1,"508/1 Powlett Street, East Melbourne",EAST MELBOURNE,3002,-37.8161278,144.984985
+16057877,2022-08-25T15:23:57,Rent,$440.00,ApartmentUnitFlat,Moreland City Council - Greater Area,0,0,2.0,1.0,1,"511/5 Olive York Way, Brunswick West",BRUNSWICK WEST,3055,-37.7587357,144.939041
+16057832,2022-08-25T15:10:21,Rent,$450 per week,ApartmentUnitFlat,Melbourne City Council - Greater Area,0,0,1.0,1.0,1,"912/87 Franklin Street, Melbourne",MELBOURNE,3000,-37.8079376,144.9617
+16057830,2022-08-25T15:09:44,Rent,$480,House,Moreland City Council - Greater Area,0,0,2.0,1.0,1,"804/3 Olive York Way, Brunswick West",BRUNSWICK WEST,3055,-37.75848,144.93869
+14290675,2022-08-25T15:05:24,Rent,$495,ApartmentUnitFlat,Melbourne City Council - Greater Area,0,0,1.0,1.0,1,"10/21-23 Hotham Street, East Melbourne",EAST MELBOURNE,3002,-37.81482,144.989868
+16057791,2022-08-25T15:05:06,Rent,$650.00,House,Melbourne City Council - Greater Area,0,0,2.0,1.0,0,"20 Ingles Street, Port Melbourne",PORT MELBOURNE,3207,-37.8351936,144.948639
+16057785,2022-08-25T15:02:33,Rent,$700 pw,ApartmentUnitFlat,Port Philip City Council - Greater Area,0,0,2.0,1.0,1,"34/18-20 Esplanade, St Kilda",ST KILDA,3182,-37.8657722,144.975052
+16057757,2022-08-25T14:54:17,Rent,$680.00,Townhouse,Port Philip City Council - Greater Area,0,0,2.0,2.0,1,"28/99 Hotham Street, Balaclava",BALACLAVA,3183,-37.86869,144.999084
+16057738,2022-08-25T14:48:27,Rent,$275 per week,ApartmentUnitFlat,Melbourne City Council - Greater Area,0,0,1.0,1.0,0,"805/528 Swanston Street, Carlton",CARLTON,3053,-37.80422,144.963608
+16057734,2022-08-25T14:46:52,Rent,"$1,050 pw",House,Bayside - Greater Area,0,0,4.0,2.0,2,"25 Spicer Street, Beaumaris",BEAUMARIS,3193,-37.9771,145.048538
+16057723,2022-08-25T14:42:26,Rent,$620,ApartmentUnitFlat,Yarra City Council - Greater Area,0,0,2.0,2.0,1,"106/36 Regent Street, Richmond",RICHMOND,3121,-37.81116,144.991974
+16057716,2022-08-25T14:40:33,Rent,$340,ApartmentUnitFlat,Maribyrnong City Council - Greater Area,0,0,2.0,1.0,1,"104/7 Ordnance Reserve, Maribyrnong",MARIBYRNONG,3032,-37.77047,144.879883
+16057701,2022-08-25T14:37:43,Rent,$895.00,Townhouse,Bayside - Greater Area,0,0,3.0,2.0,2,"32a Gilarth Street, Highett",HIGHETT,3190,-37.9487457,145.0293
+16057684,2022-08-25T14:34:10,Rent,$425 per week,ApartmentUnitFlat,Melbourne City Council - Greater Area,0,0,1.0,1.0,1,"13/21 Hotham Street, East Melbourne",EAST MELBOURNE,3002,-37.81482,144.989868
+16057614,2022-08-25T14:15:27,Rent,$385,House,Melton City - Greater Area,0,0,3.0,2.0,0,"18 Amaya Way, Rockbank",ROCKBANK,3335,-37.7340355,144.660278
+16057589,2022-08-25T14:08:18,Rent,$430 per week,ApartmentUnitFlat,Port Philip City Council - Greater Area,0,0,1.0,1.0,1,"13/9 Fitzroy Street, St Kilda",ST KILDA,3182,-37.86263,144.973221
+15341392,2022-08-25T14:07:24,Rent,$450,House,Glen Eira Council - Greater Area,0,0,2.0,1.0,3,"26 Lygon Street, Caulfield South",CAULFIELD SOUTH,3162,-37.89916,145.024
+16057529,2022-08-25T13:52:11,Rent,$520 per week,ApartmentUnitFlat,Melbourne City Council - Greater Area,0,0,1.0,1.0,1,"2410/45 Haig Street, Southbank",SOUTHBANK,3006,-37.82706,144.957428
+16057525,2022-08-25T13:48:35,Rent,$490,ApartmentUnitFlat,Moreland City Council - Greater Area,0,0,1.0,1.0,1,"111/378-390 Saint Georges Road, Fitzroy North",FITZROY NORTH,3068,-37.7784843,144.988251
+16057499,2022-08-25T13:42:42,Rent,$520 per week,ApartmentUnitFlat,Whitehorse City Council - Greater Area,0,0,3.0,2.0,2,"3/4 Ovens Street, Box Hill North",BOX HILL NORTH,3129,-37.80753,145.125046
+16057432,2022-08-25T13:18:04,Rent,$620 per week,House,Stonnington - Greater Area,0,0,2.0,1.0,1,"126 Darling Road, Malvern East",MALVERN EAST,3145,-37.87251,145.06041
+16057366,2022-08-25T12:53:21,Rent,$450.00,ApartmentUnitFlat,Boroondara City Council - Greater Area,0,0,2.0,1.0,1,"1/42a Hawthorn Grove, Hawthorn",HAWTHORN,3122,-37.81576,145.032837
+16057341,2022-08-25T12:45:12,Rent,$500 Per Week,Townhouse,Dandenong - Greater Area,0,0,3.0,3.0,1,"14/542- 544 Springvale Road, Springvale South",SPRINGVALE SOUTH,3172,-37.97456,145.146927
+16057325,2022-08-25T12:39:18,Rent,$420.00,ApartmentUnitFlat,Glen Eira Council - Greater Area,0,0,2.0,1.0,1,"3/694 Inkerman Road, Caulfield North",CAULFIELD NORTH,3161,-37.8692665,145.024078
+16057221,2022-08-25T12:15:55,Rent,$380 Per Week,ApartmentUnitFlat,Melbourne City Council - Greater Area,0,0,1.0,1.0,1,"405/442 St Kilda Road, Melbourne",MELBOURNE,3004,-37.8382378,144.9754
+16057188,2022-08-25T12:07:52,Rent,"$1,050.00",Townhouse,Yarra City Council - Greater Area,0,0,4.0,3.0,1,"88 Brighton Street, Richmond",RICHMOND,3121,-37.82955,144.998688
+16057176,2022-08-25T12:06:39,Rent,$450.00,Townhouse,Moreland City Council - Greater Area,0,0,2.0,2.0,3,"1/22 Park Street, Pascoe Vale",PASCOE VALE,3044,-37.72694,144.924759
+16057119,2022-08-25T11:46:54,Rent,$600.00 Per Week,ApartmentUnitFlat,Melbourne City Council - Greater Area,0,0,2.0,2.0,1,"73/390 Toorak Road, South Yarra",SOUTH YARRA,3141,-37.8408241,145.004257
