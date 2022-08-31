@@ -1,4 +1,4 @@
-,property_id,listing_type,price,time_listed,property_type,area,building_area,land_area,bedrooms,bathrooms,carspaces,street_address,suburb,postcode,latitude,longitude,price2
+,property_id,listing_type,price,time_listed,property_type,area,building_area,land_area,bedrooms,bathrooms,carspaces,street_address,suburb,postcode,latitude,longitude,weekly_rent
 0,16064379,Rent,$370 per week,2022-08-30T15:20:28,ApartmentUnitFlat,Melbourne City Council - Greater Area,0.0,0.0,1.0,1.0,0,"1106/555 Flinders Street, Melbourne",MELBOURNE,3000,-37.8209724,144.956482,370.0
 1,16064243,Rent,$500 per week,2022-08-30T14:50:32,ApartmentUnitFlat,Melbourne City Council - Greater Area,0.0,0.0,2.0,1.0,1,"2901/200 Spencer Street, Melbourne",MELBOURNE,3000,-37.816227000000005,144.953247,500.0
 2,16063884,Rent,$2500 Per Week,2022-08-30T13:28:24,ApartmentUnitFlat,Melbourne City Council - Greater Area,0.0,0.0,3.0,3.0,2,"5401/464 Collins Street, Melbourne",MELBOURNE,3000,-37.8175621,144.958588,2500.0
@@ -38,7 +38,7 @@
 36,15226362,Rent,$695pw,2022-08-15T15:17:02,ApartmentUnitFlat,Melbourne City Council - Greater Area,0.0,0.0,2.0,2.0,1,"2.01/15 Collins Street, Melbourne",MELBOURNE,3000,-37.813736,144.973328,695.0
 37,16022489,Rent,$400,2022-08-04T11:20:55,ApartmentUnitFlat,Melbourne City Council - Greater Area,0.0,0.0,1.0,1.0,0,"29/400 Little Collins Street, Melbourne",MELBOURNE,3000,-37.8157959,144.961349,400.0
 38,14748133,Rent,$250,2022-06-14T14:58:06,ApartmentUnitFlat,Melbourne City Council - Greater Area,0.0,0.0,1.0,1.0,0,"711/500 Flinders Street, Melbourne",MELBOURNE,3000,-37.82002,144.957825,250.0
-39,16036889,Rent,520pw,2022-08-12T16:06:15,ApartmentUnitFlat,Melbourne City Council - Greater Area,0.0,0.0,1.0,1.0,0,"5703/462 Elizabeth St, Melbourne",MELBOURNE,3000,-37.807857500000004,144.96061699999998,520.0
+39,16036889,Rent,520pw,2022-08-12T16:06:15,ApartmentUnitFlat,Melbourne City Council - Greater Area,0.0,0.0,1.0,1.0,0,"5703/462 Elizabeth St, Melbourne",MELBOURNE,3000,-37.807857500000004,144.96061699999998,
 40,13459693,Rent,$1100 per week,2022-08-03T10:50:38,ApartmentUnitFlat,Melbourne City Council - Greater Area,0.0,0.0,2.0,2.0,1,"3203/35 Spring Street, Melbourne",MELBOURNE,3000,-37.814170000000004,144.974,1100.0
 41,16059788,Rent,$680 per week,2022-08-26T14:58:52,ApartmentUnitFlat,Melbourne City Council - Greater Area,0.0,0.0,2.0,2.0,1,"7/7 Drewery Lane, Melbourne",MELBOURNE,3000,-37.8110733,144.9639,680.0
 42,16055668,Rent,$380 per week,2022-08-24T14:57:09,ApartmentUnitFlat,Melbourne City Council - Greater Area,0.0,0.0,1.0,1.0,1,"401/594 St Kilda Road, Melbourne",MELBOURNE,3000,-37.8496933,144.979645,380.0
@@ -248,7 +248,7 @@
 246,16031351,Rent,$430,2022-08-10T10:15:09,ApartmentUnitFlat,Melbourne City Council - Greater Area,0.0,0.0,1.0,1.0,1,"618/360 St Kilda Road, Melbourne",MELBOURNE,3000,-37.831509999999994,144.970718,430.0
 247,16031171,Rent,$380.00,2022-08-10T09:24:20,Studio,Melbourne City Council - Greater Area,0.0,0.0,1.0,1.0,0,"1210/181 ABeckett Street, Melbourne",MELBOURNE,3000,-37.8101578,144.958191,380.0
 248,16031170,Rent,$600.00,2022-08-10T09:24:14,ApartmentUnitFlat,Melbourne City Council - Greater Area,0.0,0.0,2.0,1.0,0,"2002/560 Lonsdale Street, Melbourne",MELBOURNE,3000,-37.814029999999995,144.9556,600.0
-249,16030693,Rent,680 per week,2022-08-09T16:48:39,ApartmentUnitFlat,Melbourne City Council - Greater Area,0.0,0.0,2.0,1.0,1,"3305/483 Swanston Street, Melbourne",MELBOURNE,3000,-37.807216600000004,144.96234099999998,680.0
+249,16030693,Rent,680 per week,2022-08-09T16:48:39,ApartmentUnitFlat,Melbourne City Council - Greater Area,0.0,0.0,2.0,1.0,1,"3305/483 Swanston Street, Melbourne",MELBOURNE,3000,-37.807216600000004,144.96234099999998,
 250,16029623,Rent,$250 per week,2022-08-09T12:50:38,ApartmentUnitFlat,Melbourne City Council - Greater Area,0.0,0.0,1.0,1.0,0,"124/546 Flinders Street, Melbourne",MELBOURNE,3000,-37.820507,144.956177,250.0
 251,16028812,Rent,$670.00,2022-08-09T09:25:59,ApartmentUnitFlat,Melbourne City Council - Greater Area,0.0,0.0,2.0,2.0,1,"804/95 Berkeley Street, Melbourne",MELBOURNE,3000,-37.80338,144.958786,670.0
 252,16028811,Rent,$610.00,2022-08-09T09:25:47,ApartmentUnitFlat,Melbourne City Council - Greater Area,0.0,0.0,2.0,2.0,1,"2802/618 Lonsdale Street, Melbourne",MELBOURNE,3000,-37.81425,144.953979,610.0
@@ -361,7 +361,7 @@
 359,14819549,Rent,$525 per week,2022-08-30T18:48:17,ApartmentUnitFlat,Melbourne City Council - Greater Area,0.0,0.0,2.0,1.0,0,"1007/27 Therry Street, Melbourne",MELBOURNE,3000,-37.806987799999995,144.96101399999998,525.0
 360,15366391,Rent,$750 **SPACIOUS APARTMENT**,2022-08-30T16:24:29,ApartmentUnitFlat,Melbourne City Council - Greater Area,0.0,0.0,2.0,2.0,0,"2402/155 Franklin Street, Melbourne",MELBOURNE,3000,-37.808826399999994,144.959549,750.0
 361,15335147,Rent,$650 **INSPECTION UPON REQUEST**,2022-08-30T16:10:35,ApartmentUnitFlat,Melbourne City Council - Greater Area,0.0,0.0,2.0,1.0,0,"2307/60 A'Beckett Street, Melbourne",MELBOURNE,3000,-37.80874,144.96144099999998,650.0
-362,15329783,Rent,$800 **Level 53 High Level View**,2022-08-30T16:04:45,ApartmentUnitFlat,Melbourne City Council - Greater Area,0.0,0.0,2.0,1.0,0,"5313/228 La Trobe Street, Melbourne",MELBOURNE,3000,-37.80975,144.962616,80053.0
+362,15329783,Rent,$800 **Level 53 High Level View**,2022-08-30T16:04:45,ApartmentUnitFlat,Melbourne City Council - Greater Area,0.0,0.0,2.0,1.0,0,"5313/228 La Trobe Street, Melbourne",MELBOURNE,3000,-37.80975,144.962616,800.0
 363,14527576,Rent,$550 **INSPECTION UPON REQUEST**,2022-08-30T16:02:50,ApartmentUnitFlat,Melbourne City Council - Greater Area,0.0,0.0,1.0,1.0,0,"3807/639 Little Lonsdale Street, Melbourne",MELBOURNE,3000,-37.814193700000004,144.95216399999998,550.0
 364,16064252,Rent,$520 per week *Fully Furnished*,2022-08-30T14:52:49,ApartmentUnitFlat,Melbourne City Council - Greater Area,0.0,0.0,2.0,1.0,0,"4405/639 Lonsdale Street, Melbourne",MELBOURNE,3000,-37.815067299999995,144.95341499999998,520.0
 365,14488107,Rent,$450/week,2022-08-29T17:42:31,ApartmentUnitFlat,Melbourne City Council - Greater Area,0.0,0.0,1.0,1.0,0,"6207/568 Collins Street, Melbourne",MELBOURNE,3000,-37.818374600000006,144.955429,450.0
@@ -388,7 +388,7 @@
 386,15295297,Rent,$850 per week,2022-08-24T12:09:31,ApartmentUnitFlat,Melbourne City Council - Greater Area,0.0,0.0,2.0,1.0,1,"3003/228 La Trobe Street, Melbourne",MELBOURNE,3000,-37.80975,144.962616,850.0
 387,16054202,Rent,$680/week,2022-08-23T17:34:49,ApartmentUnitFlat,Melbourne City Council - Greater Area,0.0,0.0,2.0,1.0,1,"2402/250 Elizabeth St, Melbourne",MELBOURNE,3000,-37.8125648,144.96281399999998,680.0
 388,16051118,Rent,$600 per week,2022-08-22T15:22:03,ApartmentUnitFlat,Melbourne City Council - Greater Area,0.0,0.0,2.0,2.0,0,"2304/33 Mackenzie Street, Melbourne",MELBOURNE,3000,-37.80772,144.96688799999998,600.0
-389,15080037,Rent,$400 **1 BEDROOM 1 BATHROOM APT**,2022-08-22T14:56:31,ApartmentUnitFlat,Melbourne City Council - Greater Area,0.0,0.0,1.0,1.0,0,"2704/350 William Street, Melbourne",MELBOURNE,3000,-37.8112335,144.956482,40011.0
+389,15080037,Rent,$400 **1 BEDROOM 1 BATHROOM APT**,2022-08-22T14:56:31,ApartmentUnitFlat,Melbourne City Council - Greater Area,0.0,0.0,1.0,1.0,0,"2704/350 William Street, Melbourne",MELBOURNE,3000,-37.8112335,144.956482,400.0
 390,16048537,Rent,$650,2022-08-19T14:59:13,ApartmentUnitFlat,Melbourne City Council - Greater Area,0.0,0.0,2.0,2.0,1,"302/20 Queens Road, Melbourne",MELBOURNE,3000,-37.840621899999995,144.97522,650.0
 391,15384280,Rent,$630/W Furnished,2022-08-18T17:05:57,ApartmentUnitFlat,Melbourne City Council - Greater Area,0.0,0.0,1.0,1.0,0,"1311/228 La Trobe Street, Melbourne",MELBOURNE,3000,-37.80975,144.962616,630.0
 392,16041088,Rent,$650/W Furnished Optinal,2022-08-16T13:05:42,ApartmentUnitFlat,Melbourne City Council - Greater Area,0.0,0.0,1.0,1.0,0,"4703/157 A'Bekcett Street, Melbourne",MELBOURNE,3000,-37.8099174,144.959183,650.0
@@ -397,9 +397,9 @@
 395,16031797,Rent,$680,2022-08-10T12:13:26,ApartmentUnitFlat,Melbourne City Council - Greater Area,0.0,0.0,2.0,2.0,0,"260 Spencer St, Melbourne",MELBOURNE,3000,-37.814563799999995,144.95228600000002,680.0
 396,16026234,Rent,$750,2022-08-06T12:42:40,ApartmentUnitFlat,Melbourne City Council - Greater Area,0.0,0.0,2.0,2.0,1,"205/20 Queens Rd, Melbourne",MELBOURNE,3000,-37.840621899999995,144.97522,750.0
 397,15160406,Rent,$540 weekly,2022-08-03T10:42:58,ApartmentUnitFlat,Melbourne City Council - Greater Area,0.0,0.0,2.0,1.0,0,"2801/31 A'Beckett Street, Melbourne",MELBOURNE,3000,-37.8088875,144.962555,540.0
-398,14222264,Rent,550,2022-08-01T12:48:54,ApartmentUnitFlat,Melbourne City Council - Greater Area,0.0,0.0,2.0,1.0,1,"1904/22-24 Jane Bell Lane, Melbourne",MELBOURNE,3000,-37.81022,144.966263,550.0
-399,16011359,Rent,$1155pw - Stay 1 mth+,2022-07-28T16:30:16,ApartmentUnitFlat,Melbourne City Council - Greater Area,0.0,0.0,1.0,1.0,1,"110/133 Bourke Street, Melbourne",MELBOURNE,3000,-37.8126373,144.9693,11551.0
-400,16011228,Rent,$1085pw - Stay 1 mth+,2022-07-28T16:03:18,ApartmentUnitFlat,Melbourne City Council - Greater Area,0.0,0.0,1.0,1.0,1,"110/250 Elizabeth Street, Melbourne",MELBOURNE,3000,-37.8125648,144.96281399999998,10851.0
+398,14222264,Rent,550,2022-08-01T12:48:54,ApartmentUnitFlat,Melbourne City Council - Greater Area,0.0,0.0,2.0,1.0,1,"1904/22-24 Jane Bell Lane, Melbourne",MELBOURNE,3000,-37.81022,144.966263,
+399,16011359,Rent,$1155pw - Stay 1 mth+,2022-07-28T16:30:16,ApartmentUnitFlat,Melbourne City Council - Greater Area,0.0,0.0,1.0,1.0,1,"110/133 Bourke Street, Melbourne",MELBOURNE,3000,-37.8126373,144.9693,1155.0
+400,16011228,Rent,$1085pw - Stay 1 mth+,2022-07-28T16:03:18,ApartmentUnitFlat,Melbourne City Council - Greater Area,0.0,0.0,1.0,1.0,1,"110/250 Elizabeth Street, Melbourne",MELBOURNE,3000,-37.8125648,144.96281399999998,1085.0
 401,16010119,Rent,$650 weekly,2022-07-28T11:00:46,ApartmentUnitFlat,Melbourne City Council - Greater Area,0.0,0.0,2.0,2.0,0,"3806/500 Elizabeth St, Melbourne",MELBOURNE,3000,-37.807243299999996,144.960281,650.0
 402,14868244,Rent,$650 Fully Furnished,2022-07-25T11:29:37,ApartmentUnitFlat,Melbourne City Council - Greater Area,0.0,0.0,1.0,1.0,0,"3706/228 La Trobe Street, Melbourne",MELBOURNE,3000,-37.80975,144.962616,650.0
 403,16044335,Rent,$520/PW,2022-08-17T16:54:42,ApartmentUnitFlat,Melbourne City Council - Greater Area,0.0,0.0,2.0,1.0,0,"3101/31 Abeckett Street, Melbourne",MELBOURNE,3000,-37.8088875,144.962555,520.0
@@ -408,7 +408,7 @@
 406,14927172,Rent,$550/week,2022-08-05T11:53:38,ApartmentUnitFlat,Melbourne City Council - Greater Area,0.0,0.0,2.0,1.0,0,"5708/568 Collins Street, Melbourne",MELBOURNE,3000,-37.818374600000006,144.955429,550.0
 407,16024066,Rent,Furnished $500/Week,2022-08-05T00:51:41,ApartmentUnitFlat,Melbourne City Council - Greater Area,0.0,0.0,1.0,1.0,0,"603/299 King Street, Melbourne",MELBOURNE,3000,-37.8133,144.954041,500.0
 408,16019420,Rent,$560 per week,2022-08-03T10:51:29,ApartmentUnitFlat,Melbourne City Council - Greater Area,0.0,0.0,2.0,2.0,0,"2211/33 Rose Lane, Melbourne",MELBOURNE,3000,-37.8150139,144.953873,560.0
-409,16009666,Rent,$854pw - Stay 1 mth+,2022-07-27T21:27:26,ApartmentUnitFlat,Melbourne City Council - Greater Area,0.0,0.0,1.0,1.0,1,"1706/200 Spencer Street, Melbourne",MELBOURNE,3000,-37.816227000000005,144.953247,8541.0
+409,16009666,Rent,$854pw - Stay 1 mth+,2022-07-27T21:27:26,ApartmentUnitFlat,Melbourne City Council - Greater Area,0.0,0.0,1.0,1.0,1,"1706/200 Spencer Street, Melbourne",MELBOURNE,3000,-37.816227000000005,144.953247,854.0
 410,15986804,Rent,"$2,600.00",2022-07-14T14:57:52,ApartmentUnitFlat,Melbourne City Council - Greater Area,0.0,0.0,4.0,4.0,3,"231/299 Queen Street, Melbourne",MELBOURNE,3000,-37.81142,144.958786,2600.0
 411,15979423,Rent,$600 per week,2022-07-11T14:24:21,ApartmentUnitFlat,Melbourne City Council - Greater Area,0.0,0.0,2.0,1.0,0,"4303/285 La Trobe Street, Melbourne",MELBOURNE,3000,-37.8107338,144.960815,600.0
 412,15291903,Rent,$500,2022-07-06T10:00:30,ApartmentUnitFlat,Melbourne City Council - Greater Area,0.0,0.0,1.0,1.0,0,"81 Abeckett Street, Melbourne",MELBOURNE,3000,-37.809227,144.96138,500.0
@@ -471,7 +471,7 @@
 469,16018550,Rent,$350 per week,2022-08-05T22:58:04,ApartmentUnitFlat,Melbourne City Council - Greater Area,0.0,0.0,1.0,1.0,0,"2804/220 Spencer Street, Melbourne",MELBOURNE,3000,-37.8157158,144.952957,350.0
 470,14184820,Rent,$620,2022-08-05T14:28:50,ApartmentUnitFlat,Melbourne City Council - Greater Area,0.0,0.0,2.0,2.0,1,"1407/8 Sutherland, Melbourne",MELBOURNE,3000,-37.8113174,144.960983,620.0
 471,15243100,Rent,$680,2022-08-04T17:24:38,ApartmentUnitFlat,Melbourne City Council - Greater Area,0.0,0.0,2.0,2.0,0,"3412/639 Lonsdale Street, Melbourne",MELBOURNE,3000,-37.815067299999995,144.95341499999998,680.0
-472,14720834,Rent,$600 **FURNISHED 2 BEDROOMS APARTMENT**,2022-08-04T12:31:10,ApartmentUnitFlat,Melbourne City Council - Greater Area,0.0,0.0,2.0,1.0,0,"1402/135 A'Beckett Street, Melbourne",MELBOURNE,3000,-37.809787799999995,144.959641,6002.0
+472,14720834,Rent,$600 **FURNISHED 2 BEDROOMS APARTMENT**,2022-08-04T12:31:10,ApartmentUnitFlat,Melbourne City Council - Greater Area,0.0,0.0,2.0,1.0,0,"1402/135 A'Beckett Street, Melbourne",MELBOURNE,3000,-37.809787799999995,144.959641,600.0
 473,16020819,Rent,$400 per week,2022-08-03T16:07:36,ApartmentUnitFlat,Melbourne City Council - Greater Area,0.0,0.0,1.0,1.0,0,"1217/228 A'beckett Street, Melbourne",MELBOURNE,3000,-37.81031,144.95665,400.0
 474,16020556,Rent,$400 per week *Unfurnished*,2022-08-03T15:16:53,ApartmentUnitFlat,Melbourne City Council - Greater Area,0.0,0.0,1.0,1.0,0,"1506/80 A'Beckett Street, Melbourne",MELBOURNE,3000,-37.809,144.961075,400.0
 475,16019645,Rent,$750,2022-08-03T11:42:47,ApartmentUnitFlat,Melbourne City Council - Greater Area,0.0,0.0,2.0,2.0,2,"1201/54 A'beckett Street, Melbourne",MELBOURNE,3000,-37.808857,144.961639,750.0
@@ -479,7 +479,7 @@
 477,16014037,Rent,UNDER APPLICATION,2022-07-31T17:24:21,ApartmentUnitFlat,Melbourne City Council - Greater Area,0.0,0.0,3.0,2.0,1,"72/99 Spring Street, Melbourne",MELBOURNE,3000,-37.812529999999995,144.973328,
 478,16013889,Rent,$650,2022-07-30T12:58:26,ApartmentUnitFlat,Melbourne City Council - Greater Area,0.0,0.0,2.0,2.0,0,"1503/296 Little Lonsdale Street, Melbourne",MELBOURNE,3000,-37.81149,144.96061699999998,650.0
 479,15316700,Rent,$580 weekly,2022-07-29T11:55:00,ApartmentUnitFlat,Melbourne City Council - Greater Area,0.0,0.0,1.0,1.0,0,"5202/228 La Trobe Street, Melbourne",MELBOURNE,3000,-37.80975,144.962616,580.0
-480,14881732,Rent,1Bed + 1Study $560 Negotiable,2022-07-28T11:56:03,ApartmentUnitFlat,Melbourne City Council - Greater Area,0.0,0.0,2.0,1.0,0,"6104/639 Little Lonsdale Street, Melbourne",MELBOURNE,3000,-37.814193700000004,144.95216399999998,11560.0
+480,14881732,Rent,1Bed + 1Study $560 Negotiable,2022-07-28T11:56:03,ApartmentUnitFlat,Melbourne City Council - Greater Area,0.0,0.0,2.0,1.0,0,"6104/639 Little Lonsdale Street, Melbourne",MELBOURNE,3000,-37.814193700000004,144.95216399999998,560.0
 481,16007554,Rent,$450 per week,2022-07-27T09:08:12,ApartmentUnitFlat,Melbourne City Council - Greater Area,0.0,0.0,2.0,1.0,0,"812/233 Collins Street, Melbourne",MELBOURNE,3000,-37.816005700000005,144.966171,450.0
 482,16007357,Rent,$400,2022-07-26T20:18:28,Studio,Melbourne City Council - Greater Area,0.0,0.0,1.0,1.0,0,"1208/151 Franklin Street, Melbourne",MELBOURNE,3000,-37.808690000000006,144.959381,400.0
 483,14713253,Rent,$550/week,2022-07-26T16:47:44,ApartmentUnitFlat,Melbourne City Council - Greater Area,0.0,0.0,2.0,2.0,0,"2807/568 Collins Street, Melbourne",MELBOURNE,3000,-37.818374600000006,144.955429,550.0
@@ -547,7 +547,7 @@
 545,14098665,Rent,$780,2020-03-20T12:50:31,ApartmentUnitFlat,Melbourne City Council - Greater Area,0.0,0.0,1.0,1.0,0,"4207/568 Collins Street, Melbourne",MELBOURNE,3000,-37.818374600000006,144.955429,780.0
 546,13916703,Rent,$520,2020-01-17T13:06:01,ApartmentUnitFlat,Melbourne City Council - Greater Area,0.0,0.0,2.0,1.0,0,"1403/568 Collins Street, Melbourne",MELBOURNE,3000,-37.818374600000006,144.955429,520.0
 547,12991464,Rent,$700,2019-03-13T13:30:16,ApartmentUnitFlat,Melbourne City Council - Greater Area,0.0,0.0,2.0,1.0,0,"1904/60 A?Beckett Street, Melbourne",MELBOURNE,3000,-37.80875,144.961426,700.0
-548,9346440,Rent,$1050pw Stay 1 mth,2018-09-20T14:23:42,ApartmentUnitFlat,Melbourne City Council - Greater Area,0.0,0.0,1.0,1.0,1,"250 Elizabeth Street, Melbourne",MELBOURNE,3000,-37.8125648,144.96281399999998,10501.0
+548,9346440,Rent,$1050pw Stay 1 mth,2018-09-20T14:23:42,ApartmentUnitFlat,Melbourne City Council - Greater Area,0.0,0.0,1.0,1.0,1,"250 Elizabeth Street, Melbourne",MELBOURNE,3000,-37.8125648,144.96281399999998,1050.0
 549,11355962,Rent,"$1,290 per week",2017-05-04T14:00:01,ApartmentUnitFlat,Melbourne City Council - Greater Area,0.0,0.0,3.0,2.0,0,"520/585 Latrobe Street, Melbourne, Melbourne",MELBOURNE,3000,-37.81328,144.951828,1290.0
 550,11010473,Rent,Leased,2016-11-29T13:04:32,ApartmentUnitFlat,Melbourne City Council - Greater Area,0.0,0.0,1.0,1.0,0,Melbourne,MELBOURNE,3000,-37.8152046,144.963943,
 551,12863768,Rent,$770 per week,2022-08-29T11:51:28,ApartmentUnitFlat,Melbourne City Council - Greater Area,0.0,0.0,3.0,2.0,2,"38/400 Victoria Parade, East Melbourne",EAST MELBOURNE,3002,-37.8095627,144.984848,770.0
@@ -590,7 +590,7 @@
 588,15970802,Rent,$400 weekly,2022-07-05T17:02:00,ApartmentUnitFlat,Melbourne City Council - Greater Area,0.0,0.0,1.0,1.0,1,"213/33 Cliveden Close, East Melbourne",EAST MELBOURNE,3002,-37.8171,144.97671499999998,400.0
 589,11915530,Rent,$780 per week,2022-06-15T12:18:42,ApartmentUnitFlat,Melbourne City Council - Greater Area,0.0,0.0,3.0,2.0,2,"9/8 Wellington Crescent, East Melbourne",EAST MELBOURNE,3002,-37.8172226,144.977676,780.0
 590,15930944,Rent,$990 weekly,2022-06-12T15:49:21,House,Melbourne City Council - Greater Area,0.0,0.0,4.0,1.0,0,"560 Victoria Parade, East Melbourne",EAST MELBOURNE,3002,-37.810140000000004,144.990051,990.0
-591,7100906,Rent,$995pw Stay 1 mth,2018-01-30T18:20:43,ApartmentUnitFlat,Melbourne City Council - Greater Area,0.0,0.0,1.0,1.0,1,"158 Simpson Street, East Melbourne",EAST MELBOURNE,3002,-37.81066,144.989075,9951.0
+591,7100906,Rent,$995pw Stay 1 mth,2018-01-30T18:20:43,ApartmentUnitFlat,Melbourne City Council - Greater Area,0.0,0.0,1.0,1.0,1,"158 Simpson Street, East Melbourne",EAST MELBOURNE,3002,-37.81066,144.989075,995.0
 592,16063432,Rent,$500,2022-08-30T11:35:32,ApartmentUnitFlat,Melbourne City Council - Greater Area,0.0,0.0,2.0,2.0,1,"503/9 Dryburgh Street, West Melbourne",WEST MELBOURNE,3003,-37.806617700000004,144.942413,500.0
 593,16060284,Rent,$460 per Week,2022-08-26T17:12:35,ApartmentUnitFlat,Melbourne City Council - Greater Area,0.0,0.0,1.0,1.0,1,"1014/65 Dudley Street, West Melbourne",WEST MELBOURNE,3003,-37.8102226,144.9507,460.0
 594,15230553,Rent,$400 pw,2022-08-22T10:31:27,ApartmentUnitFlat,Melbourne City Council - Greater Area,0.0,0.0,1.0,1.0,0,"322/23 Batman Street, West Melbourne",WEST MELBOURNE,3003,-37.8108749,144.95236200000002,400.0
@@ -665,10 +665,10 @@
 663,15980335,Rent,$465 per week,2022-07-11T17:12:39,ApartmentUnitFlat,Melbourne City Council - Greater Area,0.0,0.0,1.0,1.0,0,"1501/393 Spencer Street, West Melbourne",WEST MELBOURNE,3003,-37.8113251,144.950241,465.0
 664,15936225,Rent,$400 per week,2022-06-15T15:52:58,ApartmentUnitFlat,Melbourne City Council - Greater Area,0.0,0.0,1.0,1.0,0,"201/130 Dudley Street, West Melbourne",WEST MELBOURNE,3003,-37.80955,144.950836,400.0
 665,15852895,Rent,$525 per week,2022-04-26T16:40:50,ApartmentUnitFlat,Melbourne City Council - Greater Area,0.0,0.0,2.0,1.0,1,"405/150 Dudley Street, West Melbourne",WEST MELBOURNE,3003,-37.80965,144.950577,525.0
-666,15829775,Rent,610 per week,2022-04-08T16:50:25,ApartmentUnitFlat,Melbourne City Council - Greater Area,0.0,0.0,2.0,2.0,1,"703/130 Dudley St, West Melbourne",WEST MELBOURNE,3003,-37.80955,144.950836,610.0
+666,15829775,Rent,610 per week,2022-04-08T16:50:25,ApartmentUnitFlat,Melbourne City Council - Greater Area,0.0,0.0,2.0,2.0,1,"703/130 Dudley St, West Melbourne",WEST MELBOURNE,3003,-37.80955,144.950836,
 667,15829689,Rent,$380 Weekly,2022-04-08T16:30:28,ApartmentUnitFlat,Melbourne City Council - Greater Area,0.0,0.0,1.0,1.0,0,"102/140 Dudley St, West Melbourne",WEST MELBOURNE,3003,-37.809574100000006,144.950775,380.0
 668,16063679,Rent,$1500 Per Week,2022-08-30T12:34:34,ApartmentUnitFlat,Melbourne City Council - Greater Area,0.0,0.0,2.0,3.0,2,"113/350 St Kilda Road, Melbourne",MELBOURNE,3004,-37.8311424,144.970856,1500.0
-669,16062867,Rent,800,2022-08-30T00:06:00,ApartmentUnitFlat,Melbourne City Council - Greater Area,0.0,0.0,3.0,2.0,1,"503/8 Bowen Crescent, Melbourne",MELBOURNE,3004,-37.83542,144.97258,800.0
+669,16062867,Rent,800,2022-08-30T00:06:00,ApartmentUnitFlat,Melbourne City Council - Greater Area,0.0,0.0,3.0,2.0,1,"503/8 Bowen Crescent, Melbourne",MELBOURNE,3004,-37.83542,144.97258,
 670,16062777,Rent,$380 per week,2022-08-29T18:34:25,ApartmentUnitFlat,Melbourne City Council - Greater Area,0.0,0.0,1.0,1.0,1,"702/594 St Kilda Road, Melbourne",MELBOURNE,3004,-37.8496933,144.979645,380.0
 671,16061923,Rent,"$1,100.00",2022-08-29T14:31:51,ApartmentUnitFlat,Melbourne City Council - Greater Area,0.0,0.0,2.0,2.0,2,"1201/55 Queens Road, Melbourne",MELBOURNE,3004,-37.84789,144.97828700000002,1100.0
 672,16057221,Rent,$380 Per Week,2022-08-25T12:15:55,ApartmentUnitFlat,Melbourne City Council - Greater Area,0.0,0.0,1.0,1.0,1,"405/442 St Kilda Road, Melbourne",MELBOURNE,3004,-37.838237799999995,144.9754,380.0
@@ -740,7 +740,7 @@
 738,15517680,Rent,$900 per week,2022-08-29T11:08:18,ApartmentUnitFlat,Melbourne City Council - Greater Area,0.0,0.0,2.0,1.0,2,"91/604 St Kilda Road, Melbourne",MELBOURNE,3004,-37.8512154,144.980087,900.0
 739,16057768,Rent,$600 per week,2022-08-25T14:56:40,ApartmentUnitFlat,Melbourne City Council - Greater Area,0.0,0.0,2.0,2.0,1,"1101/605 St Kilda Road, Melbourne",MELBOURNE,3004,-37.850914,144.98146100000002,600.0
 740,14135134,Rent,$330,2022-08-23T12:08:29,ApartmentUnitFlat,Melbourne City Council - Greater Area,0.0,0.0,1.0,1.0,1,"731/572 St Kilda St, Melbourne",MELBOURNE,3004,-37.847766899999996,144.9787,330.0
-741,16009662,Rent,$1024pw - Stay 1 mth+,2022-07-27T21:15:27,ApartmentUnitFlat,Melbourne City Council - Greater Area,0.0,0.0,2.0,2.0,1,"428/539 St Kilda Road, Melbourne",MELBOURNE,3004,-37.8456,144.979477,10241.0
+741,16009662,Rent,$1024pw - Stay 1 mth+,2022-07-27T21:15:27,ApartmentUnitFlat,Melbourne City Council - Greater Area,0.0,0.0,2.0,2.0,1,"428/539 St Kilda Road, Melbourne",MELBOURNE,3004,-37.8456,144.979477,1024.0
 742,15788198,Rent,$600,2022-07-13T12:02:16,ApartmentUnitFlat,Melbourne City Council - Greater Area,0.0,0.0,1.0,1.0,1,"306/450 St Kilda Road, Melbourne",MELBOURNE,3004,-37.838770000000004,144.975571,600.0
 743,16037648,Rent,$550,2022-08-14T15:34:52,ApartmentUnitFlat,Melbourne City Council - Greater Area,0.0,0.0,2.0,1.0,1,"912/12 Queens Road, Melbourne",MELBOURNE,3004,-37.83842,144.974716,550.0
 744,14868412,Rent,Whole floor penthouse - $1800 Per Week,2022-08-12T14:54:34,ApartmentUnitFlat,Melbourne City Council - Greater Area,0.0,0.0,2.0,2.0,2,"1501/601 St Kilda Road, Melbourne",MELBOURNE,3004,-37.8504753,144.981552,1800.0
@@ -877,7 +877,7 @@
 875,16025792,Rent,$530 per week,2022-08-05T16:34:13,ApartmentUnitFlat,Melbourne City Council - Greater Area,0.0,0.0,2.0,1.0,0,"2701/9 Power Street, Southbank",SOUTHBANK,3006,-37.8230629,144.961426,530.0
 876,16024206,Rent,$430.00,2022-08-05T09:24:13,ApartmentUnitFlat,Melbourne City Council - Greater Area,0.0,0.0,1.0,1.0,0,"126/173 City Road, Southbank",SOUTHBANK,3006,-37.8246269,144.96234099999998,430.0
 877,16023848,Rent,$600 weekly,2022-08-04T17:16:11,ApartmentUnitFlat,Melbourne City Council - Greater Area,0.0,0.0,2.0,2.0,0,"3516/70 Southbank Boulevard, Southbank",SOUTHBANK,3006,-37.823192600000006,144.963989,600.0
-878,16022315,Rent,From $60pw - 2 spots available,2022-08-04T10:42:57,House,Melbourne City Council - Greater Area,0.0,0.0,1.0,1.0,1,"5P24 and 5P54 70 Southbank Boulevard, Southbank",SOUTHBANK,3006,-37.8219528,144.9634,602.0
+878,16022315,Rent,From $60pw - 2 spots available,2022-08-04T10:42:57,House,Melbourne City Council - Greater Area,0.0,0.0,1.0,1.0,1,"5P24 and 5P54 70 Southbank Boulevard, Southbank",SOUTHBANK,3006,-37.8219528,144.9634,60.0
 879,16021700,Rent,$620.00,2022-08-03T17:31:16,ApartmentUnitFlat,Melbourne City Council - Greater Area,0.0,0.0,2.0,2.0,1,"1507/1 Balston Street, Southbank",SOUTHBANK,3006,-37.82502,144.961578,620.0
 880,16020644,Rent,$560.00,2022-08-03T15:37:23,ApartmentUnitFlat,Melbourne City Council - Greater Area,0.0,0.0,2.0,2.0,1,"3510/241 City Road, Southbank",SOUTHBANK,3006,-37.826252000000004,144.959991,560.0
 881,16016582,Rent,$625.00,2022-08-02T09:24:26,ApartmentUnitFlat,Melbourne City Council - Greater Area,0.0,0.0,2.0,2.0,1,"3908/60 Kavanagh Street, Southbank",SOUTHBANK,3006,-37.8240967,144.963684,625.0
@@ -927,17 +927,17 @@
 925,12154090,Rent,under application,2020-02-05T13:03:24,ApartmentUnitFlat,Melbourne City Council - Greater Area,0.0,0.0,1.0,1.0,0,"519/152 Sturt Street, Southbank",SOUTHBANK,3006,-37.82544,144.965912,
 926,12754115,Rent,$875,2018-11-27T15:44:43,ApartmentUnitFlat,Melbourne City Council - Greater Area,0.0,0.0,2.0,2.0,1,"3813/70 Southbank Bvd, Southbank",SOUTHBANK,3006,-37.8232422,144.964066,875.0
 927,11447599,Rent,$800 per week,2017-06-14T17:14:10,ApartmentUnitFlat,Melbourne City Council - Greater Area,0.0,0.0,2.0,2.0,1,"2910/241 City Road, Southbank",SOUTHBANK,3006,-37.8265152,144.960068,800.0
-928,16065015,Rent,$1036pw - Stay 1 mth+,2022-08-30T19:12:29,ApartmentUnitFlat,Melbourne City Council - Greater Area,0.0,0.0,1.0,1.0,1,"1705/1 Freshwater Place, Southbank",SOUTHBANK,3006,-37.8219261,144.96215800000002,10361.0
+928,16065015,Rent,$1036pw - Stay 1 mth+,2022-08-30T19:12:29,ApartmentUnitFlat,Melbourne City Council - Greater Area,0.0,0.0,1.0,1.0,1,"1705/1 Freshwater Place, Southbank",SOUTHBANK,3006,-37.8219261,144.96215800000002,1036.0
 929,16063376,Rent,$560,2022-08-30T11:22:35,ApartmentUnitFlat,Melbourne City Council - Greater Area,0.0,0.0,2.0,2.0,0,"2704/245 City Road, Southbank",SOUTHBANK,3006,-37.826640000000005,144.959671,560.0
 930,16062625,Rent,$460,2022-08-29T17:10:36,ApartmentUnitFlat,Melbourne City Council - Greater Area,0.0,0.0,1.0,1.0,1,"unit 1509/105 Clarendon Street, Southbank",SOUTHBANK,3006,-37.8271255,144.95813,460.0
 931,16054478,Rent,$580,2022-08-24T09:18:24,ApartmentUnitFlat,Melbourne City Council - Greater Area,0.0,0.0,2.0,2.0,0,"2305/245 City Road, Southbank",SOUTHBANK,3006,-37.826640000000005,144.959671,580.0
 932,15335234,Rent,$600 **FURNISHED APARTMENT IN SOUTHBANK**,2022-08-22T15:03:26,ApartmentUnitFlat,Melbourne City Council - Greater Area,0.0,0.0,2.0,1.0,0,"3005/105 Clarendon Street, Southbank",SOUTHBANK,3006,-37.8271255,144.95813,600.0
 933,16044559,Rent,$700,2022-08-17T18:08:57,ApartmentUnitFlat,Melbourne City Council - Greater Area,0.0,0.0,2.0,2.0,2,"2207/22 Dorcas Street, Southbank",SOUTHBANK,3006,-37.83016,144.9696,700.0
 934,16051228,Rent,"$1,100",2022-08-22T15:45:33,ApartmentUnitFlat,Melbourne City Council - Greater Area,0.0,0.0,2.0,2.0,1,"2704/8 Kavanagh Street, Southbank",SOUTHBANK,3006,-37.8226738,144.9665,1100.0
-935,16009660,Rent,$1099pw - Stay 1 mth+,2022-07-27T21:12:10,ApartmentUnitFlat,Melbourne City Council - Greater Area,0.0,0.0,2.0,2.0,1,"1402/63 Whiteman Street, Southbank",SOUTHBANK,3006,-37.82605,144.956848,10991.0
-936,15912893,Rent,$926pw - Stay 1 mth+,2022-06-01T11:15:25,ApartmentUnitFlat,Melbourne City Council - Greater Area,0.0,0.0,1.0,1.0,0,"1311/1 Freshwater Place, Southbank",SOUTHBANK,3006,-37.8219261,144.96215800000002,9261.0
-937,15800260,Rent,$1015pw - Stay 1 mth+,2022-03-23T21:06:33,ApartmentUnitFlat,Melbourne City Council - Greater Area,0.0,0.0,1.0,1.0,1,"1 Freshwater Place, Southbank",SOUTHBANK,3006,-37.8219261,144.96215800000002,10151.0
-938,15503636,Rent,$1085pw - Stay 1 mth+,2021-11-04T16:00:12,ApartmentUnitFlat,Melbourne City Council - Greater Area,0.0,0.0,1.0,1.0,1,"1 Freshwater Place, Southbank",SOUTHBANK,3006,-37.8219948,144.962128,10851.0
+935,16009660,Rent,$1099pw - Stay 1 mth+,2022-07-27T21:12:10,ApartmentUnitFlat,Melbourne City Council - Greater Area,0.0,0.0,2.0,2.0,1,"1402/63 Whiteman Street, Southbank",SOUTHBANK,3006,-37.82605,144.956848,1099.0
+936,15912893,Rent,$926pw - Stay 1 mth+,2022-06-01T11:15:25,ApartmentUnitFlat,Melbourne City Council - Greater Area,0.0,0.0,1.0,1.0,0,"1311/1 Freshwater Place, Southbank",SOUTHBANK,3006,-37.8219261,144.96215800000002,926.0
+937,15800260,Rent,$1015pw - Stay 1 mth+,2022-03-23T21:06:33,ApartmentUnitFlat,Melbourne City Council - Greater Area,0.0,0.0,1.0,1.0,1,"1 Freshwater Place, Southbank",SOUTHBANK,3006,-37.8219261,144.96215800000002,1015.0
+938,15503636,Rent,$1085pw - Stay 1 mth+,2021-11-04T16:00:12,ApartmentUnitFlat,Melbourne City Council - Greater Area,0.0,0.0,1.0,1.0,1,"1 Freshwater Place, Southbank",SOUTHBANK,3006,-37.8219948,144.962128,1085.0
 939,15295596,Rent,$650 per week,2022-08-26T11:33:41,ApartmentUnitFlat,Melbourne City Council - Greater Area,0.0,0.0,1.0,2.0,1,"5006/7 Riverside Quay, Southbank",SOUTHBANK,3006,-37.8213348,144.964691,650.0
 940,16058948,Rent,$460,2022-08-26T10:50:02,ApartmentUnitFlat,Melbourne City Council - Greater Area,0.0,0.0,1.0,1.0,0,"1202W/48 Balston Street, Southbank",SOUTHBANK,3006,-37.8266144,144.962616,460.0
 941,16054932,Rent,$650 per week,2022-08-24T11:26:47,ApartmentUnitFlat,Melbourne City Council - Greater Area,0.0,0.0,2.0,2.0,0,"3905/11 Bale Circuit, Southbank",SOUTHBANK,3006,-37.82613370000001,144.96286,650.0
@@ -971,7 +971,7 @@
 969,15965286,Rent,from $580 per week,2022-07-01T16:12:46,ApartmentUnitFlat,Melbourne City Council - Greater Area,0.0,0.0,2.0,2.0,0,"18 Hoff Boulevard, Southbank",SOUTHBANK,3006,-37.8258171,144.964035,580.0
 970,15324978,Rent,$600 per week,2022-06-20T20:53:41,ApartmentUnitFlat,Melbourne City Council - Greater Area,0.0,0.0,2.0,2.0,1,"2004/61-63 Haig Street, Southbank",SOUTHBANK,3006,-37.8276672,144.9567,600.0
 971,15887806,Rent,$700 per week,2022-05-17T10:48:50,ApartmentUnitFlat,Melbourne City Council - Greater Area,0.0,0.0,2.0,2.0,0,"3004/9 Power Street, Southbank",SOUTHBANK,3006,-37.8230629,144.961426,700.0
-972,15501871,Rent,$980pw Stay 1 mth plus,2021-11-04T10:10:24,ApartmentUnitFlat,Melbourne City Council - Greater Area,0.0,0.0,1.0,1.0,1,"619/1 Freshwater Place , Southbank",SOUTHBANK,3006,-37.82606,144.96225,9801.0
+972,15501871,Rent,$980pw Stay 1 mth plus,2021-11-04T10:10:24,ApartmentUnitFlat,Melbourne City Council - Greater Area,0.0,0.0,1.0,1.0,1,"619/1 Freshwater Place , Southbank",SOUTHBANK,3006,-37.82606,144.96225,980.0
 973,14859874,Rent,$380Per Week,2021-01-27T09:19:16,ApartmentUnitFlat,Melbourne City Council - Greater Area,0.0,0.0,1.0,1.0,0,"904/57-61 city Road, Southbank",SOUTHBANK,3006,-37.82213,144.965973,380.0
 974,14222263,Rent,$420,2020-05-08T10:52:28,ApartmentUnitFlat,Melbourne City Council - Greater Area,0.0,0.0,1.0,1.0,0,"1410/93-113 Kavanagh Street, Southbank",SOUTHBANK,3006,-37.82562,144.962875,420.0
 975,16047103,Rent,$495,2022-08-19T00:18:38,ApartmentUnitFlat,Melbourne City Council - Greater Area,0.0,0.0,1.0,1.0,1,"S3209/231 Harbour Esplanade, Docklands",DOCKLANDS,3008,-37.8135757,144.94299999999998,495.0
@@ -1090,7 +1090,7 @@
 1088,16025060,Rent,$625 pw *Multiple Apts Available,2022-08-05T13:42:24,ApartmentUnitFlat,Melbourne City Council - Greater Area,0.0,0.0,2.0,1.0,0,"3813/628 Flinders Street, Docklands",DOCKLANDS,3008,-37.82097,144.953247,625.0
 1089,16014491,Rent,$420,2022-08-01T10:50:42,ApartmentUnitFlat,Melbourne City Council - Greater Area,0.0,0.0,1.0,1.0,0,"241 Harbour Esplanade, Docklands",DOCKLANDS,3008,-37.8132,144.942978,420.0
 1090,16010017,Rent,$400 per week,2022-07-28T10:31:18,ApartmentUnitFlat,Melbourne City Council - Greater Area,0.0,0.0,1.0,1.0,0,"Floor6/8 Pearl River Road, Docklands",DOCKLANDS,3008,-37.81565,144.938248,400.0
-1091,15258330,Rent,$880 **WATERFRONT SPACIOUS 3-BEDROOMS**,2022-07-25T12:40:34,ApartmentUnitFlat,Melbourne City Council - Greater Area,0.0,0.0,3.0,2.0,1,"1107/8 Marmion Place, Docklands",DOCKLANDS,3008,-37.813342999999996,144.94253500000002,8803.0
+1091,15258330,Rent,$880 **WATERFRONT SPACIOUS 3-BEDROOMS**,2022-07-25T12:40:34,ApartmentUnitFlat,Melbourne City Council - Greater Area,0.0,0.0,3.0,2.0,1,"1107/8 Marmion Place, Docklands",DOCKLANDS,3008,-37.813342999999996,144.94253500000002,880.0
 1092,16002699,Rent,$500 per week,2022-07-25T12:30:17,ApartmentUnitFlat,Melbourne City Council - Greater Area,0.0,0.0,1.0,1.0,1,"1416/100 Harbour Esplanade, Docklands",DOCKLANDS,3008,-37.81856,144.946869,500.0
 1093,16001822,Rent,$430 per week,2022-07-25T09:32:30,ApartmentUnitFlat,Melbourne City Council - Greater Area,0.0,0.0,1.0,1.0,0,"F6/15 Doepel Way, Docklands",DOCKLANDS,3008,-37.814834600000005,144.940048,430.0
 1094,15998203,Rent,$985 **WATERFRONT FURNISHED APARTMENT**,2022-07-21T13:13:41,ApartmentUnitFlat,Melbourne City Council - Greater Area,0.0,0.0,3.0,2.0,1,"603/915 Collins Street, Docklands",DOCKLANDS,3008,-37.8206024,144.940247,985.0
@@ -1101,7 +1101,7 @@
 1099,15956593,Rent,$600 Per Week,2022-06-27T18:38:34,ApartmentUnitFlat,Melbourne City Council - Greater Area,0.0,0.0,2.0,1.0,1,"2606N/889 Collins Street, Docklands",DOCKLANDS,3008,-37.8211632,144.94194,600.0
 1100,15882556,Rent,$590 per week,2022-05-12T19:02:23,ApartmentUnitFlat,Melbourne City Council - Greater Area,0.0,0.0,2.0,1.0,1,"702IF/381 Docklands Drive, Docklands",DOCKLANDS,3008,-37.8136177,144.941452,590.0
 1101,14703154,Rent,$580,2020-11-17T15:21:59,ApartmentUnitFlat,Melbourne City Council - Greater Area,0.0,0.0,1.0,1.0,0,"2008S/889 Collins Street, Docklands",DOCKLANDS,3008,-37.82101,144.941589,580.0
-1102,9040170,Rent,$1015pw - Stay 1 mth+,2018-09-20T13:22:14,ApartmentUnitFlat,Melbourne City Council - Greater Area,0.0,0.0,1.0,1.0,1,"18 Aquitania Way, Docklands",DOCKLANDS,3008,-37.8135757,144.94299999999998,10151.0
+1102,9040170,Rent,$1015pw - Stay 1 mth+,2018-09-20T13:22:14,ApartmentUnitFlat,Melbourne City Council - Greater Area,0.0,0.0,1.0,1.0,1,"18 Aquitania Way, Docklands",DOCKLANDS,3008,-37.8135757,144.94299999999998,1015.0
 1103,16061312,Rent,$470 per week,2022-08-29T11:49:19,ApartmentUnitFlat,Maribyrnong City Council - Greater Area,0.0,0.0,2.0,2.0,1,"802/8 Joseph Road, Footscray",FOOTSCRAY,3011,-37.7992134,144.90991200000002,470.0
 1104,16060949,Rent,$510 per week,2022-08-29T10:16:27,ApartmentUnitFlat,Maribyrnong City Council - Greater Area,0.0,0.0,2.0,2.0,1,"811/2 Joseph Road, Footscray",FOOTSCRAY,3011,-37.800329999999995,144.909653,510.0
 1105,16058549,Rent,$480 weekly,2022-08-26T07:21:10,House,Maribyrnong City Council - Greater Area,0.0,0.0,2.0,1.0,0,"31 Buckingham St, Footscray",FOOTSCRAY,3011,-37.80129,144.890121,480.0
@@ -1244,7 +1244,7 @@
 1242,9383365,Rent,$255.00 per week,2022-04-06T10:28:24,Studio,Maribyrnong City Council - Greater Area,0.0,0.0,1.0,1.0,0,"315/133 Droop Street, Footscray",FOOTSCRAY,3011,-37.792533899999995,144.89328,255.0
 1243,15815326,Rent,$433 per week (from),2022-04-01T09:25:23,ApartmentUnitFlat,Maribyrnong City Council - Greater Area,0.0,0.0,1.0,1.0,0,"35 Victoria Street, Footscray",FOOTSCRAY,3011,-37.801487,144.89296000000002,433.0
 1244,15806723,Rent,$390 Per Week,2022-03-28T14:12:24,ApartmentUnitFlat,Maribyrnong City Council - Greater Area,0.0,0.0,2.0,1.0,0,"1/30 Trugo Lane, Footscray",FOOTSCRAY,3011,-37.8015,144.89975,390.0
-1245,15761192,Rent,$ 170 per week,2022-03-02T18:15:49,House,Maribyrnong City Council - Greater Area,0.0,0.0,1.0,1.0,0,"88 Paisley Street, Footscray",FOOTSCRAY,3011,-37.80008,144.894119,170.0
+1245,15761192,Rent,$ 170 per week,2022-03-02T18:15:49,House,Maribyrnong City Council - Greater Area,0.0,0.0,1.0,1.0,0,"88 Paisley Street, Footscray",FOOTSCRAY,3011,-37.80008,144.894119,
 1246,15542913,Rent,$280 per week,2022-02-23T13:43:25,ApartmentUnitFlat,Maribyrnong City Council - Greater Area,0.0,0.0,1.0,1.0,0,"406A/62 - 66 Nicholson Street, Footscray",FOOTSCRAY,3011,-37.7984848,144.899521,280.0
 1247,10123648,Rent,$300 Per Week,2022-02-22T09:26:15,ApartmentUnitFlat,Maribyrnong City Council - Greater Area,0.0,0.0,2.0,1.0,1,"3/5 Empire Street, Footscray",FOOTSCRAY,3011,-37.7902565,144.890717,300.0
 1248,15637877,Rent,"$1,250.00 per week",2022-01-09T09:28:27,ApartmentUnitFlat,Maribyrnong City Council - Greater Area,0.0,0.0,4.0,3.0,2,"802/250 Barkly Street, Footscray",FOOTSCRAY,3011,-37.7991371,144.896072,1250.0
@@ -1691,7 +1691,7 @@
 1689,16029272,Rent,$355 per week,2022-08-09T11:22:31,ApartmentUnitFlat,Hobsons Bay City Council - Greater Area,0.0,0.0,2.0,1.0,1,"3/83 Railway Street North, Altona",ALTONA,3018,-37.866690000000006,144.8302,355.0
 1690,16018764,Rent,$625 per week,2022-08-02T17:58:29,House,Hobsons Bay City Council - Greater Area,0.0,0.0,2.0,2.0,1,"5/130 Civic Parade, Altona",ALTONA,3018,-37.864624,144.8304,625.0
 1691,16018744,Rent,$575 per week,2022-08-02T17:48:13,House,Hobsons Bay City Council - Greater Area,0.0,0.0,2.0,2.0,1,"2/130 Civic Parade, Altona",ALTONA,3018,-37.864624,144.8304,575.0
-1692,16010917,Rent,465 per week,2022-07-28T14:44:39,ApartmentUnitFlat,Hobsons Bay City Council - Greater Area,0.0,0.0,3.0,1.0,2,"3/2 Upton Street, Altona",ALTONA,3018,-37.869479999999996,144.823792,465.0
+1692,16010917,Rent,465 per week,2022-07-28T14:44:39,ApartmentUnitFlat,Hobsons Bay City Council - Greater Area,0.0,0.0,3.0,1.0,2,"3/2 Upton Street, Altona",ALTONA,3018,-37.869479999999996,144.823792,
 1693,16009309,Rent,$400 per week,2022-07-27T16:39:39,House,Hobsons Bay City Council - Greater Area,0.0,0.0,3.0,1.0,2,"128 Maidstone Street, Altona",ALTONA,3018,-37.8636246,144.812531,400.0
 1694,16006976,Rent,$480 per week,2022-07-26T16:38:41,House,Hobsons Bay City Council - Greater Area,0.0,0.0,3.0,1.0,1,"72 Grieve Parade, Altona",ALTONA,3018,-37.8625,144.8192,480.0
 1695,16005788,Rent,$525,2022-07-26T12:05:57,ApartmentUnitFlat,Hobsons Bay City Council - Greater Area,0.0,0.0,3.0,2.0,2,"2/42 Galvin Street, Altona",ALTONA,3018,-37.86043,144.810181,525.0
@@ -1709,7 +1709,7 @@
 1707,15778032,Rent,$485 per week,2022-03-11T15:28:56,ApartmentUnitFlat,Hobsons Bay City Council - Greater Area,0.0,0.0,2.0,2.0,1,"103/118 Pier Street, Altona",ALTONA,3018,-37.86544,144.83123799999998,485.0
 1708,16051305,Rent,$370.00 per week,2022-08-22T16:01:19,ApartmentUnitFlat,Hobsons Bay City Council - Greater Area,0.0,0.0,2.0,1.0,1,"306/117 Pier Street, Altona",ALTONA,3018,-37.86549,144.830414,370.0
 1709,16012523,Rent,$390 per week,2022-07-29T12:19:45,House,Hobsons Bay City Council - Greater Area,0.0,0.0,3.0,1.0,1,"22 Maidstone Street, Altona",ALTONA,3018,-37.871959999999994,144.81303400000002,390.0
-1710,15985045,Rent,465,2022-07-13T16:45:41,Townhouse,Hobsons Bay City Council - Greater Area,0.0,0.0,3.0,1.0,1,"3/30-32 Civic Parade, Seaholme",SEAHOLME,3018,-37.86595,144.8409,465.0
+1710,15985045,Rent,465,2022-07-13T16:45:41,Townhouse,Hobsons Bay City Council - Greater Area,0.0,0.0,3.0,1.0,1,"3/30-32 Civic Parade, Seaholme",SEAHOLME,3018,-37.86595,144.8409,
 1711,15976402,Rent,$355.00 per week,2022-07-08T12:36:38,ApartmentUnitFlat,Hobsons Bay City Council - Greater Area,0.0,0.0,2.0,1.0,1,"3/20 Hancock Street, Altona",ALTONA,3018,-37.864193,144.82304399999998,355.0
 1712,15694880,Rent,$240,2022-02-02T11:21:52,ApartmentUnitFlat,Hobsons Bay City Council - Greater Area,0.0,0.0,2.0,1.0,1,"3/68 GRIEVE PARADE, Altona",ALTONA,3018,-37.8638153,144.818939,240.0
 1713,15661073,Rent,$280,2022-01-18T15:06:37,House,Hobsons Bay City Council - Greater Area,0.0,0.0,1.0,1.0,1,"4/33 Bent Street, Altona",ALTONA,3018,-37.8666077,144.83154299999998,280.0
@@ -1743,7 +1743,7 @@
 1741,16009895,Rent,$395 per week,2022-07-28T09:55:41,House,Maribyrnong City Council - Greater Area,0.0,0.0,2.0,2.0,1,"4/15 Lawn Crescent, Braybrook",BRAYBROOK,3019,-37.78301,144.860764,395.0
 1742,15927884,Rent,$430 per week,2022-06-09T15:43:09,House,Maribyrnong City Council - Greater Area,0.0,0.0,4.0,1.0,1,"90 Churchill Avenue, Braybrook",BRAYBROOK,3019,-37.78570560000001,144.859482,430.0
 1743,15735621,Rent,$350,2022-02-18T15:08:36,House,Maribyrnong City Council - Greater Area,0.0,0.0,3.0,1.0,2,"155 Churchill Avenue, Braybrook",BRAYBROOK,3019,-37.78715,144.85093700000002,350.0
-1744,16030929,Rent,$320/week (6 Month Lease Only),2022-08-09T18:24:15,House,Brimbank City Council - Greater Area,0.0,0.0,2.0,1.0,1,"7 Benjamin Street, Sunshine",SUNSHINE,3020,-37.7939758,144.833359,3206.0
+1744,16030929,Rent,$320/week (6 Month Lease Only),2022-08-09T18:24:15,House,Brimbank City Council - Greater Area,0.0,0.0,2.0,1.0,1,"7 Benjamin Street, Sunshine",SUNSHINE,3020,-37.7939758,144.833359,320.0
 1745,16041056,Rent,$350,2022-08-16T12:57:44,House,Brimbank City Council - Greater Area,0.0,0.0,3.0,1.0,1,"9 Ball Street, Sunshine North",SUNSHINE NORTH,3020,-37.7665,144.840485,350.0
 1746,16060092,Rent,$400,2022-08-26T16:20:15,ApartmentUnitFlat,Brimbank City Council - Greater Area,0.0,0.0,2.0,1.0,1,"310/1 Foundry Road, Sunshine",SUNSHINE,3020,-37.7797279,144.832474,400.0
 1747,16051497,Rent,$430,2022-08-22T16:32:45,House,Brimbank City Council - Greater Area,0.0,0.0,3.0,1.0,4,"28 Murray Street, Sunshine West",SUNSHINE WEST,3020,-37.788579999999996,144.804626,430.0
@@ -2011,7 +2011,7 @@
 2009,15214137,Rent,$320,2021-06-25T14:43:26,House,Brimbank City Council - Greater Area,0.0,0.0,3.0,1.0,2,"1 Magnolia Avenue, Kings Park",KINGS PARK,3021,-37.7311,144.780273,320.0
 2010,15183122,Rent,$350 Per week,2021-06-11T11:01:10,House,Brimbank City Council - Greater Area,0.0,0.0,3.0,1.0,1,"34 Moffat Street, St Albans",ST ALBANS,3021,-37.737278,144.7822,350.0
 2011,12580965,Rent,$750,2018-09-12T13:22:32,Studio,Brimbank City Council - Greater Area,0.0,0.0,1.0,1.0,0,"5 & 18/1-3 Princess Street, St Albans",ST ALBANS,3021,-37.7450867,144.801025,750.0
-2012,10621148,Rent,From $786 - $1572 per week,2016-06-09T18:26:48,Studio,Brimbank City Council - Greater Area,0.0,0.0,1.0,1.0,19,"1A & 1B/101-103 Main Road West, St Albans",ST ALBANS,3021,-37.7562027,144.811249,
+2012,10621148,Rent,From $786 - $1572 per week,2016-06-09T18:26:48,Studio,Brimbank City Council - Greater Area,0.0,0.0,1.0,1.0,19,"1A & 1B/101-103 Main Road West, St Albans",ST ALBANS,3021,-37.7562027,144.811249,786.0
 2013,16035224,Rent,$400,2022-08-25T18:25:20,House,Brimbank City Council - Greater Area,0.0,0.0,3.0,2.0,1,"40 Esmond Street, Ardeer",ARDEER,3022,-37.775135,144.797073,400.0
 2014,16041090,Rent,Application Approved,2022-08-16T13:06:52,Townhouse,Brimbank City Council - Greater Area,0.0,0.0,3.0,2.0,1,"1/66 Blanche Street, Ardeer",ARDEER,3022,-37.779,144.80058300000002,
 2015,16040006,Rent,$370,2022-08-15T18:48:17,Townhouse,Brimbank City Council - Greater Area,0.0,0.0,2.0,1.0,1,"4/30 Rockbank Road, Ardeer",ARDEER,3022,-37.77766,144.8033,370.0
@@ -2124,7 +2124,7 @@
 2122,15971797,Rent,$410 per week,2022-07-06T11:44:37,House,Melton City - Greater Area,0.0,0.0,3.0,2.0,2,"52 Wills Terrace, Burnside Heights",BURNSIDE HEIGHTS,3023,-37.73068,144.756851,410.0
 2123,15969814,Rent,$330 pw,2022-07-05T13:40:40,House,Brimbank City Council - Greater Area,0.0,0.0,3.0,1.0,1,"76 Billingham Road, Deer Park",DEER PARK,3023,-37.758812,144.768311,330.0
 2124,15696394,Rent,$360 pw,2022-02-02T16:31:17,House,Brimbank City Council - Greater Area,0.0,0.0,3.0,1.0,1,"23 Runcorn Crescent, Deer Park",DEER PARK,3023,-37.7635956,144.767792,360.0
-2125,14995441,Rent,220,2022-01-18T10:08:28,ApartmentUnitFlat,Brimbank City Council - Greater Area,0.0,0.0,1.0,1.0,1,"2/5 Earlsfield Court, Deer Park",DEER PARK,3023,-37.7598953,144.7689,220.0
+2125,14995441,Rent,220,2022-01-18T10:08:28,ApartmentUnitFlat,Brimbank City Council - Greater Area,0.0,0.0,1.0,1.0,1,"2/5 Earlsfield Court, Deer Park",DEER PARK,3023,-37.7598953,144.7689,
 2126,15309814,Rent,$390pw,2021-08-06T14:32:45,House,Melton City - Greater Area,0.0,0.0,3.0,2.0,1,"20 Castlemaine Way, Caroline Springs",CAROLINE SPRINGS,3023,-37.7523956,144.748581,390.0
 2127,14397022,Rent,$340,2020-07-20T12:39:14,House,Brimbank City Council - Greater Area,0.0,0.0,3.0,1.0,0,"2 WELWYN PARADE, Deer Park",DEER PARK,3023,-37.766063700000004,144.77127099999998,340.0
 2128,15342537,Rent,$360,2022-08-30T14:39:05,House,Wyndham City Council - Greater Area,0.0,0.0,3.0,2.0,2,"1 Glee Street, Wyndham Vale",WYNDHAM VALE,3024,-37.848156,144.59303300000002,360.0
@@ -2192,13 +2192,13 @@
 2190,16000197,Rent,$350 per week,2022-07-22T12:40:51,ApartmentUnitFlat,Wyndham City Council - Greater Area,0.0,0.0,3.0,1.0,1,"4B Ducane Street, Wyndham Vale",WYNDHAM VALE,3024,-37.878788,144.62841799999998,350.0
 2191,15979494,Rent,$400.00,2022-07-11T14:35:22,House,Wyndham City Council - Greater Area,0.0,0.0,4.0,2.0,2,"26 Arrowhead Street, Manor Lakes",MANOR LAKES,3024,-37.8724136,144.598587,400.0
 2192,15045977,Rent,$420,2022-06-30T18:00:27,House,Wyndham City Council - Greater Area,0.0,0.0,4.0,2.0,2,"20 Silver Gum Street, Manor Lakes",MANOR LAKES,3024,-37.881904600000006,144.60961899999998,420.0
-2193,15692397,Rent,Rent2own with No Deposit,2022-02-01T13:51:22,House,Wyndham City Council - Greater Area,0.0,0.0,4.0,2.0,2,Manor Lakes,MANOR LAKES,3024,-37.87339779999999,144.582077,2.0
+2193,15692397,Rent,Rent2own with No Deposit,2022-02-01T13:51:22,House,Wyndham City Council - Greater Area,0.0,0.0,4.0,2.0,2,Manor Lakes,MANOR LAKES,3024,-37.87339779999999,144.582077,
 2194,15357874,Rent,$400,2021-08-31T19:20:14,House,Wyndham City Council - Greater Area,0.0,0.0,4.0,2.0,2,"8 Pankina Road, Mambourin",MAMBOURIN,3024,-37.88792,144.5976,400.0
 2195,15338325,Rent,$350,2021-08-21T10:25:27,House,Wyndham City Council - Greater Area,0.0,0.0,4.0,2.0,2,"41 Dajarra Avenue, Wyndham Vale",WYNDHAM VALE,3024,-37.86313,144.615387,350.0
 2196,15208533,Rent,$360,2021-06-23T14:07:25,House,Wyndham City Council - Greater Area,0.0,0.0,3.0,1.0,1,"1 Croxley Close, Wyndham Vale",WYNDHAM VALE,3024,-37.8926849,144.627655,360.0
-2197,14978777,Rent,RENT2OWN with NO DEPOSIT,2021-05-24T09:30:17,House,Wyndham City Council - Greater Area,172.0,335.0,3.0,2.0,2,Wyndham Vale,WYNDHAM VALE,3024,-37.88925,144.62133799999998,2.0
+2197,14978777,Rent,RENT2OWN with NO DEPOSIT,2021-05-24T09:30:17,House,Wyndham City Council - Greater Area,172.0,335.0,3.0,2.0,2,Wyndham Vale,WYNDHAM VALE,3024,-37.88925,144.62133799999998,
 2198,15091415,Rent,$430,2021-04-30T12:44:50,House,Wyndham City Council - Greater Area,0.0,0.0,4.0,2.0,2,"10 Julep Street, Manor Lakes",MANOR LAKES,3024,-37.8674965,144.582077,430.0
-2199,14987615,Rent,Rent2own with No Deposit,2021-03-16T18:44:33,House,Wyndham City Council - Greater Area,0.0,0.0,4.0,2.0,2,Mambourin,MAMBOURIN,3024,-37.897884399999995,144.5121,2.0
+2199,14987615,Rent,Rent2own with No Deposit,2021-03-16T18:44:33,House,Wyndham City Council - Greater Area,0.0,0.0,4.0,2.0,2,Mambourin,MAMBOURIN,3024,-37.897884399999995,144.5121,
 2200,16064649,Rent,$360 per week,2022-08-30T16:18:02,House,Wyndham City Council - Greater Area,0.0,0.0,4.0,1.0,1,"6 Intervale Drive, Wyndham Vale",WYNDHAM VALE,3024,-37.8948555,144.623962,360.0
 2201,16064265,Rent,$420,2022-08-30T14:56:25,House,Wyndham City Council - Greater Area,0.0,0.0,4.0,2.0,2,"43 Millbrook Drive, Wyndham Vale",WYNDHAM VALE,3024,-37.8470345,144.5954,420.0
 2202,16063556,Rent,$410,2022-08-30T12:02:39,House,Wyndham City Council - Greater Area,0.0,0.0,3.0,2.0,2,"14 Lady Penryhn Avenue, Wyndham Vale",WYNDHAM VALE,3024,-37.881542200000005,144.628067,410.0
@@ -2256,7 +2256,7 @@
 2254,16064696,Rent,$390,2022-08-30T16:27:41,House,Hobsons Bay City Council - Greater Area,0.0,0.0,2.0,1.0,4,"141 Millers Road, Altona North",ALTONA NORTH,3025,-37.829856899999996,144.84886200000003,390.0
 2255,16061169,Rent,$550pw,2022-08-29T11:17:21,House,Hobsons Bay City Council - Greater Area,0.0,0.0,3.0,2.0,2,"4 Amaranth Avenue, Altona North",ALTONA NORTH,3025,-37.831195799999996,144.854492,550.0
 2256,15368852,Rent,$560,2022-08-29T10:28:17,ApartmentUnitFlat,Hobsons Bay City Council - Greater Area,0.0,0.0,3.0,2.0,3,"8A Chambers Road, Altona North",ALTONA NORTH,3025,-37.8413467,144.841812,560.0
-2257,16037988,Rent,580 per week,2022-08-15T10:23:44,Townhouse,Hobsons Bay City Council - Greater Area,0.0,0.0,3.0,2.0,0,"3 Farrington Avenue, Altona North",ALTONA NORTH,3025,-37.8382034,144.862091,580.0
+2257,16037988,Rent,580 per week,2022-08-15T10:23:44,Townhouse,Hobsons Bay City Council - Greater Area,0.0,0.0,3.0,2.0,0,"3 Farrington Avenue, Altona North",ALTONA NORTH,3025,-37.8382034,144.862091,
 2258,16057326,Rent,$600.00,2022-08-25T12:39:31,House,Hobsons Bay City Council - Greater Area,0.0,0.0,3.0,2.0,1,"29A Bunting Court, Altona North",ALTONA NORTH,3025,-37.84042,144.843063,600.0
 2259,16012141,Rent,$480 per week,2022-07-29T10:48:50,House,Hobsons Bay City Council - Greater Area,0.0,0.0,3.0,2.0,2,"11 Knapp Street, Altona North",ALTONA NORTH,3025,-37.8285446,144.834641,480.0
 2260,15680520,Rent,$400.00,2022-01-27T09:35:11,House,Hobsons Bay City Council - Greater Area,0.0,0.0,3.0,1.0,3,"71 First Avenue, Altona North",ALTONA NORTH,3025,-37.83489229999999,144.854538,400.0
@@ -2264,7 +2264,7 @@
 2262,16056110,Rent,$460,2022-08-24T16:41:19,House,Hobsons Bay City Council - Greater Area,0.0,0.0,2.0,2.0,1,"4/185 Millers Road, Altona North",ALTONA NORTH,3025,-37.833709999999996,144.848236,460.0
 2263,16052955,Rent,$580 per week,2022-08-23T12:12:18,House,Hobsons Bay City Council - Greater Area,0.0,0.0,3.0,2.0,1,"10A Murphy Street, Altona North",ALTONA NORTH,3025,-37.8344574,144.844391,580.0
 2264,16051953,Rent,$480,2022-08-23T08:39:33,House,Hobsons Bay City Council - Greater Area,0.0,0.0,3.0,1.0,2,"2 Lee Street, Altona North",ALTONA NORTH,3025,-37.8262367,144.84573400000002,480.0
-2265,16047149,Rent,580 per week,2022-08-19T08:40:29,Townhouse,Hobsons Bay City Council - Greater Area,0.0,0.0,3.0,2.0,2,"1/54A Mills Street, Altona North",ALTONA NORTH,3025,-37.8426781,144.854279,580.0
+2265,16047149,Rent,580 per week,2022-08-19T08:40:29,Townhouse,Hobsons Bay City Council - Greater Area,0.0,0.0,3.0,2.0,2,"1/54A Mills Street, Altona North",ALTONA NORTH,3025,-37.8426781,144.854279,
 2266,15897367,Rent,$300 P/W,2022-08-15T11:25:43,ApartmentUnitFlat,Hobsons Bay City Council - Greater Area,0.0,0.0,2.0,1.0,1,"1/78 Marion Street, Altona North",ALTONA NORTH,3025,-37.834938,144.851364,300.0
 2267,16036082,Rent,$510.00 weekly,2022-08-12T12:29:32,Townhouse,Hobsons Bay City Council - Greater Area,0.0,0.0,3.0,2.0,1,"5 Bright Avenue, Altona North",ALTONA NORTH,3025,-37.83807,144.8589,510.0
 2268,16032702,Rent,$515 Per Week,2022-08-10T16:12:37,House,Hobsons Bay City Council - Greater Area,129.0,173.0,3.0,2.0,1,"20 Stapley Crescent, Altona North",ALTONA NORTH,3025,-37.8369865,144.862259,515.0
@@ -2296,7 +2296,7 @@
 2294,16055009,Rent,$445 weekly,2022-08-24T11:49:33,House,Brimbank City Council - Greater Area,0.0,0.0,4.0,2.0,2,"12 Aston Glade, Derrimut",DERRIMUT,3026,-37.79316,144.754578,445.0
 2295,16053650,Rent,$450 per week,2022-08-23T15:18:29,House,Brimbank City Council - Greater Area,0.0,0.0,4.0,2.0,2,"9 Taunton Grove, Derrimut",DERRIMUT,3026,-37.794807399999996,144.756927,450.0
 2296,16042064,Rent,$450,2022-08-16T17:00:28,House,Brimbank City Council - Greater Area,0.0,0.0,3.0,2.0,2,"25 Drummond Circuit, Derrimut",DERRIMUT,3026,-37.79096,144.754532,450.0
-2297,16000922,Rent,420pw,2022-07-22T15:48:53,House,Brimbank City Council - Greater Area,0.0,0.0,3.0,2.0,2,"25 Belvoir Gardens, Derrimut",DERRIMUT,3026,-37.79633,144.768311,420.0
+2297,16000922,Rent,420pw,2022-07-22T15:48:53,House,Brimbank City Council - Greater Area,0.0,0.0,3.0,2.0,2,"25 Belvoir Gardens, Derrimut",DERRIMUT,3026,-37.79633,144.768311,
 2298,16000113,Rent,$420.00 per week,2022-07-22T12:18:50,House,Brimbank City Council - Greater Area,0.0,0.0,4.0,2.0,2,"42 Fernhurst Avenue, Derrimut",DERRIMUT,3026,-37.79018,144.758865,420.0
 2299,15997502,Rent,$425 Per Week,2022-07-21T10:05:15,House,Brimbank City Council - Greater Area,0.0,0.0,3.0,2.0,2,"35 Lincoln Drive, Derrimut",DERRIMUT,3026,-37.79656,144.7621,425.0
 2300,15990508,Rent,$580 Per Week,2022-07-18T11:23:21,House,Brimbank City Council - Greater Area,0.0,0.0,4.0,2.0,2,"155 Windsor Boulevard, Derrimut",DERRIMUT,3026,-37.7879868,144.756866,580.0
@@ -2327,7 +2327,7 @@
 2325,15993604,Rent,$465 pw,2022-07-19T13:20:58,House,Wyndham City Council - Greater Area,0.0,0.0,4.0,2.0,2,"21 Fantail Crescent, Williams Landing",WILLIAMS LANDING,3027,-37.855106400000004,144.735687,465.0
 2326,16060079,Rent,$460 pw,2022-08-26T16:14:27,House,Hobsons Bay City Council - Greater Area,0.0,0.0,3.0,2.0,2,"37 Crellin Avenue, Altona Meadows",ALTONA MEADOWS,3028,-37.872345,144.7553,460.0
 2327,16064913,Rent,$440 per week,2022-08-30T17:28:58,House,Hobsons Bay City Council - Greater Area,0.0,0.0,3.0,2.0,0,"10 Walters Court, Altona Meadows",ALTONA MEADOWS,3028,-37.87478,144.7723,440.0
-2328,16064764,Rent,410 per week,2022-08-30T16:45:34,House,Hobsons Bay City Council - Greater Area,0.0,0.0,4.0,2.0,2,"10 Reddrop Court, Altona Meadows",ALTONA MEADOWS,3028,-37.87863,144.773453,410.0
+2328,16064764,Rent,410 per week,2022-08-30T16:45:34,House,Hobsons Bay City Council - Greater Area,0.0,0.0,4.0,2.0,2,"10 Reddrop Court, Altona Meadows",ALTONA MEADOWS,3028,-37.87863,144.773453,
 2329,16064669,Rent,$430 per week,2022-08-30T16:22:36,House,Hobsons Bay City Council - Greater Area,0.0,0.0,3.0,2.0,2,"15 Marlin Terrace, Seabrook",SEABROOK,3028,-37.88582,144.75413500000002,430.0
 2330,16064338,Rent,"$330PW, $1434PCM",2022-08-30T15:11:18,ApartmentUnitFlat,Hobsons Bay City Council - Greater Area,0.0,0.0,1.0,1.0,1,"5/21 Sumers Street, Laverton",LAVERTON,3028,-37.8602257,144.767014,330.0
 2331,16063853,Rent,$480 per week,2022-08-30T13:19:59,House,Hobsons Bay City Council - Greater Area,0.0,0.0,3.0,1.0,1,"9 O'Brien Court, Altona Meadows",ALTONA MEADOWS,3028,-37.8746033,144.78753700000001,480.0
@@ -2403,7 +2403,7 @@
 2401,15715242,Rent,$340,2022-02-10T13:53:30,House,Hobsons Bay City Council - Greater Area,0.0,0.0,3.0,1.0,0,"52 Tyquin Street, Laverton",LAVERTON,3028,-37.85105,144.778946,340.0
 2402,15715053,Rent,$330,2022-02-10T13:12:58,House,Hobsons Bay City Council - Greater Area,0.0,0.0,3.0,1.0,5,"6 Williams Road, Laverton",LAVERTON,3028,-37.860454600000004,144.775772,330.0
 2403,15102515,Rent,$325 Per Week Until April 2022. Increase to $335 Per Week a,2022-02-04T09:27:32,House,Hobsons Bay City Council - Greater Area,0.0,0.0,3.0,1.0,3,"1 Jones Court, Laverton",LAVERTON,3028,-37.8509865,144.77598600000002,325.0
-2404,15698257,Rent,300,2022-02-03T12:32:01,House,Hobsons Bay City Council - Greater Area,0.0,0.0,3.0,1.0,1,"32 Woods Street, Laverton",LAVERTON,3028,-37.8618355,144.773438,300.0
+2404,15698257,Rent,300,2022-02-03T12:32:01,House,Hobsons Bay City Council - Greater Area,0.0,0.0,3.0,1.0,1,"32 Woods Street, Laverton",LAVERTON,3028,-37.8618355,144.773438,
 2405,15680670,Rent,$410,2022-01-27T10:12:45,House,Hobsons Bay City Council - Greater Area,0.0,0.0,3.0,2.0,6,"14 Addison Place, Seabrook",SEABROOK,3028,-37.88089,144.7599,410.0
 2406,14841440,Rent,$400 Per Week,2022-01-27T10:12:38,House,Hobsons Bay City Council - Greater Area,0.0,0.0,3.0,2.0,2,"2 Canonbury Circle, Seabrook",SEABROOK,3028,-37.8801727,144.761581,400.0
 2407,15664416,Rent,$340,2022-01-19T15:41:29,House,Hobsons Bay City Council - Greater Area,0.0,0.0,3.0,1.0,0,"3 Armstrong Street, Laverton",LAVERTON,3028,-37.860202799999996,144.773026,340.0
@@ -2437,7 +2437,7 @@
 2435,16049428,Rent,$450,2022-08-20T15:00:23,House,Melton City - Greater Area,0.0,0.0,4.0,2.0,4,"18 Bighorn Road, Truganina",TRUGANINA,3029,-37.759609999999995,144.694672,450.0
 2436,16041043,Rent,$350,2022-08-16T12:54:35,House,Wyndham City Council - Greater Area,0.0,0.0,3.0,2.0,2,"11 Nettlefold Avenue, Hoppers Crossing",HOPPERS CROSSING,3029,-37.8649864,144.69311499999998,350.0
 2437,16039605,Rent,$340,2022-08-15T16:17:03,House,Wyndham City Council - Greater Area,0.0,0.0,3.0,1.0,0,"29A Melaleuca Drive, Hoppers Crossing",HOPPERS CROSSING,3029,-37.8584938,144.680771,340.0
-2438,16039275,Rent,370.00,2022-08-15T15:12:32,ApartmentUnitFlat,Wyndham City Council - Greater Area,0.0,0.0,3.0,2.0,0,"2/59 O'Reilly Rd, Tarneit",TARNEIT,3029,-37.857234999999996,144.661591,3700.0
+2438,16039275,Rent,370.00,2022-08-15T15:12:32,ApartmentUnitFlat,Wyndham City Council - Greater Area,0.0,0.0,3.0,2.0,0,"2/59 O'Reilly Rd, Tarneit",TARNEIT,3029,-37.857234999999996,144.661591,
 2439,16036744,Rent,$290 per week,2022-08-12T15:32:44,ApartmentUnitFlat,Wyndham City Council - Greater Area,0.0,0.0,2.0,1.0,1,"2/146 Mossfiel Drive, Hoppers Crossing",HOPPERS CROSSING,3029,-37.866496999999995,144.691,290.0
 2440,16032880,Rent,$330 pw,2022-08-10T16:54:57,ApartmentUnitFlat,Wyndham City Council - Greater Area,0.0,0.0,2.0,1.0,1,"1/595 Tarneit Road, Hoppers Crossing",HOPPERS CROSSING,3029,-37.85552,144.668869,330.0
 2441,16030127,Rent,$480,2022-08-09T14:50:56,House,Melton City - Greater Area,0.0,0.0,4.0,2.0,2,"51 Hoffman crescent, Truganina",TRUGANINA,3029,-37.8237152,144.715454,480.0
@@ -2520,7 +2520,7 @@
 2518,16033145,Rent,$370,2022-08-10T21:45:13,House,Wyndham City Council - Greater Area,0.0,0.0,3.0,1.0,2,"1 Murdoch Street, Hoppers Crossing",HOPPERS CROSSING,3029,-37.868390000000005,144.698837,370.0
 2519,16032699,Rent,$450,2022-08-10T16:12:33,House,Melton City - Greater Area,0.0,0.0,4.0,2.0,2,"15 Gilbee Road, Truganina",TRUGANINA,3029,-37.818805700000006,144.709778,450.0
 2520,16032016,Rent,$340.00,2022-08-10T13:10:22,House,Wyndham City Council - Greater Area,0.0,0.0,3.0,2.0,2,"97 Mossfiel Drive, Hoppers Crossing",HOPPERS CROSSING,3029,-37.86975,144.69061299999998,340.0
-2521,16032009,Rent,$ 440 PER WEEK,2022-08-10T13:07:29,House,Wyndham City Council - Greater Area,0.0,0.0,4.0,2.0,2,"31 Bindi Avenue, Tarneit",TARNEIT,3029,-37.8372765,144.643631,440.0
+2521,16032009,Rent,$ 440 PER WEEK,2022-08-10T13:07:29,House,Wyndham City Council - Greater Area,0.0,0.0,4.0,2.0,2,"31 Bindi Avenue, Tarneit",TARNEIT,3029,-37.8372765,144.643631,
 2522,16032000,Rent,$390.00 per week,2022-08-10T13:04:30,House,Wyndham City Council - Greater Area,0.0,0.0,3.0,2.0,1,"3 Cheer Terrace, Tarneit",TARNEIT,3029,-37.8307076,144.66751100000002,390.0
 2523,16030849,Rent,$460,2022-08-09T17:26:32,House,Melton City - Greater Area,0.0,0.0,4.0,2.0,2,"13 Angaston Way, Truganina",TRUGANINA,3029,-37.84737,144.741226,460.0
 2524,16030538,Rent,$340 per week,2022-08-09T16:11:26,House,Wyndham City Council - Greater Area,0.0,0.0,3.0,1.0,1,"135 Heaths Road, Hoppers Crossing",HOPPERS CROSSING,3029,-37.87896,144.693512,340.0
@@ -2569,7 +2569,7 @@
 2567,15650347,Rent,$440,2022-03-16T15:41:23,House,Melton City - Greater Area,0.0,0.0,4.0,2.0,2,"12 Bodmin Court, Truganina",TRUGANINA,3029,-37.8629,144.723816,440.0
 2568,15677812,Rent,$450,2022-01-25T15:39:06,House,Wyndham City Council - Greater Area,0.0,0.0,4.0,2.0,4,Tarneit,TARNEIT,3029,-37.809166,144.6672,450.0
 2569,15426308,Rent,$375 Per Week,2021-10-05T11:07:46,House,Wyndham City Council - Greater Area,0.0,0.0,3.0,2.0,2,"41 Luster Crescent, Tarneit",TARNEIT,3029,-37.82986,144.675934,375.0
-2570,15417387,Rent,Rent2own with No Deposit,2021-09-30T12:18:17,House,Melton City - Greater Area,0.0,0.0,4.0,2.0,2,Truganina,TRUGANINA,3029,-37.816574100000004,144.75006100000002,2.0
+2570,15417387,Rent,Rent2own with No Deposit,2021-09-30T12:18:17,House,Melton City - Greater Area,0.0,0.0,4.0,2.0,2,Truganina,TRUGANINA,3029,-37.816574100000004,144.75006100000002,
 2571,15364166,Rent,$360,2021-09-03T13:27:12,House,Wyndham City Council - Greater Area,0.0,0.0,4.0,2.0,2,"182 Heaths Road, Hoppers Crossing",HOPPERS CROSSING,3029,-37.87788,144.688858,360.0
 2572,15349401,Rent,$380,2021-08-27T09:10:40,House,Melton City - Greater Area,0.0,0.0,3.0,2.0,2,"23 Higgins Way, Truganina",TRUGANINA,3029,-37.860313399999995,144.73005700000002,380.0
 2573,15349000,Rent,$410,2021-08-26T18:10:21,House,Melton City - Greater Area,0.0,0.0,4.0,2.0,2,"7 Yates Street, Truganina",TRUGANINA,3029,-37.85934,144.725433,410.0
@@ -2578,9 +2578,9 @@
 2576,14956493,Rent,Why Rent When You Can Buy. Rent to Own Today,2021-07-05T16:27:39,House,Wyndham City Council - Greater Area,0.0,0.0,4.0,2.0,2,Tarneit,TARNEIT,3029,-37.809166,144.6672,
 2577,15169228,Rent,$650,2021-06-05T13:30:26,House,Melton City - Greater Area,0.0,0.0,4.0,3.0,2,"8 Latitude Promenade, Truganina",TRUGANINA,3029,-37.83509,144.710052,650.0
 2578,14997360,Rent,No Deposit Required,2021-05-19T14:51:44,House,Wyndham City Council - Greater Area,249.0,302.0,4.0,2.0,2,Tarneit,TARNEIT,3029,-37.824886299999996,144.678253,
-2579,15118666,Rent,Rent2own with No Deposit,2021-05-13T10:30:45,House,Wyndham City Council - Greater Area,0.0,0.0,4.0,2.0,2,Tarneit,TARNEIT,3029,-37.8250351,144.67846699999998,2.0
-2580,15032017,Rent,420,2021-04-07T15:17:34,House,Wyndham City Council - Greater Area,0.0,0.0,4.0,2.0,2,"5 Bindi Avenue, Tarneit",TARNEIT,3029,-37.838640000000005,144.6436,420.0
-2581,14987610,Rent,Rent2own with No Deposit,2021-03-16T18:43:48,House,Melton City - Greater Area,0.0,0.0,4.0,2.0,2,Truganina,TRUGANINA,3029,-37.816574100000004,144.75006100000002,2.0
+2579,15118666,Rent,Rent2own with No Deposit,2021-05-13T10:30:45,House,Wyndham City Council - Greater Area,0.0,0.0,4.0,2.0,2,Tarneit,TARNEIT,3029,-37.8250351,144.67846699999998,
+2580,15032017,Rent,420,2021-04-07T15:17:34,House,Wyndham City Council - Greater Area,0.0,0.0,4.0,2.0,2,"5 Bindi Avenue, Tarneit",TARNEIT,3029,-37.838640000000005,144.6436,
+2581,14987610,Rent,Rent2own with No Deposit,2021-03-16T18:43:48,House,Melton City - Greater Area,0.0,0.0,4.0,2.0,2,Truganina,TRUGANINA,3029,-37.816574100000004,144.75006100000002,
 2582,14559229,Rent,$380.00 per week,2020-09-23T20:00:10,House,Wyndham City Council - Greater Area,0.0,0.0,4.0,2.0,2,"70 Mercantour Boulevard, Tarneit",TARNEIT,3029,-37.8403053,144.6657,380.0
 2583,13767769,Rent,$150,2020-05-30T19:48:07,House,Wyndham City Council - Greater Area,0.0,0.0,1.0,2.0,0,Hoppers Crossing,HOPPERS CROSSING,3029,-37.8629036,144.68545500000002,150.0
 2584,10955442,Rent,$550 per week,2019-04-30T13:46:14,Townhouse,Melton City - Greater Area,0.0,0.0,4.0,2.0,4,"244B SAYERS ROAD, Truganina",TRUGANINA,3029,-37.85326,144.740875,550.0
@@ -2598,11 +2598,11 @@
 2596,16053229,Rent,$400 pw,2022-08-23T13:32:30,House,Wyndham City Council - Greater Area,0.0,0.0,3.0,2.0,2,"45 Hope Way, Tarneit",TARNEIT,3029,-37.863205,144.65661599999999,400.0
 2597,13965064,Rent,$340,2022-08-22T11:10:11,House,Wyndham City Council - Greater Area,0.0,0.0,3.0,1.0,1,"15 Scherbourg Place, Hoppers Crossing",HOPPERS CROSSING,3029,-37.85486220000001,144.674271,340.0
 2598,16046654,Rent,$360,2022-08-18T16:10:32,ApartmentUnitFlat,Wyndham City Council - Greater Area,0.0,0.0,3.0,2.0,1,"2/7 Greenleaf Circuit, Tarneit",TARNEIT,3029,-37.85893,144.662491,360.0
-2599,15181339,Rent,380PW,2022-08-14T21:31:08,ApartmentUnitFlat,Melton City - Greater Area,0.0,0.0,3.0,2.0,2,"1/7 GASCOYNE WAY, Truganina",TRUGANINA,3029,-37.846070000000005,144.723984,380.0
+2599,15181339,Rent,380PW,2022-08-14T21:31:08,ApartmentUnitFlat,Melton City - Greater Area,0.0,0.0,3.0,2.0,2,"1/7 GASCOYNE WAY, Truganina",TRUGANINA,3029,-37.846070000000005,144.723984,
 2600,16031164,Rent,$480,2022-08-10T09:23:03,House,Wyndham City Council - Greater Area,0.0,0.0,4.0,2.0,4,"41 laflin avenue, Tarneit",TARNEIT,3029,-37.835346200000004,144.6484,480.0
 2601,16026634,Rent,$450,2022-08-08T10:11:31,House,Melton City - Greater Area,0.0,0.0,4.0,2.0,2,"15 Aquarius Street, Truganina",TRUGANINA,3029,-37.8325729,144.721436,450.0
 2602,16020184,Rent,$480,2022-08-03T13:56:46,House,Wyndham City Council - Greater Area,0.0,0.0,4.0,2.0,2,"14 Thwaites Road, Tarneit",TARNEIT,3029,-37.8378,144.67115800000002,480.0
-2603,16059476,Rent,410,2022-08-26T13:31:24,House,Wyndham City Council - Greater Area,0.0,0.0,3.0,2.0,4,"5 LORENA CLOSE, Hoppers Crossing",HOPPERS CROSSING,3029,-37.87514,144.669647,410.0
+2603,16059476,Rent,410,2022-08-26T13:31:24,House,Wyndham City Council - Greater Area,0.0,0.0,3.0,2.0,4,"5 LORENA CLOSE, Hoppers Crossing",HOPPERS CROSSING,3029,-37.87514,144.669647,
 2604,15161766,Rent,$380.00 per week,2022-08-26T11:10:47,House,Melton City - Greater Area,0.0,0.0,3.0,2.0,2,"18 Sarette Retreat, Truganina",TRUGANINA,3029,-37.845535299999995,144.7411,380.0
 2605,16058927,Rent,$445,2022-08-26T10:42:25,House,Wyndham City Council - Greater Area,0.0,0.0,5.0,2.0,2,"10 Fairway Ave, Hoppers Crossing",HOPPERS CROSSING,3029,-37.883152,144.694046,445.0
 2606,16058840,Rent,$580 Per Week,2022-08-26T10:15:27,House,Melton City - Greater Area,0.0,0.0,5.0,5.0,2,"29 Joanne Drive, Truganina",TRUGANINA,3029,-37.823609999999995,144.707565,580.0
@@ -2682,10 +2682,10 @@
 2680,14255476,Rent,$410,2020-05-21T14:46:17,House,Wyndham City Council - Greater Area,0.0,0.0,4.0,2.0,2,"26 Cecil Rd, Tarneit",TARNEIT,3029,-37.809166,144.6672,410.0
 2681,14069972,Rent,$360.00,2020-03-10T13:34:22,House,Wyndham City Council - Greater Area,0.0,0.0,4.0,2.0,2,"4 Flower Gum Crescent, Tarneit",TARNEIT,3029,-37.862224600000005,144.657227,360.0
 2682,12544827,Rent,$400,2018-08-29T10:32:55,House,Wyndham City Council - Greater Area,0.0,0.0,3.0,2.0,1,"39 Bethany road, Hoppers Crossing",HOPPERS CROSSING,3029,-37.8576279,144.6785,400.0
-2683,16054167,Rent,420pw,2022-08-23T17:22:37,House,Wyndham City Council - Greater Area,0.0,0.0,4.0,2.0,2,"25 Living Cres, Point Cook",POINT COOK,3030,-37.910823799999996,144.763367,420.0
+2683,16054167,Rent,420pw,2022-08-23T17:22:37,House,Wyndham City Council - Greater Area,0.0,0.0,4.0,2.0,2,"25 Living Cres, Point Cook",POINT COOK,3030,-37.910823799999996,144.763367,
 2684,16005212,Rent,$475,2022-07-26T09:48:44,House,Wyndham City Council - Greater Area,0.0,0.0,4.0,2.0,2,"64 Tristania Drive, Point Cook",POINT COOK,3030,-37.90569,144.759613,475.0
 2685,16061400,Rent,$400 pw,2022-08-29T12:14:18,House,Wyndham City Council - Greater Area,0.0,0.0,4.0,2.0,2,"66 Powlett Street, Werribee",WERRIBEE,3030,-37.9212952,144.645126,400.0
-2686,16064132,Rent,390.00,2022-08-30T14:26:23,House,Wyndham City Council - Greater Area,0.0,0.0,4.0,2.0,0,"18 Wagner, Werribee",WERRIBEE,3030,-37.9172249,144.636032,3900.0
+2686,16064132,Rent,390.00,2022-08-30T14:26:23,House,Wyndham City Council - Greater Area,0.0,0.0,4.0,2.0,0,"18 Wagner, Werribee",WERRIBEE,3030,-37.9172249,144.636032,
 2687,16064062,Rent,$380 Per Week,2022-08-30T14:06:55,House,Wyndham City Council - Greater Area,0.0,0.0,4.0,2.0,2,"68 Dawley Circuit, Werribee",WERRIBEE,3030,-37.911640000000006,144.60379,380.0
 2688,16063527,Rent,$480 per week,2022-08-30T11:57:11,House,Wyndham City Council - Greater Area,0.0,0.0,3.0,2.0,4,"20 Deutgam Street, Werribee",WERRIBEE,3030,-37.908229999999996,144.655975,480.0
 2689,16063317,Rent,$450 per week,2022-08-30T11:06:47,House,Wyndham City Council - Greater Area,0.0,0.0,3.0,2.0,2,"17 Kasem Drive, Werribee",WERRIBEE,3030,-37.8799744,144.6528,450.0
@@ -2787,7 +2787,7 @@
 2785,16043655,Rent,$370 per week,2022-08-17T14:36:37,House,Wyndham City Council - Greater Area,0.0,0.0,3.0,2.0,2,"17 Danube Drive, Werribee",WERRIBEE,3030,-37.8802719,144.658325,370.0
 2786,16042948,Rent,$490 per week,2022-08-17T11:29:20,House,Wyndham City Council - Greater Area,0.0,0.0,4.0,2.0,2,"9 Magnetic Avenue, Point Cook",POINT COOK,3030,-37.90396,144.739273,490.0
 2787,16042061,Rent,$510 per week,2022-08-16T16:58:30,House,Wyndham City Council - Greater Area,0.0,0.0,4.0,2.0,2,"55 Miles Franklin Boulevard, Point Cook",POINT COOK,3030,-37.88686,144.727173,510.0
-2788,16041967,Rent,$ 380 Per Week,2022-08-16T16:32:34,House,Wyndham City Council - Greater Area,0.0,0.0,3.0,2.0,2,"57 Showbridge Way, Werribee",WERRIBEE,3030,-37.9111,144.60054,380.0
+2788,16041967,Rent,$ 380 Per Week,2022-08-16T16:32:34,House,Wyndham City Council - Greater Area,0.0,0.0,3.0,2.0,2,"57 Showbridge Way, Werribee",WERRIBEE,3030,-37.9111,144.60054,
 2789,16041243,Rent,LEASED,2022-08-16T13:45:03,House,Wyndham City Council - Greater Area,0.0,0.0,4.0,2.0,2,"17 Independence Avenue, Point Cook",POINT COOK,3030,-37.90876,144.745956,
 2790,16041102,Rent,$450.00 per week,2022-08-16T13:08:55,House,Wyndham City Council - Greater Area,0.0,0.0,4.0,2.0,2,"28 Beatrix Street, Point Cook",POINT COOK,3030,-37.90285,144.760559,450.0
 2791,16040871,Rent,$500 weekly,2022-08-16T12:07:17,House,Wyndham City Council - Greater Area,0.0,0.0,4.0,2.0,2,"12 Oakridge Street, Point Cook",POINT COOK,3030,-37.9147835,144.78741499999998,500.0
@@ -2821,7 +2821,7 @@
 2819,16018452,Rent,$600 Per Week,2022-08-02T16:35:49,House,Wyndham City Council - Greater Area,0.0,0.0,4.0,2.0,2,"2 The Breezewater, Point Cook",POINT COOK,3030,-37.887344399999996,144.77200000000002,600.0
 2820,16018218,Rent,$420.00 per week,2022-08-02T15:40:26,House,Wyndham City Council - Greater Area,0.0,0.0,4.0,2.0,2,"65 Glastonbury Circuit, Point Cook",POINT COOK,3030,-37.88945770000001,144.750259,420.0
 2821,16015474,Rent,$470 per week,2022-08-01T14:42:12,House,Wyndham City Council - Greater Area,0.0,0.0,4.0,2.0,2,"50 Palmer Avenue, Point Cook",POINT COOK,3030,-37.89396,144.73551899999998,470.0
-2822,16013537,Rent,$ 410 PER WEEK,2022-07-29T16:56:30,House,Wyndham City Council - Greater Area,0.0,0.0,3.0,2.0,2,"9 Rosario Walk, Point Cook",POINT COOK,3030,-37.88391,144.714325,410.0
+2822,16013537,Rent,$ 410 PER WEEK,2022-07-29T16:56:30,House,Wyndham City Council - Greater Area,0.0,0.0,3.0,2.0,2,"9 Rosario Walk, Point Cook",POINT COOK,3030,-37.88391,144.714325,
 2823,16013190,Rent,$320 per week,2022-07-29T15:33:13,House,Wyndham City Council - Greater Area,0.0,0.0,3.0,1.0,3,"1 Muirhead Crescent, Werribee",WERRIBEE,3030,-37.895546,144.65631100000002,320.0
 2824,16011373,Rent,$295,2022-07-28T16:33:57,Studio,Wyndham City Council - Greater Area,0.0,0.0,1.0,1.0,0,"13 Austin Street, Werribee",WERRIBEE,3030,-37.89571,144.6624,295.0
 2825,16011208,Rent,$480 per week,2022-07-28T15:57:10,House,Wyndham City Council - Greater Area,0.0,0.0,4.0,2.0,2,"71 Lincolnheath Boulevard, Point Cook",POINT COOK,3030,-37.902504,144.747772,480.0
@@ -2854,13 +2854,13 @@
 2852,15933823,Rent,$370,2022-06-14T16:50:24,Townhouse,Wyndham City Council - Greater Area,0.0,0.0,4.0,2.0,0,"8 Rathdowne Road, Werribee",WERRIBEE,3030,-37.8991852,144.595245,370.0
 2853,15899998,Rent,Under Application,2022-05-24T13:43:08,House,Wyndham City Council - Greater Area,0.0,0.0,4.0,4.0,2,"3 Attadale Avenue, Werribee",WERRIBEE,3030,-37.8996277,144.599854,
 2854,15891729,Rent,$400 per week,2022-05-18T17:04:04,ApartmentUnitFlat,Wyndham City Council - Greater Area,0.0,0.0,4.0,2.0,2,"2/33 Cormorant Crescent, Werribee",WERRIBEE,3030,-37.89154,144.678253,400.0
-2855,15871433,Rent,410.00,2022-05-06T12:06:15,House,Wyndham City Council - Greater Area,0.0,0.0,4.0,2.0,2,"9 Shield Road, Point Cook",POINT COOK,3030,-37.902706099999996,144.733337,4100.0
+2855,15871433,Rent,410.00,2022-05-06T12:06:15,House,Wyndham City Council - Greater Area,0.0,0.0,4.0,2.0,2,"9 Shield Road, Point Cook",POINT COOK,3030,-37.902706099999996,144.733337,
 2856,15837496,Rent,$380,2022-04-14T10:31:36,Townhouse,Wyndham City Council - Greater Area,0.0,0.0,2.0,2.0,1,"24 Tamarind Crescent, Werribee",WERRIBEE,3030,-37.88843,144.665863,380.0
 2857,15836509,Rent,$320,2022-04-13T15:29:21,House,Wyndham City Council - Greater Area,0.0,0.0,3.0,2.0,2,"85 Duncans Road, Werribee",WERRIBEE,3030,-37.9083748,144.674133,320.0
 2858,15803640,Rent,$600 per week,2022-03-25T13:17:27,House,Wyndham City Council - Greater Area,0.0,0.0,4.0,2.0,2,"29 Bondi Parade, Point Cook",POINT COOK,3030,-37.90587,144.7752,600.0
 2859,15794007,Rent,$350,2022-03-21T14:56:40,House,Wyndham City Council - Greater Area,0.0,0.0,3.0,2.0,1,"13 Wavish Court, Werribee",WERRIBEE,3030,-37.881588,144.669983,350.0
 2860,15695519,Rent,$390 weekly,2022-03-21T11:09:44,House,Wyndham City Council - Greater Area,0.0,0.0,4.0,2.0,2,"12 Flatbush Avenue, Point Cook",POINT COOK,3030,-37.8885231,144.710587,390.0
-2861,15692394,Rent,Rent2own with No Deposit,2022-02-01T13:51:21,House,Wyndham City Council - Greater Area,0.0,0.0,4.0,2.0,2,Point Cook,POINT COOK,3030,-37.908638,144.752228,2.0
+2861,15692394,Rent,Rent2own with No Deposit,2022-02-01T13:51:21,House,Wyndham City Council - Greater Area,0.0,0.0,4.0,2.0,2,Point Cook,POINT COOK,3030,-37.908638,144.752228,
 2862,15515142,Rent,$465 Per Week,2021-11-09T15:10:19,House,Wyndham City Council - Greater Area,0.0,0.0,4.0,2.0,2,"16 Baltimore Drive, Point Cook",POINT COOK,3030,-37.882534,144.727646,465.0
 2863,15468451,Rent,$430 PER WEEK,2021-10-21T10:58:51,House,Wyndham City Council - Greater Area,0.0,0.0,4.0,2.0,2,"8 Lenox Walk, Point Cook",POINT COOK,3030,-37.879329999999996,144.718658,430.0
 2864,15335243,Rent,$420,2021-08-19T18:30:14,House,Wyndham City Council - Greater Area,0.0,0.0,4.0,2.0,2,"12 Sorrenberg Street, Point Cook",POINT COOK,3030,-37.9164467,144.784821,420.0
@@ -3072,9 +3072,9 @@
 3070,15990904,Rent,$500,2022-07-18T12:43:04,Townhouse,Melbourne City Council - Greater Area,0.0,0.0,3.0,1.0,1,"36 Maloney Street, Kensington",KENSINGTON,3031,-37.78907,144.928,500.0
 3071,15979567,Rent,$450,2022-07-11T14:50:25,House,Melbourne City Council - Greater Area,0.0,0.0,2.0,1.0,0,"71 Flemington Street, Flemington",FLEMINGTON,3031,-37.7817459,144.933929,450.0
 3072,15973362,Rent,$680,2022-07-07T08:28:27,House,Melbourne City Council - Greater Area,0.0,0.0,2.0,1.0,0,"3 Finsbury Street, Flemington",FLEMINGTON,3031,-37.78556,144.92893999999998,680.0
-3073,8672749,Rent,$1190pw Stay 1 mth,2018-09-20T14:23:08,ApartmentUnitFlat,Melbourne City Council - Greater Area,0.0,0.0,1.0,1.0,1,"100/600 Epsom Road, Flemington",FLEMINGTON,3031,-37.78865,144.9214,11901.0
+3073,8672749,Rent,$1190pw Stay 1 mth,2018-09-20T14:23:08,ApartmentUnitFlat,Melbourne City Council - Greater Area,0.0,0.0,1.0,1.0,1,"100/600 Epsom Road, Flemington",FLEMINGTON,3031,-37.78865,144.9214,1190.0
 3074,16064932,Rent,$500,2022-08-30T17:36:30,House,Monash Valley City Council - Greater Area,0.0,0.0,2.0,1.0,0,"220 Ascot Vale Road, Ascot Vale",ASCOT VALE,3032,-37.77639,144.923523,500.0
-3075,14989099,Rent,$ 410,2022-08-30T11:45:59,ApartmentUnitFlat,Maribyrnong City Council - Greater Area,0.0,0.0,2.0,1.0,1,"16F/54 La Scala Avenue, Maribyrnong",MARIBYRNONG,3032,-37.78097,144.8939,410.0
+3075,14989099,Rent,$ 410,2022-08-30T11:45:59,ApartmentUnitFlat,Maribyrnong City Council - Greater Area,0.0,0.0,2.0,1.0,1,"16F/54 La Scala Avenue, Maribyrnong",MARIBYRNONG,3032,-37.78097,144.8939,
 3076,16057716,Rent,$340,2022-08-25T14:40:33,ApartmentUnitFlat,Maribyrnong City Council - Greater Area,0.0,0.0,2.0,1.0,1,"104/7 Ordnance Reserve, Maribyrnong",MARIBYRNONG,3032,-37.77047,144.879883,340.0
 3077,16052047,Rent,$300,2022-08-23T08:51:31,ApartmentUnitFlat,Monash Valley City Council - Greater Area,0.0,0.0,1.0,1.0,1,"1/28 Ormond Road, Ascot Vale",ASCOT VALE,3032,-37.773067499999996,144.9303,300.0
 3078,16032185,Rent,$440 per week,2022-08-10T14:04:01,ApartmentUnitFlat,Maribyrnong City Council - Greater Area,0.0,0.0,2.0,2.0,1,"202/41-45 Edgewater Boulevard, Maribyrnong",MARIBYRNONG,3032,-37.78491210000001,144.894455,440.0
@@ -3513,7 +3513,7 @@
 3511,10535181,Rent,$410,2022-08-12T14:48:11,Villa,Monash Valley City Council - Greater Area,0.0,0.0,2.0,1.0,1,"3/21 Ballater Street, Essendon",ESSENDON,3040,-37.7487831,144.90458700000002,410.0
 3512,15035265,Rent,$450/week,2022-08-22T16:34:56,Townhouse,Monash Valley City Council - Greater Area,0.0,0.0,2.0,2.0,1,"6/181-183 Buckley Street, Essendon",ESSENDON,3040,-37.756553600000004,144.909988,450.0
 3513,16049557,Rent,$420 pw,2022-08-22T02:08:30,Townhouse,Monash Valley City Council - Greater Area,0.0,0.0,2.0,2.0,1,"5/2 Clarinda Street, Essendon",ESSENDON,3040,-37.75662,144.90921,420.0
-3514,16013497,Rent,350,2022-07-29T16:48:04,ApartmentUnitFlat,Monash Valley City Council - Greater Area,0.0,0.0,1.0,1.0,1,"219/1044 Mount Alexander Road, Essendon",ESSENDON,3040,-37.7487679,144.913773,350.0
+3514,16013497,Rent,350,2022-07-29T16:48:04,ApartmentUnitFlat,Monash Valley City Council - Greater Area,0.0,0.0,1.0,1.0,1,"219/1044 Mount Alexander Road, Essendon",ESSENDON,3040,-37.7487679,144.913773,
 3515,15144821,Rent,$320 per week,2022-07-18T11:27:49,ApartmentUnitFlat,Monash Valley City Council - Greater Area,0.0,0.0,1.0,1.0,0,"105/19 Russell Street, Essendon",ESSENDON,3040,-37.756313299999995,144.91683999999998,320.0
 3516,15907790,Rent,$460 per week,2022-05-29T10:06:15,Townhouse,Monash Valley City Council - Greater Area,0.0,0.0,2.0,1.0,1,"3/5 Donald Avenue, Essendon",ESSENDON,3040,-37.75317379999999,144.93246499999998,460.0
 3517,14529998,Rent,$450,2021-09-12T21:26:13,ApartmentUnitFlat,Monash Valley City Council - Greater Area,0.0,0.0,1.0,1.0,1,"413/40 Hall St, Essendon",ESSENDON,3040,-37.76574,144.920837,450.0
@@ -3545,7 +3545,7 @@
 3543,15993305,Rent,$375 weekly,2022-07-19T12:14:44,Townhouse,Monash Valley City Council - Greater Area,0.0,0.0,2.0,1.0,2,"Rear 1 Melissa St, Strathmore",STRATHMORE,3041,-37.731120000000004,144.91777,375.0
 3544,15989721,Rent,$360.00 per week,2022-07-16T11:11:17,ApartmentUnitFlat,Monash Valley City Council - Greater Area,0.0,0.0,2.0,1.0,1,"2/11 Merchiston Grove, Strathmore",STRATHMORE,3041,-37.740844700000004,144.91194199999998,360.0
 3545,15964550,Rent,$550.00,2022-07-01T13:18:22,House,Monash Valley City Council - Greater Area,0.0,0.0,3.0,2.0,2,"64 Lebanon St, Strathmore",STRATHMORE,3041,-37.727504700000004,144.91626000000002,550.0
-3546,15952035,Rent,$400.00pw/1738.00pcm,2022-06-24T10:20:15,ApartmentUnitFlat,Monash Valley City Council - Greater Area,0.0,0.0,2.0,1.0,1,"1/369 Napier Street, Strathmore",STRATHMORE,3041,-37.732082399999996,144.918549,4001738.0
+3546,15952035,Rent,$400.00pw/1738.00pcm,2022-06-24T10:20:15,ApartmentUnitFlat,Monash Valley City Council - Greater Area,0.0,0.0,2.0,1.0,1,"1/369 Napier Street, Strathmore",STRATHMORE,3041,-37.732082399999996,144.918549,400.0
 3547,15923465,Rent,$400pw/$1738pcm,2022-06-07T16:25:16,House,Monash Valley City Council - Greater Area,0.0,0.0,3.0,1.0,2,"35 Brosnan Crescent, Strathmore",STRATHMORE,3041,-37.724552200000005,144.9179,400.0
 3548,15523411,Rent,$650pw / $2824pcm,2021-11-12T09:30:03,House,Monash Valley City Council - Greater Area,0.0,0.0,3.0,2.0,2,"14 Bruce Street, Strathmore",STRATHMORE,3041,-37.7410126,144.916077,650.0
 3549,15455993,Rent,$560,2021-10-16T18:56:30,ApartmentUnitFlat,Monash Valley City Council - Greater Area,0.0,0.0,2.0,1.0,1,"C2/64-66 Keilor Road, Essendon North",ESSENDON NORTH,3041,-37.74268,144.906586,560.0
@@ -3559,7 +3559,7 @@
 3557,16016558,Rent,$710 per week,2022-08-02T09:16:43,House,Monash Valley City Council - Greater Area,0.0,0.0,3.0,2.0,2,"1 Irving Street, Niddrie",NIDDRIE,3042,-37.73537,144.89064,710.0
 3558,16063355,Rent,$600 per week,2022-08-30T11:16:56,ApartmentUnitFlat,Monash Valley City Council - Greater Area,0.0,0.0,3.0,2.0,0,"601A Keilor Road, Niddrie",NIDDRIE,3042,-37.73258,144.879013,600.0
 3559,16060475,Rent,$360 PW,2022-08-27T07:46:24,ApartmentUnitFlat,Monash Valley City Council - Greater Area,0.0,0.0,2.0,1.0,1,"18/16-20 Laurence Avenue, Airport West",AIRPORT WEST,3042,-37.728508000000005,144.8784,360.0
-3560,16060317,Rent,$509.98,2022-08-26T17:24:37,Townhouse,Monash Valley City Council - Greater Area,0.0,0.0,3.0,2.0,1,"3/42 Carrington Road, Niddrie",NIDDRIE,3042,-37.7371635,144.887543,50998.0
+3560,16060317,Rent,$509.98,2022-08-26T17:24:37,Townhouse,Monash Valley City Council - Greater Area,0.0,0.0,3.0,2.0,1,"3/42 Carrington Road, Niddrie",NIDDRIE,3042,-37.7371635,144.887543,509.0
 3561,16042776,Rent,$580.00,2022-08-17T10:43:18,House,Monash Valley City Council - Greater Area,0.0,0.0,3.0,2.0,2,"1/68 Bowes Avenue, Airport West",AIRPORT WEST,3042,-37.728609999999996,144.885483,580.0
 3562,15191123,Rent,$430 per week,2022-08-12T12:04:55,Townhouse,Monash Valley City Council - Greater Area,0.0,0.0,3.0,2.0,1,"4A Sexton St, Airport West",AIRPORT WEST,3042,-37.718090000000004,144.88098100000002,430.0
 3563,11664799,Rent,$900 per week,2022-08-11T12:06:28,Townhouse,Monash Valley City Council - Greater Area,0.0,0.0,4.0,3.0,1,"30 Carrington Rd, Niddrie",NIDDRIE,3042,-37.73737,144.88858000000002,900.0
@@ -3614,10 +3614,10 @@
 3612,16054159,Rent,"$500.00 PW / $2,173.00 PCM",2022-08-23T17:19:48,House,Hume City Council - Greater Area,0.0,0.0,3.0,1.0,2,"7 Forest Court, Gladstone Park",GLADSTONE PARK,3043,-37.684,144.88995400000002,500.0
 3613,16024633,Rent,$550,2022-08-05T11:34:23,House,Brimbank City Council - Greater Area,0.0,0.0,3.0,1.0,2,"6 Birch Avenue, Tullamarine",TULLAMARINE,3043,-37.70762,144.881958,550.0
 3614,16058786,Rent,$460PW | $1999.00,2022-08-26T10:02:20,House,Brimbank City Council - Greater Area,0.0,0.0,3.0,1.0,2,"16 Fisher Grove, Tullamarine",TULLAMARINE,3043,-37.70534,144.870651,460.0
-3615,16051724,Rent,$450PW | 1955PCM,2022-08-22T17:32:12,House,Brimbank City Council - Greater Area,0.0,0.0,3.0,1.0,1,"10 Jillian Street, Tullamarine",TULLAMARINE,3043,-37.699337,144.873825,4501955.0
+3615,16051724,Rent,$450PW | 1955PCM,2022-08-22T17:32:12,House,Brimbank City Council - Greater Area,0.0,0.0,3.0,1.0,1,"10 Jillian Street, Tullamarine",TULLAMARINE,3043,-37.699337,144.873825,450.0
 3616,16051672,Rent,$600PW | $2607PCM,2022-08-22T17:18:23,Townhouse,Brimbank City Council - Greater Area,0.0,0.0,3.0,3.0,2,"1/125 Melrose Drive, Tullamarine",TULLAMARINE,3043,-37.70649,144.8848,600.0
 3617,16035421,Rent,$470 pw,2022-08-12T09:28:35,House,Hume City Council - Greater Area,0.0,0.0,4.0,1.0,1,"60 South Circular Road, Gladstone Park",GLADSTONE PARK,3043,-37.691005700000005,144.887024,470.0
-3618,15268525,Rent,$400 PW / 1739.00 PCM,2022-08-02T09:52:27,House,Brimbank City Council - Greater Area,0.0,0.0,3.0,1.0,2,"10 Christopher Crescent, Tullamarine",TULLAMARINE,3043,-37.69964,144.877609,4001739.0
+3618,15268525,Rent,$400 PW / 1739.00 PCM,2022-08-02T09:52:27,House,Brimbank City Council - Greater Area,0.0,0.0,3.0,1.0,2,"10 Christopher Crescent, Tullamarine",TULLAMARINE,3043,-37.69964,144.877609,400.0
 3619,16014828,Rent,$395 pw,2022-08-01T12:03:00,House,Hume City Council - Greater Area,0.0,0.0,3.0,1.0,1,"8 Parnell Crescent, Gladstone Park",GLADSTONE PARK,3043,-37.69075,144.891754,395.0
 3620,16010921,Rent,$420 Per Week,2022-07-28T14:45:19,Townhouse,Brimbank City Council - Greater Area,0.0,0.0,2.0,1.0,2,"4/242 Melrose Drive, Tullamarine",TULLAMARINE,3043,-37.6955,144.877426,420.0
 3621,16007738,Rent,$430 weekly,2022-07-27T09:59:15,Townhouse,Brimbank City Council - Greater Area,0.0,0.0,2.0,1.0,1,"6/1 Gordon St, Tullamarine",TULLAMARINE,3043,-37.70702,144.875809,430.0
@@ -3742,7 +3742,7 @@
 3740,15307058,Rent,"$415 PW / $1,803 PCM",2022-08-30T11:36:33,House,Moreland City Council - Greater Area,0.0,0.0,2.0,1.0,1,"2/11 Apsley Street, Glenroy",GLENROY,3046,-37.708103200000004,144.92688,415.0
 3741,16063007,Rent,$395 per week,2022-08-30T09:37:36,ApartmentUnitFlat,Moreland City Council - Greater Area,0.0,0.0,2.0,1.0,1,"2/21 Melbourne Avenue, Glenroy",GLENROY,3046,-37.7050323,144.936615,395.0
 3742,16062992,Rent,"$500 PW / $2,173 PCM",2022-08-30T09:31:09,House,Moreland City Council - Greater Area,0.0,0.0,3.0,2.0,1,"23 Harold Street, Glenroy",GLENROY,3046,-37.7070847,144.925934,500.0
-3743,16062969,Rent,$400.00pw/1738.00pcm,2022-08-30T09:20:25,ApartmentUnitFlat,Moreland City Council - Greater Area,0.0,0.0,2.0,2.0,1,"4/8 Murrell Street, Glenroy",GLENROY,3046,-37.704093900000004,144.92068500000002,4001738.0
+3743,16062969,Rent,$400.00pw/1738.00pcm,2022-08-30T09:20:25,ApartmentUnitFlat,Moreland City Council - Greater Area,0.0,0.0,2.0,2.0,1,"4/8 Murrell Street, Glenroy",GLENROY,3046,-37.704093900000004,144.92068500000002,400.0
 3744,16062958,Rent,"$480 PW / $2,086 PCM",2022-08-30T09:16:12,Townhouse,Moreland City Council - Greater Area,0.0,0.0,3.0,2.0,1,"18 Coupling Way, Glenroy",GLENROY,3046,-37.6968346,144.9139,480.0
 3745,16062695,Rent,$470 per week,2022-08-29T17:29:33,Townhouse,Moreland City Council - Greater Area,0.0,0.0,3.0,1.0,2,"54 Hilton Street, Glenroy",GLENROY,3046,-37.70257,144.945251,470.0
 3746,13737397,Rent,$410 pw,2022-08-29T16:16:33,Townhouse,Moreland City Council - Greater Area,0.0,0.0,2.0,2.0,1,"2/14 York Street, Glenroy",GLENROY,3046,-37.70476,144.909851,410.0
@@ -3883,7 +3883,7 @@
 3881,15865389,Rent,$330 pw,2022-07-07T10:16:44,House,Hume City Council - Greater Area,0.0,0.0,3.0,1.0,1,"14 Colin Court, Broadmeadows",BROADMEADOWS,3047,-37.693302200000005,144.92408799999998,330.0
 3882,15972653,Rent,$310,2022-07-06T15:42:17,ApartmentUnitFlat,Hume City Council - Greater Area,0.0,0.0,2.0,1.0,1,"2/48 Geach Street, Dallas",DALLAS,3047,-37.673008,144.946091,310.0
 3883,15934922,Rent,$360 pw,2022-06-15T11:22:59,ApartmentUnitFlat,Hume City Council - Greater Area,0.0,0.0,2.0,1.0,1,"2/278 Camp Road, Broadmeadows",BROADMEADOWS,3047,-37.6868439,144.934448,360.0
-3884,15728585,Rent,345 PW / $1499 PCM,2022-02-16T15:26:24,Townhouse,Hume City Council - Greater Area,0.0,0.0,2.0,1.0,1,"2/375 Camp Road, Broadmeadows",BROADMEADOWS,3047,-37.6861153,144.925323,3451499.0
+3884,15728585,Rent,345 PW / $1499 PCM,2022-02-16T15:26:24,Townhouse,Hume City Council - Greater Area,0.0,0.0,2.0,1.0,1,"2/375 Camp Road, Broadmeadows",BROADMEADOWS,3047,-37.6861153,144.925323,1499.0
 3885,15702465,Rent,$320.00,2022-02-04T17:06:33,ApartmentUnitFlat,Hume City Council - Greater Area,0.0,0.0,2.0,1.0,1,"4/18-20 Ambrose Street, Dallas",DALLAS,3047,-37.6689224,144.945877,320.0
 3886,14369173,Rent,"$360 PW / $1,564 PCM",2020-07-08T09:58:18,Townhouse,Hume City Council - Greater Area,0.0,0.0,2.0,1.0,1,"2/24 Stanhope Street, Broadmeadows",BROADMEADOWS,3047,-37.68572,144.933289,360.0
 3887,13973849,Rent,$380 per week,2022-08-30T10:24:10,Villa,Hume City Council - Greater Area,0.0,0.0,3.0,1.0,1,"4/3 Alexander Court, Broadmeadows",BROADMEADOWS,3047,-37.69032670000001,144.9292,380.0
@@ -3928,7 +3928,7 @@
 3926,16061464,Rent,$400 pw,2022-08-29T12:26:32,ApartmentUnitFlat,Hume City Council - Greater Area,0.0,0.0,3.0,2.0,1,"18/4-16 Melaleuca Drive, Meadow Heights",MEADOW HEIGHTS,3048,-37.6465378,144.91503899999998,400.0
 3927,15231389,Rent,$500.00 pw,2022-08-23T14:33:16,Townhouse,Hume City Council - Greater Area,0.0,0.0,4.0,2.0,1,"59B Shankland Boulevard, Meadow Heights",MEADOW HEIGHTS,3048,-37.6465263,144.92305,500.0
 3928,16042238,Rent,$450 per week,2022-08-16T17:46:01,House,Hume City Council - Greater Area,0.0,0.0,4.0,2.0,2,"8 Colignan Court, Meadow Heights",MEADOW HEIGHTS,3048,-37.6548,144.925613,450.0
-3929,9019500,Rent,310PW,2022-08-16T17:16:57,House,Hume City Council - Greater Area,0.0,0.0,2.0,1.0,2,"2/16 Elgata Close, Meadow Heights",MEADOW HEIGHTS,3048,-37.6489754,144.9222,310.0
+3929,9019500,Rent,310PW,2022-08-16T17:16:57,House,Hume City Council - Greater Area,0.0,0.0,2.0,1.0,2,"2/16 Elgata Close, Meadow Heights",MEADOW HEIGHTS,3048,-37.6489754,144.9222,
 3930,16040567,Rent,$360 pw,2022-08-16T10:56:34,ApartmentUnitFlat,Hume City Council - Greater Area,0.0,0.0,3.0,2.0,1,"3/12 Shankland Boulevard, Meadow Heights",MEADOW HEIGHTS,3048,-37.64897,144.918686,360.0
 3931,16030364,Rent,$280 pw,2022-08-09T15:34:26,ApartmentUnitFlat,Hume City Council - Greater Area,0.0,0.0,1.0,1.0,0,"2/10 Glenmaggie Court, Meadow Heights",MEADOW HEIGHTS,3048,-37.658474,144.923141,280.0
 3932,12638161,Rent,"$1,690 pm",2022-06-28T12:31:31,House,Hume City Council - Greater Area,0.0,0.0,3.0,2.0,0,"9 Paltara Close, Meadow Heights",MEADOW HEIGHTS,3048,-37.64761,144.93066399999998,1690.0
@@ -4069,7 +4069,7 @@
 4067,13336355,Rent,$650,2019-06-25T13:51:06,House,Melbourne City Council - Greater Area,0.0,0.0,2.0,1.0,5,"137 Flemington Road, North Melbourne",NORTH MELBOURNE,3051,-37.7963028,144.95022600000001,650.0
 4068,15148071,Rent,$780,2022-08-23T11:22:58,ApartmentUnitFlat,Melbourne City Council - Greater Area,0.0,0.0,3.0,2.0,1,"12 Yates Lane, Parkville",PARKVILLE,3052,-37.7861633,144.9415,780.0
 4069,16034343,Rent,$450.00,2022-08-11T14:10:21,ApartmentUnitFlat,Melbourne City Council - Greater Area,0.0,0.0,2.0,1.0,0,"1/35 Morrah Street, Parkville",PARKVILLE,3052,-37.7958336,144.956329,450.0
-4070,15912140,Rent,780.00,2022-08-09T13:18:04,Townhouse,Melbourne City Council - Greater Area,0.0,0.0,3.0,2.0,1,"4/14 Yates Lane, Parkville",PARKVILLE,3052,-37.7861977,144.941422,7800.0
+4070,15912140,Rent,780.00,2022-08-09T13:18:04,Townhouse,Melbourne City Council - Greater Area,0.0,0.0,3.0,2.0,1,"4/14 Yates Lane, Parkville",PARKVILLE,3052,-37.7861977,144.941422,
 4071,16061715,Rent,$560.00,2022-08-29T13:31:03,ApartmentUnitFlat,Melbourne City Council - Greater Area,0.0,0.0,2.0,2.0,1,"406/459 Royal Parade, Parkville",PARKVILLE,3052,-37.7821846,144.95881699999998,560.0
 4072,16059504,Rent,$585.00,2022-08-26T13:40:10,Townhouse,Melbourne City Council - Greater Area,0.0,0.0,3.0,2.0,1,"17/517 Royal Parade, Parkville",PARKVILLE,3052,-37.7802544,144.959091,585.0
 4073,16046651,Rent,$520.00,2022-08-18T16:09:47,ApartmentUnitFlat,Melbourne City Council - Greater Area,0.0,0.0,2.0,2.0,1,"710/67 Galada Avenue, Parkville",PARKVILLE,3052,-37.77977,144.939377,520.0
@@ -4082,7 +4082,7 @@
 4080,16051207,Rent,$300pw/$1304pcm,2022-08-22T15:42:15,ApartmentUnitFlat,Melbourne City Council - Greater Area,0.0,0.0,1.0,1.0,1,"9/10-12 Lennon Street, Parkville",PARKVILLE,3052,-37.7865829,144.941177,300.0
 4081,16043834,Rent,$360 weekly,2022-08-17T15:17:25,ApartmentUnitFlat,Melbourne City Council - Greater Area,0.0,0.0,1.0,1.0,1,"316/445 Royal Parade, Parkville",PARKVILLE,3052,-37.782509999999995,144.958908,360.0
 4082,16055250,Rent,$380pw/$1651pcm,2022-08-24T13:01:03,ApartmentUnitFlat,Melbourne City Council - Greater Area,0.0,0.0,1.0,1.0,1,"5/495 Royal Parade, Parkville",PARKVILLE,3052,-37.781135600000006,144.95932,380.0
-4083,16042481,Rent,$ 480 per week,2022-08-17T09:13:46,ApartmentUnitFlat,Melbourne City Council - Greater Area,0.0,0.0,2.0,2.0,1,"904/91 Galada Avenue, Parkville",PARKVILLE,3052,-37.7786179,144.9393,480.0
+4083,16042481,Rent,$ 480 per week,2022-08-17T09:13:46,ApartmentUnitFlat,Melbourne City Council - Greater Area,0.0,0.0,2.0,2.0,1,"904/91 Galada Avenue, Parkville",PARKVILLE,3052,-37.7786179,144.9393,
 4084,13814750,Rent,$440 per week,2022-08-10T16:21:50,ApartmentUnitFlat,Melbourne City Council - Greater Area,0.0,0.0,2.0,1.0,1,"705/91 Galada, Parkville",PARKVILLE,3052,-37.7786179,144.9393,440.0
 4085,15211194,Rent,$450 per week,2022-08-10T16:15:44,ApartmentUnitFlat,Melbourne City Council - Greater Area,0.0,0.0,2.0,2.0,1,"804/91 Galada Avenue, Parkville",PARKVILLE,3052,-37.7786179,144.9393,450.0
 4086,16004473,Rent,$500.00,2022-07-25T17:29:24,Townhouse,Melbourne City Council - Greater Area,0.0,0.0,2.0,2.0,1,"104/94 Cade Way, Parkville",PARKVILLE,3052,-37.778490000000005,144.93911699999998,500.0
@@ -4092,7 +4092,7 @@
 4090,15967737,Rent,$350pw/$1521pcm,2022-07-04T15:20:51,ApartmentUnitFlat,Melbourne City Council - Greater Area,0.0,0.0,1.0,1.0,1,"5/361 Royal Parade, Parkville",PARKVILLE,3052,-37.7851372,144.958481,350.0
 4091,15952990,Rent,$625.00,2022-06-24T14:35:15,ApartmentUnitFlat,Melbourne City Council - Greater Area,0.0,0.0,3.0,1.0,1,"19/361 Royal Parade, Parkville",PARKVILLE,3052,-37.7851372,144.958481,625.0
 4092,15929509,Rent,$910.00,2022-06-10T13:36:07,Townhouse,Melbourne City Council - Greater Area,0.0,0.0,3.0,2.0,2,"1/38 Walker Street, Parkville",PARKVILLE,3052,-37.7843971,144.957886,910.0
-4093,15926516,Rent,$570 pw - Save Time View Our 3D Tour & Apply,2022-06-09T09:41:55,House,Melbourne City Council - Greater Area,0.0,0.0,2.0,1.0,1,"14 The Avenue, Parkville",PARKVILLE,3052,-37.7883339,144.957428,5703.0
+4093,15926516,Rent,$570 pw - Save Time View Our 3D Tour & Apply,2022-06-09T09:41:55,House,Melbourne City Council - Greater Area,0.0,0.0,2.0,1.0,1,"14 The Avenue, Parkville",PARKVILLE,3052,-37.7883339,144.957428,570.0
 4094,15851513,Rent,$485 PW / $2107 PCM,2022-04-26T12:13:49,ApartmentUnitFlat,Melbourne City Council - Greater Area,0.0,0.0,2.0,1.0,0,"8/196 The Avenue, Parkville",PARKVILLE,3052,-37.7829323,144.9575,485.0
 4095,14737377,Rent,$850pw / $3693pcm,2020-12-01T13:17:14,House,Melbourne City Council - Greater Area,0.0,0.0,3.0,1.0,0,"16 Morrah Street, Parkville",PARKVILLE,3052,-37.7955055,144.9572,850.0
 4096,12621694,Rent,$410.00,2018-10-02T14:24:29,ApartmentUnitFlat,Melbourne City Council - Greater Area,0.0,0.0,2.0,1.0,1,"210/77 Galada Avenue, Parkville",PARKVILLE,3052,-37.779334999999996,144.939056,410.0
@@ -4162,7 +4162,7 @@
 4160,8442039,Rent,From $250 per week,2013-07-04T15:57:17,ApartmentUnitFlat,Melbourne City Council - Greater Area,0.0,0.0,1.0,1.0,0,"131 Pelham Street, Carlton",CARLTON,3053,-37.8027,144.963852,250.0
 4161,16060229,Rent,$375 weekly,2022-08-26T16:55:12,ApartmentUnitFlat,Melbourne City Council - Greater Area,0.0,0.0,1.0,1.0,0,"802/613 Swanston Street, Carlton",CARLTON,3053,-37.8040237,144.963089,375.0
 4162,16052892,Rent,$720 per week,2022-08-23T12:02:20,ApartmentUnitFlat,Melbourne City Council - Greater Area,0.0,0.0,2.0,2.0,1,"2004/28 Bouverie Street, Carlton",CARLTON,3053,-37.80579,144.961823,720.0
-4163,15729770,Rent,$ 400 per week,2022-08-23T11:22:57,ApartmentUnitFlat,Melbourne City Council - Greater Area,0.0,0.0,1.0,1.0,1,"311/495 Rathdowne Street, Carlton",CARLTON,3053,-37.7941055,144.970718,400.0
+4163,15729770,Rent,$ 400 per week,2022-08-23T11:22:57,ApartmentUnitFlat,Melbourne City Council - Greater Area,0.0,0.0,1.0,1.0,1,"311/495 Rathdowne Street, Carlton",CARLTON,3053,-37.7941055,144.970718,
 4164,8567156,Rent,$360 per week,2022-08-19T16:53:10,ApartmentUnitFlat,Melbourne City Council - Greater Area,0.0,0.0,1.0,1.0,0,"1103/131 Pelham Street, Carlton",CARLTON,3053,-37.8027,144.963867,360.0
 4165,16048900,Rent,$350 Per Week,2022-08-19T16:21:04,House,Melbourne City Council - Greater Area,0.0,0.0,1.0,1.0,0,"1207/131 Pelham Street, Carlton",CARLTON,3053,-37.8027,144.963867,350.0
 4166,8529556,Rent,$330.00 per week,2022-08-19T10:44:31,ApartmentUnitFlat,Melbourne City Council - Greater Area,0.0,0.0,1.0,1.0,0,"205/255 Cardigan Street, Carlton",CARLTON,3053,-37.80073,144.965164,330.0
@@ -4252,7 +4252,7 @@
 4250,14413684,Rent,$400,2021-09-18T08:44:26,ApartmentUnitFlat,Melbourne City Council - Greater Area,0.0,0.0,2.0,1.0,1,"4/19 McIlwriath St, Carlton",CARLTON,3053,-37.7847176,144.967819,400.0
 4251,14102778,Rent,$590 Per Week Fully Furnished N Flexi Lease Term,2021-08-20T17:10:12,ApartmentUnitFlat,Melbourne City Council - Greater Area,0.0,0.0,2.0,2.0,1,"2207/551 Swanston Street, Carlton",CARLTON,3053,-37.80567,144.9623,590.0
 4252,15307932,Rent,$850/W Furnished,2021-08-05T17:56:08,ApartmentUnitFlat,Melbourne City Council - Greater Area,0.0,0.0,2.0,2.0,0,"4912/160 Victoria St, Carlton",CARLTON,3053,-37.806175200000006,144.961746,850.0
-4253,14941810,Rent,450 Furnished,2021-02-27T13:13:01,ApartmentUnitFlat,Melbourne City Council - Greater Area,0.0,0.0,2.0,1.0,0,"488 Swanston Street, Carlton",CARLTON,3053,-37.805755600000005,144.96324199999998,450.0
+4253,14941810,Rent,450 Furnished,2021-02-27T13:13:01,ApartmentUnitFlat,Melbourne City Council - Greater Area,0.0,0.0,2.0,1.0,0,"488 Swanston Street, Carlton",CARLTON,3053,-37.805755600000005,144.96324199999998,
 4254,14844678,Rent,$440 per week,2021-01-19T19:51:18,ApartmentUnitFlat,Melbourne City Council - Greater Area,0.0,0.0,2.0,1.0,0,"465/488 Swanston Street, Carlton",CARLTON,3053,-37.805755600000005,144.96324199999998,440.0
 4255,16063178,Rent,$500.00,2022-08-30T10:28:08,ApartmentUnitFlat,Melbourne City Council - Greater Area,0.0,0.0,2.0,1.0,1,"4/867-883 Drummond Street, Carlton North",CARLTON NORTH,3054,-37.78394,144.971024,500.0
 4256,16042646,Rent,$650,2022-08-17T10:07:27,House,Melbourne City Council - Greater Area,0.0,0.0,2.0,1.0,2,"461 Canning Street, Carlton North",CARLTON NORTH,3054,-37.78557,144.974625,650.0
@@ -4284,7 +4284,7 @@
 4282,16020614,Rent,$1150 PW / $6900 PCM,2022-08-03T15:30:12,House,Melbourne City Council - Greater Area,0.0,0.0,4.0,1.0,0,"459 Station Street, Carlton North",CARLTON NORTH,3054,-37.78577,144.9757,1150.0
 4283,16018530,Rent,$745.00 per week,2022-08-02T16:50:01,House,Melbourne City Council - Greater Area,0.0,0.0,3.0,1.0,0,"540 Canning Street, Carlton North",CARLTON NORTH,3054,-37.7842,144.975449,745.0
 4284,16018500,Rent,$690.00,2022-08-02T16:45:21,House,Melbourne City Council - Greater Area,0.0,0.0,2.0,1.0,0,"125 Newry Street, Carlton North",CARLTON NORTH,3054,-37.7898979,144.97113000000002,690.0
-4285,16017159,Rent,"$1,100pw/$4,780pcm",2022-08-02T11:35:50,House,Melbourne City Council - Greater Area,0.0,0.0,5.0,2.0,0,"65 Wilson Street, Princes Hill",PRINCES HILL,3054,-37.78335,144.966492,110.0
+4285,16017159,Rent,"$1,100pw/$4,780pcm",2022-08-02T11:35:50,House,Melbourne City Council - Greater Area,0.0,0.0,5.0,2.0,0,"65 Wilson Street, Princes Hill",PRINCES HILL,3054,-37.78335,144.966492,1100.0
 4286,16013134,Rent,$500.00,2022-07-29T15:20:38,House,Melbourne City Council - Greater Area,0.0,0.0,2.0,1.0,0,"8 Hughes Street, Carlton North",CARLTON NORTH,3054,-37.78230670000001,144.971054,500.0
 4287,14501277,Rent,$425,2022-07-26T09:17:29,ApartmentUnitFlat,Melbourne City Council - Greater Area,0.0,0.0,2.0,1.0,1,"16/611 Drummond Street, Carlton North",CARLTON NORTH,3054,-37.790638,144.9699,425.0
 4288,15997081,Rent,$880.00,2022-07-20T17:36:41,House,Melbourne City Council - Greater Area,0.0,0.0,3.0,2.0,1,"670 Rathdowne Street, Carlton North",CARLTON NORTH,3054,-37.7815056,144.973633,880.0
@@ -4299,7 +4299,7 @@
 4297,15924224,Rent,$295 Per Week,2022-06-08T10:01:46,ApartmentUnitFlat,Melbourne City Council - Greater Area,0.0,0.0,1.0,1.0,0,"9/912 Drummond Street, Carlton North",CARLTON NORTH,3054,-37.78295,144.971878,295.0
 4298,14624270,Rent,$1100 Per week,2022-06-07T14:07:18,House,Melbourne City Council - Greater Area,0.0,0.0,4.0,2.0,1,"651 Canning Street, Carlton North",CARLTON NORTH,3054,-37.78078,144.975418,1100.0
 4299,15918442,Rent,$610 Per Week,2022-06-03T16:01:57,House,Melbourne City Council - Greater Area,0.0,0.0,2.0,1.0,1,"711 Rathdowne Street, Carlton North",CARLTON NORTH,3054,-37.788208000000004,144.97166399999998,610.0
-4300,15916694,Rent,$680 pw - Save Time View Our 3D Tour & Apply,2022-06-02T17:52:44,House,Melbourne City Council - Greater Area,0.0,0.0,2.0,1.0,1,"703 Drummond Street, Carlton North",CARLTON NORTH,3054,-37.7882843,144.970245,6803.0
+4300,15916694,Rent,$680 pw - Save Time View Our 3D Tour & Apply,2022-06-02T17:52:44,House,Melbourne City Council - Greater Area,0.0,0.0,2.0,1.0,1,"703 Drummond Street, Carlton North",CARLTON NORTH,3054,-37.7882843,144.970245,680.0
 4301,15888007,Rent,$650.00,2022-05-17T11:38:10,House,Melbourne City Council - Greater Area,0.0,0.0,3.0,1.0,0,"637 Station Street, Carlton North",CARLTON NORTH,3054,-37.7814026,144.976379,650.0
 4302,15878674,Rent,$850.00,2022-05-11T11:19:13,House,Melbourne City Council - Greater Area,0.0,0.0,3.0,2.0,0,"607 Rathdowne Street, Carlton North",CARLTON NORTH,3054,-37.790905,144.971344,850.0
 4303,15778652,Rent,$700.00,2022-03-11T17:33:35,House,Melbourne City Council - Greater Area,0.0,0.0,3.0,1.0,0,"129 Curtain Street, Carlton North",CARLTON NORTH,3054,-37.7887154,144.969452,700.0
@@ -4307,7 +4307,7 @@
 4305,16052564,Rent,"$1,100",2022-08-23T10:36:18,House,Melbourne City Council - Greater Area,0.0,0.0,3.0,2.0,1,"49 Owen Street, Carlton North",CARLTON NORTH,3054,-37.8006859,144.972824,1100.0
 4306,15865767,Rent,$645 per week,2022-05-03T17:58:26,House,Melbourne City Council - Greater Area,0.0,0.0,3.0,1.0,0,"161 Lee Street, Carlton North",CARLTON NORTH,3054,-37.79116,144.96951299999998,645.0
 4307,5909505,Rent,$265,2008-10-06T11:31:06,ApartmentUnitFlat,Melbourne City Council - Greater Area,0.0,0.0,1.0,1.0,0,"671 Park St, Carlton North",CARLTON NORTH,3054,-37.779197700000005,144.968781,265.0
-4308,15426148,Rent,1912.00 per month,2022-08-30T10:13:39,ApartmentUnitFlat,Moreland City Council - Greater Area,0.0,0.0,2.0,2.0,1,"614/5 Olive York Way, Brunswick West",BRUNSWICK WEST,3055,-37.7587357,144.939041,1912.0
+4308,15426148,Rent,1912.00 per month,2022-08-30T10:13:39,ApartmentUnitFlat,Moreland City Council - Greater Area,0.0,0.0,2.0,2.0,1,"614/5 Olive York Way, Brunswick West",BRUNSWICK WEST,3055,-37.7587357,144.939041,
 4309,16062260,Rent,$450.00,2022-08-29T15:50:49,ApartmentUnitFlat,Moreland City Council - Greater Area,0.0,0.0,2.0,1.0,1,"107/358 Moreland Road, Brunswick West",BRUNSWICK WEST,3055,-37.7538719,144.949478,450.0
 4310,16060747,Rent,"$1,000",2022-08-29T09:02:48,House,Moreland City Council - Greater Area,0.0,0.0,4.0,3.0,2,"7A Foden Street, Brunswick West",BRUNSWICK WEST,3055,-37.77047,144.9479,1000.0
 4311,16057877,Rent,$440.00,2022-08-25T15:23:57,ApartmentUnitFlat,Moreland City Council - Greater Area,0.0,0.0,2.0,1.0,1,"511/5 Olive York Way, Brunswick West",BRUNSWICK WEST,3055,-37.7587357,144.939041,440.0
@@ -4324,7 +4324,7 @@
 4322,16042300,Rent,$380,2022-08-16T18:54:19,ApartmentUnitFlat,Moreland City Council - Greater Area,0.0,0.0,2.0,1.0,1,"3/9 Moule Street, Brunswick West",BRUNSWICK WEST,3055,-37.770912200000005,144.94116200000002,380.0
 4323,16040290,Rent,$730.00,2022-08-16T09:47:24,House,Moreland City Council - Greater Area,0.0,0.0,4.0,1.0,0,"50 Burnell Street, Brunswick West",BRUNSWICK WEST,3055,-37.76037,144.9458,730.0
 4324,15960873,Rent,$340.00,2022-08-03T13:35:40,ApartmentUnitFlat,Moreland City Council - Greater Area,0.0,0.0,1.0,1.0,1,"6/26 Mclean Street, Brunswick West",BRUNSWICK WEST,3055,-37.7546043,144.938843,340.0
-4325,15420143,Rent,$440 per week until December 2022,2022-07-18T19:05:27,ApartmentUnitFlat,Moreland City Council - Greater Area,0.0,0.0,2.0,2.0,1,"403/1 Olive York Way, Brunswick West",BRUNSWICK WEST,3055,-37.758075700000006,144.938766,4402022.0
+4325,15420143,Rent,$440 per week until December 2022,2022-07-18T19:05:27,ApartmentUnitFlat,Moreland City Council - Greater Area,0.0,0.0,2.0,2.0,1,"403/1 Olive York Way, Brunswick West",BRUNSWICK WEST,3055,-37.758075700000006,144.938766,440.0
 4326,14385334,Rent,$340 per week,2022-08-24T11:58:41,ApartmentUnitFlat,Moreland City Council - Greater Area,0.0,0.0,1.0,1.0,1,"506/5 Olive York Way, Brunswick West",BRUNSWICK WEST,3055,-37.7587357,144.939041,340.0
 4327,16063624,Rent,$390pw / $1695pcm,2022-08-30T12:18:09,ApartmentUnitFlat,Moreland City Council - Greater Area,0.0,0.0,2.0,1.0,1,"7/35 Murray Street, Brunswick West",BRUNSWICK WEST,3055,-37.7596,144.941711,390.0
 4328,16059214,Rent,$310 Per Week,2022-08-26T12:04:33,ApartmentUnitFlat,Moreland City Council - Greater Area,0.0,0.0,1.0,1.0,1,"20/556 Moreland Road, Brunswick West",BRUNSWICK WEST,3055,-37.751976,144.933884,310.0
@@ -4495,7 +4495,7 @@
 4493,15927358,Rent,$520.00 per week,2022-06-09T13:40:37,House,Moreland City Council - Greater Area,0.0,0.0,2.0,1.0,0,"58 Evans Street, Brunswick",BRUNSWICK,3056,-37.770156899999996,144.96731599999998,520.0
 4494,15915840,Rent,$990pw / $4302pcm,2022-06-02T14:19:56,Townhouse,Moreland City Council - Greater Area,0.0,0.0,3.0,2.0,2,"2/308 Brunswick Road, Brunswick",BRUNSWICK,3056,-37.776351899999995,144.952911,990.0
 4495,15910452,Rent,$650,2022-05-31T10:34:52,House,Moreland City Council - Greater Area,0.0,0.0,3.0,1.0,0,"15 Sturrock Street, Brunswick",BRUNSWICK,3056,-37.7574234,144.975754,650.0
-4496,15895780,Rent,$920 pw - Save Time View Our 3D Tour & Apply,2022-05-20T16:00:31,Townhouse,Moreland City Council - Greater Area,0.0,0.0,3.0,2.0,1,"21/35 Stewart Street, Brunswick",BRUNSWICK,3056,-37.7637062,144.966644,9203.0
+4496,15895780,Rent,$920 pw - Save Time View Our 3D Tour & Apply,2022-05-20T16:00:31,Townhouse,Moreland City Council - Greater Area,0.0,0.0,3.0,2.0,1,"21/35 Stewart Street, Brunswick",BRUNSWICK,3056,-37.7637062,144.966644,920.0
 4497,9576488,Rent,$390.00 per week,2022-05-18T07:34:43,ApartmentUnitFlat,Moreland City Council - Greater Area,0.0,0.0,2.0,1.0,1,"2/32 Donald St, Brunswick",BRUNSWICK,3056,-37.7581177,144.966675,390.0
 4498,15888202,Rent,$680 (Neg),2022-05-17T12:23:19,House,Moreland City Council - Greater Area,0.0,0.0,5.0,1.0,1,"6 Chambers Street, Brunswick",BRUNSWICK,3056,-37.7785225,144.96888700000002,680.0
 4499,15876911,Rent,$500 Per Week,2022-05-10T13:57:33,House,Moreland City Council - Greater Area,0.0,0.0,2.0,1.0,0,"167 Barkly Street, Brunswick",BRUNSWICK,3056,-37.776962299999994,144.96965,500.0
@@ -4551,7 +4551,7 @@
 4549,16044605,Rent,$375 Per Week,2022-08-17T19:00:21,ApartmentUnitFlat,Moreland City Council - Greater Area,0.0,0.0,1.0,1.0,1,"215/26 Lygon Street, Brunswick East",BRUNSWICK EAST,3057,-37.77799,144.97108500000002,375.0
 4550,16046766,Rent,$850.00,2022-08-18T16:38:31,Townhouse,Moreland City Council - Greater Area,0.0,0.0,3.0,2.0,1,"3/22 Albert Street, Brunswick East",BRUNSWICK EAST,3057,-37.7695427,144.9667,850.0
 4551,16034803,Rent,$995.00,2022-08-11T16:11:06,Townhouse,Moreland City Council - Greater Area,0.0,0.0,4.0,3.0,2,"1/22 Albert Street, Brunswick East",BRUNSWICK EAST,3057,-37.769973799999995,144.970978,995.0
-4552,16063123,Rent,$390 pw - Save Time View Our 3D Tour & Apply,2022-08-30T10:11:10,ApartmentUnitFlat,Moreland City Council - Greater Area,0.0,0.0,2.0,1.0,0,"2/72 Victoria Street, Brunswick East",BRUNSWICK EAST,3057,-37.767433200000006,144.96456899999998,3903.0
+4552,16063123,Rent,$390 pw - Save Time View Our 3D Tour & Apply,2022-08-30T10:11:10,ApartmentUnitFlat,Moreland City Council - Greater Area,0.0,0.0,2.0,1.0,0,"2/72 Victoria Street, Brunswick East",BRUNSWICK EAST,3057,-37.767433200000006,144.96456899999998,390.0
 4553,16062298,Rent,$310.00 per week,2022-08-29T16:04:48,ApartmentUnitFlat,Moreland City Council - Greater Area,0.0,0.0,1.0,1.0,1,"8/36 Holmes Street, Brunswick East",BRUNSWICK EAST,3057,-37.760284399999996,144.974716,310.0
 4554,16053216,Rent,$380,2022-08-23T13:29:42,ApartmentUnitFlat,Moreland City Council - Greater Area,0.0,0.0,1.0,1.0,1,"312/29 Nicholson Street., Brunswick East",BRUNSWICK EAST,3057,-37.77874370000001,144.978165,380.0
 4555,16026125,Rent,$480pw / $2086pcm,2022-08-05T20:37:09,ApartmentUnitFlat,Moreland City Council - Greater Area,0.0,0.0,2.0,2.0,1,"101/182-206 Lygon Street, Brunswick East",BRUNSWICK EAST,3057,-37.772216799999995,144.971771,480.0
@@ -4686,7 +4686,7 @@
 4684,16038524,Rent,$580 Per Week,2022-08-15T12:24:17,House,Darebin City Council - Greater Area,0.0,0.0,3.0,2.0,2,"9 Biggs Street, Coburg",COBURG,3058,-37.730990000000006,144.9815,580.0
 4685,16035732,Rent,$440 per week,2022-08-12T10:56:31,ApartmentUnitFlat,Darebin City Council - Greater Area,0.0,0.0,2.0,1.0,1,"302/53 Gaffney Street, Coburg",COBURG,3058,-37.733825700000004,144.961792,440.0
 4686,16025816,Rent,$430,2022-08-05T16:40:29,NewHouseLand,Darebin City Council - Greater Area,0.0,0.0,2.0,2.0,1,"14 Danthonia Street, Coburg North",COBURG NORTH,3058,-37.72926,144.9786,430.0
-4687,16024879,Rent,310 Per Week,2022-08-05T12:48:40,ApartmentUnitFlat,Darebin City Council - Greater Area,0.0,0.0,2.0,1.0,1,"2/64 Victoria Street, Coburg",COBURG,3058,-37.7420845,144.958542,310.0
+4687,16024879,Rent,310 Per Week,2022-08-05T12:48:40,ApartmentUnitFlat,Darebin City Council - Greater Area,0.0,0.0,2.0,1.0,1,"2/64 Victoria Street, Coburg",COBURG,3058,-37.7420845,144.958542,
 4688,16022913,Rent,$650 per week,2022-08-04T13:20:37,House,Darebin City Council - Greater Area,0.0,0.0,3.0,1.0,4,"112 Gordon Street, Coburg",COBURG,3058,-37.745329999999996,144.94937099999999,650.0
 4689,16020591,Rent,$470 per week,2022-08-03T15:23:28,SemiDetached,Darebin City Council - Greater Area,0.0,0.0,2.0,1.0,1,"171 Munro Street, Coburg",COBURG,3058,-37.743686700000005,144.951965,470.0
 4690,16019433,Rent,$400,2022-08-03T10:52:36,House,Darebin City Council - Greater Area,0.0,0.0,3.0,1.0,1,"1 Convent Court, Coburg North",COBURG NORTH,3058,-37.7306023,144.965439,400.0
@@ -4710,7 +4710,7 @@
 4708,15914389,Rent,$680 PW / $2955PCM,2022-06-01T17:05:40,House,Darebin City Council - Greater Area,0.0,0.0,6.0,2.0,2,"31 Arthur Street, Coburg North",COBURG NORTH,3058,-37.723716700000004,144.981277,680.0
 4709,15059797,Rent,$445 per week,2022-05-31T09:21:04,House,Darebin City Council - Greater Area,100.0,500.0,4.0,1.0,0,Coburg,COBURG,3058,-37.7413,144.966614,445.0
 4710,15884377,Rent,$490.00,2022-05-13T16:40:03,House,Darebin City Council - Greater Area,0.0,0.0,3.0,1.0,1,"2 Belgrave Street, Coburg",COBURG,3058,-37.7427673,144.974762,490.0
-4711,15854705,Rent,$465 pw - Save Time View Our 3D Tour & Apply,2022-04-27T13:58:44,ApartmentUnitFlat,Darebin City Council - Greater Area,0.0,0.0,2.0,2.0,1,"14/48-52 Sydney Road, Coburg",COBURG,3058,-37.75398,144.964584,4653.0
+4711,15854705,Rent,$465 pw - Save Time View Our 3D Tour & Apply,2022-04-27T13:58:44,ApartmentUnitFlat,Darebin City Council - Greater Area,0.0,0.0,2.0,2.0,1,"14/48-52 Sydney Road, Coburg",COBURG,3058,-37.75398,144.964584,465.0
 4712,15844393,Rent,$430.00,2022-04-20T14:37:34,ApartmentUnitFlat,Darebin City Council - Greater Area,0.0,0.0,2.0,1.0,1,"1/79 Harding Street, Coburg",COBURG,3058,-37.745704700000005,144.973846,430.0
 4713,14889506,Rent,$680,2022-04-13T16:24:41,House,Darebin City Council - Greater Area,0.0,0.0,3.0,1.0,1,"41 Victoria Street, Coburg",COBURG,3058,-37.742893200000005,144.960358,680.0
 4714,14215057,Rent,$400 per week,2021-11-24T14:28:00,House,Darebin City Council - Greater Area,0.0,0.0,3.0,1.0,3,"1/148 Elizabeth Street, Coburg North",COBURG NORTH,3058,-37.7281761,144.98439,400.0
@@ -4754,7 +4754,7 @@
 4752,16048284,Rent,$670 pw,2022-08-19T13:58:40,House,Hume City Council - Greater Area,0.0,0.0,4.0,2.0,2,"11 Wenlyan Drive, Greenvale",GREENVALE,3059,-37.6454468,144.87561000000002,670.0
 4753,16039932,Rent,$500 pw,2022-08-15T17:46:36,House,Hume City Council - Greater Area,0.0,0.0,3.0,2.0,2,"2 Oban Court, Greenvale",GREENVALE,3059,-37.646102899999995,144.899323,500.0
 4754,15979497,Rent,$322 Per Week,2022-07-11T14:36:16,ApartmentUnitFlat,Hume City Council - Greater Area,0.0,0.0,2.0,1.0,1,"177B Greenvale Drive, Greenvale",GREENVALE,3059,-37.6474,144.89828500000002,322.0
-4755,15960755,Rent,650 PER WEEK,2022-06-29T16:00:39,House,Hume City Council - Greater Area,0.0,0.0,4.0,2.0,2,"4 Palmaston Drive, Greenvale",GREENVALE,3059,-37.645920000000004,144.872467,650.0
+4755,15960755,Rent,650 PER WEEK,2022-06-29T16:00:39,House,Hume City Council - Greater Area,0.0,0.0,4.0,2.0,2,"4 Palmaston Drive, Greenvale",GREENVALE,3059,-37.645920000000004,144.872467,
 4756,15442916,Rent,$410.00,2021-10-11T17:00:14,House,Hume City Council - Greater Area,0.0,0.0,3.0,2.0,0,"10 Fluent Lane, Greenvale",GREENVALE,3059,-37.615520000000004,144.889236,410.0
 4757,16060249,Rent,$480 pw,2022-08-26T17:00:31,House,Hume City Council - Greater Area,0.0,0.0,3.0,2.0,2,"16 Adlington Avenue, Greenvale",GREENVALE,3059,-37.64549,144.884125,480.0
 4758,13295778,Rent,$435,2021-09-18T09:00:40,House,Hume City Council - Greater Area,0.0,0.0,3.0,2.0,2,Greenvale,GREENVALE,3059,-37.64549,144.884125,435.0
