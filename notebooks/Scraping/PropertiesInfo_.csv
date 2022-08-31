@@ -1,3 +1,4 @@
+id,time,listing_type,price,property_type,area,building_area,land_area,bedrooms,bathrooms,carspaces,street_address,suburb,postcode,latitude,longitude
 16066003,2022-08-31T13:00:15,Rent,$320,ApartmentUnitFlat,Melbourne City Council - Greater Area,0,0,1.0,1.0,0,"1007/238 Flinders St, Melbourne",MELBOURNE,3000,-37.8175163,144.966492
 16065974,2022-08-31T12:50:55,Rent,$700,ApartmentUnitFlat,Melbourne City Council - Greater Area,0,0,2.0,2.0,0,"1211/260 Spencer Street, Melbourne",MELBOURNE,3000,-37.8145638,144.952286
 15302782,2022-08-31T10:12:30,Rent,$395 per week,ApartmentUnitFlat,Melbourne City Council - Greater Area,0,0,2.0,1.0,0,"504/350 La Trobe Street, Melbourne",MELBOURNE,3000,-37.81068,144.959274
