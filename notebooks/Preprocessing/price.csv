@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 ,id,time,listing_type,price,property_type,area,building_area,land_area,bedrooms,bathrooms,carspaces,street_address,suburb,postcode,latitude,longitude,weekly_rent
 0,16066003,2022-08-31T13:00:15,Rent,$320,ApartmentUnitFlat,Melbourne City Council - Greater Area,0.0,0.0,1.0,1.0,0,"1007/238 Flinders St, Melbourne",MELBOURNE,3000,-37.8175163,144.966492,320.0
 1,16065974,2022-08-31T12:50:55,Rent,$700,ApartmentUnitFlat,Melbourne City Council - Greater Area,0.0,0.0,2.0,2.0,0,"1211/260 Spencer Street, Melbourne",MELBOURNE,3000,-37.8145638,144.952286,700.0
@@ -13227,6 +13228,8 @@
 13657,16011588,2022-07-28T17:31:16,Rent,$350.00 per week,House,Wangaratta - Greater Area,0.0,0.0,3.0,1.0,2,"1 Rattray Avenue, Wangaratta",WANGARATTA,3677,-36.3738937,146.316849,350.0
 13658,15943988,2022-06-20T16:14:00,Rent,$360 p.w.,House,Wangaratta - Greater Area,0.0,0.0,3.0,1.0,0,"1613 Wangaratta - Whitfield Road, Docker",DOCKER,3678,-36.4901237,146.369644,360.0
 =======
+=======
+>>>>>>> 831df2eb22abac65f9f255a76707a564a92d51e1
 ,property_id,listing_type,price,time_listed,property_type,area,building_area,land_area,bedrooms,bathrooms,carspaces,street_address,suburb,postcode,latitude,longitude,weekly_rent
 0,16064379,Rent,$370 per week,2022-08-30T15:20:28,ApartmentUnitFlat,Melbourne City Council - Greater Area,0.0,0.0,1.0,1.0,0,"1106/555 Flinders Street, Melbourne",MELBOURNE,3000,-37.8209724,144.956482,370.0
 1,16064243,Rent,$500 per week,2022-08-30T14:50:32,ApartmentUnitFlat,Melbourne City Council - Greater Area,0.0,0.0,2.0,1.0,1,"2901/200 Spencer Street, Melbourne",MELBOURNE,3000,-37.816227000000005,144.953247,500.0
@@ -17936,4 +17939,7 @@
 4808,15956312,Rent,$275 per week,2022-06-27T16:54:35,ApartmentUnitFlat,Hume City Council - Greater Area,0.0,0.0,1.0,1.0,1,"11/13 Church Street, Campbellfield",CAMPBELLFIELD,3061,-37.6759148,144.959015,275.0
 4809,16043898,Rent,$550 per week,2022-08-17T15:26:56,House,Hume City Council - Greater Area,0.0,0.0,5.0,2.0,8,"7 Holly Court, Campbellfield",CAMPBELLFIELD,3061,-37.6770172,144.961929,550.0
 4810,16030863,Rent,$250 pw,2022-08-09T17:32:32,ApartmentUnitFlat,Hume City Council - Greater Area,0.0,0.0,1.0,1.0,0,"5/1657 Sydney Road, Campbellfield",CAMPBELLFIELD,3061,-37.671405799999995,144.955154,250.0
+<<<<<<< HEAD
+>>>>>>> 831df2eb22abac65f9f255a76707a564a92d51e1
+=======
 >>>>>>> 831df2eb22abac65f9f255a76707a564a92d51e1
