@@ -363,7 +363,7 @@
 364,14819549,2022-08-30T18:48:17,Rent,$525_per_week,ApartmentUnitFlat,Melbourne City Council - Greater Area,0.0,0.0,2.0,1.0,0,"1007/27 Therry Street, Melbourne",MELBOURNE,3000,-37.8069878,144.961014,525
 365,15366391,2022-08-30T16:24:29,Rent,$750_**SPACIOUS_APARTMENT**,ApartmentUnitFlat,Melbourne City Council - Greater Area,0.0,0.0,2.0,2.0,0,"2402/155 Franklin Street, Melbourne",MELBOURNE,3000,-37.8088264,144.959549,750
 366,15335147,2022-08-30T16:10:35,Rent,$650_**INSPECTION_UPON_REQUEST**,ApartmentUnitFlat,Melbourne City Council - Greater Area,0.0,0.0,2.0,1.0,0,"2307/60 A'Beckett Street, Melbourne",MELBOURNE,3000,-37.80874,144.961441,650
-367,15329783,2022-08-30T16:04:45,Rent,$800_**Level_53_High_Level_View**,ApartmentUnitFlat,Melbourne City Council - Greater Area,0.0,0.0,2.0,1.0,0,"5313/228 La Trobe Street, Melbourne",MELBOURNE,3000,-37.80975,144.962616,53
+367,15329783,2022-08-30T16:04:45,Rent,$800_**Level_53_High_Level_View**,ApartmentUnitFlat,Melbourne City Council - Greater Area,0.0,0.0,2.0,1.0,0,"5313/228 La Trobe Street, Melbourne",MELBOURNE,3000,-37.80975,144.962616,800
 368,14527576,2022-08-30T16:02:50,Rent,$550_**INSPECTION_UPON_REQUEST**,ApartmentUnitFlat,Melbourne City Council - Greater Area,0.0,0.0,1.0,1.0,0,"3807/639 Little Lonsdale Street, Melbourne",MELBOURNE,3000,-37.8141937,144.952164,550
 369,16064252,2022-08-30T14:52:49,Rent,$520_per_week_*Fully_Furnished*,ApartmentUnitFlat,Melbourne City Council - Greater Area,0.0,0.0,2.0,1.0,0,"4405/639 Lonsdale Street, Melbourne",MELBOURNE,3000,-37.8150673,144.953415,520
 370,14488107,2022-08-29T17:42:31,Rent,$450/week,ApartmentUnitFlat,Melbourne City Council - Greater Area,0.0,0.0,1.0,1.0,0,"6207/568 Collins Street, Melbourne",MELBOURNE,3000,-37.8183746,144.955429,450
@@ -1073,6 +1073,7 @@
 1093,14769143,2022-08-07T20:32:31,Rent,$600_Per_Week,ApartmentUnitFlat,Melbourne City Council - Greater Area,0.0,0.0,2.0,2.0,1,"1305E/888 Collins Street, Docklands",DOCKLANDS,3008,-37.82073,144.942261,600
 1094,16025060,2022-08-05T13:42:24,Rent,$625_pw_*Multiple_Apts_Available,ApartmentUnitFlat,Melbourne City Council - Greater Area,0.0,0.0,2.0,1.0,0,"3813/628 Flinders Street, Docklands",DOCKLANDS,3008,-37.82097,144.953247,625
 1095,16014491,2022-08-01T10:50:42,Rent,$420,ApartmentUnitFlat,Melbourne City Council - Greater Area,0.0,0.0,1.0,1.0,0,"241 Harbour Esplanade, Docklands",DOCKLANDS,3008,-37.8132,144.942978,420
+1096,15258330,2022-07-25T12:40:34,Rent,$880_**WATERFRONT_SPACIOUS_3-BEDROOMS**,ApartmentUnitFlat,Melbourne City Council - Greater Area,0.0,0.0,3.0,2.0,1,"1107/8 Marmion Place, Docklands",DOCKLANDS,3008,-37.813343,144.942535,880
 1097,16002699,2022-07-25T12:30:17,Rent,$500_per_week,ApartmentUnitFlat,Melbourne City Council - Greater Area,0.0,0.0,1.0,1.0,1,"1416/100 Harbour Esplanade, Docklands",DOCKLANDS,3008,-37.81856,144.946869,500
 1098,16001822,2022-07-25T09:32:30,Rent,$430_per_week,ApartmentUnitFlat,Melbourne City Council - Greater Area,0.0,0.0,1.0,1.0,0,"F6/15 Doepel Way, Docklands",DOCKLANDS,3008,-37.8148346,144.940048,430
 1099,15998203,2022-07-21T13:13:41,Rent,$985_**WATERFRONT_FURNISHED_APARTMENT**,ApartmentUnitFlat,Melbourne City Council - Greater Area,0.0,0.0,3.0,2.0,1,"603/915 Collins Street, Docklands",DOCKLANDS,3008,-37.8206024,144.940247,985
