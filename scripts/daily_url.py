@@ -5,10 +5,6 @@ from requests import get
 import re
 import pickle
 import os
-import time
-from random import seed
-from random import random
-from random import randint
 
 def get_urls_daily(start, end):
     with open("HIS_url_links", "rb") as fp:
@@ -25,16 +21,6 @@ def get_urls_daily(start, end):
         house_data = soup.find_all("div", {"class":re.compile("property (odd|even) clearfix")})
         regex = r'(\d{4})'
         post = re.findall(regex, result_urls_partial[i])
-        # random wait times
-        value = random()
-        scaled_value = 1 + (value * (9 - 5))
-        # print(scaled_value)
-        time.sleep(scaled_value)
-
-        # no need this
-        #for link in result_urls_partial:
-        #    post = re.findall(regex, link)
-        #    postcode = post[0][0:4]
 
         houses.extend(house_data)
         for c in range(len(house_data)):
