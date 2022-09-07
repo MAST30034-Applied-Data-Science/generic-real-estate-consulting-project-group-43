@@ -11,6 +11,7 @@ def get_urls_daily(start, end):
         result_urls = pickle.load(fp)
     result_urls_partial = result_urls[start:end]
     houses = []
+    posts = []
     headers = {"User-Agent": "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Mobile Safari/537.36"}
 
     for i in range(len(result_urls_partial)):
@@ -18,12 +19,29 @@ def get_urls_daily(start, end):
         # in the html of the page, find all the bins with <li> and class:
         print(f'{i}.getting data from {result_urls_partial[i]}')
         house_data = soup.find_all("div", {"class":re.compile("property (odd|even) clearfix")})
+        regex = r'(\d{4})'
+        post = re.findall(regex, result_urls_partial[i])
+        # random wait times
+        value = random()
+        scaled_value = 1 + (value * (9 - 5))
+        # print(scaled_value)
+        time.sleep(scaled_value)
+
+        # no need this
+        #for link in result_urls_partial:
+        #    post = re.findall(regex, link)
+        #    postcode = post[0][0:4]
+
         houses.extend(house_data)
+        for c in range(len(house_data)):
+            posts.append(post)
+        
         
     count = 0
     data = pd.DataFrame()
     first = True
 
+    count_p = 0
     for num in houses:
         # getting the price: make sure to test this code a few times by itself to understand exactly which parameters will work 
         current_priceTag = num.find_all('section', {"class":"grid-35 tablet-grid-35 price"})
@@ -87,12 +105,15 @@ def get_urls_daily(start, end):
             d = {"address":[address], "latitude":[latitude], "longitude":[longitude], 
                 "nbed":[nbed], "nbath":[nbath], "ncar":[ncar], "historical_prices":[z[0]], 
                 "type":[type],
-                "historical_dates":[z[1]]}
+                "historical_dates":[z[1]],
+                "postcode":posts[count_p]}
 
             if first:
                 first = False
                 data = pd.DataFrame.from_dict(d)
             else:
                 data = pd.concat([data, pd.DataFrame.from_dict(d)])
+
+        count_p += 1
     print(data.head(10))
     data.to_csv(f'../../data/raw/historical_data/{start}_{end}_historical.csv')
