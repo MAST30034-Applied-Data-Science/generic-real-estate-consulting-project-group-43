@@ -5,6 +5,9 @@ from requests import get
 import re
 import pickle
 import os
+#202.86.119.53
+#128.250.28.139
+
 
 def get_urls_daily(start, end):
     with open("HIS_url_links", "rb") as fp:
