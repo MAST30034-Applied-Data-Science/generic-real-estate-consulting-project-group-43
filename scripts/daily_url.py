@@ -5,6 +5,10 @@ from requests import get
 import re
 import pickle
 import os
+import time
+from random import seed
+from random import random
+from random import randint
 
 def get_urls_daily(start, end):
     with open("HIS_url_links", "rb") as fp:
