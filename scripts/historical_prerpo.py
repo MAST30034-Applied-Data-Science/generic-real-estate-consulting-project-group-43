@@ -4,8 +4,8 @@ import sys
 import re
 # caution: path[0] is reserved for script path (or '' in REPL)
 sys.path.insert(1, '../../scripts/')
-import price_prepro
-from price_prepro import price_prepro
+import price
+from price import price_prepro
 
 def prepro(path, type):
     regex = r'\d+\w\d+'
