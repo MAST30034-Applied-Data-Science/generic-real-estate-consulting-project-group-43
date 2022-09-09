@@ -11,7 +11,7 @@ def prepro(path, type):
     regex = r'\d+\w\d+'
     num = re.findall(regex, path)
     df = pd.read_csv(path)
-    df.historical_dates = pd.to_datetime(df.historical_dates)
+    df.dates = pd.to_datetime(df.historical_dates)
     df['suburb'] = df.address.str.split(" ").str[-1]
     df.ncar.replace(to_replace=['none'], value=0, inplace=True)
     df = df.drop(columns = "Unnamed: 0")
