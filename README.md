@@ -1,14 +1,14 @@
 # Generic Real Estate Consulting Project
 Groups should generate their own suitable `README.md`.
 Group number:43
-Group members:  \n
-Jiahe Liu (jiahe3@student.unimelb.edu.au) \n
-Hyunjin Park (hyunjinp@student.unimelb.edu.au) \n
-Jongho Park (jonghop@student.unimelb.edu.au) \n
-Nuo Chen (nc1@student.unimelb.edu.au) \n
-Anzhe Cai (anzhec@student.unimelb.edu.au) \n
+Group members:  <br/>
+Jiahe Liu (jiahe3@student.unimelb.edu.au) <br/>
+Hyunjin Park (hyunjinp@student.unimelb.edu.au) <br/>
+Jongho Park (jonghop@student.unimelb.edu.au) <br/>
+Nuo Chen (nc1@student.unimelb.edu.au) <br/>
+Anzhe Cai (anzhec@student.unimelb.edu.au) <br/>
 
- \n
+ 
 
 
 
