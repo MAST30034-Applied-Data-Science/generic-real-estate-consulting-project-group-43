@@ -7,7 +7,7 @@ import os
 def outlier_removal(path):
     outlier_lst = []
     df_len_lst = []
-    regex = r'\d+\w\d+'
+    regex = r'\d+'
     num = re.findall(regex, path)
     df = pd.read_csv(path)
     df = df.drop(columns='Unnamed: 0')
