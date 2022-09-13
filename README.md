@@ -1,6 +1,6 @@
 # Generic Real Estate Consulting Project
-Groups should generate their own suitable `README.md`.
-Group number:43
+Groups should generate their own suitable `README.md`. <br/>
+Group number:43 <br/>
 Group members:  <br/>
 Jiahe Liu (jiahe3@student.unimelb.edu.au) <br/>
 Hyunjin Park (hyunjinp@student.unimelb.edu.au) <br/>
