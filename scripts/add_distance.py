@@ -6,19 +6,19 @@ import time
 and to Melbourne Central"""
 
 def add_distance_time(property_place_csv, year):
-    client = ors.Client('5b3ce3597851110001cf6248ce6c95ac96814219a4c3a7741f323b73') # philip's api key
+    #client = ors.Client('5b3ce3597851110001cf6248ce6c95ac96814219a4c3a7741f323b73') # philip's api key
+    client = ors.Client('5b3ce3597851110001cf6248d99385fa95fc4e388d4e970e7e82a967') # philip's api key
     to_place_distances = []
     to_place_times = []
     to_cbd_distances = []
     to_cbd_times = []
 
-    print(f"{len(property_place_csv['SA2_CODE'].unique())} unique SA2 codes")
-    for code in property_place_csv['SA2_CODE'].unique():
+    for code in property_place_csv['SA2_CODE'].unique():  # loop through SA2 Code
+        print(f"Executing SA2 Code {code}", flush=True)
+        time.sleep(1.5)
         locations_coor = []
         sources_index = []
         destinations_index = []
-        temp_list1 = []
-        temp_list2 = []
 
         subset = property_place_csv[property_place_csv['SA2_CODE'] == code].reset_index(drop=True)
         count_places = subset['Place_Names'].nunique() # e.g. 10 places for 202021027
@@ -33,24 +33,80 @@ def add_distance_time(property_place_csv, year):
 
         destinations_index += [x for x in range(i, i+count_places+1)] # destination indices right after origin indices, add uptil all places have been added 
         
-        print("locations coordinates = ")
-        print(locations_coor)
-        print("destination index = ")
-        print(destinations_index)
+        #print("locations coordinates = ", flush=True)
+        #time.sleep(0.5) # wait for 1.3 sec
+        #print(locations_coor, flush=True)
+        #time.sleep(0.5) # wait for 1.3 sec
+        #print("destination index = ", flush=True)
+        #time.sleep(0.5) # wait for 1.3 sec
+        #print(destinations_index, flush=True)
+        #time.sleep(0.5) # wait for 1.3 sec
+        
+        # Less than the maximum allowed routes in one request, normal execution
+        if (i * (count_places+1) < 3500):
+            temp_list1 = [] # temporary lists to store unique to cbd distance
+            temp_list2 = [] # temporary lists to store unique to cbd time
+            try:
+                # add a try/except here
+                # request the distance matrix for each property to all places under current SA2 code
+                distance_matrix = ors.distance_matrix.distance_matrix(client=client, locations=locations_coor, 
+                profile='driving-car', sources=sources_index, destinations=destinations_index, metrics=['distance', 'duration'])
+                
+                to_place_distances += [each for sublist in distance_matrix['distances'] for each in sublist[:-1]]
+                to_place_times += [each for sublist in distance_matrix['durations'] for each in sublist[:-1]]
+                temp_list1 += [each for sublist in distance_matrix['distances'] for each in sublist[-1:]]  # get the cbd distances
+                temp_list2 += [each for sublist in distance_matrix['durations'] for each in sublist[-1:]]  # get the cbd times
+                to_cbd_distances += list(np.repeat(temp_list1, count_places))  # repeat N (place count) times for each property to keep the format
+                to_cbd_times += list(np.repeat(temp_list2, count_places))
+                #print(f"To Place Distance Grand List, Normal Branch, length = {len(to_place_distances)}")
+                #print(to_place_distances)
+                #print(f"To CBD Distance Grand List, Normal Branch, length = {len(to_cbd_distances)}")
+                #print(to_cbd_distances)                           
+            except:
+                print('Quota Exceeded daily limit')
+        
+        else:
+            # iteratively cut into sublists to make requests
+            j = 0
+            factor = i*(count_places+1) // 3500  # assumes it's properties that exceed by a factor, so reduce them
+            slicer = i // (factor+1)
+            while (j < factor+1):
+                temp_list1 = [] # temporary lists to store sliced lists of unique to cbd distance, reset at each iteration
+                temp_list2 = [] # temporary lists to store sliced lists of unique to cbd time, reset at each iteration
+                if (j==factor):
+                    partial_sources_index = sources_index[j*slicer:i] # from the last slicer to the end (of source)
+                else:
+                    partial_sources_index = sources_index[j*slicer:(j+1)*slicer] # slice in between
+                
+                try:
+                    distance_matrix = ors.distance_matrix.distance_matrix(client=client, locations=locations_coor, 
+                    profile='driving-car', sources=partial_sources_index, destinations=destinations_index, metrics=['distance', 'duration'])
+                    
+                    #print("partial sources index = ", flush=True)
+                    #time.sleep(0.5) # wait for 1.3 sec
+                    #print(partial_sources_index, flush=True)
+                    #time.sleep(0.5) # wait for 1.3 sec
+                    #print("destination index = ", flush=True)
+                    #time.sleep(0.5) # wait for 1.3 sec
+                    #print(destinations_index, flush=True)
+                    #time.sleep(0.5) # wait for 1.3 sec                    
+                    
+                    to_place_distances += [each for sublist in distance_matrix['distances'] for each in sublist[:-1]]
+                    to_place_times += [each for sublist in distance_matrix['durations'] for each in sublist[:-1]]
+                    temp_list1 += [each for sublist in distance_matrix['distances'] for each in sublist[-1:]]  # get the cbd distances
+                    temp_list2 += [each for sublist in distance_matrix['durations'] for each in sublist[-1:]]  # get the cbd times
+                    
+                    to_cbd_distances += list(np.repeat(temp_list1, count_places))  # repeat N (place count) times for each property to keep the format
+                    to_cbd_times += list(np.repeat(temp_list2, count_places))  
 
-        time.sleep(1.5) # wait for 1.5 sec
-        # add a try/except here
-        # request the distance matrix for each property to all places under current SA2 code
-        distance_matrix = ors.distance_matrix.distance_matrix(client=client, locations=locations_coor, 
-        profile='driving-car', sources=sources_index, destinations=destinations_index, metrics=['distance', 'duration'])
-
-
-        to_place_distances += [each for sublist in distance_matrix['distances'] for each in sublist[:-1]]
-        to_place_times += [each for sublist in distance_matrix['durations'] for each in sublist[:-1]]
-        temp_list1 += [each for sublist in distance_matrix['distances'] for each in sublist[-1:]]  # get the cbd distances
-        temp_list2 += [each for sublist in distance_matrix['durations'] for each in sublist[-1:]]  # get the cbd times
-        to_cbd_distances += list(np.repeat(temp_list1, count_places))  # repeat N (place count) times for each property to keep the format
-        to_cbd_times += list(np.repeat(temp_list2, count_places))
+                    #print(f"To Place Distance Grand List, Slice Branch, length = {len(to_place_distances)}")
+                    #print(to_place_distances)
+                    #print(f"To CBD Distance Grand List, Slice, Branch, length = {len(to_cbd_distances)}")
+                    #print(to_cbd_distances)        
+                    time.sleep(1.5)
+                    j += 1
+                except:
+                    print("Quota Exceeded daily limit")
 
     property_place_csv['dist_to_place_M'] = to_place_distances
     property_place_csv['dist_to_place_KM'] = property_place_csv['dist_to_place_M'] / 1000
@@ -60,7 +116,7 @@ def add_distance_time(property_place_csv, year):
     property_place_csv['dist_to_cbd_M'] = to_cbd_distances
     property_place_csv['dist_to_cbd_KM'] = property_place_csv['dist_to_cbd_M'] / 1000
     property_place_csv['time_to_cbd_S'] = to_cbd_times
-    property_place_csv['time_to_cbd_MIN'] = property_place_csv['dist_to_cbd_S'] / 60
+    property_place_csv['time_to_cbd_MIN'] = property_place_csv['time_to_cbd_S'] / 60
     
     property_place_csv.to_csv(f'../../data/featured/{year}_distance_rental_place.csv')
     return property_place_csv
