@@ -47,51 +47,67 @@ def add_distance_time(property_place_csv, year, client, mode):
         #time.sleep(0.5) # wait for 1.3 sec
         # Less than the maximum allowed routes in one request, normal execution
         if (i * (count_places+1) < 3500):
-            temp_list1 = [] # temporary lists to store unique to cbd distance
-            temp_list2 = [] # temporary lists to store unique to cbd time
-            try:
-                # add a try/except here
-                # request the distance matrix for each property to all places under current SA2 code
-                distance_matrix = ors.distance_matrix.distance_matrix(client=client, locations=locations_coor, 
-                profile='driving-car', sources=sources_index, destinations=destinations_index, metrics=['distance', 'duration'])
-                time.sleep(2.3)
-                
-                matrix_checker = [each for sublist in distance_matrix['distances'] for each in sublist[:-1]]
-                # new matrix must have same length as the subset each time
-                if (len(matrix_checker) == len(subset)):
-                    to_place_distances += matrix_checker
-                    to_place_times += [each for sublist in distance_matrix['durations'] for each in sublist[:-1]]
-                    temp_list1 += [each for sublist in distance_matrix['distances'] for each in sublist[-1:]]  # get the cbd distances
-                    temp_list2 += [each for sublist in distance_matrix['durations'] for each in sublist[-1:]]  # get the cbd times
-                    to_cbd_distances += list(np.repeat(temp_list1, count_places))  # repeat N (place count) times for each property to keep the format
-                    to_cbd_times += list(np.repeat(temp_list2, count_places))
-                    print(f"To Place Distance Grand List, Normal Branch, length = {len(to_place_distances)}", flush=True)
-                    #time.sleep(2.5)
-                    #print(to_place_distances)
-                    #print(f"To CBD Distance Grand List, Normal Branch, length = {len(to_cbd_distances)}")
-                    #print(to_cbd_distances)
-                
-                else:
-                    print(f"Normal branch failed to match dimension due to random error, matrix size = {len(matrix_checker)}")
-                    # dimension unmatched due to random error
-                    to_place_distances += [0 for i in range(len(subset))]
-                    to_place_times += [0 for i in range(len(subset))]
-                    to_cbd_distances += [0 for i in range(len(subset))]
-                    to_cbd_times += [0 for i in range(len(subset))]     
-                                               
-            except:
-                to_place_distances += [0 for i in range(len(subset))]
-                to_place_times += [0 for i in range(len(subset))]
-                to_cbd_distances += [0 for i in range(len(subset))]  # repeat N (place count) times for each property to keep the format
-                to_cbd_times += [0 for i in range(len(subset))]
-                client = ors.Client('5b3ce3597851110001cf6248ce6c95ac96814219a4c3a7741f323b73') # Phikho-caz's api key 2500
-                print('Quota Exceeded daily limit or (less than 3500 branch) timeout')
+            success = False
+            retried_original_key = False
+            backup_failed = False
+            while(not success):
+                temp_list1 = [] # temporary lists to store unique to cbd distance
+                temp_list2 = [] # temporary lists to store unique to cbd time
+                try:
+                    # add a try/except here
+                    # request the distance matrix for each property to all places under current SA2 code
+                    distance_matrix = ors.distance_matrix.distance_matrix(client=client, locations=locations_coor, 
+                    profile='driving-car', sources=sources_index, destinations=destinations_index, metrics=['distance', 'duration'])
+                    time.sleep(2.3)
+                    # the oms request is valid
+                    success = True
+                    matrix_checker = [each for sublist in distance_matrix['distances'] for each in sublist[:-1]]
+                    # new matrix must have same length as the subset each time
+                    if (len(matrix_checker) == len(subset)):
+                        to_place_distances += matrix_checker
+                        to_place_times += [each for sublist in distance_matrix['durations'] for each in sublist[:-1]]
+                        temp_list1 += [each for sublist in distance_matrix['distances'] for each in sublist[-1:]]  # get the cbd distances
+                        temp_list2 += [each for sublist in distance_matrix['durations'] for each in sublist[-1:]]  # get the cbd times
+                        to_cbd_distances += list(np.repeat(temp_list1, count_places))  # repeat N (place count) times for each property to keep the format
+                        to_cbd_times += list(np.repeat(temp_list2, count_places))
+                        print(f"To Place Distance Grand List, Normal Branch, length = {len(to_place_distances)}", flush=True)
+                        #time.sleep(2.5)
+                        #print(to_place_distances)
+                        #print(f"To CBD Distance Grand List, Normal Branch, length = {len(to_cbd_distances)}")
+                        #print(to_cbd_distances)
+                    
+                    else:
+                        print(f"Normal branch failed to match dimension due to random error, matrix size = {len(matrix_checker)}")
+                        # dimension unmatched due to random error
+                        to_place_distances += [0 for i in range(len(subset))]
+                        to_place_times += [0 for i in range(len(subset))]
+                        to_cbd_distances += [0 for i in range(len(subset))]
+                        to_cbd_times += [0 for i in range(len(subset))]     
+                                                
+                except:
+                    if(retried_original_key):
+                        client = ors.Client('5b3ce3597851110001cf6248ce6c95ac96814219a4c3a7741f323b73') # Phikho-caz's api key 2500
+                        backup_failed = True
+                        print('Quota Exceeded daily limit or (less than 3500 branch) timeout')
+                    retried_original_key = True
+                    time.sleep(2.2)
+                    # if original key has run out of quota and backup key also runs out of quota
+                    if(retried_original_key and backup_failed):
+                        to_place_distances += [0 for i in range(len(subset))]
+                        to_place_times += [0 for i in range(len(subset))]
+                        to_cbd_distances += [0 for i in range(len(subset))]  # repeat N (place count) times for each property to keep the format
+                        to_cbd_times += [0 for i in range(len(subset))]
+                        # retried the original key, confirm its quota has been exceeded
+                        success = True
+                    
         
         else:
             # iteratively cut into sublists to make requests
             j = 0
             factor = i*(count_places+1) // 3500  # assumes it's properties that exceed by a factor, so reduce them
             slicer = i // (factor+1)
+            retried_original_key = False
+            backup_failed = False
             while (j < factor+1):
                 temp_list1 = [] # temporary lists to store sliced lists of unique to cbd distance, reset at each iteration
                 temp_list2 = [] # temporary lists to store sliced lists of unique to cbd time, reset at each iteration
@@ -138,24 +154,35 @@ def add_distance_time(property_place_csv, year, client, mode):
                     
                     j += 1
                 except:
-                    to_place_distances += [0 for i in range(len(partial_sources_index) * count_places)]
-                    to_place_times += [0 for i in range(len(partial_sources_index) * count_places)]
-                    to_cbd_distances += [0 for i in range(len(partial_sources_index) * count_places)]
-                    to_cbd_times += [0 for i in range(len(partial_sources_index) * count_places)]
-                    client = ors.Client('5b3ce3597851110001cf6248ce6c95ac96814219a4c3a7741f323b73') # Phikho-caz's api key 2500
-                    print('Quota Exceeded daily limit or (greater than 3500 branch) timeout')
+                    # retried the original key, confirm its quota has been exceeded
+                    if(retried_original_key):
+                        client = ors.Client('5b3ce3597851110001cf6248ce6c95ac96814219a4c3a7741f323b73') # Phikho-caz's api key 2500
+                        backup_failed = True
+                        print('Quota Exceeded daily limit or (greater than 3500 branch) timeout')
+                    retried_original_key = True
+                    time.sleep(2.2)
+                    if(retried_original_key and backup_failed):
+                        to_place_distances += [0 for i in range(len(partial_sources_index) * count_places)]
+                        to_place_times += [0 for i in range(len(partial_sources_index) * count_places)]
+                        to_cbd_distances += [0 for i in range(len(partial_sources_index) * count_places)]
+                        to_cbd_times += [0 for i in range(len(partial_sources_index) * count_places)]
+                        j += 1
 
     csv_copy = property_place_csv.copy(deep=True)
 
-    csv_copy['dist_to_place_M'] = to_place_distances
-    csv_copy['dist_to_place_KM'] = csv_copy['dist_to_place_M'] / 1000
-    csv_copy['time_to_place_S'] = to_place_times
-    csv_copy['time_to_place_MIN'] = csv_copy['time_to_place_S'] / 60
+    try:
+        csv_copy['dist_to_place_M'] = to_place_distances
+        csv_copy['dist_to_place_KM'] = csv_copy['dist_to_place_M'] / 1000
+        csv_copy['time_to_place_S'] = to_place_times
+        csv_copy['time_to_place_MIN'] = csv_copy['time_to_place_S'] / 60
+        
+        csv_copy['dist_to_cbd_M'] = to_cbd_distances
+        csv_copy['dist_to_cbd_KM'] = csv_copy['dist_to_cbd_M'] / 1000
+        csv_copy['time_to_cbd_S'] = to_cbd_times
+        csv_copy['time_to_cbd_MIN'] = csv_copy['time_to_cbd_S'] / 60
     
-    csv_copy['dist_to_cbd_M'] = to_cbd_distances
-    csv_copy['dist_to_cbd_KM'] = csv_copy['dist_to_cbd_M'] / 1000
-    csv_copy['time_to_cbd_S'] = to_cbd_times
-    csv_copy['time_to_cbd_MIN'] = csv_copy['time_to_cbd_S'] / 60
+    except:
+        print("Errors creating new columns due to mismatched shape")
     
     if (mode == 'saving'):
         csv_copy.to_csv(f'../../data/featured/{year}_distance_rental_place.csv', index=False)
