@@ -52,7 +52,7 @@ In the add_distance_time function, the requests were conducted by iterating SA2 
 
 For route number greater than 3500 which was prohibited by ORS, a slicing method that divided sources into smaller subsets based on the factor, by which route number exceeded 3500, replaced the original requests. So that the restriction could be solved by making additional calls. For example for 103 sources * 35 places = 3605 > 3500, exceeding by a factor of 1, sources list was divided into 51-52 sublists, and two requests with route number 51 * 35 and 52 * 35 were called to ensure all 3605 data was retrieved.
 
-For exception such as exceeding API quota during processing, a back up API key with a capacity of 2500 calls was switched into to handle the exception. For other keys, the quota of 500 was mostly sufficient to process each merged yearly dataset given there were fewer than 500 SA2 codes in each year.  
+For exception such as exceeding API quota during processing, a back up API key with a capacity of 2500 calls was switched into to handle the exception. For other keys, the individual quota of 500 was mostly sufficient to process each merged yearly dataset given there were fewer than 500 SA2 codes in each year (except for 502 in 2022).  
 
 ## 2.2 External Dataset Preprocessing
 [Need to complete later]
