@@ -42,8 +42,17 @@ For number of rooms, we viewed the boxplot and mannually confirmed deleted some 
 
 For the rental price, we removed outliers year by year. For each year, we removed the rental price vlaues out side of the 3 standard deviation. Each year, arounf 1 to 3 % of data were removed as outliers. Hence we suggest it is a reasonable outlier removal appraoch.
 
-### 2.1.2 Adding SA2 Code for Cleaned Data
+### 2.1.3 Adding SA2 Code for Cleaned Data
 [Need to complete later]
+
+### 2.1.4 Adding Distance/Time to Places/CBD from Clean Property Data (Open Route Servive API)
+See `/notebooks/Preprocessing/ors_iteration_add_rentalDistance`. At each iteration, a yearly subset of places csv and a year subset of property csv between 2013-2021 were called out and merged based on SA2 Code. Then, a list of clients registered with unique API keys was used to request distance/time for each merged yearly dataset. 
+
+In the add_distance_time function, the requests were conducted by iterating SA2 codes. All properties in current SA2 code were computed as sources, each of which was mapped to all places defined by this SA2 code. So in total, (size of sources * count of places) routes of distances/time were computed for each SA2 district. 
+
+For route number greater than 3500 which was prohibited by ORS, a slicing method that divided sources into smaller subsets based on the factor, by which route number exceeded 3500, replaced the original requests. So that the restriction could be solved by making additional calls. For example for 103 sources * 35 places = 3605 > 3500, exceeding by a factor of 1, sources list was divided into 51-52 sublists, and two requests with route number 51*35 and 52*35 were called to ensure all 3605 data was retrieved.
+
+For exception such as exceeding API quota during processing, a back up API key with a capacity of 2500 calls was switched into to handle the exception. For other keys, the quota of 500 was mostly sufficient to process each merged yearly dataset given there were fewer than 500 SA2 codes in each year.  
 
 ## 2.2 External Dataset Preprocessing
 [Need to complete later]
