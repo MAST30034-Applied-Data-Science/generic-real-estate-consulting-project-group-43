@@ -134,13 +134,15 @@ dmypy.json
 
 # OSX .DS_Store file
 .DS_Store
+data/featured/2022_distance_rental_place.csv
+data/featured/2015_distance_rental_place.csv
+data/featured/2016_distance_rental_place.csv
+data/featured/2018_distance_rental_place.csv
+data/featured/2021_distance_rental_place.csv
+data/featured/2020_distance_rental_place.csv
+data/featured/2019_distance_rental_place.csv
 data/featured/2013_distance_rental_place.csv
 data/featured/2014_distance_rental_place.csv
-data/featured/2016_distance_rental_place.csv
 data/featured/2015_distance_rental_place.csv
+data/featured/2016_distance_rental_place.csv
 data/featured/2017_distance_rental_place.csv
-data/featured/2018_distance_rental_place.csv
-data/featured/2019_distance_rental_place.csv
-data/featured/2020_distance_rental_place.csv
-data/featured/2021_distance_rental_place.csv
-data/featured/2022_distance_rental_place.csv
