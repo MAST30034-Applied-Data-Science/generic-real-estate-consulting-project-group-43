@@ -1,4 +1,3 @@
-from http import client
 from operator import index
 import openrouteservice as ors
 import numpy as np
@@ -192,8 +191,22 @@ def add_distance_time(property_place_csv, year, client, mode):
 
 
 
+def get_min_distance_time(distance_added_csv, year):
+    csv_copy = distance_added_csv.copy(deep=True)
+    
+    csv_copy['min_distance_to_place_M'] = csv_copy.groupby(['address', 'place_type', 'month'])['dist_to_place_M'].transform('min')
+    csv_copy['min_distance_to_place_KM'] = csv_copy.groupby(['address', 'place_type', 'month'])['dist_to_place_KM'].transform('min')
+    csv_copy['min_time_to_place_S'] = csv_copy.groupby(['address', 'place_type', 'month'])['time_to_place_S'].transform('min')
+    csv_copy['min_time_to_place_MIN'] = csv_copy.groupby(['address', 'place_type', 'month'])['time_to_place_MIN'].transform('min')
+    min_distance_df = csv_copy.drop_duplicates(subset=['address','month', 'min_distance_to_place_M', 'min_distance_to_place_KM', 'min_time_to_place_S', 'min_time_to_place_MIN']) \
+        .drop(columns=['Place_Names', 'latitude_des', 'longitude_des','Place_Names','dist_to_place_M', 'dist_to_place_KM', 'time_to_place_S', 'time_to_place_MIN'])\
+        .reset_index(drop=True)
 
-
+    addr_month_pair = len(min_distance_df.drop_duplicates(subset=['address', 'month']))
+    min_distance_df = min_distance_df.sort_values('month').reset_index(drop=True)
+    min_distance_df.to_csv(f'../../data/distance/{year}_min_distance.csv', index=False)
+    print(f"Updated {addr_month_pair} address-month pairs, shape = {min_distance_df.shape}")
+    return min_distance_df
 
 """
 import geopy
