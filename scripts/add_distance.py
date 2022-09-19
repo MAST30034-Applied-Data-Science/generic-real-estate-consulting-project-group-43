@@ -205,7 +205,7 @@ def get_min_distance_time(distance_added_csv, year):
     addr_month_pair = len(min_distance_df.drop_duplicates(subset=['address', 'month']))
     min_distance_df = min_distance_df.sort_values('month').reset_index(drop=True)
     min_distance_df.to_csv(f'../../data/distance/{year}_min_distance.csv', index=False)
-    print(f"Updated {addr_month_pair} address-month pairs, shape = {min_distance_df.shape}")
+    print(f"Completed Year {year}, updated {addr_month_pair} address-month pairs, shape = {min_distance_df.shape}")
     return min_distance_df
 
 """
