@@ -1,0 +1,548 @@
+* {
+  font-family: "Georgia", sans-serif;
+}
+
+header {
+  grid-area: header;
+  background-color: #034f84;
+  text-align: center;
+  width: 100%;
+  color:#fff
+
+}
+header a {
+  text-decoration: none;
+  
+}
+
+ul.topnav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color:  #034f84;
+  width: 100%;
+}
+
+ul.topnav li {
+  float: left;
+}
+
+ul.topnav li a {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+ul.topnav li a:hover {
+  background-color: #f4e1d2;
+}
+
+ul.topnav li.icon {
+  display: none;
+}
+
+@media screen and (max-width: 680px) {
+  ul.topnav li:not(:first-child) {
+    display: none;
+  }
+  ul.topnav li.icon {
+    display: inline-block;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  ul.topnav.responsive {
+    position: relative;
+  }
+  ul.topnav.responsive li.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  ul.topnav.responsive li {
+    float: none;
+    display: inline;
+  }
+  ul.topnav.responsive li a {
+    display: block;
+    text-align: left;
+  }
+}
+
+body {
+  /* page layout - desktop version */
+  display: grid;
+  grid-template-columns: 5fr 22fr 10fr;
+  grid-template-rows: auto auto;
+  grid-gap: 0;
+  margin: 0;
+  grid-template-areas:
+    "header header header"
+    "nav main aside"
+    "footer footer footer";
+}
+
+.topnav {
+  background-color: #333;
+  position: absolute;
+}
+
+/* assign regions of the page to the grid */
+@media screen and (max-width: 640px) {
+  /* page layout for phones */
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+  nav {
+    display: none;
+    flex-direction: column;
+  }
+  .mobile-container {
+    display: flex;
+    margin: auto;
+  }
+}
+
+.article {
+  color: rgb(70, 70, 70);
+  text-align: justify;
+}
+
+nav {
+  grid-area: nav;
+}
+
+.sidenav {
+  background-color:  #92a8d1;
+  display: block;
+  float: left;
+  height: 100%;
+}
+
+.about_sidenav {
+  color:#fff;
+  background-color: #92a8d1;
+  font-size: 15px;
+  display: block;
+  float: left;
+  height: 100%;
+}
+.about_sidenav a:hover {
+  background: #034f84;
+}
+.about_sidenav a {
+  padding: 20px 20px 20px 20px;
+  font-size: 20px;
+  text-decoration: none;
+  color: #fff;
+  display: block;
+}
+
+.sidenav .image {
+  height: 200px;
+  margin: 10px;
+}
+.links {
+  background-color: #deeaee;
+  text-align: left;
+  font-size: small;
+}
+.links h3 {
+  text-align: center;
+}
+.links a {
+  color: #818181;
+}
+
+.box {
+  text-align: center;
+  visibility: hidden;
+}
+footer {
+  color: #818181;
+  grid-area: footer;
+  background: #034f84;
+  text-align: center;
+  color: #fff;
+
+}
+footer a {
+  text-decoration: none;
+  text-align: center;
+  background: #034f84;
+  color: #fff;
+}
+footer a:hover {
+  background: #034f84;
+}
+
+aside {
+  grid-area: aside;
+  width: 95%;
+}
+.greeting {
+  font-size: 250%;
+  color: rgb(70, 70, 70);
+}
+
+.date {
+  font-size: 100%;
+  color: rgb(70, 70, 70);
+}
+
+main {
+  grid-area: main;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 5%;
+}
+
+.sectionborder {
+  color: rgb(70, 70, 70);
+  border-width: 5px;
+  border-spacing: 20px;
+  border-style: solid;
+  width: 98%;
+  overflow: auto;
+}
+.sectionborder tr td {
+  text-align: left;
+}
+.view {
+  text-align: center;
+  padding: 5px 5px 5 px 5px;
+  background-color: rgba(229, 229, 229, 0.5);
+}
+
+.button {
+  border: none;
+  color: rgb(70, 70, 70);
+  padding: 15px 12px;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  background-color: rgba(229, 229, 229, 0.5);
+  border-radius: 25px;
+}
+
+.viewbutton {
+  position: relative;
+  left: 45%;
+}
+
+.sectionborder table,
+th,
+td {
+  padding: 10px;
+}
+
+.leaderboard_sectionborder {
+  overflow: auto;
+  color: rgb(70, 70, 70);
+  border-color: #f7cac9;
+  border-width: 5px;
+  border-spacing: 10px;
+  border-style: solid;
+}
+
+.historyData table {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  color: rgb(70, 70, 70);
+  border-color: #fff;
+  border-width: 5px;
+  border-spacing: 5px;
+  border-style: solid;
+  border-collapse: collapse;
+}
+.historyData tr {
+  padding: 10px;
+  border: solid #e1f0db;
+}
+.historyData td {
+  padding: 10px;
+  border: 1px solid #e1f0db;
+  text-align: center;
+}
+.historyData .title {
+  font-size: 11.5px;
+  font-weight: bold;
+}
+
+.sectionborder .categories .td {
+  text-align: center;
+}
+
+/*BELOW ARE CSS FOR CLINICIAN*/
+
+.clinician_header {
+  color: #818181;
+  height: 35px;
+  background-color: #e1f0db;
+  text-align: center;
+  width: 100%;
+}
+
+.cli_sidenav {
+  background-color: #cfe6bd;
+  height: 1000px;
+  /*Mannually drag background color to the bottom*/
+}
+.cli_sidenav img {
+  width: 80%;
+  margin-left: 20px;
+}
+
+.active {
+  background-color: #818181;
+}
+
+.cli_active {
+  background-color: white;
+}
+
+.cli_greeting {
+  position: absolute;
+  width: 65%;
+  left: 18%;
+  top: 13%;
+  display: flex;
+  flex-direction: column;
+}
+.cli_greeting h1 {
+  font-size: 4em;
+  position: static;
+  font-style: normal;
+  color: rgba(0, 0, 0, 0.7);
+  text-align: left;
+  line-height: 10%;
+}
+
+.cli_greeting h2 {
+  position: static;
+  font-style: normal;
+  font-size: 2em;
+  color: rgba(0, 0, 0, 0.6);
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  margin: 28px 0px;
+  line-height: 5%;
+}
+.cli_sectionborder {
+  overflow: auto;
+}
+.cli_sectionborder table {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  color: rgb(70, 70, 70);
+  border-color: #fff;
+  border-width: 5px;
+  border-spacing: 5px;
+  border-style: solid;
+  border-collapse: collapse;
+  
+}
+.cli_sectionborder tr {
+  padding: 10px;
+  border: solid #fff;
+}
+.cli_sectionborder td,
+th {
+  padding: 10px;
+  width: 50px;
+  border: 1px solid #fff;
+  text-align: center;
+}
+.cli_sectionborder .title {
+  font-size: 11.5px;
+  font-weight: bold;
+}
+.cli_sectionborder .patient_name a {
+  color: rgba(0, 0, 0, 0.7);
+  text-decoration: underline;
+}
+.cli_notes {
+  text-align: center;
+  background-color:#8fbc88;
+}
+.cli_notes a {
+  color:white;
+  font-size: 13px;
+}
+.menu {
+  color: rgba(0, 0, 0, 0.7);
+  font-size: 1.3rem;
+}
+
+.menu {
+  position: relative;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  height: 80%;
+  top: 5%;
+  width: 25%;
+  left: 65%;
+  column-gap: 4em;
+}
+
+.menu .elem {
+  border-width: 0;
+  border-radius: 15vh;
+  background-color: #8fbc88;
+  width: 100px;
+}
+.menu .elem a {
+  text-decoration: none;
+  color: black;
+}
+.menu .elem:hover {
+  background-color: rgb(157, 196, 157);
+}
+
+.aboutlog {
+  position: relative;
+  border-width: 0;
+  border-radius: 20vh;
+  background-color: #8fbc88;
+  width: 50px;
+  height: 30px;
+  top: -130%;
+  left: 40%;
+}
+.aboutlog a {
+  text-decoration: none;
+  color: rgb(70, 70, 70);
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: darkgrey;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+  border-radius: 10px;
+
+  /* Position the tooltip text - see examples below! */
+  position: absolute;
+  z-index: 1;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+.notLogin {
+  background-color: #e1f0db;
+}
+
+.whole {
+  text-align: center;
+  margin-bottom: 2em;
+  color:#333;
+}
+
+.each {
+  margin: 2em;
+}
+
+.news {
+  overflow: auto;
+}
+.news .image {
+  width: 200px;
+  height: 300px
+}
+.news table {
+  padding: 10px;
+  font-size: 14px;
+  color: rgb(70, 70, 70);
+  border-color: #fff;
+  border-width: 5px;
+  border-spacing: 5px;
+  border-style: solid;
+  border-collapse: collapse;
+}
+.news table a {
+  color: rgb(70, 70, 70);
+  text-decoration: none;
+}
+.clinician_header a {
+  color: #818181
+}
+
+.displayBadge #above {
+  font-style:italic;
+  color: #8fbc88;
+}
+
+.displayBadge #below {
+  font-style:italic;
+  color:rgb(70, 70, 70);
+}
+
+progress {
+  width: 250px;
+  height: 20px;
+  color:rgb(70, 70, 70);
+}
+.alert {
+  color:indianred;
+  font-size: larger;
+  background-color:rgb(247, 202, 202);
+  padding-top: 20px;
+  height:50px;
+  width: 100%;
+  text-align: center;
+}
+button {
+  margin:5px;
+  padding: 8px;
+  background-color:#034f84;
+  border-radius:15px;
+  border: #034f84;
+  color:white
+}
+.re-edit button {
+  margin:5px;
+  padding: 8px;
+  background-color:grey;
+  border-radius:15px;
+  border: #f7786b;
+  color:white
+}
+
+::placeholder {
+  background-color:#deeaee;
+  border-radius:15px;
+  padding: 8px;
+}
+:placeholder-shown {
+  border-radius:15px;
+  border:#fff;
+  padding: 8px;
+}
+input {
+  background-color:#deeaee;
+  border-radius:15px;
+  border:5px;
+  padding: 8px;
+}

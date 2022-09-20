@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="{{ url_for('static', filename='style1.css')}}" rel="stylesheet" />
+    <title>Realestate Consulting Project</title>
+</head>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function(event) { 
+      var scrollpos = localStorage.getItem('scrollpos');
+      if (scrollpos) window.scrollTo(0, scrollpos);
+  });
+
+  window.onbeforeunload = function(e) {
+      localStorage.setItem('scrollpos', window.scrollY);
+  };
+</script>
+<!-- content of webpage begins here -->
+<body>
+    <header>
+      <h2>Data Science With Realestate<br></h2>
+      
+    </header>
+
+    <main>
+      <div class="article">
+      <section>
+        <a name="Overview"></a>
+        <h2>Overview</h2>
+        <p>
+          Can you believe that you can forseen the future with the help of statsitcis and machine learning models? <br> <br>
+
+          With this website you can not only forseen the suburbs with the greatest rental price growth rate but also
+          know the the population, GDP rate, income rate, saving rate, crime rate for suburbs for 
+          the next 5 years.<br> <br>
+
+          If you are currently looking for the most livable or affordable house or apartment to rent, this website 
+          is perfect for you!<br> <br>
+
+          You can enter the rank of your prioritization in terms of education, transportation, safety, shopping followed by 
+          your budget and our system will automatically return the most liveable and affordable suburb for you. If you are
+          just interested in data science and machine learning models just like us, feel free to explore:)
+        </p>
+      </section>
+    </div>
+      <div class="mapouter"><div class="gmap_canvas"><iframe width=100% height="400" id="gmap_canvas" src="https://maps.google.com/maps?q=victoria&t=&z=5&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://fmovies-online.net"></a><br><style>.mapouter{position:relative;text-align:right;height:400px;width:100%;}</style><a href="https://www.embedgooglemap.net">how to add map to website</a><style>.gmap_canvas {overflow:hidden;background:none!important;height:400px;width:100%;}</style></div></div>
+      <br>
+
+      <div class="article">
+        <a name="Feature Prediction Models"></a>
+        <h2>Feature Prediction</h2>
+      </div>
+
+      <div class="cli_sectionborder">
+        <table>
+          <tr>
+            <th>
+          <h3>Population prediction</h3>
+            <!-- Action is where the data is sent. In our case, predict page.
+            If action is omitted, it assumed to be the current page -->
+            <form action="{{ url_for('predict')}}"method="post">
+              <input type="text" name="Year" placeholder="Year" required="required" /><br/><br/>
+                <input type="text" name="SA2" placeholder="SA2" required="required" /><p>
+        
+                <button type="submit" class="btn btn-primary btn-block btn-large">Predict population of this sa2</button></p>
+            </form>
+          <h4>{{ prediction_text1 }} </h4>
+        </th>
+          <th><h3>Crime case prediction</h3>
+          <!-- Action is where the data is sent. In our case, predict page.
+          If action is omitted, it assumed to be the current page -->
+          <form action="{{ url_for('predict_crime')}}"method="post">
+            <input type="text" name="Year" placeholder="Year" required="required" /><br/><br/>
+              <input type="text" name="SA2" placeholder="Postcode" required="required" /><p>
+              <button type="submit" class="btn btn-primary btn-block btn-large">Predict crime case of this postcode</button></p>
+          </form>
+        <h4>{{ prediction_text2 }} </h4>
+      </th></tr></table>
+      </div>
+
+      <div class="article">
+        <section>
+          <a name="Rental Price Prediction"></a>
+            <h2>Rental Price Prediction</h2>
+            <p>
+              blablabla
+              <a name="title1"></a><br /><br />
+            </p>
+          </section>
+    
+          <section>
+            <a name="The Most Liveable Suburb"></a>
+            <h2>The Most Liveable Suburb for You</h2>
+            <ol>
+              <li>point1.</li>
+              <li>
+                point2
+              </li>
+              <li>point3</li>
+              <li>
+                point4
+              </li>
+            </ol>
+          </section>
+        </div></main>
+
+
+    <aside>
+      <div class="links">
+        <div class="video">
+            <p>
+              <h3>The Best Place to Live - The Economics</h3>
+              <iframe
+                width="100%"
+                height="250"
+                src="https://www.youtube.com/embed/ylR21fezN7E"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </p>
+          </div>
+        </div>
+  
+
+    <div class="links">
+      <h3>Useful Links</h3>
+      <ul>
+        <li>
+          <strong>GitHub Repository: </strong>
+          <a href="https://github.com/MAST30034-Applied-Data-Science/generic-real-estate-consulting-project-group-43" target="_blank">github.com</a>
+          <br/><br/>
+        </li>
+        <li>
+          <strong>Liveability Index: </strong>
+          <a href="https://www.un.org/sustainabledevelopment/cities/" target="_blank">UN</a>
+          <a href="https://www.melbourne.vic.gov.au/about-melbourne/research-and-statistics/Pages/liveability.aspx" target="_blank">City of Melbourne</a>
+          <br /><br />
+        </li>
+        <li>
+          <strong>Realestate Information: </strong>
+          <a href="https://www.domain.com.au/" target="_blank">Domain</a>
+          <a href="https://www.realestate.com.au/" target="_blank">Realestate</a>
+          <br/><br/>
+        </li>
+        <li>
+          <strong>Datasets of VIC: </strong>
+          <a href="https://www.abs.gov.au/" target="_blank">ABS</a>
+          <a href="https://data.aurin.org.au/dataset/" target="_blank">AURIN</a>
+          <br /><br />
+        </li>
+      </ul>
+    </div>
+
+    <div class = links>
+      <h3>Most Rented Apartments</h3>
+      <table  class="dataframe">
+        <thead>
+          <tr style="text-align: right;">
+            <th></th>
+            <th>SA2 Name</th>
+            <th>SA2 Code</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>0</th>
+            <td>Prahran - Windsor</td>
+            <td>206061136</td>
+          </tr>
+          <tr>
+            <th>1</th>
+            <td>Elwood</td>
+            <td>206051129</td>
+          </tr>
+          <tr>
+            <th>2</th>
+            <td>North Melbourne</td>
+            <td>206041506</td>
+          </tr>
+          <tr>
+            <th>3</th>
+            <td>St Kilda - Central</td>
+            <td>206051513</td>
+          </tr>
+          <tr>
+            <th>4</th>
+            <td>St Kilda - West</td>
+            <td>206051514</td>
+          </tr>
+          <tr>
+            <th>5</th>
+            <td>Albert Park</td>
+            <td>206051128</td>
+          </tr>
+          <tr>
+            <th>6</th>
+            <td>Malvern - Glen Iris</td>
+            <td>208041194</td>
+          </tr>
+          <tr>
+            <th>7</th>
+            <td>Toorak</td>
+            <td>206061138</td>
+          </tr>
+          <tr>
+            <th>8</th>
+            <td>Carlton</td>
+            <td>206041117</td>
+          </tr>
+          <tr>
+            <th>9</th>
+            <td>Brunswick West</td>
+            <td>206011107</td>
+          </tr>
+          <tr>
+            <th>10</th>
+            <td>Malvern East</td>
+            <td>208041195</td>
+          </tr>
+          <tr>
+            <th>11</th>
+            <td>Hawthorn East</td>
+            <td>207011152</td>
+          </tr>
+          <tr>
+            <th>12</th>
+            <td>Carnegie</td>
+            <td>208021176</td>
+          </tr>
+          <tr>
+            <th>13</th>
+            <td>Ormond - Glen Huntly</td>
+            <td>208021182</td>
+          </tr>
+          <tr>
+            <th>14</th>
+            <td>Footscray</td>
+            <td>213031348</td>
+          </tr>
+          <tr>
+            <th>15</th>
+            <td>Elsternwick</td>
+            <td>208021179</td>
+          </tr>
+          <tr>
+            <th>16</th>
+            <td>Armadale</td>
+            <td>206061135</td>
+          </tr>
+          <tr>
+            <th>17</th>
+            <td>Docklands</td>
+            <td>206041118</td>
+          </tr>
+          <tr>
+            <th>18</th>
+            <td>Fitzroy</td>
+            <td>206071142</td>
+          </tr>
+          <tr>
+            <th>19</th>
+            <td>Thornbury</td>
+            <td>206021112</td>
+          </tr>
+          <tr>
+            <th>20</th>
+            <td>Port Melbourne</td>
+            <td>206051130</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class = links>
+      <h3>
+        Most Rented Houses
+      </h3>
+      <table class="dataframe">
+        <thead>
+          <tr style="text-align: right;">
+            <th></th>
+            <th>SA2 Name</th>
+            <th>SA2 Code</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>0</th>
+            <td>Bendigo</td>
+            <td>202011018</td>
+          </tr>
+          <tr>
+            <th>1</th>
+            <td>Rosebud - McCrae</td>
+            <td>214021384</td>
+          </tr>
+          <tr>
+            <th>2</th>
+            <td>Wonthaggi - Inverloch</td>
+            <td>205031093</td>
+          </tr>
+          <tr>
+            <th>3</th>
+            <td>Canadian - Mount Clear</td>
+            <td>201011483</td>
+          </tr>
+          <tr>
+            <th>4</th>
+            <td>Phillip Island</td>
+            <td>205031091</td>
+          </tr>
+          <tr>
+            <th>5</th>
+            <td>Alfredton</td>
+            <td>201011001</td>
+          </tr>
+          <tr>
+            <th>6</th>
+            <td>Newport</td>
+            <td>213021344</td>
+          </tr>
+          <tr>
+            <th>7</th>
+            <td>Burnside Heights</td>
+            <td>213041462</td>
+          </tr>
+          <tr>
+            <th>8</th>
+            <td>North Geelong - Bell Park</td>
+            <td>203021047</td>
+          </tr>
+          <tr>
+            <th>9</th>
+            <td>Ballarat</td>
+            <td>201011002</td>
+          </tr>
+          <tr>
+            <th>10</th>
+            <td>Yarraville</td>
+            <td>213031352</td>
+          </tr>
+          <tr>
+            <th>11</th>
+            <td>Geelong West - Hamlyn Heights</td>
+            <td>203021040</td>
+          </tr>
+          <tr>
+            <th>12</th>
+            <td>Albert Park</td>
+            <td>206051128</td>
+          </tr>
+          <tr>
+            <th>13</th>
+            <td>Williamstown</td>
+            <td>213021346</td>
+          </tr>
+          <tr>
+            <th>14</th>
+            <td>Point Nepean</td>
+            <td>214021383</td>
+          </tr>
+          <tr>
+            <th>15</th>
+            <td>Ashwood - Chadstone</td>
+            <td>212051319</td>
+          </tr>
+          <tr>
+            <th>16</th>
+            <td>Torquay</td>
+            <td>203031053</td>
+          </tr>
+          <tr>
+            <th>17</th>
+            <td>Cranbourne South</td>
+            <td>212031303</td>
+          </tr>
+          <tr>
+            <th>18</th>
+            <td>East Bendigo - Kennington</td>
+            <td>202011020</td>
+          </tr>
+          <tr>
+            <th>19</th>
+            <td>Oakleigh - Huntingdale</td>
+            <td>212051326</td>
+          </tr>
+          <tr>
+            <th>20</th>
+            <td>Cranbourne</td>
+            <td>212031300</td>
+          </tr>
+          <tr>
+          </tbody>
+      </table>
+    </div>
+  </aside>
+
+    
+    <nav>
+        <div class="about_sidenav">
+            <p>
+              <a href="#Overview">Overview</a>
+            </p>
+            <p>
+              <a href="#Feature Prediction Models">Feature Prediction</a>
+            </p>
+            <p>
+              <a href="#Rental Price Prediction">Rental Price Prediction</a>
+            </p>
+            <p>
+              <a href="#The Most Liveable Suburb">The Most Liveable Suburb for You</a>
+            </p>
+          </div>
+        </nav>
+        <footer>
+          <br><br>
+          <img src = "https://1073zb3xfs20yv98x228do7r-wpengine.netdna-ssl.com/wp-content/uploads/2020/04/UniMelb_WEB.jpg" width="50" height="50" right="100%">
+          <p>About us</p>
+          <p>We are Data Science students are The University of Melbourne. This website is built up in terms of statistical model illustrations. 
+            We hope this website can bridge the communcation between the general populatiion and our model and deliver some insights on rental 
+            price and liveability.
+            Particularly, we hope that non-data-science background people can enjoy using and exploring this website. So that models constructed by us, the
+            future data scientsts are being applied and realized on a larger scale.
+            <br><br>
+            <p>Copyright 2022 by Data Science With Realestate @ The University of Melbourne All Rights Reserved.</p>
+          </p>
+        </footer>
+</body>
+</html>
