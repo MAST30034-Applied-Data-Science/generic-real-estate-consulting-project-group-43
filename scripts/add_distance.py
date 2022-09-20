@@ -31,7 +31,7 @@ def add_distance_time(property_place_csv, year, client, mode):
             sources_index.append(i) # append origin indices
             i += 1
         
-        locations_coor += [ (x[15], x[14]) for x in subset.iloc[:count_places].to_numpy()] # 15 is place longitude, 14 is place latitude, add all places right after property coordinates
+        locations_coor += [ (x[14], x[13]) for x in subset.iloc[:count_places].to_numpy()] # 15 is place longitude, 14 is place latitude, add all places right after property coordinates
         locations_coor += [(144.962379, -37.810454)] # add melbourne central coordinates to the end
 
         destinations_index += [x for x in range(i, i+count_places+1)] # destination indices right after origin indices, add uptil all places have been added 
@@ -57,7 +57,7 @@ def add_distance_time(property_place_csv, year, client, mode):
                     # request the distance matrix for each property to all places under current SA2 code
                     distance_matrix = ors.distance_matrix.distance_matrix(client=client, locations=locations_coor, 
                     profile='driving-car', sources=sources_index, destinations=destinations_index, metrics=['distance', 'duration'])
-                    time.sleep(2.3)
+                    time.sleep(1.2)
                     # the oms request is valid
                     success = True
                     matrix_checker = [each for sublist in distance_matrix['distances'] for each in sublist[:-1]]
@@ -89,7 +89,7 @@ def add_distance_time(property_place_csv, year, client, mode):
                         backup_failed = True
                         print('Quota Exceeded daily limit or (less than 3500 branch) timeout')
                     retried_original_key = True
-                    time.sleep(2.2)
+                    time.sleep(1.5)
                     # if original key has run out of quota and backup key also runs out of quota
                     if(retried_original_key and backup_failed):
                         to_place_distances += [0 for i in range(len(subset))]
@@ -118,7 +118,7 @@ def add_distance_time(property_place_csv, year, client, mode):
                 try:
                     distance_matrix = ors.distance_matrix.distance_matrix(client=client, locations=locations_coor, 
                     profile='driving-car', sources=partial_sources_index, destinations=destinations_index, metrics=['distance', 'duration'])
-                    time.sleep(2.3)
+                    time.sleep(1.2)
                     
                     #print("partial sources index = ", flush=True)
                     #time.sleep(0.5) # wait for 1.3 sec
@@ -159,7 +159,7 @@ def add_distance_time(property_place_csv, year, client, mode):
                         backup_failed = True
                         print('Quota Exceeded daily limit or (greater than 3500 branch) timeout')
                     retried_original_key = True
-                    time.sleep(2.2)
+                    time.sleep(1.5)
                     if(retried_original_key and backup_failed):
                         to_place_distances += [0 for i in range(len(partial_sources_index) * count_places)]
                         to_place_times += [0 for i in range(len(partial_sources_index) * count_places)]
