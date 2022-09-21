@@ -49,7 +49,8 @@ def predict():
         return render_template('index.html', error1='Please enter valid values.')
     result = pd.read_csv('../data/curated/feature_prediction/22_27_population.csv')
     sa2_df = pd.read_csv('../data/curated/sa2_vic.csv')
-    suburb = sa2_df[sa2_df.SA2_CODE21 == 201011001].SA2_NAME21
+    print(sa2)
+    suburb = sa2_df.loc[sa2_df.SA2_CODE21 == sa2].SA2_NAME21.values
     suburb = suburb[0]
     SA2_lst = list(set(result['SA2 code']))
     year_lst = list(set(result['year']))
