@@ -1,7 +1,7 @@
 # https://youtu.be/bluclMxiUkA
 
 import numpy as np
-from flask import Flask, request, render_template
+from flask import Flask, request, render_template, json
 import pickle
 import os
 import pandas as pd
@@ -40,42 +40,55 @@ def home():
 @app.route('/predict',methods=['POST'])
 
 def predict():
-    int_features = [float(x) for x in request.form.values()] #Convert string inputs to float.
-    features = [np.array(int_features)]  #Convert to the form [[a, b]] for input to the model
-    year = int(features[0][0])
-    sa2 = int(features[0][1])
+    int_features = [x for x in request.form.values()] #Convert string inputs to float.
+    features = [np.array(int_features)]  #Convert to the form [[a, b]] for input to the 
+    if (features[0][0].isdigit() & features[0][1].isdigit()):
+        year = int(features[0][0])
+        sa2 = int(features[0][1])
+    else:
+        return render_template('index.html', error1='Please enter valid values.')
     result = pd.read_csv('../data/curated/feature_prediction/22_27_population.csv')
     sa2_df = pd.read_csv('../data/curated/sa2_vic.csv')
     suburb = sa2_df[sa2_df.SA2_CODE21 == 201011001].SA2_NAME21
     suburb = suburb[0]
     SA2_lst = list(set(result['SA2 code']))
-    df_sa2 = pd.DataFrame(SA2_lst)
-    df_sa2.columns = ['SA2 code']
-    df_sa2_dum = pd.get_dummies(df_sa2, columns=['SA2 code'])
-    row = df_sa2_dum[df_sa2_dum['SA2 code_'+str(sa2)] == 1]
-    row.insert(0, 'year',year)
-    pred = int(model1.predict(row))
-    #prediction = model.predict(features)  # features Must be in the form [[a, b]]
-    output = pred
-    return render_template('index.html', prediction_text1='In {}, the population of {} is predicted to be {}'.format(year, suburb,output))
+    year_lst = list(set(result['year']))
+    if ((sa2 in SA2_lst) & (year in year_lst)):
+        df_sa2 = pd.DataFrame(SA2_lst)
+        df_sa2.columns = ['SA2 code']
+        df_sa2_dum = pd.get_dummies(df_sa2, columns=['SA2 code'])
+        row = df_sa2_dum[df_sa2_dum['SA2 code_'+str(sa2)] == 1]
+        row.insert(0, 'year',year)
+        pred = int(model1.predict(row))
+        #prediction = model.predict(features)  # features Must be in the form [[a, b]]
+        output = pred
+        return render_template('index.html', prediction_text1='In {}, the population of {} is predicted to be {}'.format(year, suburb,output))
+    return render_template('index.html', error2='Sorry, we do not have enough information to make prediction.')
 
 @app.route('/predict_crime',methods=['POST'])
 
 def predict_crime():
-    year_crime = 2023
-    post = 3000
+    int_features = [x for x in request.form.values()] #Convert string inputs to float.
+    features = [np.array(int_features)]
+    if (features[0][0].isdigit() & features[0][1].isdigit()):
+        year_crime = int(features[0][0])
+        post = int(features[0][1])
+    else:
+        return render_template('index.html', error3='Please enter valid values.')
     result = pd.read_csv('../data/curated/feature_prediction/23_27_crime_case.csv')
     post_lst = list(set(result['Postcode']))
-    df_post = pd.DataFrame(post_lst)
-    df_post.columns = ['Postcode']
-    df_post_dum = pd.get_dummies(df_post, columns=['Postcode'])
-    row = df_post_dum[df_post_dum['Postcode_'+str(post)] == 1]
-    row.insert(0, 'Year',year_crime)
-    pred = int(model2.predict(row))
-    #prediction = model.predict(features)  # features Must be in the form [[a, b]]
-    output_crime = pred
-    return render_template('index.html', prediction_text2='In {}, the crime cases of {} is predicted to be {}'.format(year_crime, post,output_crime))
-
+    year_lst = list(set(result['Year']))
+    if ((post in post_lst) & (year_crime in year_lst)):
+        df_post = pd.DataFrame(post_lst)
+        df_post.columns = ['Postcode']
+        df_post_dum = pd.get_dummies(df_post, columns=['Postcode'])
+        row = df_post_dum[df_post_dum['Postcode_'+str(post)] == 1]
+        row.insert(0, 'Year',year_crime)
+        pred = int(model2.predict(row))
+        #prediction = model.predict(features)  # features Must be in the form [[a, b]]
+        output_crime = pred
+        return render_template('index.html', prediction_text2='In {}, the crime cases of {} is predicted to be {}'.format(year_crime, post,output_crime))
+    return render_template('index.html', error4='Sorry, we do not have enough information to make the prediction.')
 
 
 #When the Python interpreter reads a source file, it first defines a few special variables. 

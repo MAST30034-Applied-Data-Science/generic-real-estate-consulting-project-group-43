@@ -67,7 +67,9 @@
         
                 <button type="submit" class="btn btn-primary btn-block btn-large">Predict population of this sa2</button></p>
             </form>
-          <h4>{{ prediction_text1 }} </h4>
+            <p>{{ prediction_text1 }} </p>
+            <p style="color:lightcoral">{{ error1 }} </p>
+            <p style="color:lightcoral">{{ error2 }} </p>
         </th>
           <th><h3>Crime case prediction</h3>
           <!-- Action is where the data is sent. In our case, predict page.
@@ -77,7 +79,9 @@
               <input type="text" name="SA2" placeholder="Postcode" required="required" /><p>
               <button type="submit" class="btn btn-primary btn-block btn-large">Predict crime case of this postcode</button></p>
           </form>
-        <h4>{{ prediction_text2 }} </h4>
+        <p>{{ prediction_text2 }} </p>
+        <p style="color:lightcoral">{{ error3 }} </p>
+        <p style="color:lightcoral">{{ error4 }} </p>
       </th></tr></table>
       </div>
 

@@ -238,11 +238,7 @@ main {
   left: 45%;
 }
 
-.sectionborder table,
-th,
-td {
-  padding: 10px;
-}
+
 
 .leaderboard_sectionborder {
   overflow: auto;
@@ -258,7 +254,6 @@ td {
   padding: 10px;
   font-size: 14px;
   color: rgb(70, 70, 70);
-  border-color: #fff;
   border-width: 5px;
   border-spacing: 5px;
   border-style: solid;
@@ -346,10 +341,8 @@ td {
   padding: 10px;
   font-size: 14px;
   color: rgb(70, 70, 70);
-  border-color: #fff;
   border-width: 5px;
   border-spacing: 5px;
-  border-style: solid;
   border-collapse: collapse;
   
 }
@@ -475,7 +468,6 @@ th {
   padding: 10px;
   font-size: 14px;
   color: rgb(70, 70, 70);
-  border-color: #fff;
   border-width: 5px;
   border-spacing: 5px;
   border-style: solid;
