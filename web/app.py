@@ -42,7 +42,7 @@ def home():
 def predict():
     int_features = [x for x in request.form.values()] #Convert string inputs to float.
     features = [np.array(int_features)]  #Convert to the form [[a, b]] for input to the 
-    if (features[0][0].isdigit() & features[0][1].isdigit()):
+    if (features[0][0].isdigit() & features[0][1].isdigit() & len(features[0][1]) == 9):
         year = int(features[0][0])
         sa2 = int(features[0][1])
     else:
@@ -71,7 +71,8 @@ def predict():
 def predict_crime():
     int_features = [x for x in request.form.values()] #Convert string inputs to float.
     features = [np.array(int_features)]
-    if (features[0][0].isdigit() & features[0][1].isdigit()):
+    if (features[0][0].isdigit() & features[0][1].isdigit() ):
+        print(len( features[0][1]))
         year_crime = int(features[0][0])
         post = int(features[0][1])
     else:
@@ -80,6 +81,7 @@ def predict_crime():
     post_lst = list(set(result['Postcode']))
     year_lst = list(set(result['Year']))
     if ((post in post_lst) & (year_crime in year_lst)):
+
         df_post = pd.DataFrame(post_lst)
         df_post.columns = ['Postcode']
         df_post_dum = pd.get_dummies(df_post, columns=['Postcode'])

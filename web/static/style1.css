@@ -184,7 +184,9 @@ footer a:hover {
 
 aside {
   grid-area: aside;
-  width: 95%;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 5%;
 }
 .greeting {
   font-size: 250%;
@@ -348,13 +350,11 @@ main {
 }
 .cli_sectionborder tr {
   padding: 10px;
-  border: solid #fff;
 }
 .cli_sectionborder td,
 th {
   padding: 10px;
   width: 50px;
-  border: 1px solid #fff;
   text-align: center;
 }
 .cli_sectionborder .title {
