@@ -8,6 +8,7 @@
     <title>Realestate Consulting Project</title>
 </head>
 
+
 <script>
   document.addEventListener("DOMContentLoaded", function(event) { 
       var scrollpos = localStorage.getItem('scrollpos');
@@ -18,6 +19,7 @@
       localStorage.setItem('scrollpos', window.scrollY);
   };
 </script>
+
 <!-- content of webpage begins here -->
 <body>
     <header>
@@ -103,15 +105,120 @@
         <section>
           <a name="Rental Price Prediction"></a>
             <h2>Rental Price Prediction</h2>
-            <p>
-              blablabla
-              <a name="title1"></a><br /><br />
+            <p>blablabla<a name="title1"></a><br /><br />
             </p>
-          </section>
-    
-          <section>
-            <a name="The Most Liveable Suburb"></a>
-            <h2>The Most Liveable Suburb for You</h2>
+        </section>
+            <h2>The Most Liveable & Affordable Suburb for You</h2>
+
+            <form action="/action_page.php">
+            <table style ="width: 100%; text-align: center; font-size: small;">
+              <thead>
+                <tr>
+                  <th>Criteria</th>
+                  <th>Preference</th>
+                 </tr>
+              </thead>
+              <tbody>
+
+                <tr>
+                  <td>
+                    Preferred residence type
+                  </td>
+                  <td><br>
+                  <label for="residence_type">Please choose your preferred residence type:</label>
+                  <select name="residence_type" id="residence_type">
+                  <option value="Apartment">Apartment</option>
+                  <option value="House">House</option>
+                  <option value="IDM">I don't mind</option>
+                </select>
+                  </td><br>
+                </tr>
+
+                <tr>
+                  <td>
+                    Weekly rent budget
+                  </td>
+                  <td><br>
+                    <label for="budget">Please choose your preferred weekly rent budget:</label>
+                    <select name="budget" id="budget">
+                    <option value="200">under $200 per week</option>
+                    <option value="300">under $300 per week</option>
+                    <option value="400">under $400 per week</option>
+                    <option value="500">under $500 per week</option>
+                    <option value="600">under $600 per week</option>
+                    <option value="700">under $700 per week</option>
+                    <option value="800">under $800 per week</option>
+                    <option value="900">under $900 per week</option>
+                    <option value="1000">under $1000 per week</option>
+                    <option value="over_1000">over $1000 per week</option>
+                    <option value="r_IDM">I don't mind</option>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>
+                    Safety: <label id="SafetyValue" style="color:crimson">10</label>
+                  </td>
+                  <td>
+                    <label>Not important(0)</label><input type="range" value="10" min="0" max="10" oninput="SafetyValue.innerText = this.value" class = "slider">
+                    <label>Extremely important(10)</label>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    Education: <label id="EducationValue" style="color:crimson">10</label>
+                  </td>
+                  <td>
+                    <label>Not important(0)</label>
+                    <input type="range" value="10" min="0" max="10" oninput="EducationValue.innerText = this.value" class = "slider">
+                    <label>Extremely important(10)</label>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    Transportation: <label id="TransportationValue" style="color:crimson">10</label>
+                  </td>
+                  <td>
+                    <label>Not important(0)</label><input type="range" value="10" min="0" max="10" oninput="TransportationValue.innerText = this.value" class = "slider">
+                    <label>Extremely important(10)</label>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    Healthcare: <label id="HealthcareValue" style="color:crimson">10</label>
+                  </td>
+                  <td>
+                    <label>Not important(0)</label><input type="range" value="10" min="0" max="10" oninput="HealthcareValue.innerText = this.value" class = "slider">
+                    <label>Extremely important(10)</label>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    Distance to City: <label id="CityValue" style="color:crimson">10</label>
+                  </td>
+                  <td>
+                    <label>Not important(0)</label><input type="range" value="10" min="0" max="10" oninput="CityValue.innerText = this.value" class = "slider">
+                    <label>Extremely important(10)</label>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    Shopping: <label id="ShoppingValue" style="color:crimson">10</label>
+                  </td>
+                  <td>
+                    <label>Not important(0)</label><input type="range" value="10" min="0" max="10" oninput="ShoppingValue.innerText = this.value" class = "slider">
+                    <label>Extremely important(10)</label>
+                  </td>
+                </tr>
+                </tbody></table>
+                <br>
+                <button type="submit" class="btn btn-primary btn-block btn-large"style='position: relative; left:50%'>submit</button></p>
+              </form>
+                
+            <p>
+              The most liveable and affordable suburb for you is: <br><br>
+              The top 10 recommended property for you to rent is:
+            </p>
             <ol>
               <li>point1.</li>
               <li>
