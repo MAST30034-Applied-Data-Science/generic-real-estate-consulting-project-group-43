@@ -19,6 +19,7 @@ print(dname)
 
 model1 = pickle.load(open('../web/models/population_model.pkl', 'rb'))
 model2 = pickle.load(open('../web/models/crimecase_model.pkl', 'rb'))
+model3 = pickle.load(open('../web/models/income_model.pkl', 'rb'))
 
 
 #Define the route to be home. 
@@ -42,16 +43,17 @@ def home():
 def predict():
     int_features = [x for x in request.form.values()] #Convert string inputs to float.
     features = [np.array(int_features)]  #Convert to the form [[a, b]] for input to the 
-    if (features[0][0].isdigit() & features[0][1].isdigit() & len(features[0][1]) == 9):
+    if (features[0][0].isdigit() & features[0][1].isdigit()):
         year = int(features[0][0])
         sa2 = int(features[0][1])
     else:
         return render_template('index.html', error1='Please enter valid values.')
     result = pd.read_csv('../data/curated/feature_prediction/22_27_population.csv')
-    sa2_df = pd.read_csv('../data/curated/sa2_vic.csv')
+    sa2_df = pd.read_csv('../data/curated/sa2_vic_2021.csv')
     print(sa2)
     suburb = sa2_df.loc[sa2_df.SA2_CODE21 == sa2].SA2_NAME21.values
-    suburb = suburb[0]
+    if suburb:
+        suburb = suburb[0]
     SA2_lst = list(set(result['SA2 code']))
     year_lst = list(set(result['year']))
     if ((sa2 in SA2_lst) & (year in year_lst)):
@@ -63,7 +65,7 @@ def predict():
         pred = int(model1.predict(row))
         #prediction = model.predict(features)  # features Must be in the form [[a, b]]
         output = pred
-        return render_template('index.html', prediction_text1='In {}, the population of {} is predicted to be {}'.format(year, suburb,output))
+        return render_template('index.html', prediction_text1='In {}, the population density of {} is predicted to be {} per kilometer square'.format(year, suburb,output))
     return render_template('index.html', error2='Sorry, we do not have enough information to make prediction.')
 
 @app.route('/predict_crime',methods=['POST'])
@@ -93,6 +95,35 @@ def predict_crime():
         return render_template('index.html', prediction_text2='In {}, the crime cases of {} is predicted to be {}'.format(year_crime, post,output_crime))
     return render_template('index.html', error4='Sorry, we do not have enough information to make the prediction.')
 
+@app.route('/predict_income',methods=['POST'])
+
+def predict_income():
+    int_features = [x for x in request.form.values()] #Convert string inputs to float.
+    features = [np.array(int_features)]
+    if (features[0][0].isdigit() & features[0][1].isdigit() ):
+        print(len( features[0][1]))
+        year_income = int(features[0][0])
+        sa2 = int(features[0][1])
+    else:
+        return render_template('index.html', error5='Please enter valid values.')
+    result = pd.read_csv('../data/curated/feature_prediction/20_27_income_per_person_2016sa2.csv')
+    sa2_df = pd.read_csv('../data/curated/sa2_vic_2016.csv')
+    suburb = sa2_df.loc[sa2_df.SA2_MAIN16 == sa2].SA2_NAME16.values
+    if suburb:
+        suburb = suburb[0]
+    sa2_lst = list(set(result['sa2_2016']))
+    year_lst = list(set(result['Year']))
+    if ((sa2 in sa2_lst) & (year_income in year_lst)):
+        df_sa2 = pd.DataFrame(sa2_lst)
+        df_sa2.columns = ['SA2']
+        df_sa2_dum = pd.get_dummies(df_sa2, columns=['SA2'])
+        row = df_sa2_dum[df_sa2_dum['SA2_'+str(sa2)] == 1]
+        row.insert(0, 'Year',year_income)
+        pred = int(model3.predict(row))
+        #prediction = model.predict(features)  # features Must be in the form [[a, b]]
+        output_crime = pred
+        return render_template('index.html', prediction_text3='In {}, the income of {} is predicted to be {} AUD per year'.format(year_income, suburb,output_crime))
+    return render_template('index.html', error6='Sorry, we do not have enough information to make the prediction.')
 
 #When the Python interpreter reads a source file, it first defines a few special variables. 
 #For now, we care about the __name__ variable.
