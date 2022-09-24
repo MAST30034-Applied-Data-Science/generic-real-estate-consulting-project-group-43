@@ -35,7 +35,7 @@
 
           With this website you can not only forseen the suburbs with the greatest rental price growth rate but also
           know the the population, GDP rate, income rate, saving rate, crime rate for suburbs for 
-          the next 5 years.<br> <br>
+          the next 5 years in Victoria, Australia.<br> <br>
 
           If you are currently looking for the most livable or affordable house or apartment to rent, this website 
           is perfect for you!<br> <br>
@@ -47,6 +47,7 @@
       </section>
     </div>
       <div class="mapouter"><div class="gmap_canvas"><iframe width=100% height="400" id="gmap_canvas" src="https://maps.google.com/maps?q=victoria&t=&z=5&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://fmovies-online.net"></a><br><style>.mapouter{position:relative;text-align:right;height:400px;width:100%;}</style><a href="https://www.embedgooglemap.net">how to add map to website</a><style>.gmap_canvas {overflow:hidden;background:none!important;height:400px;width:100%;}</style></div></div>
+      <p style = "text-align: center;">Victoria, Australia</p>
       <br>
 
       <div class="article">
@@ -58,20 +59,20 @@
         <table>
           <tr>
             <th>
-          <h3>Population prediction</h3>
+          <h3>Population Density </h3>
             <!-- Action is where the data is sent. In our case, predict page.
             If action is omitted, it assumed to be the current page -->
             <form action="{{ url_for('predict')}}"method="post">
               <input type="text" name="Year" placeholder="Year" required="required" /><br/><br/>
                 <input type="text" name="SA2" placeholder="SA2" required="required" /><p>
         
-                <button type="submit" class="btn btn-primary btn-block btn-large">Predict population of this sa2</button></p>
+                <button type="submit" class="btn btn-primary btn-block btn-large">Predict population density of this sa2</button></p>
             </form>
             <p>{{ prediction_text1 }} </p>
             <p style="color:lightcoral">{{ error1 }} </p>
             <p style="color:lightcoral">{{ error2 }} </p>
         </th>
-          <th><h3>Crime case prediction</h3>
+          <th><h3>Crime Case</h3>
           <!-- Action is where the data is sent. In our case, predict page.
           If action is omitted, it assumed to be the current page -->
           <form action="{{ url_for('predict_crime')}}"method="post">
@@ -82,7 +83,20 @@
         <p>{{ prediction_text2 }} </p>
         <p style="color:lightcoral">{{ error3 }} </p>
         <p style="color:lightcoral">{{ error4 }} </p>
-      </th></tr></table>
+      </th></tr>
+        <th><h3>Income</h3>
+          <!-- Action is where the data is sent. In our case, predict page.
+          If action is omitted, it assumed to be the current page -->
+          <form action="{{ url_for('predict_income')}}"method="post">
+            <input type="text" name="Year" placeholder="Year" required="required" /><br/><br/>
+              <input type="text" name="SA2" placeholder="SA2" required="required" /><p>
+              <button type="submit" class="btn btn-primary btn-block btn-large">Predict income  of this SA2</button></p>
+          </form>
+        <p>{{ prediction_text3 }} </p>
+        <p style="color:lightcoral">{{ error5 }} </p>
+        <p style="color:lightcoral">{{ error6 }} </p>
+    </th></tr>
+    </table>
       </div>
 
       <div class="article">
@@ -426,7 +440,7 @@
           <img src = "https://1073zb3xfs20yv98x228do7r-wpengine.netdna-ssl.com/wp-content/uploads/2020/04/UniMelb_WEB.jpg" width="50" height="50" right="100%">
           <p>About us</p>
           <p>We are Data Science students are The University of Melbourne. This website is built up in terms of statistical model illustrations. 
-            We hope this website can bridge the communcation between the general populatiion and our model and deliver some insights on rental 
+            We hope this website can bridge the communcation between the general population and our model and deliver some insights on rental 
             price and liveability.
             Particularly, we hope that non-data-science background people can enjoy using and exploring this website. So that models constructed by us, the
             future data scientsts are being applied and realized on a larger scale.
