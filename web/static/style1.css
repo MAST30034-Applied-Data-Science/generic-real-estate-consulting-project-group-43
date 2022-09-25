@@ -206,7 +206,7 @@ main {
 }
 
 .sectionborder {
-  color: #92a8d1;
+  color: rgba(0, 0, 0, 0.7);
   border-width: 5px;
   border-spacing: 20px;
   border-style: solid;
@@ -342,7 +342,7 @@ main {
   width: 100%;
   padding: 10px;
   font-size: 14px;
-  color:#92a8d1;
+  color: rgba(0, 0, 0, 0.7);
   border-width: 5px;
   border-spacing: 5px;
   border-collapse: collapse;
