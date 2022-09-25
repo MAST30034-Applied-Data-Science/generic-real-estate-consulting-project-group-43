@@ -206,7 +206,7 @@ main {
 }
 
 .sectionborder {
-  color: rgb(70, 70, 70);
+  color: #92a8d1;
   border-width: 5px;
   border-spacing: 20px;
   border-style: solid;
@@ -214,7 +214,7 @@ main {
   overflow: auto;
 }
 .sectionborder tr td {
-  text-align: left;
+  text-align: center;
 }
 .view {
   text-align: center;
@@ -342,7 +342,7 @@ main {
   width: 100%;
   padding: 10px;
   font-size: 14px;
-  color: rgb(70, 70, 70);
+  color:#92a8d1;
   border-width: 5px;
   border-spacing: 5px;
   border-collapse: collapse;
@@ -526,6 +526,14 @@ button {
   background-color:#deeaee;
   border-radius:15px;
   padding: 8px;
+}
+.links input[type=text] {
+  float: right;
+  padding: 6px;
+  border: none;
+  margin-top: 8px;
+  margin-right: 16px;
+  font-size: 17px;
 }
 :placeholder-shown {
   border-radius:15px;
