@@ -1,0 +1,9 @@
+,Significant External predictors,Significant Internal predictors
+0,sa2_2021,residence_type
+1,min_distance_to_cbd,nbed
+2,min_distance_to_second,nbath
+3,min_distance_to_train,
+4,min_distance_to_poli,
+5,income_per_person,
+6,crime_cases,
+7,population_density,
