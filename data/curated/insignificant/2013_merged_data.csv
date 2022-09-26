@@ -1,0 +1,11 @@
+,Insignificant External predictors,Insignificant Internal predictors
+0,population_density,ncar
+1,min_distance_to_cbd,residence_type
+2,min_distance_to_park,nbed
+3,min_distance_to_prim,nbath
+4,min_distance_to_second,ncar
+5,min_distance_to_train,
+6,gdp,
+7,saving_rate,
+8,income_per_person,
+9,crime_cases,

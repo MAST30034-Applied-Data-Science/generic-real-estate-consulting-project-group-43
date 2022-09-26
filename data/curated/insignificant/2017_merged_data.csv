@@ -2,10 +2,10 @@
 0,population_density,ncar
 1,sa2_2021,residence_type
 2,min_distance_to_cbd,nbed
-3,min_distance_to_park,nbath
-4,min_distance_to_prim,ncar
+3,min_distance_to_prim,nbath
+4,min_distance_to_second,ncar
 5,min_distance_to_train,
-6,min_distance_to_shop,
+6,min_distance_to_hosp,
 7,gdp,
 8,saving_rate,
 9,income_per_person,
