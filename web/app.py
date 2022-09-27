@@ -1,11 +1,12 @@
 # https://youtu.be/bluclMxiUkA
 
+from lib2to3.pgen2.pgen import DFAState
+import string
 import numpy as np
-from flask import Flask, request, render_template, json
+from flask import Flask, request, render_template, json, jsonify
 import pickle
 import os
 import pandas as pd
- 
 #Create an app object using the Flask class. 
 app = Flask(__name__)
 
@@ -125,6 +126,116 @@ def predict_income():
         return render_template('index.html', prediction_text3='In {}, the income of {} is predicted to be {} AUD per year'.format(year_income, suburb,output_crime))
     return render_template('index.html', error6='Sorry, we do not have enough information to make the prediction.')
 
+@app.route('/liveability',methods=['POST'])
+def liveability():
+    df = pd.read_csv('../data/curated/merged_dataset/2022_merged_data.csv')
+    type = request.form['residence_type']
+    budget = request.form['budget']
+    if type != 'idm':
+        df = df[df.residence_type == type]
+    if budget != 'idm':
+        budget = float(request.form['budget'])
+        df = df[df.weekly_rent <= budget]
+    crime = request.form['crime']
+    poli = request.form['poli']
+    primary = request.form['primary']
+    secondary = request.form['secondary']
+    trans = request.form['trans']
+    health = request.form['health']
+    park = request.form['park']
+    city = request.form['city']
+    shop = request.form['shop']
+    lst = [int(crime), int(poli), int(primary),int(secondary), int(trans), int(health),int(park), int(city), int(shop)]
+    weight = [int(crime)/sum(lst), int(poli)/sum(lst), int(primary)/sum(lst), int(secondary)/sum(lst), int(trans)/sum(lst), int(health)/sum(lst), int(park)/sum(lst), int(city)/sum(lst), int(shop)/sum(lst)]
+    print(int(budget))
+    COLS = ["residence_type","weekly_rent","address","sa2_2021",
+        'min_distance_to_poli', 'crime_cases',  'min_distance_to_prim',
+       'min_distance_to_second', 'min_distance_to_train',
+       'min_distance_to_hosp','min_distance_to_park',
+       'min_distance_to_cbd', 'min_distance_to_shop']
+    COL = [
+        'min_distance_to_poli', 'crime_cases',  'min_distance_to_prim',
+       'min_distance_to_second', 'min_distance_to_train',
+       'min_distance_to_hosp','min_distance_to_park',
+       'min_distance_to_cbd', 'min_distance_to_shop']
+    ranking = pd.DataFrame()
+    for col in COLS:
+        if col not in ["address","sa2_2021","residence_type","weekly_rent"]:
+            ranking[col] = df[col].rank(ascending=False)
+        else:
+            ranking[col] = df[col]
+    for col in COL:
+        if col not in ["address","sa2_2021","residence_type","weekly_rent"]:
+            ranking[col] = ranking[col]/len(ranking[col])
+    score = ranking
+    def liveability_scoring(scores, cols, weights):
+        """Takes score data, list of weights and column names, return the total liveability score based on the weights"""
+        # check the validation of weight list
+        if len(weights) != len(cols):
+            return np.nan
+        #if sum(weights) != 1:
+            #return np.nan
+        
+        # initialize the values
+        scores["total_liveability_score"] = 0
+
+        # calculate the total liveability
+        for i, rows in scores.iterrows():
+            list_sum = 0
+            for n in range(0, len(cols)):
+                if not np.isnan(scores.loc[i, cols[n]]):
+                    list_sum = list_sum + (scores.loc[i, cols[n]]*weights[n])
+            scores.loc[i, "total_liveability_score"] = list_sum
+        return scores
+    total_score = liveability_scoring(score, COL, weight)
+    # liveable property
+    total_score =total_score.sort_values(by=['total_liveability_score'], ascending=False)
+    result = list(total_score.address.head(10))
+    r1 = result[0]
+    r2 = result[1]
+    r3 = result[2]
+    r4 = result[3]
+    r5 = result[4]
+    price = list(total_score.weekly_rent.head(5))
+    p1 = price[0]
+    p2 = price[1]
+    p3 = price[2]
+    p4 = price[3]
+    p5 = price[4]
+    type = list(total_score.residence_type.head(5))
+    t1 = type[0]
+    t2 = type[1]
+    t3 = type[2]
+    t4 = type[3]
+    t5 = type[4]
+    # liveable suburb
+    sa2_name = pd.read_csv('../data/curated/sa2_vic_2021.csv')
+    df2 = total_score[['sa2_2021', 'total_liveability_score','address']]\
+        .groupby(['sa2_2021'],as_index = False) \
+        .agg(
+            {\
+                'total_liveability_score': 'mean', # count number of instances from sample
+                'address': 'count',
+            }
+        ) \
+        .rename({'address': 'num','total_liveability_score': 'averaged_total_liveability_score' }, axis=1)
+    df2 = df2.sort_values(by=['averaged_total_liveability_score'], ascending=False)
+    df3 = df2.merge(sa2_name, how="left",left_on="sa2_2021",right_on = "SA2_CODE21").drop(columns = ['Unnamed: 0','SA2_CODE21'])
+    df3 = list(df3.SA2_NAME21.head(5))
+
+    R1 = df3[0]
+    R2 = df3[1]
+    R3 = df3[2]
+    R4 = df3[3]
+    R5 = df3[4]
+
+
+    return render_template('index.html',result = 'The top 5 recommended properties for you to rent are:', \
+            r1='1. {}'.format(r1),r2='2. {}'.format(r2),r3='3. {}'.format(r3),r4='4. {}'.format(r4),r5='5. {}'.format(r5),\
+            result2 = 'The top 5 recommended suburbs for you to rent at are:',\
+            R1='1. {}'.format(R1),R2='2. {}'.format(R2),R3='3. {}'.format(R3),R4='4. {}'.format(R4),R5='5. {}'.format(R5),\
+            p1=', ${} per week'.format(p1),p2=', ${} per week'.format(p2),p3=', ${} per week'.format(p3),p4=', ${} per week'.format(p4),p5=', ${} per week'.format(p5),\
+            t1=', {}'.format(t1),t2=', {}'.format(t2),t3=', {}'.format(t3),t4=', {}'.format(t4),t5=', {}'.format(t5))
 #When the Python interpreter reads a source file, it first defines a few special variables. 
 #For now, we care about the __name__ variable.
 #If we execute our code in the main program, like in our case here, it assigns

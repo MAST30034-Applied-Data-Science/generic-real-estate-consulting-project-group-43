@@ -117,7 +117,7 @@
               In our model, we have the shortest distance for each residential property to its closest schools, hospitals, train stations etc.
               we will assume that easier access (smaller distance) to the closest facility will suggest a higher liveability for that criterion.
             </p>
-            <form action="/action_page.php">
+            <form action="{{ url_for('liveability')}}"method="post">
             <table style ="width: 100%; text-align: center; font-size: small;">
               <thead>
                 <tr>
@@ -136,7 +136,7 @@
                   <select name="residence_type" id="residence_type">
                   <option value="Apartment">Apartment</option>
                   <option value="House">House</option>
-                  <option value="IDM">I don't mind</option>
+                  <option value="idm">I don't mind</option>
                 </select>
                   </td><br>
                 </tr>
@@ -148,54 +148,82 @@
                   <td><br>
                     <label for="budget">Please choose your preferred weekly rent budget:</label>
                     <select name="budget" id="budget">
-                    <option value="200">under $200 per week</option>
-                    <option value="300">under $300 per week</option>
-                    <option value="400">under $400 per week</option>
-                    <option value="500">under $500 per week</option>
-                    <option value="600">under $600 per week</option>
-                    <option value="700">under $700 per week</option>
-                    <option value="800">under $800 per week</option>
-                    <option value="900">under $900 per week</option>
-                    <option value="1000">under $1000 per week</option>
-                    <option value="over_1000">over $1000 per week</option>
-                    <option value="r_IDM">I don't mind</option>
+                    <option value=200>under $200 per week</option>
+                    <option value=300>under $300 per week</option>
+                    <option value=400>under $400 per week</option>
+                    <option value=500>under $500 per week</option>
+                    <option value=600>under $600 per week</option>
+                    <option value=700>under $700 per week</option>
+                    <option value=800>under $800 per week</option>
+                    <option value=900>under $900 per week</option>
+                    <option value=1000>under $1000 per week</option>
+                    <option value="idm">I don't mind</option>
                   </td>
                 </tr>
 
                 <tr>
                   <td>
-                    Safety: <label id="SafetyValue" style="color:crimson">10</label>
+                    Safety - distance to police station: <label id="poliValue" style="color:crimson">10</label>
                   </td>
                   <td>
-                    <label>Not important(0)</label><input type="range" value="10" min="0" max="10" oninput="SafetyValue.innerText = this.value" class = "slider">
+                    <label>Not important(0)</label><input type="range" value="10" min="0" max="10" oninput="poliValue.innerText = this.value" name ="poli">
                     <label>Extremely important(10)</label>
                   </td>
                 </tr>
                 <tr>
                   <td>
-                    Education: <label id="EducationValue" style="color:crimson">10</label>
+                    Safety - number of crime cases: <label id="crimeValue" style="color:crimson">10</label>
+                  </td>
+                  <td>
+                    <label>Not important(0)</label><input type="range" value="10" min="0" max="10" oninput="crimeValue.innerText = this.value" name ="crime">
+                    <label>Extremely important(10)</label>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    Education - distance to primary school : <label id="primaryValue" style="color:crimson">10</label>
                   </td>
                   <td>
                     <label>Not important(0)</label>
-                    <input type="range" value="10" min="0" max="10" oninput="EducationValue.innerText = this.value" class = "slider">
+                    <input type="range" value="10" min="0" max="10" oninput="primaryValue.innerText = this.value" name ="primary">
+                    <label>Extremely important(10)</label>
+                  </td>
+                </tr>
+                <tr>
+                  <tr>
+                    <td>
+                      Education - distance to secondary school: <label id="secondaryValue" style="color:crimson">10</label>
+                    </td>
+                    <td>
+                      <label>Not important(0)</label>
+                      <input type="range" value="10" min="0" max="10" oninput="secondaryValue.innerText = this.value" name ="secondary">
+                      <label>Extremely important(10)</label>
+                    </td>
+                  </tr>
+                  <tr>
+                  <td>
+                    Transportation - distance to train stations: <label id="TransportationValue" style="color:crimson">10</label>
+                  </td>
+                  <td>
+                    <label>Not important(0)</label><input type="range" value="10" min="0" max="10" oninput="TransportationValue.innerText = this.value" name ="trans">
                     <label>Extremely important(10)</label>
                   </td>
                 </tr>
                 <tr>
                   <td>
-                    Transportation: <label id="TransportationValue" style="color:crimson">10</label>
+                    Healthcare - distance to train hospitals: <label id="HealthcareValue" style="color:crimson">10</label>
                   </td>
                   <td>
-                    <label>Not important(0)</label><input type="range" value="10" min="0" max="10" oninput="TransportationValue.innerText = this.value" class = "slider">
+                    <label>Not important(0)</label><input type="range" value="10" min="0" max="10" oninput="HealthcareValue.innerText = this.value" name = "health">
                     <label>Extremely important(10)</label>
                   </td>
                 </tr>
                 <tr>
                   <td>
-                    Healthcare: <label id="HealthcareValue" style="color:crimson">10</label>
+                    Wellbeing - distance to parks: <label id="parkValue" style="color:crimson">10</label>
                   </td>
                   <td>
-                    <label>Not important(0)</label><input type="range" value="10" min="0" max="10" oninput="HealthcareValue.innerText = this.value" class = "slider">
+                    <label>Not important(0)</label><input type="range" value="10" min="0" max="10" oninput="parkValue.innerText = this.value" name = "park">
                     <label>Extremely important(10)</label>
                   </td>
                 </tr>
@@ -204,16 +232,16 @@
                     Distance to City: <label id="CityValue" style="color:crimson">10</label>
                   </td>
                   <td>
-                    <label>Not important(0)</label><input type="range" value="10" min="0" max="10" oninput="CityValue.innerText = this.value" class = "slider">
+                    <label>Not important(0)</label><input type="range" value="10" min="0" max="10" oninput="CityValue.innerText = this.value" name = "city">
                     <label>Extremely important(10)</label>
                   </td>
                 </tr>
                 <tr>
                   <td>
-                    Shopping: <label id="ShoppingValue" style="color:crimson">10</label>
+                    Shopping - access to shopping malls: <label id="ShoppingValue" style="color:crimson">10</label>
                   </td>
                   <td>
-                    <label>Not important(0)</label><input type="range" value="10" min="0" max="10" oninput="ShoppingValue.innerText = this.value" class = "slider">
+                    <label>Not important(0)</label><input type="range" value="10" min="0" max="10" oninput="ShoppingValue.innerText = this.value" name = "shop">
                     <label>Extremely important(10)</label>
                   </td>
                 </tr>
@@ -221,21 +249,22 @@
                 <br>
                 <button type="submit" class="btn btn-primary btn-block btn-large"style='position: relative; left:50%'>submit</button></p>
               </form>
-                
+              
             <p>
-              The most liveable and affordable suburb for you is: <br><br>
-              The top 10 recommended property for you to rent is:
+              <h4>{{ result2 }} </h4>
+              <p>{{ R1 }} </p>
+              <p>{{ R2 }} </p>
+              <p>{{ R3 }} </p>
+              <p>{{ R4 }} </p>
+              <p>{{ R5 }} </p>
+
+              <h4>{{ result }} </h4>
+              <p>{{ r1 }} {{t1}}{{p1}}</p>
+              <p>{{ r2 }} {{t2}}{{p2}}</p>
+              <p>{{ r3 }} {{t3}}{{p3}}</p>
+              <p>{{ r4 }} {{t4}}{{p4}}</p>
+              <p>{{ r5 }} {{t5}}{{p5}}</p>
             </p>
-            <ol>
-              <li>point1.</li>
-              <li>
-                point2
-              </li>
-              <li>point3</li>
-              <li>
-                point4
-              </li>
-            </ol>
           </section>
         </div></main>
 
