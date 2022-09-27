@@ -238,7 +238,7 @@
                 </tr>
                 <tr>
                   <td>
-                    Shopping - access to shopping malls: <label id="ShoppingValue" style="color:crimson">10</label>
+                    Shopping - distance to shopping malls: <label id="ShoppingValue" style="color:crimson">10</label>
                   </td>
                   <td>
                     <label>Not important(0)</label><input type="range" value="10" min="0" max="10" oninput="ShoppingValue.innerText = this.value" name = "shop">
@@ -251,19 +251,19 @@
               </form>
               
             <p>
-              <h4>{{ result2 }} </h4>
-              <p>{{ R1 }} </p>
-              <p>{{ R2 }} </p>
-              <p>{{ R3 }} </p>
-              <p>{{ R4 }} </p>
-              <p>{{ R5 }} </p>
+              <h4>{{ result2 }} <t style="color:#92a8d1"> {{red}}</t></h4>
+              <p>{{ R1 }} <t style="color:crimson"> {{S1}}</t>
+              <p>{{ R2 }} <t style="color:crimson"> {{S2}}</t>
+              <p>{{ R3 }} <t style="color:crimson"> {{S3}}</t>
+              <p>{{ R4 }} <t style="color:crimson"> {{S4}}</t>
+              <p>{{ R5 }} <t style="color:crimson"> {{S5}}</t>
 
-              <h4>{{ result }} </h4>
-              <p>{{ r1 }} {{t1}}{{p1}}</p>
-              <p>{{ r2 }} {{t2}}{{p2}}</p>
-              <p>{{ r3 }} {{t3}}{{p3}}</p>
-              <p>{{ r4 }} {{t4}}{{p4}}</p>
-              <p>{{ r5 }} {{t5}}{{p5}}</p>
+              <h4>{{ result }} <t style="color:#92a8d1""> {{red}}</h4>
+              <p>{{ r1 }} {{t1}}{{p1}} <t style="color:crimson"> {{s1}}</t>
+              <p>{{ r2 }} {{t2}}{{p2}}<t style="color:crimson"> {{s2}}</t>
+              <p>{{ r3 }} {{t3}}{{p3}}<t style="color:crimson"> {{s3}}</t>
+              <p>{{ r4 }} {{t4}}{{p4}}<t style="color:crimson"> {{s4}}</t>
+              <p>{{ r5 }} {{t5}}{{p5}}<t style="color:crimson"> {{s5}}</t>
             </p>
           </section>
         </div></main>

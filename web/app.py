@@ -208,6 +208,12 @@ def liveability():
     t3 = type[2]
     t4 = type[3]
     t5 = type[4]
+    score = list(round(total_score.total_liveability_score.head(10),4))
+    s1 = score[0]
+    s2 = score[1]
+    s3 = score[2]
+    s4 = score[3]
+    s5 = score[4]
     # liveable suburb
     sa2_name = pd.read_csv('../data/curated/sa2_vic_2021.csv')
     df2 = total_score[['sa2_2021', 'total_liveability_score','address']]\
@@ -220,22 +226,30 @@ def liveability():
         ) \
         .rename({'address': 'num','total_liveability_score': 'averaged_total_liveability_score' }, axis=1)
     df2 = df2.sort_values(by=['averaged_total_liveability_score'], ascending=False)
-    df3 = df2.merge(sa2_name, how="left",left_on="sa2_2021",right_on = "SA2_CODE21").drop(columns = ['Unnamed: 0','SA2_CODE21'])
-    df3 = list(df3.SA2_NAME21.head(5))
-
+    df33 = df2.merge(sa2_name, how="left",left_on="sa2_2021",right_on = "SA2_CODE21").drop(columns = ['Unnamed: 0','SA2_CODE21'])
+    df3 = list(df33.SA2_NAME21.head(5))
+    score = list(round(df33.averaged_total_liveability_score.head(10),4))
     R1 = df3[0]
     R2 = df3[1]
     R3 = df3[2]
     R4 = df3[3]
     R5 = df3[4]
 
+    S1 = score[0]
+    S2 = score[1]
+    S3 = score[2]
+    S4 = score[3]
+    S5 = score[4]
 
-    return render_template('index.html',result = 'The top 5 recommended properties for you to rent are:', \
+    return render_template('index.html',result = 'The top 5 recommended properties for you to rent are', \
+            red = '(with red values as liveability score):',\
             r1='1. {}'.format(r1),r2='2. {}'.format(r2),r3='3. {}'.format(r3),r4='4. {}'.format(r4),r5='5. {}'.format(r5),\
-            result2 = 'The top 5 recommended suburbs for you to rent at are:',\
-            R1='1. {}'.format(R1),R2='2. {}'.format(R2),R3='3. {}'.format(R3),R4='4. {}'.format(R4),R5='5. {}'.format(R5),\
-            p1=', ${} per week'.format(p1),p2=', ${} per week'.format(p2),p3=', ${} per week'.format(p3),p4=', ${} per week'.format(p4),p5=', ${} per week'.format(p5),\
-            t1=', {}'.format(t1),t2=', {}'.format(t2),t3=', {}'.format(t3),t4=', {}'.format(t4),t5=', {}'.format(t5))
+            result2 = 'The top 5 recommended suburbs for you to rent at are',\
+            R1='1. {},'.format(R1),R2='2. {},'.format(R2),R3='3. {},'.format(R3),R4='4. {},'.format(R4),R5='5. {},'.format(R5),\
+            p1=', ${} per week,'.format(p1),p2=', ${} per week,'.format(p2),p3=', ${} per week,'.format(p3),p4=', ${} per week,'.format(p4),p5=', ${} per week,'.format(p5),\
+            t1=', {}'.format(t1),t2=', {}'.format(t2),t3=', {}'.format(t3),t4=', {}'.format(t4),t5=', {}'.format(t5),\
+            s1=' {}'.format(s1),s2=' {}'.format(s2),s3=' {}'.format(s3),s4=' {}'.format(s4),s5=' {}'.format(s5),\
+            S1=' {}'.format(S1),S2=' {}'.format(S2),S3=' {}'.format(S3),S4=' {}'.format(S4),S5=' {}'.format(S5))
 #When the Python interpreter reads a source file, it first defines a few special variables. 
 #For now, we care about the __name__ variable.
 #If we execute our code in the main program, like in our case here, it assigns
