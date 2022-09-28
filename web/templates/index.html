@@ -112,7 +112,7 @@
             <h2>The Most Liveable & Affordable Suburb for You</h2>
             <p>In the following setion, our models will calculate and output the most liveable and affordable suburb for you
               based on your personal preference of the listed below criteria. You will need to enter your preferred residence type, weekly 
-              budget, and rank the how important you value safety, education, transportation, healthcare, distance to city, and
+              budget, and rank the how important you value safety, education, transportation, healthcare, wellbeing, distance to city, and
               shopping.<br><br>
               In our model, we have the shortest distance for each residential property to its closest schools, hospitals, train stations etc.
               we will assume that easier access (smaller distance) to the closest facility will suggest a higher liveability for that criterion.
@@ -166,7 +166,7 @@
                     Safety - distance to police station: <label id="poliValue" style="color:crimson">10</label>
                   </td>
                   <td>
-                    <label>Not important(0)</label><input type="range" value="10" min="0" max="10" oninput="poliValue.innerText = this.value" name ="poli">
+                    <label>Not important(1)</label><input type="range" value="10" min="1" max="10" oninput="poliValue.innerText = this.value" name ="poli">
                     <label>Extremely important(10)</label>
                   </td>
                 </tr>
@@ -175,7 +175,7 @@
                     Safety - number of crime cases: <label id="crimeValue" style="color:crimson">10</label>
                   </td>
                   <td>
-                    <label>Not important(0)</label><input type="range" value="10" min="0" max="10" oninput="crimeValue.innerText = this.value" name ="crime">
+                    <label>Not important(1)</label><input type="range" value="10" min="1" max="10" oninput="crimeValue.innerText = this.value" name ="crime">
                     <label>Extremely important(10)</label>
                   </td>
                 </tr>
@@ -184,8 +184,8 @@
                     Education - distance to primary school : <label id="primaryValue" style="color:crimson">10</label>
                   </td>
                   <td>
-                    <label>Not important(0)</label>
-                    <input type="range" value="10" min="0" max="10" oninput="primaryValue.innerText = this.value" name ="primary">
+                    <label>Not important(1)</label>
+                    <input type="range" value="10" min="1" max="10" oninput="primaryValue.innerText = this.value" name ="primary">
                     <label>Extremely important(10)</label>
                   </td>
                 </tr>
@@ -195,8 +195,8 @@
                       Education - distance to secondary school: <label id="secondaryValue" style="color:crimson">10</label>
                     </td>
                     <td>
-                      <label>Not important(0)</label>
-                      <input type="range" value="10" min="0" max="10" oninput="secondaryValue.innerText = this.value" name ="secondary">
+                      <label>Not important(1)</label>
+                      <input type="range" value="10" min="1" max="10" oninput="secondaryValue.innerText = this.value" name ="secondary">
                       <label>Extremely important(10)</label>
                     </td>
                   </tr>
@@ -205,7 +205,7 @@
                     Transportation - distance to train stations: <label id="TransportationValue" style="color:crimson">10</label>
                   </td>
                   <td>
-                    <label>Not important(0)</label><input type="range" value="10" min="0" max="10" oninput="TransportationValue.innerText = this.value" name ="trans">
+                    <label>Not important(1)</label><input type="range" value="10" min="1" max="10" oninput="TransportationValue.innerText = this.value" name ="trans">
                     <label>Extremely important(10)</label>
                   </td>
                 </tr>
@@ -214,7 +214,7 @@
                     Healthcare - distance to train hospitals: <label id="HealthcareValue" style="color:crimson">10</label>
                   </td>
                   <td>
-                    <label>Not important(0)</label><input type="range" value="10" min="0" max="10" oninput="HealthcareValue.innerText = this.value" name = "health">
+                    <label>Not important(1)</label><input type="range" value="10" min="1" max="10" oninput="HealthcareValue.innerText = this.value" name = "health">
                     <label>Extremely important(10)</label>
                   </td>
                 </tr>
@@ -223,7 +223,7 @@
                     Wellbeing - distance to parks: <label id="parkValue" style="color:crimson">10</label>
                   </td>
                   <td>
-                    <label>Not important(0)</label><input type="range" value="10" min="0" max="10" oninput="parkValue.innerText = this.value" name = "park">
+                    <label>Not important(1)</label><input type="range" value="10" min="1" max="10" oninput="parkValue.innerText = this.value" name = "park">
                     <label>Extremely important(10)</label>
                   </td>
                 </tr>
@@ -232,7 +232,7 @@
                     Distance to City: <label id="CityValue" style="color:crimson">10</label>
                   </td>
                   <td>
-                    <label>Not important(0)</label><input type="range" value="10" min="0" max="10" oninput="CityValue.innerText = this.value" name = "city">
+                    <label>Not important(1)</label><input type="range" value="10" min="1" max="10" oninput="CityValue.innerText = this.value" name = "city">
                     <label>Extremely important(10)</label>
                   </td>
                 </tr>
@@ -241,7 +241,7 @@
                     Shopping - distance to shopping malls: <label id="ShoppingValue" style="color:crimson">10</label>
                   </td>
                   <td>
-                    <label>Not important(0)</label><input type="range" value="10" min="0" max="10" oninput="ShoppingValue.innerText = this.value" name = "shop">
+                    <label>Not important(1)</label><input type="range" value="10" min="1" max="10" oninput="ShoppingValue.innerText = this.value" name = "shop">
                     <label>Extremely important(10)</label>
                   </td>
                 </tr>

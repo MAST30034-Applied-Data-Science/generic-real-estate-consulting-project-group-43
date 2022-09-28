@@ -1,4 +1,4 @@
-# https://youtu.be/bluclMxiUkA
+# reference:https://youtu.be/bluclMxiUkA
 
 from lib2to3.pgen2.pgen import DFAState
 import string
@@ -147,7 +147,6 @@ def liveability():
     shop = request.form['shop']
     lst = [int(crime), int(poli), int(primary),int(secondary), int(trans), int(health),int(park), int(city), int(shop)]
     weight = [int(crime)/sum(lst), int(poli)/sum(lst), int(primary)/sum(lst), int(secondary)/sum(lst), int(trans)/sum(lst), int(health)/sum(lst), int(park)/sum(lst), int(city)/sum(lst), int(shop)/sum(lst)]
-    print(int(budget))
     COLS = ["residence_type","weekly_rent","address","sa2_2021",
         'min_distance_to_poli', 'crime_cases',  'min_distance_to_prim',
        'min_distance_to_second', 'min_distance_to_train',
