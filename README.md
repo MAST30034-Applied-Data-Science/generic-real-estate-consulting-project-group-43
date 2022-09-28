@@ -21,6 +21,7 @@ We retrieved data from `Domain.com` and `oldlisting.com` using API and web scrap
 To generate Domain's data using API, please run `/notebooks/Scraping/API_Retrieving.ipynb`. However, as you may need to apply for your own client key and secrete via https://developer.domain.com.au/ . If you have questions regarding this, please contact the team via jiahe3@student.unimelb.edu.au
 
 To generate oldlisting's data use Web Scarping, please run `/notebooks/Scraping/Get_historical_url.ipynb`. Which will generate all the websites that contains historical rental information `/notebooks/Scraping/HIS_url_links`. It will generate the historical data retrieved from the first 100 URLs for example demonstration. This data will be stored at `/data/raw/historical_data\`. However, it is very likely to be blocked if we generate too many data at each time. Hence, the team devided the web scraping tasks and generated gradually using the notebook script `/notebooks/Scraping/Group_scraping_tasks.ipynb`. This script will generate all historical data (2006-2022) retrieved fro, oldlisting to `/data/raw/historical_data\`. In total, the team retrieved around 400k data from oldlisting.
+
 As the historical web site monitor ip address with high levels of activity, we assume the website counts the number of access by tryring many access with reasonable breaks and check when it gets block. So there are few solution options and one of them is using api-rotator through AWS. It is shown in the file `/scripts/aws-scraping-tool.py`. AWS API key will be hidden in .env file.
 
 If you want to see Domain's data retrieved using Web Scrping, please run `/notebooks/Scraping/BS_Scraping.ipynb`. However, these data will not be used in preliminary analysis or modeling to avoid redundancy.
@@ -63,8 +64,11 @@ For exception such as exceeding API quota during processing, a back up API key w
 [Need to complete later]
 ### 2.3.X Adding SA2
 There are many options to add SA2. 
-First we add SA2 using suburb name as generally SA2 name refers to suburb in the residential address (see document  https://www.abs.gov.au/ausstats/abs@.nsf/lookup/by%20subject/1270.0.55.001~july%202016~main%20features~statistical%20area%20level%202%20(sa2)~10014) however there are many of them fail to match with SA2 name because of different formats, some of region added prefix or suffix (ex. -south, -north, the great-, etc...) and the regions that have different name to SA2 name.
-Second, we use location data to add SA2. This approach is genuine method as the data loss is less than 0.5% (few data is located outside of victoria) and easy to process. We use shap file from ABS (https://www.abs.gov.au/statistics/standards/australian-statistical-geography-standard-asgs-edition-3/jul2021-jun2026/access-and-downloads/digital-boundary-files) and map polygon coordinates and check which region contains the residence locations. This will assign SA2 code to every residential locations.
+First we add SA2 using suburb name as generally SA2 name refers to suburb in the residential address (see document  https://www.abs.gov.au/ausstats/abs@.nsf/lookup/by%20subject/1270.0.55.001~july%202016~main%20features~statistical%20area%20level%202%20(sa2)~10014) however there are many of them fail to match with SA2 name because of different formats, some of region added prefix or suffix (ex. -south, -north, the great-, etc...) and the regions that have different name to SA2 name.  
+
+Second, we use location data to add SA2. This approach is genuine method as the all of data has location meta data in the website and API and the data loss is less than 0.5% (few data is located outside of victoria) and easy to process. We use shap file from ABS (https://www.abs.gov.au/statistics/standards/australian-statistical-geography-standard-asgs-edition-3/jul2021-jun2026/access-and-downloads/digital-boundary-files) and map polygon coordinates and check which region contains the residence locations. This will assign SA2 code to every residential locations.  
+
+
 
 # 3. Data Analysis
 
