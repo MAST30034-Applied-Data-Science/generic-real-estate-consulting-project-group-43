@@ -61,6 +61,10 @@ For exception such as exceeding API quota during processing, a back up API key w
 
 ## 2.3 Data Merging
 [Need to complete later]
+### 2.3.X Adding SA2
+There are many options to add SA2. 
+First we add SA2 using suburb name as generally SA2 name refers to suburb in the residential address (see document  https://www.abs.gov.au/ausstats/abs@.nsf/lookup/by%20subject/1270.0.55.001~july%202016~main%20features~statistical%20area%20level%202%20(sa2)~10014) however there are many of them fail to match with SA2 name because of different formats, some of region added prefix or suffix (ex. -south, -north, the great-, etc...) and the regions that have different name to SA2 name.
+Second, we use location data to add SA2. This approach is genuine method as the data loss is less than 0.5% (few data is located outside of victoria) and easy to process. We use shap file from ABS (https://www.abs.gov.au/statistics/standards/australian-statistical-geography-standard-asgs-edition-3/jul2021-jun2026/access-and-downloads/digital-boundary-files) and map polygon coordinates and check which region contains the residence locations. This will assign SA2 code to every residential locations.
 
 # 3. Data Analysis
 
