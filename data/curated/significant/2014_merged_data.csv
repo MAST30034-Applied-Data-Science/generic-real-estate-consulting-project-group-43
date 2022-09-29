@@ -1,9 +1,8 @@
-,Significant External predictors,Significant Internal predictors
-0,min_distance_to_cbd,residence_type
-1,min_distance_to_train,nbed
-2,min_distance_to_shop,nbath
-3,gdp,ncar
-4,saving_rate,
-5,income_per_person,
-6,crime_cases,
-7,population_density,
+Significant External predictors,Significant Internal predictors
+min_distance_to_cbd,residence_type
+min_distance_to_prim,nbed
+min_distance_to_train,nbath
+min_distance_to_shop,ncar
+income_per_person,
+crime_cases,
+population_density,
