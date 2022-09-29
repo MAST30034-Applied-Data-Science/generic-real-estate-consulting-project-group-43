@@ -7,6 +7,8 @@ from flask import Flask, request, render_template, json, jsonify
 import pickle
 import os
 import pandas as pd
+import folium
+
 #Create an app object using the Flask class. 
 app = Flask(__name__)
 
@@ -225,9 +227,10 @@ def liveability():
         ) \
         .rename({'address': 'num','total_liveability_score': 'averaged_total_liveability_score' }, axis=1)
     df2 = df2.sort_values(by=['averaged_total_liveability_score'], ascending=False)
+    df2['averaged_total_liveability_score'] = round(df2['averaged_total_liveability_score']*100,2)
     df33 = df2.merge(sa2_name, how="left",left_on="sa2_2021",right_on = "SA2_CODE21").drop(columns = ['Unnamed: 0','SA2_CODE21'])
     df3 = list(df33.SA2_NAME21.head(5))
-    score = list(round(df33.averaged_total_liveability_score.head(10) *100,2))
+    score = list(df33.averaged_total_liveability_score.head(10))
     R1 = df3[0]
     R2 = df3[1]
     R3 = df3[2]
@@ -240,6 +243,25 @@ def liveability():
     S4 = score[3]
     S5 = score[4]
 
+    with open('../data/curated/geo.json', 'r') as f:
+        geoJSON = json.load(f)
+    gsdf_pd = pd.read_csv('../data/curated/gsdf_pd.csv')
+    m = folium.Map(location=[-37.81, 144.96], tiles="Stamen Terrain", zoom_start=10, color='white')
+    svg_style = '<style>svg {background-color: rgb(255, 255, 255,0.5);}</style>'
+    m.get_root().header.add_child(folium.Element(svg_style))
+
+    c = folium.Choropleth(
+        geo_data=geoJSON,
+        name='choropleth',
+        data=df33.reset_index(), 
+        columns=['SA2_NAME21','averaged_total_liveability_score'],
+        key_on='properties.SA2_NAME21', 
+        fill_color='PiYG', 
+        nan_fill_color='black',
+        legend_name='averaged livability score per sa2',
+    )
+    c.add_to(m)
+
     return render_template('index.html',result = 'The top 5 recommended properties for you to rent are', \
             red = '(with liveability score out of 100):',\
             r1='1. {}'.format(r1),r2='2. {}'.format(r2),r3='3. {}'.format(r3),r4='4. {}'.format(r4),r5='5. {}'.format(r5),\
@@ -249,7 +271,10 @@ def liveability():
             t1=', {}'.format(t1),t2=', {}'.format(t2),t3=', {}'.format(t3),t4=', {}'.format(t4),t5=', {}'.format(t5),\
             s1=' {}'.format(s1),s2=' {}'.format(s2),s3=' {}'.format(s3),s4=' {}'.format(s4),s5=' {}'.format(s5),\
             S1=' {}'.format(S1),S2=' {}'.format(S2),S3=' {}'.format(S3),S4=' {}'.format(S4),S5=' {}'.format(S5),\
-            contact = 'Contact us at jiahe3@student.unimelb.edu.au if you are interested in how we performed the ranking steps.')
+            contact = 'Contact us at jiahe3@student.unimelb.edu.au if you are interested in how we performed the ranking steps.',\
+            map=m._repr_html_(),map1 = 'Averaged Liveability Score Based on Your Criteria')
+
+
 #When the Python interpreter reads a source file, it first defines a few special variables. 
 #For now, we care about the __name__ variable.
 #If we execute our code in the main program, like in our case here, it assigns

@@ -49,7 +49,6 @@
       </section>
     </div>
       <div class="mapouter"><div class="gmap_canvas"><iframe width=100% height="400" id="gmap_canvas" src="https://maps.google.com/maps?q=victoria&t=&z=5&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://fmovies-online.net"></a><br><style>.mapouter{position:relative;text-align:right;height:400px;width:100%;}</style><a href="https://www.embedgooglemap.net">how to add map to website</a><style>.gmap_canvas {overflow:hidden;background:none!important;height:400px;width:100%;}</style></div></div>
-      <div class="mapouter"><div class="gmap_canvas"><iframe width=100% height="400" id="gmap_canvas" src="../plots/aggregated_geo/averaged livability score per sa2.html" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://fmovies-online.net"></a><br><style>.mapouter{position:relative;text-align:right;height:400px;width:100%;}</style><a href="https://www.embedgooglemap.net">how to add map to website</a><style>.gmap_canvas {overflow:hidden;background:none!important;height:400px;width:100%;}</style></div></div>
 
       <p style = "text-align: center;">Victoria, Australia</p>
       <br>
@@ -249,7 +248,7 @@
                 </tr>
                 </tbody></table>
                 <br>
-                <button type="submit" class="btn btn-primary btn-block btn-large"style='position: relative; left:50%'>submit</button></p>
+                <button type="submit" class="btn btn-primary btn-block btn-large"style='position: relative; left:40%; width:170px'>view recommendations for you</button></p>
               </form>
               
             <p>
@@ -266,11 +265,14 @@
               <p>{{ r3 }} {{t3}}{{p3}}<t style="color:crimson"> {{s3}}</t>
               <p>{{ r4 }} {{t4}}{{p4}}<t style="color:crimson"> {{s4}}</t>
               <p>{{ r5 }} {{t5}}{{p5}}<t style="color:crimson"> {{s5}}</t>
-              <p style="color:#92a8d1"> {{contact}}</p>
+              
             </p>
+
+              <p>{{ map | safe }}</p>
+              <p style = "text-align: center;"> {{map1}}</p>
+              <p style="color:#92a8d1"> {{contact}}</p>
           </section>
         </div></main>
-
 
     <aside style = "margin-left: 10px; margin-right: 10px;margin-bottom: 10px;">
       <div class="links">
