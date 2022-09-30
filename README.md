@@ -28,10 +28,12 @@ We retrieved data of external attribute by urls, such as crime cases, total pers
 
 ## 1.3 External Dataset Downloading (Infrastructure Facility Locations Retrieved by API)
 We retreieved data of features of interest in Victoria state by retreiving query in GeoJson format through `https://services6.arcgis.com/GB33F62SbDxJjwEL/ArcGIS/rest/services/Vicmap_Features_of_Interest/FeatureServer/8/query`. The selected features of interest that we deicded to include were primary/secondary schools, parks, train stations, hospitals, market places, police stations and shopping malls. By querying them by each year with their registered data on the dataset of `https://www.arcgis.com/home/webmap/viewer.html?url=https://services6.arcgis.com/GB33F62SbDxJjwEL/ArcGIS/rest/services/Vicmap_Features_of_Interest/FeatureServer/8&source=sd`, we could retrieve each year's features of interest locations that is used to calculate the distance between a feature of interest and a rental property from the historical rental property dataset. <br/>
-### The way of producing one feature of interest for a particular year is cumulative. 
+### Structure of features of interest dataset for each year
+The way of producing one feature of interest for a particular year is cumulative. 
 eg) To retrieve the data for **market places in 2014**, all the market places registered before 2013 + market places registered in 2013 + market places registered in 2014 are combined. <br/>
+### The reasons of choosing these particular features
 We have chosen these 8 features of interest to put into our model as inputs out of many other features of interest in Victoria, since we consider them to have a significant relevant to livability, which is one of the main topic questions. According to Global livability Index 2021 Report `https://www.eiu.com/n/campaigns/global-liveability-index-2021/`, they stated 5 factors that compose liveability as "stability, healthcare, culture and environment, education and infrastructure". 
-### By referring to these five factors, we have chosen the 8 features with the following reasons: <br/>
+**By referring to these five factors, we have chosen the 8 features with the following reasons:** <br/>
 - Primary/secondary schools: Education
 - Parks, Shopping malls: Culture and environment
 - Hospitals: Healthcare
