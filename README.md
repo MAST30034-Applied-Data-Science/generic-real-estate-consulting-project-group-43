@@ -103,12 +103,12 @@ All models mentioned below are in `\models` file, and store into the features_pr
 
 ### 4.1.2 Averaged income per person for each SA2
 The notebook script `/models/income_predict.ipynb` is used to model the income per person for each sa2 (2016) with a linear regression model, and it is used to predict the income per person for each sa2 (2016) region from 2020 to 2027, with `income per person ~ year + sa2 code(2016)`.
-`year` is considered as numerical values and `sa2 code(2016)` is considered as categorical value.
+`year` is considered as numerical value and `sa2 code(2016)` is considered as categorical value.
 
 ### 4.1.3 Crime cases per each postcode region
 A linear regression model was used to predict the crime cases per each postcode region from 2023 to 2027. 
 prediction formula: `crime cases ~ year + postcode`
-`year` was considered as numerical values and `postcode` was considered as categorical value
+`year` was considered as numerical value and `postcode` was considered as categorical value
 
 ## 4.2 Rental Price Prediction
 **[Need to complete later] philip, jin, katherine**
