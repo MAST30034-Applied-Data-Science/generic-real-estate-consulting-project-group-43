@@ -30,6 +30,10 @@ If you want to see Domain's data retrieved using Web Scrping, please run `/noteb
 We retrieved data of external attributes, such as crime cases, total personal income, population, GDP from `abs.gov.au` and `hcrimestatistics.vic.gov.au`
 **[Need to complete later] - katherine & jin**
 
+## 1.3 External Dataset Downloading (Infrastructure Facility Locations Retrieved by API)
+**[Need to complete later] - jin**
+
+
 # 2. Data Preprocessing
 
 ## 2.1 Property Dataset Preprocessing
