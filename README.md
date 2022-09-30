@@ -74,8 +74,10 @@ The notebook script `/notebooks/External/external_preprocess.ipynb` is used to d
 **[Need to complete later] - katherine(geo & crime visualization)**
 
 ## 2.3 Data Merging
-The notebook script `/notebooks/External/external_merge.ipynb` is used to do
-**[Need to complete later] - ketherine**
+For merging external data of 2013 to 2022, the notebook script `/notebooks/External/external_merge.ipynb` is used to merge external attributes (GDP and saving rate, income per person for each sa2, population density and crime cases) with the data in the min_distance_sa2_organised folder in curated folder, and also drop months to get values of all attributes based on year. If the values of external attributes (GDP and saving rate, income per person for each sa2, population density and crime cases) are missing, the predicted values for the external attributes (in the features_prediction folder in curated folder) are used to merge.
+
+For merging predicted values of external attributes of 2023 to 2027, the notebook script `/notebooks/External/2023_2027_merge.ipynb` is used to merge predicted values of external attributes (GDP and saving rate, income per person for each sa2, population density and crime cases) with the postcode, 2016 sa2 codes and 2021 sa2 codes from 2022 dataset. Since 2022 dataset has the most values of postcode, sa2 2021 and sa2 2016, and includes all values from previous years of those attributes, postcode, sa2 2021 and sa2 2016 from 2022 dataset will be used for further prediction. The predicted values of the external attributes, that used for merging, are from the features_prediction folder in curated folder.
+**[Need to complete later] - ketherine & john**
 ### 2.3.X Adding SA2
 There are many options to add SA2. 
 First we add SA2 using suburb name as generally SA2 name refers to suburb in the residential address (see document  https://www.abs.gov.au/ausstats/abs@.nsf/lookup/by%20subject/1270.0.55.001~july%202016~main%20features~statistical%20area%20level%202%20(sa2)~10014) however there are many of them fail to match with SA2 name because of different formats, some of region added prefix or suffix (ex. -south, -north, the great-, etc...) and the regions that have different name to SA2 name.  
@@ -94,12 +96,13 @@ Second, we use location data to add SA2. This approach is genuine method as the 
 # 4. Modeling
 
 ## 4.1 Prediction Model for External Features
-All models mentioned below are in `\models` file
+All models mentioned below are in `\models` file, and store into the features_prediction folder in curated folder
 
 ### 4.1.1 Population
 **[Need to complete later] john**
 
 ### 4.1.2 Averaged income per person for each SA2
+
 **[Need to complete later] katherine**
 
 ### 4.1.3 Crime cases per each postcode region
