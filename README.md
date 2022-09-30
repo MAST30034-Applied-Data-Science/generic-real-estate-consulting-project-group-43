@@ -28,7 +28,7 @@ If you want to see Domain's data retrieved using Web Scrping, please run `/noteb
 
 ## 1.2 External Dataset Downloading
 We retrieved data of external attributes, such as crime cases, total personal income, population, GDP from `abs.gov.au` and `hcrimestatistics.vic.gov.au`
-[Need to complete later]
+**[Need to complete later] - katherine**
 
 # 2. Data Preprocessing
 
@@ -46,7 +46,7 @@ For number of rooms, we viewed the boxplot and mannually confirmed deleted some 
 For the rental price, we removed outliers year by year. For each year, we removed the rental price vlaues out side of the 3 standard deviation. Each year, arounf 1 to 3 % of data were removed as outliers. Hence we suggest it is a reasonable outlier removal appraoch.
 
 ### 2.1.3 Adding SA2 Code for Cleaned Data
-[Need to complete later]
+**[Need to complete later] - john & kathrine**
 
 ### 2.1.4 Adding Distance/Time to Places/CBD from Clean Property Data (Open Route Servive API)
 See `/notebooks/Preprocessing/ors_iteration_add_rentalDistance`. At each iteration, a yearly subset of places csv and a year subset of property csv between 2013-2021 were called out and merged based on SA2 Code. Then, a list of clients registered with unique API keys was used to request distance/time for each merged yearly dataset. 
@@ -66,10 +66,10 @@ However, we discovered that in total 42.66% of properties (231497 property data 
 To view these steps please see `/models/classify_property_type.ipynb`.
 
 ## 2.2 External Dataset Preprocessing
-[Need to complete later]
+**[Need to complete later] - katherine**
 
 ## 2.3 Data Merging
-[Need to complete later]
+**[Need to complete later] - ketherine**
 ### 2.3.X Adding SA2
 There are many options to add SA2. 
 First we add SA2 using suburb name as generally SA2 name refers to suburb in the residential address (see document  https://www.abs.gov.au/ausstats/abs@.nsf/lookup/by%20subject/1270.0.55.001~july%202016~main%20features~statistical%20area%20level%202%20(sa2)~10014) however there are many of them fail to match with SA2 name because of different formats, some of region added prefix or suffix (ex. -south, -north, the great-, etc...) and the regions that have different name to SA2 name.  
@@ -81,28 +81,34 @@ Second, we use location data to add SA2. This approach is genuine method as the 
 # 3. Data Analysis
 
 ## 3.1 Property Data Preliminary Analysis
-[Need to complete later]
+**[Need to complete later] - jin & grace**
 ## 3.2 Property Data Geo Visual
-[Need to complete later]
+**[Need to complete later] - jin & grace**
 
 # 4. Modeling
 
 ## 4.1 Prediction Model for External Features
 All models mentioned below are in `\models` file
 
-### 4.4.1 Population
-[Need to complete later]
+### 4.1.1 Population
+**[Need to complete later] john**
 
-### 4.4.2 Averaged income per person for each SA2
-[Need to complete later]
+### 4.1.2 Averaged income per person for each SA2
+**[Need to complete later] john**
 
-### 4.4.3 Crime cases per each postcode region
+### 4.1.3 Crime cases per each postcode region
 A linear regression model was used to predict the crime cases per each postcode region from 2023 to 2027. 
 prediction formula: `crime cases ~ year + postcode`
 `year` was considered as numerical values and `postcode` was considered as categorical value
 
+## 4.2 Rental Price Prediction
+**[Need to complete later] philip, jin, katherine**
+
+### 4.3 Rental Price Growth Rate Calculation
+**[Need to complete later] philip, jin, katherine**
+
 # 5. Liveability Scoring and Ranking Algorithm
-[Need to complete later]
+**[Need to complete later] jon & grace**
 
 # 6. Website Building
 To put our model into practice and bridge the gap between the general population and our models, we built a web site that enables the general population to explore our models.
