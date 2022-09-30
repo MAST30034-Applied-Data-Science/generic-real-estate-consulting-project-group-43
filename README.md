@@ -8,6 +8,10 @@ Jongho Park (jonghop@student.unimelb.edu.au) <br/>
 Nuo Chen (nc1@student.unimelb.edu.au) <br/>
 Anzhe Cai (anzhec@student.unimelb.edu.au) <br/>
 
+ 
+
+
+
 # 1. Data Downloading
 
 ## 1.1 Property Dataset Downloading
@@ -27,17 +31,8 @@ We retrieved data of external attribute by urls, such as crime cases, total pers
 **[Need to complete later] - john (saving rate) & jin**
 
 ## 1.3 External Dataset Downloading (Infrastructure Facility Locations Retrieved by API)
-We retreieved data of features of interest in Victoria state by retreiving query in GeoJson format through `https://services6.arcgis.com/GB33F62SbDxJjwEL/ArcGIS/rest/services/Vicmap_Features_of_Interest/FeatureServer/8/query`. The selected features of interest that we deicded to include were primary/secondary schools, parks, train stations, hospitals, market places, police stations and shopping malls. By querying them by each year with their registered data on the dataset of `https://www.arcgis.com/home/webmap/viewer.html?url=https://services6.arcgis.com/GB33F62SbDxJjwEL/ArcGIS/rest/services/Vicmap_Features_of_Interest/FeatureServer/8&source=sd`, we could retrieve each year's features of interest locations that is used to calculate the distance between a feature of interest and a rental property from the historical rental property dataset. <br/>
-### Structure of features of interest dataset for each year
-The way of producing one feature of interest for a particular year is cumulative. 
-eg) To retrieve the data for **market places in 2014**, all the market places registered before 2013 + market places registered in 2013 + market places registered in 2014 are combined. <br/>
-### The reasons of choosing these particular features
-We have chosen these 8 features of interest to put into our model as inputs out of many other features of interest in Victoria, since we consider them to have a significant relevant to livability, which is one of the main topic questions. According to Global livability Index 2021 Report `https://www.eiu.com/n/campaigns/global-liveability-index-2021/`, they stated 5 factors that compose liveability as "stability, healthcare, culture and environment, education and infrastructure". 
-**By referring to these five factors, we have chosen the 8 features with the following reasons:** <br/>
-- Primary/secondary schools: Education
-- Parks, Shopping malls: Culture and environment
-- Hospitals: Healthcare
-- Markets, Police stations, Train stations: Stability, Infrastructure
+**[Need to complete later] - jin**
+
 
 # 2. Data Preprocessing
 
@@ -76,9 +71,10 @@ To view these steps please see `/models/classify_property_type.ipynb`.
 
 ## 2.2 External Dataset Preprocessing
 The notebook script `/notebooks/External/external_preprocess.ipynb` is used to do preprocessing on those external dataset (estimated resident population, total income, crime cases, GDP), and store into the curated folder in the data folder. We calculated the population density for each sa2 region (2021), income per person for each sa2 region (2016) based on the dataset of estimated resident population and total income respectively. We tried to convert the 2016 sa2 of income to 2021 sa2, but this would lead to lots of data missing. Therefore, we decide to use 2016 sa2 for later merging.
-**[Need to complete later] - katherine(geo)**
+**[Need to complete later] - katherine(geo & crime visualization)**
 
 ## 2.3 Data Merging
+The notebook script `/notebooks/External/external_merge.ipynb` is used to do
 **[Need to complete later] - ketherine**
 ### 2.3.X Adding SA2
 There are many options to add SA2. 
@@ -104,7 +100,7 @@ All models mentioned below are in `\models` file
 **[Need to complete later] john**
 
 ### 4.1.2 Averaged income per person for each SA2
-**[Need to complete later] john**
+**[Need to complete later] katherine**
 
 ### 4.1.3 Crime cases per each postcode region
 A linear regression model was used to predict the crime cases per each postcode region from 2023 to 2027. 
