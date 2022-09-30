@@ -27,7 +27,7 @@ As the historical web site monitor ip address with high levels of activity, we a
 If you want to see Domain's data retrieved using Web Scrping, please run `/notebooks/Scraping/BS_Scraping.ipynb`. However, these data will not be used in preliminary analysis or modeling to avoid redundancy.
 
 ## 1.2 External Dataset Downloading
-We retrieved data of external attributes, such as crime cases, total personal income, estimated resident population, GDP from `abs.gov.au` and `hcrimestatistics.vic.gov.au`
+We retrieved data of external attribute by urls, such as crime cases, total personal income, estimated resident population, GDP, from `abs.gov.au` and `hcrimestatistics.vic.gov.au`.
 **[Need to complete later] - katherine & jin**
 
 ## 1.3 External Dataset Downloading (Infrastructure Facility Locations Retrieved by API)
