@@ -27,8 +27,8 @@ As the historical web site monitor ip address with high levels of activity, we a
 If you want to see Domain's data retrieved using Web Scrping, please run `/notebooks/Scraping/BS_Scraping.ipynb`. However, these data will not be used in preliminary analysis or modeling to avoid redundancy.
 
 ## 1.2 External Dataset Downloading
-We retrieved data of external attribute by urls, such as crime cases, total personal income, estimated resident population, GDP, from `abs.gov.au` and `hcrimestatistics.vic.gov.au`.
-**[Need to complete later] - katherine & jin**
+We retrieved data of external attribute by urls, such as crime cases, total personal income, estimated resident population, GDP, from `abs.gov.au` and `hcrimestatistics.vic.gov.au`. The notebook script `/notebooks/External/external_dataset_download.ipynb` is used to download those external dataset, and store into the raw folder in the data folder.
+**[Need to complete later] - john (saving rate) & jin**
 
 ## 1.3 External Dataset Downloading (Infrastructure Facility Locations Retrieved by API)
 **[Need to complete later] - jin**
@@ -50,7 +50,7 @@ For number of rooms, we viewed the boxplot and mannually confirmed deleted some 
 For the rental price, we removed outliers year by year. For each year, we removed the rental price vlaues out side of the 3 standard deviation. Each year, arounf 1 to 3 % of data were removed as outliers. Hence we suggest it is a reasonable outlier removal appraoch.
 
 ### 2.1.3 Adding SA2 Code for Cleaned Data
-**[Need to complete later] - john & kathrine**
+**[Need to complete later] - john**
 
 ### 2.1.4 Adding Distance/Time to Places/CBD from Clean Property Data (Open Route Servive API)
 See `/notebooks/Preprocessing/ors_iteration_add_rentalDistance`. At each iteration, a yearly subset of places csv and a year subset of property csv between 2013-2021 were called out and merged based on SA2 Code. Then, a list of clients registered with unique API keys was used to request distance/time for each merged yearly dataset. 
@@ -70,7 +70,8 @@ However, we discovered that in total 42.66% of properties (231497 property data 
 To view these steps please see `/models/classify_property_type.ipynb`.
 
 ## 2.2 External Dataset Preprocessing
-**[Need to complete later] - katherine**
+The notebook script `/notebooks/External/external_preprocess.ipynb` is used to do preprocessing on those external dataset (estimated resident population, total income, crime cases, GDP), and store into the curated folder in the data folder. We calculated the population density for each sa2 region (2021), income per person for each sa2 region (2016) based on the dataset of estimated resident population and total income respectively. We tried to convert the 2016 sa2 of income to 2021 sa2, but this would lead to lots of data missing. Therefore, we decide to use 2016 sa2 for later merging.
+**[Need to complete later] - katherine(geo)**
 
 ## 2.3 Data Merging
 **[Need to complete later] - ketherine**
