@@ -117,7 +117,7 @@ prediction formula: `crime cases ~ year + postcode`
 **[Need to complete later] philip, jin, katherine**
 
 # 5. Liveability Scoring and Ranking Algorithm
-**[Need to complete later] jon & grace**
+**[Need to complete later] john & grace**
 
 # 6. Website Building
 To put our model into practice and bridge the gap between the general population and our models, we built a web site that enables the general population to explore our models.
