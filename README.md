@@ -27,8 +27,7 @@ As the historical web site monitor ip address with high levels of activity, we a
 If you want to see Domain's data retrieved using Web Scrping, please run `/notebooks/Scraping/BS_Scraping.ipynb`. However, these data will not be used in preliminary analysis or modeling to avoid redundancy.
 
 ## 1.2 External Dataset Downloading
-We retrieved data of external attribute by urls, such as crime cases, total personal income, estimated resident population, GDP, from `abs.gov.au` and `hcrimestatistics.vic.gov.au`. The notebook script `/notebooks/External/external_dataset_download.ipynb` is used to download those external dataset, and store into the raw folder in the data folder.
-**[Need to complete later] - john (saving rate) & jin**
+We retrieved data of external attribute by urls, such as crime cases, total personal income, estimated resident population, GDP, saving rate from `abs.gov.au`, `hcrimestatistics.vic.gov.au` and `data.oecd.org/natincome/saving-rate.htm`. The notebook script `/notebooks/External/external_dataset_download.ipynb` is used to download those external dataset, and store into the raw folder in the data folder.
 
 ## 1.3 External Dataset Downloading (Infrastructure Facility Locations Retrieved by API)
 **[Need to complete later] - jin**
