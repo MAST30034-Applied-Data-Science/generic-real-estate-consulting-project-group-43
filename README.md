@@ -9,6 +9,8 @@ Nuo Chen (nc1@student.unimelb.edu.au) <br/>
 Anzhe Cai (anzhec@student.unimelb.edu.au) <br/>
 
  
+* Note: file named beginning with "test_" are approaches we tried but seemed not useful or we found alternative way to optimise. 
+
 
 
 
@@ -18,19 +20,21 @@ Anzhe Cai (anzhec@student.unimelb.edu.au) <br/>
 
 We retrieved data from `Domain.com` and `oldlisting.com` using API and web scraping respectively. We also applied web scraping to retrieve data from `Domain.com`. However, we realised that they are similar from API-retrieved ones and Web-scrapped Domain data contained more error messages and will result in big data loss after data cleaning. Hence, we decided to use API-retrieved Domain data.
 
-To generate Domain's data using API, please run `/notebooks/Scraping/API_Retrieving.ipynb`. However, as you may need to apply for your own client key and secrete via https://developer.domain.com.au/ . If you have questions regarding this, please contact the team via jiahe3@student.unimelb.edu.au
+0. `/notebooks/Scraping/0.BS_Scraping.ipynb`: This notebook will scrape data at Domain using beautiful soup. However, these data will not be used in preliminary analysis or modeling to avoid redundancy.
 
-To generate oldlisting's data use Web Scarping, please run `/notebooks/Scraping/Get_historical_url.ipynb`. Which will generate all the websites that contains historical rental information `/notebooks/Scraping/HIS_url_links`. It will generate the historical data retrieved from the first 100 URLs for example demonstration. This data will be stored at `/data/raw/historical_data\`. However, it is very likely to be blocked if we generate too many data at each time. Hence, the team devided the web scraping tasks and generated gradually using the notebook script `/notebooks/Scraping/Group_scraping_tasks.ipynb`. This script will generate all historical data (2006-2022) retrieved fro, oldlisting to `/data/raw/historical_data\`. In total, the team retrieved around 400k data from oldlisting.
+1. `/notebooks/Scraping/1.API_Retrieving.ipynb`:  This notebook will retrieve data at Domain using API.However, as you may need to apply for your own client key and secrete via https://developer.domain.com.au/ . If you have questions regarding this, please contact the team via jiahe3@student.unimelb.edu.au
 
-As the historical web site monitor ip address with high levels of activity, we assume the website counts the number of access by trying many access with reasonable breaks and check when it gets block. So there are few solution options and one of them is using api-rotator through AWS. It is shown in the file `/scripts/aws-scraping-tool.py`. AWS API key will be hidden in .env file.
+2. `/notebooks/Scraping/2.Get_historical_url.ipynb`: This notebook  will generate all the URL links that contains historical rental information into `/notebooks/Scraping/HIS_url_links`
+It will generate the historical data retrieved from the first 100 URLs for example demonstration. However, it is very likely to be blocked if we generate too many data at each time. Hence, the team devided the web scraping tasks and generated gradually using the notebook script.
 
-If you want to see Domain's data retrieved using Web Scrping, please run `/notebooks/Scraping/BS_Scraping.ipynb`. However, these data will not be used in preliminary analysis or modeling to avoid redundancy.
+3. `/notebooks/Scraping/3.Group_scraping_tasks.ipynb`: Hence, this notebook will generate all historical data (2006-2022) retrieved fro, oldlisting to `/data/raw/historical_data/`.We retrieved around 572k data from oldlisting.
+
+4. `/notebooks/Scraping/4.Scraping_whole.ipynb`: this notebook will using api-rotator through AWSAs to prevent web scrapping from being blocked. The historical web site monitor ip address with high levels of activity, we assume the website counts the number of access by trying many access with reasonable breaks and check when it gets block. So there are few solution options and one of them is using api-rotator through AWS. It is shown in the file `/scripts/aws-scraping-tool.py`. AWS API key will be hidden in .env file.
+
+5. `/notebooks/Scraping/5.facility_data_retreiving`: this notebook will retrieve facility data using API. Facility dataset include the facility name, location, year in which these facilitie exist. Facilities include primary and secondary schools, hospital, train station, police station, market, shopping mall.
 
 ## 1.2 External Dataset Downloading
 We retrieved data of external attribute by urls, such as crime cases, total personal income, estimated resident population, GDP, saving rate from `abs.gov.au`, `hcrimestatistics.vic.gov.au` and `data.oecd.org/natincome/saving-rate.htm`. The notebook script `/notebooks/External/0.external_dataset_download.ipynb` is used to download those external dataset, and store into the raw folder in the data folder.
-
-## 1.3 External Dataset Downloading (Infrastructure Facility Locations Retrieved by API)
-**[Need to complete later] - jin**
 
 
 # 2. Data Preprocessing
@@ -39,14 +43,16 @@ We retrieved data of external attribute by urls, such as crime cases, total pers
 
 ### 2.1.1 API-retrieved Data Preprocessing (rental price)
 
-For API data rental price preprocessing, please see `/notebooks/Preprocessing/API_prepro.ipynb`. We kept the integer only for the rental price. This notebook also converted the API dataset to the same format as the Web Scraped dataset for future concatenation. 
+0. `/notebooks/Preprocessing/API_prepro.ipynb`: this notebook will preprocess API data rental price. We kept the integer only for the rental price. This notebook also converted the API dataset to the same format as the Web Scraped dataset for future concatenation. 
+
 ### 2.1.2 Web-Scraping-retrieved Data Preprocessing (rental price, outlier detection for all features)
 
-For Web Scraping + API data preprocessing please see `/notebooks/Preprocessing/History_prepro.ipynb`. We firstly cleaned Web-Scraped data's rental price and then combined it with API datasets. We classified the whole datset and re-saved them by year. This is because, there may be inflations every year and the variance of rental price calculated year by year may be more reasonable.
+1. `/notebooks/Preprocessing/1.History_prepro.ipynb`:this notebook will preproces Web Scraping + API data preprocessing. We firstly cleaned Web-Scraped data's rental price and then combined it with API datasets. We classified the whole datset and re-saved them by year. This is because, there may be inflations every year and the variance of rental price calculated year by year may be more reasonable.
 
 For number of rooms, we viewed the boxplot and mannually confirmed deleted some inituive outliers (large number of rooms, very low price). For the location (latitude and longitude), we ammended 3 badly scrapped location data. 
 
 For the rental price, we removed outliers year by year. For each year, we removed the rental price vlaues out side of the 3 standard deviation. Each year, arounf 1 to 3 % of data were removed as outliers. Hence we suggest it is a reasonable outlier removal appraoch.
+
 
 ### 2.1.3 Adding SA2 Code for Cleaned Data
 There are many options to add SA2. 
@@ -54,14 +60,22 @@ First we add SA2 using suburb name as generally SA2 name refers to suburb in the
 
 Second, we use location data to add SA2. This approach is genuine method as the all of data has location meta data in the website and API and the data loss is less than 0.5% (few data is located outside of victoria) and easy to process. For the process, we use shap file from ABS (https://www.abs.gov.au/statistics/standards/australian-statistical-geography-standard-asgs-edition-3/jul2021-jun2026/access-and-downloads/digital-boundary-files) and map polygon coordinates and check which region contains the residence locations. This will assign SA2 code to every residential locations.  
 
+2. `/notebooks/Preprocessing/2.add_SA2_coordinate_API.`: this notebook will add 2021 SA2 code for each property instance retrieved by Domain API. This is done by checking whether the location point (longitude, latitude) is within the SA2 polygon by from shape file. 
+
+3. `/notebooks/Preprocessing/3.add_SA2_coordinate_WS_and_facilities`: this notebook will add 2021 SA2 code for each property instance retrieved oldlisting web scraping and facility (school, parks, hospital etc.) dataset. Approaches are the same as the above.
+
 ### 2.1.4 Adding Distance/Time to Places/CBD from Clean Property Data (Open Route Servive API)
-See `/notebooks/Preprocessing/ors_iteration_add_rentalDistance`. At each iteration, a yearly subset of places csv and a year subset of property csv between 2013-2021 were called out and merged based on SA2 Code. Then, a list of clients registered with unique API keys was used to request distance/time for each merged yearly dataset. 
+4. `/notebooks/Preprocessing/4.ors_add_rentalDistance.ipynb`. At each iteration, a yearly subset of places csv and a year subset of property csv between 2013-2021 were called out and merged based on SA2 Code. Then, a list of clients registered with unique API keys was used to request distance/time for each merged yearly dataset. 
 
 In the add_distance_time function, the requests were conducted by iterating SA2 codes. All properties in current SA2 code were computed as sources, each of which was mapped to all places defined by this SA2 code. So in total, (size of sources * count of places) routes of distances/time were computed for each SA2 district. 
 
 For route number greater than 3500 which was prohibited by ORS, a slicing method that divided sources into smaller subsets based on the factor, by which route number exceeded 3500, replaced the original requests. Through this, the restriction could be solved by making additional calls for reduced sublists. For example for 206 sources * 35 places = 7210 > 3500, exceeding by a factor of 2, sources list was divided into \[0-68), \[68-136) and \[136-206) sublists, and 3 requests with route number 68 * 35, 68 * 35 and 70 * 35 were called to ensure all 7210 data was retrieved.
 
 For exception such as exceeding API quota during processing, a back up API key with a capacity of 2500 calls was switched into to handle the exception. For other keys, the individual quota of 500 was mostly sufficient to process each merged yearly dataset given there were fewer than 500 SA2 codes in each year (except for 502 in 2022).  
+
+5. `/notebooks/Preprocessing/4.ors_iteration_add_rentalDistance.ipynb`: this notebook will perform the mentioned steps iteratively to retrieve all the data we need.
+
+6. `/notebooks/Preprocessing/6.get_minDistance.ipynb`: this notebook will compare distances each facility within a SA2 suburb for each property and only keep the minimal distance i.e. distance to the cloesest facility. NA value will be applied if there is no a type of facility within a SA2 suburb. These NA values will be filled later by the maximum number within a column. 
 
 ### 2.1.5 Feature Engineering for Property Dataset
 
@@ -79,7 +93,6 @@ The notebook script `/notebooks/External/1.external_preprocess.ipynb` is used to
 For merging external data of 2013 to 2022, the notebook script `/notebooks/External/2.external_merge.ipynb` is used to merge external attributes (GDP and saving rate, income per person for each sa2, population density and crime cases) with the data in the min_distance_sa2_organised folder in curated folder, and also drop months to get values of all attributes based on year. If the values of external attributes (GDP and saving rate, income per person for each sa2, population density and crime cases) are missing, the predicted values for the external attributes (in the features_prediction folder in curated folder) are used to merge.
 
 For merging predicted values of external attributes of 2023 to 2027, the notebook script `/notebooks/External/3.2023_2027_merge.ipynb` is used to merge predicted values of external attributes (GDP and saving rate, income per person for each sa2, population density and crime cases) with the postcode of Local Government Area (LGA), 2016 sa2 codes and 2021 sa2 codes from 2022 dataset. Since 2022 dataset has the most values of postcode, sa2 2021 and sa2 2016, and includes all values from previous years of those attributes, postcode, sa2 2021 and sa2 2016 from 2022 dataset will be used for further prediction. The predicted values of the external attributes, that used for merging, are from the features_prediction folder in curated folder.
-**[Need to complete later] - john (min_distance_sa2_organised)**
 
 ### 2.3.X Adding SA2 2016
 There were issues arised that the statistic data (including population, income, etc...) before 2021 has different SA2 code standard established at 2016. Every five year the SA2 code standard gradually changes so we need to add more SA2 code standard to the instance. As the name and area of SA2 codes change, we need stable data to match the code. The using location data is decided as an fitable method because is is stable and can be point directly what SA2 region, it was used to belong in the past.
@@ -89,9 +102,10 @@ There were issues arised that the statistic data (including population, income, 
 # 3. Data Analysis
 
 ## 3.1 Property Data Preliminary Analysis
-**[Need to complete later] - jin & grace**
+`/notebooks/preliminary_property.ipynb`: this notebook performs analysis through analysis houses and apartments together and respectively. Plots drawn by this were saved to `/plots/figure/`. 
+
 ## 3.2 Property Data Geo Visual
-**[Need to complete later] - jin & grace**
+`/notebooks/preliminary_property.ipynb`: This notebook also contains geo visual for houses and apartments per SA2 respectively. More imporatantly, this notebook uses simplified geo shape file to improve graph-drawn efficiency. The simplification process was down through `https://mapshaper.org/`. `notebooks/Liveability/scoring.ipynb` has clearer explanation of this. And the number of houses and apartments rental records per SA2 respectively. Geo plots were saved to `/plots/aggregated_geo`
 
 # 4. Modeling
 
@@ -99,7 +113,7 @@ There were issues arised that the statistic data (including population, income, 
 All models mentioned below are in `\models` file, and store into the features_prediction folder in curated folder.
 
 ### 4.1.1 Population
-**[Need to complete later] john**
+`/models/bootstrap-population.ipynb`: this notebook predicts populatino from 2023 to 2027 using bootstrapping and linear regression, with `population density  ~ year + sa2 code(2021)`.
 
 ### 4.1.2 Averaged income per person for each SA2
 The notebook script `/models/income_predict.ipynb` is used to model the income per person for each sa2 (2016) with a linear regression model, and it is used to predict the income per person for each sa2 (2016) region from 2020 to 2027, with `income per person ~ year + sa2 code(2016)`.
@@ -117,7 +131,7 @@ prediction formula: `crime cases ~ year + postcode`
 **[Need to complete later] philip, jin, katherine**
 
 # 5. Liveability Scoring and Ranking Algorithm
-**[Need to complete later] john & grace**
+`notebooks/Liveability/scoring.ipynb`: this notebook developed a ranking system for liveability scoring (0-100). The notebook firstly checked distribution of each feature to see whether standardisation can be applied. Unfortunately, data were not normally distributed. Hence we used score = rank / len(df) to perform the score for each liveability criterion and sum them with weight specified by our user. 
 
 # 6. Website Building
 To put our model into practice and bridge the gap between the general population and our models, we built a web site that enables the general population to explore our models.
