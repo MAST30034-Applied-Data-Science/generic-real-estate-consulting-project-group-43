@@ -49,7 +49,10 @@ For number of rooms, we viewed the boxplot and mannually confirmed deleted some 
 For the rental price, we removed outliers year by year. For each year, we removed the rental price vlaues out side of the 3 standard deviation. Each year, arounf 1 to 3 % of data were removed as outliers. Hence we suggest it is a reasonable outlier removal appraoch.
 
 ### 2.1.3 Adding SA2 Code for Cleaned Data
-**[Need to complete later] - john**
+There are many options to add SA2. 
+First we add SA2 using suburb name as generally SA2 name refers to suburb in the residential address (see document  https://www.abs.gov.au/ausstats/abs@.nsf/lookup/by%20subject/1270.0.55.001~july%202016~main%20features~statistical%20area%20level%202%20(sa2)~10014) however there are many of them fail to match with SA2 name because of different formats, some of region added prefix or suffix (ex. -south, -north, the great-, etc...) and the few regions that have totally different name to SA2 name.  
+
+Second, we use location data to add SA2. This approach is genuine method as the all of data has location meta data in the website and API and the data loss is less than 0.5% (few data is located outside of victoria) and easy to process. For the process, we use shap file from ABS (https://www.abs.gov.au/statistics/standards/australian-statistical-geography-standard-asgs-edition-3/jul2021-jun2026/access-and-downloads/digital-boundary-files) and map polygon coordinates and check which region contains the residence locations. This will assign SA2 code to every residential locations.  
 
 ### 2.1.4 Adding Distance/Time to Places/CBD from Clean Property Data (Open Route Servive API)
 See `/notebooks/Preprocessing/ors_iteration_add_rentalDistance`. At each iteration, a yearly subset of places csv and a year subset of property csv between 2013-2021 were called out and merged based on SA2 Code. Then, a list of clients registered with unique API keys was used to request distance/time for each merged yearly dataset. 
@@ -77,11 +80,9 @@ For merging external data of 2013 to 2022, the notebook script `/notebooks/Exter
 
 For merging predicted values of external attributes of 2023 to 2027, the notebook script `/notebooks/External/3.2023_2027_merge.ipynb` is used to merge predicted values of external attributes (GDP and saving rate, income per person for each sa2, population density and crime cases) with the postcode of Local Government Area (LGA), 2016 sa2 codes and 2021 sa2 codes from 2022 dataset. Since 2022 dataset has the most values of postcode, sa2 2021 and sa2 2016, and includes all values from previous years of those attributes, postcode, sa2 2021 and sa2 2016 from 2022 dataset will be used for further prediction. The predicted values of the external attributes, that used for merging, are from the features_prediction folder in curated folder.
 **[Need to complete later] - john (min_distance_sa2_organised)**
-### 2.3.X Adding SA2
-There are many options to add SA2. 
-First we add SA2 using suburb name as generally SA2 name refers to suburb in the residential address (see document  https://www.abs.gov.au/ausstats/abs@.nsf/lookup/by%20subject/1270.0.55.001~july%202016~main%20features~statistical%20area%20level%202%20(sa2)~10014) however there are many of them fail to match with SA2 name because of different formats, some of region added prefix or suffix (ex. -south, -north, the great-, etc...) and the few regions that have totally different name to SA2 name.  
 
-Second, we use location data to add SA2. This approach is genuine method as the all of data has location meta data in the website and API and the data loss is less than 0.5% (few data is located outside of victoria) and easy to process. For the process, we use shap file from ABS (https://www.abs.gov.au/statistics/standards/australian-statistical-geography-standard-asgs-edition-3/jul2021-jun2026/access-and-downloads/digital-boundary-files) and map polygon coordinates and check which region contains the residence locations. This will assign SA2 code to every residential locations.  
+### 2.3.X Adding SA2 2016
+There were issues arised that the statistic data (including population, income, etc...) before 2021 has different SA2 code standard established at 2016. Every five year the SA2 code standard gradually changes so we need to add more SA2 code standard to the instance. As the name and area of SA2 codes change, we need stable data to match the code. The using location data is decided as an fitable method because is is stable and can be point directly what SA2 region, it was used to belong in the past.
 
 
 
