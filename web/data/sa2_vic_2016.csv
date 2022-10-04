@@ -1,0 +1,465 @@
+,SA2_MAIN16,SA2_NAME16
+578,201011001,Alfredton
+579,201011002,Ballarat
+580,201011003,Ballarat - North
+581,201011004,Ballarat - South
+582,201011005,Buninyong
+583,201011006,Delacombe
+584,201011007,Smythes Creek
+585,201011008,Wendouree - Miners Rest
+586,201021009,Bacchus Marsh Region
+587,201021010,Creswick - Clunes
+588,201021011,Daylesford
+589,201021012,Gordon (Vic.)
+590,201031013,Avoca
+591,201031014,Beaufort
+592,201031015,Golden Plains - North
+593,201031016,Maryborough (Vic.)
+594,201031017,Maryborough Region
+595,202011018,Bendigo
+596,202011019,California Gully - Eaglehawk
+597,202011020,East Bendigo - Kennington
+598,202011021,Flora Hill - Spring Gully
+599,202011022,Kangaroo Flat - Golden Square
+600,202011023,Maiden Gully
+601,202011024,Strathfieldsaye
+602,202011025,White Hills - Ascot
+603,202021026,Bendigo Region - South
+604,202021027,Castlemaine
+605,202021028,Castlemaine Region
+606,202021029,Heathcote
+607,202021030,Kyneton
+608,202021031,Woodend
+609,202031032,Bendigo Region - North
+610,202031033,Loddon
+611,203011034,Bannockburn
+612,203011035,Golden Plains - South
+613,203011036,Winchelsea
+614,203021037,Belmont
+615,203021038,Corio - Norlane
+616,203021039,Geelong
+617,203021040,Geelong West - Hamlyn Heights
+618,203021041,Grovedale
+619,203021042,Highton
+620,203021043,Lara
+621,203021044,Leopold
+622,203021045,Newcomb - Moolap
+623,203021046,Newtown (Vic.)
+624,203021047,North Geelong - Bell Park
+625,203031048,Clifton Springs
+626,203031049,Lorne - Anglesea
+627,203031050,Ocean Grove - Barwon Heads
+628,203031051,Portarlington
+629,203031052,Point Lonsdale - Queenscliff
+630,203031053,Torquay
+631,204011054,Alexandra
+632,204011055,Euroa
+633,204011056,Kilmore - Broadford
+634,204011057,Mansfield (Vic.)
+635,204011058,Nagambie
+636,204011059,Seymour
+637,204011060,Seymour Region
+638,204011061,Upper Yarra Valley
+639,204011062,Yea
+640,204021063,Benalla
+641,204021064,Benalla Region
+642,204021065,Rutherglen
+643,204021066,Wangaratta
+644,204021067,Wangaratta Region
+645,204031068,Beechworth
+646,204031069,Bright - Mount Beauty
+647,204031070,Chiltern - Indigo Valley
+648,204031071,Myrtleford
+649,204031072,Towong
+650,204031073,West Wodonga
+651,204031074,Wodonga
+652,204031075,Yackandandah
+653,205011076,Drouin
+654,205011077,Mount Baw Baw Region
+655,205011078,Trafalgar (Vic.)
+656,205011079,Warragul
+657,205021080,Alps - East
+658,205021081,Bairnsdale
+659,205021082,Bruthen - Omeo
+660,205021083,Lake King
+661,205021084,Lakes Entrance
+662,205021085,Orbost
+663,205021086,Paynesville
+664,205031087,Foster
+665,205031088,French Island
+666,205031089,Korumburra
+667,205031090,Leongatha
+668,205031091,Phillip Island
+669,205031092,Wilsons Promontory
+670,205031093,Wonthaggi - Inverloch
+671,205041094,Churchill
+672,205041095,Moe - Newborough
+673,205041096,Morwell
+674,205041097,Traralgon
+675,205041098,Yallourn North - Glengarry
+676,205051099,Alps - West
+677,205051100,Longford - Loch Sport
+678,205051101,Maffra
+679,205051102,Rosedale
+680,205051103,Sale
+681,205051104,Yarram
+682,206011105,Brunswick
+683,206011106,Brunswick East
+684,206011107,Brunswick West
+685,206011108,Coburg
+686,206011109,Pascoe Vale South
+687,206021110,Alphington - Fairfield
+688,206021111,Northcote
+689,206021112,Thornbury
+690,206031113,Ascot Vale
+691,206031114,Essendon - Aberfeldie
+692,206031115,Flemington
+693,206031116,Moonee Ponds
+694,206041117,Carlton
+695,206041118,Docklands
+696,206041119,East Melbourne
+697,206041120,Flemington Racecourse
+698,206041121,Kensington (Vic.)
+699,206041122,Melbourne
+700,206041123,North Melbourne
+701,206041124,Parkville
+702,206041125,South Yarra - West
+703,206041126,Southbank
+704,206041127,West Melbourne
+705,206051128,Albert Park
+706,206051129,Elwood
+707,206051130,Port Melbourne
+708,206051131,Port Melbourne Industrial
+709,206051132,South Melbourne
+710,206051133,St Kilda
+711,206051134,St Kilda East
+712,206061135,Armadale
+713,206061136,Prahran - Windsor
+714,206061137,South Yarra - East
+715,206061138,Toorak
+716,206071139,Abbotsford
+717,206071140,Carlton North - Princes Hill
+718,206071141,Collingwood
+719,206071142,Fitzroy
+720,206071143,Fitzroy North
+721,206071144,Richmond (Vic.)
+722,206071145,Yarra - North
+723,207011146,Ashburton (Vic.)
+724,207011147,Balwyn
+725,207011148,Balwyn North
+726,207011149,Camberwell
+727,207011150,Glen Iris - East
+728,207011151,Hawthorn
+729,207011152,Hawthorn East
+730,207011153,Kew
+731,207011154,Kew East
+732,207011155,Surrey Hills (West) - Canterbury
+733,207021156,Bulleen
+734,207021157,Doncaster
+735,207021159,Templestowe
+736,207021160,Templestowe Lower
+737,207021424,Doncaster East (North)
+738,207021425,Doncaster East (South)
+739,207031161,Blackburn
+740,207031162,Blackburn South
+741,207031163,Box Hill
+742,207031164,Box Hill North
+743,207031165,Burwood
+744,207031166,Burwood East
+745,207031167,Surrey Hills (East) - Mont Albert
+746,208011168,Beaumaris
+747,208011169,Brighton (Vic.)
+748,208011170,Brighton East
+749,208011171,Cheltenham - Highett (West)
+750,208011172,Hampton
+751,208011173,Sandringham - Black Rock
+752,208021174,Bentleigh - McKinnon
+753,208021176,Carnegie
+754,208021177,Caulfield - North
+755,208021178,Caulfield - South
+756,208021179,Elsternwick
+757,208021180,Hughesdale
+758,208021181,Murrumbeena
+759,208021182,Ormond - Glen Huntly
+760,208021426,Bentleigh East (North)
+761,208021427,Bentleigh East (South)
+762,208031183,Aspendale Gardens - Waterways
+763,208031184,Braeside
+764,208031185,Carrum - Patterson Lakes
+765,208031186,Chelsea - Bonbeach
+766,208031187,Chelsea Heights
+767,208031188,Cheltenham - Highett (East)
+768,208031189,Edithvale - Aspendale
+769,208031190,Mentone
+770,208031191,Moorabbin - Heatherton
+771,208031192,Moorabbin Airport
+772,208031193,Mordialloc - Parkdale
+773,208041194,Malvern - Glen Iris
+774,208041195,Malvern East
+775,209011196,Bundoora - East
+776,209011197,Greensborough
+777,209011198,Heidelberg - Rosanna
+778,209011199,Heidelberg West
+779,209011200,Ivanhoe
+780,209011201,Ivanhoe East - Eaglemont
+781,209011202,Montmorency - Briar Hill
+782,209011203,Viewbank - Yallambie
+783,209011204,Watsonia
+784,209021205,Kingsbury
+785,209021207,Reservoir - East
+786,209021208,Reservoir - West
+787,209021428,Preston - East
+788,209021429,Preston - West
+789,209031209,Eltham
+790,209031210,Hurstbridge
+791,209031211,Kinglake
+792,209031212,Panton Hill - St Andrews
+793,209031213,Plenty - Yarrambat
+794,209031214,Research - North Warrandyte
+795,209031215,Wattle Glen - Diamond Creek
+796,209041216,Bundoora - North
+797,209041217,Bundoora - West
+798,209041219,Lalor
+799,209041220,Mill Park - North
+800,209041221,Mill Park - South
+801,209041223,Thomastown
+802,209041224,Wallan
+803,209041225,Whittlesea
+804,209041430,Doreen
+805,209041431,Epping - East
+806,209041432,Epping - South
+807,209041433,Epping - West
+808,209041434,Mernda
+809,209041435,South Morang (North)
+810,209041436,South Morang (South)
+811,209041437,Wollert
+812,210011226,Airport West
+813,210011227,Essendon Airport
+814,210011228,Keilor
+815,210011229,Keilor East
+816,210011230,Niddrie - Essendon West
+817,210011231,Strathmore
+818,210021232,Gisborne
+819,210021233,Macedon
+820,210021234,Riddells Creek
+821,210021235,Romsey
+822,210031236,Coburg North
+823,210031237,Fawkner
+824,210031239,Pascoe Vale
+825,210031438,Glenroy
+826,210031439,Gowanbrae
+827,210031440,Hadfield
+828,210041240,Sunbury
+829,210041241,Sunbury - South
+830,210051242,Broadmeadows
+831,210051243,Campbellfield - Coolaroo
+832,210051245,Gladstone Park - Westmeadows
+833,210051246,Greenvale - Bulla
+834,210051247,Meadow Heights
+835,210051248,Melbourne Airport
+836,210051249,Roxburgh Park - Somerton
+837,210051250,Tullamarine
+838,210051441,Craigieburn - Central
+839,210051442,Craigieburn - North
+840,210051443,Craigieburn - South
+841,210051444,Craigieburn - West
+842,210051445,Mickleham - Yuroke
+843,211011251,Bayswater
+844,211011254,Knoxfield - Scoresby
+845,211011255,Lysterfield
+846,211011256,Rowville - Central
+847,211011257,Rowville - North
+848,211011258,Rowville - South
+849,211011259,Wantirna
+850,211011260,Wantirna South
+851,211011446,Boronia
+852,211011447,Ferntree Gully (North)
+853,211011448,Ferntree Gully (South) - Upper Ferntree Gully
+854,211011449,The Basin
+855,211021261,Donvale - Park Orchards
+856,211021262,Warrandyte - Wonga Park
+857,211031263,Bayswater North
+858,211031265,Croydon Hills - Warranwood
+859,211031266,Ringwood
+860,211031267,Ringwood East
+861,211031268,Ringwood North
+862,211031450,Croydon - East
+863,211031451,Croydon - West
+864,211031452,Croydon South
+865,211041269,Forest Hill
+866,211041270,Mitcham (Vic.)
+867,211041271,Nunawading
+868,211041272,Vermont
+869,211041273,Vermont South
+870,211051274,Belgrave - Selby
+871,211051275,Chirnside Park
+872,211051276,Healesville - Yarra Glen
+873,211051277,Kilsyth
+874,211051278,Lilydale - Coldstream
+875,211051279,Monbulk - Silvan
+876,211051280,Montrose
+877,211051281,Mooroolbark
+878,211051282,Mount Dandenong - Olinda
+879,211051283,Mount Evelyn
+880,211051284,Upwey - Tecoma
+881,211051285,Wandin - Seville
+882,211051286,Yarra Valley
+883,212011287,Beaconsfield - Officer
+884,212011288,Bunyip - Garfield
+885,212011289,Emerald - Cockatoo
+886,212011290,Koo Wee Rup
+887,212011291,Pakenham - North
+888,212011292,Pakenham - South
+889,212021293,Berwick - North
+890,212021294,Berwick - South
+891,212021295,Doveton
+892,212021297,Hallam
+893,212021299,Narre Warren North
+894,212021453,Endeavour Hills - North
+895,212021454,Endeavour Hills - South
+896,212021455,Narre Warren - North East
+897,212021456,Narre Warren - South West
+898,212031300,Cranbourne
+899,212031301,Cranbourne East
+900,212031302,Cranbourne North
+901,212031303,Cranbourne South
+902,212031304,Cranbourne West
+903,212031305,Hampton Park - Lynbrook
+904,212031306,Lynbrook - Lyndhurst
+905,212031308,Pearcedale - Tooradin
+906,212031457,Narre Warren South (East)
+907,212031458,Narre Warren South (West)
+908,212041309,Clarinda - Oakleigh South
+909,212041310,Clayton South
+910,212041311,Dandenong
+911,212041312,Dandenong North
+912,212041313,Dingley Village
+913,212041314,Keysborough
+914,212041316,Noble Park North
+915,212041317,Springvale
+916,212041318,Springvale South
+917,212041459,Noble Park - East
+918,212041460,Noble Park - West
+919,212051319,Ashwood - Chadstone
+920,212051320,Clayton
+921,212051321,Glen Waverley - East
+922,212051322,Glen Waverley - West
+923,212051323,Mount Waverley - North
+924,212051324,Mount Waverley - South
+925,212051325,Mulgrave
+926,212051326,Oakleigh - Huntingdale
+927,212051327,Wheelers Hill
+928,213011328,Ardeer - Albion
+929,213011329,Cairnlea
+930,213011330,Deer Park - Derrimut
+931,213011331,Delahey
+932,213011332,Keilor Downs
+933,213011333,Kings Park (Vic.)
+934,213011334,St Albans - North
+935,213011335,St Albans - South
+936,213011336,Sunshine
+937,213011337,Sunshine North
+938,213011338,Sunshine West
+939,213011339,Sydenham
+940,213011340,Taylors Lakes
+941,213021341,Altona
+942,213021342,Altona Meadows
+943,213021343,Altona North
+944,213021344,Newport
+945,213021345,Seabrook
+946,213021346,Williamstown
+947,213031347,Braybrook
+948,213031348,Footscray
+949,213031349,Maribyrnong
+950,213031350,Seddon - Kingsville
+951,213031351,West Footscray - Tottenham
+952,213031352,Yarraville
+953,213041353,Bacchus Marsh
+954,213041355,Hillside
+955,213041356,Melton
+956,213041357,Melton South
+957,213041358,Melton West
+958,213041359,Rockbank - Mount Cottrell
+959,213041360,Taylors Hill
+960,213041461,Burnside
+961,213041462,Burnside Heights
+962,213041463,Caroline Springs
+963,213051361,Hoppers Crossing - North
+964,213051362,Hoppers Crossing - South
+965,213051363,Laverton
+966,213051365,Tarneit
+967,213051366,Truganina
+968,213051368,Werribee - South
+969,213051369,Wyndham Vale
+970,213051464,Point Cook - East
+971,213051465,Point Cook - North
+972,213051466,Point Cook - South
+973,213051467,Werribee - East
+974,213051468,Werribee - West
+975,214011370,Carrum Downs
+976,214011371,Frankston
+977,214011372,Frankston North
+978,214011373,Frankston South
+979,214011374,Langwarrin
+980,214011375,Seaford (Vic.)
+981,214011376,Skye - Sandhurst
+982,214021377,Dromana
+983,214021378,Flinders
+984,214021379,Hastings - Somers
+985,214021380,Mornington
+986,214021381,Mount Eliza
+987,214021382,Mount Martha
+988,214021383,Point Nepean
+989,214021384,Rosebud - McCrae
+990,214021385,Somerville
+991,215011386,Ararat
+992,215011387,Ararat Region
+993,215011388,Horsham
+994,215011389,Horsham Region
+995,215011390,Nhill Region
+996,215011391,St Arnaud
+997,215011392,Stawell
+998,215011393,West Wimmera
+999,215011394,Yarriambiack
+1000,215021395,Irymple
+1001,215021396,Merbein
+1002,215021398,Mildura Region
+1003,215021399,Red Cliffs
+1004,215021469,Mildura - North
+1005,215021470,Mildura - South
+1006,215031400,Buloke
+1007,215031401,Gannawarra
+1008,215031402,Kerang
+1009,215031403,Robinvale
+1010,215031404,Swan Hill
+1011,215031405,Swan Hill Region
+1012,216011406,Echuca
+1013,216011407,Kyabram
+1014,216011408,Lockington - Gunbower
+1015,216011409,Rochester
+1016,216011410,Rushworth
+1017,216021411,Cobram
+1018,216021412,Moira
+1019,216021413,Numurkah
+1020,216021414,Yarrawonga
+1021,216031415,Mooroopna
+1022,216031416,Shepparton - North
+1023,216031417,Shepparton - South
+1024,216031418,Shepparton Region - East
+1025,216031419,Shepparton Region - West
+1026,217011420,Glenelg (Vic.)
+1027,217011421,Hamilton (Vic.)
+1028,217011422,Portland
+1029,217011423,Southern Grampians
+1030,217031471,Camperdown
+1031,217031472,Colac
+1032,217031473,Colac Region
+1033,217031474,Corangamite - North
+1034,217031475,Corangamite - South
+1035,217031476,Otway
+1036,217041477,Moyne - East
+1037,217041478,Moyne - West
+1038,217041479,Warrnambool - North
+1039,217041480,Warrnambool - South
+1040,297979799,Migratory - Offshore - Shipping (Vic.)
+1041,299999499,No usual address (Vic.)
