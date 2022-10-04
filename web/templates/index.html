@@ -119,14 +119,14 @@
               we will assume that easier access (smaller distance) to the closest facility will suggest a higher liveability for that criterion.
             </p>
             <form action="{{ url_for('liveability')}}"method="post">
-            <table style ="width: 100%; text-align: center; font-size: small;">
-              <thead>
-                <tr>
-                  <th>Criteria</th>
-                  <th>Preference</th>
-                 </tr>
-              </thead>
+            <div class = sectionborder style = "background-color: #fff;border-color: #deeaee; font-size: small;">
+            <table style ="width: 200%; text-align: center; font-size: small; display: flex;">
+
+        
+
               <tbody>
+                <td><b>Criteria</b></td>
+                <td><b>Preference</b></td>
 
                 <tr>
                   <td>
@@ -246,9 +246,9 @@
                     <label>Extremely important(10)</label>
                   </td>
                 </tr>
-                </tbody></table>
+                </tbody></table></div>
                 <br>
-                <button type="submit" class="btn btn-primary btn-block btn-large"style='position: relative; left:40%; width:170px'>view recommendations for you</button></p>
+                <button type="submit" class="btn btn-primary btn-block btn-large"style='position: relative; width:100%'>click to view recommendations for you</button></p>
               </form>
               
             <p>
