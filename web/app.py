@@ -51,8 +51,8 @@ def predict():
         sa2 = int(features[0][1])
     else:
         return render_template('index.html', error1='Please enter valid values.')
-    result = pd.read_csv('../data/curated/feature_prediction/22_27_population.csv')
-    sa2_df = pd.read_csv('../data/curated/sa2_vic_2021.csv')
+    result = pd.read_csv('data/22_27_population.csv')
+    sa2_df = pd.read_csv('data/sa2_vic_2021.csv')
     print(sa2)
     suburb = sa2_df.loc[sa2_df.SA2_CODE21 == sa2].SA2_NAME21.values
     if suburb:
@@ -82,7 +82,7 @@ def predict_crime():
         post = int(features[0][1])
     else:
         return render_template('index.html', error3='Please enter valid values.')
-    result = pd.read_csv('../data/curated/feature_prediction/23_27_crime_case.csv')
+    result = pd.read_csv('data/23_27_crime_case.csv')
     post_lst = list(set(result['Postcode']))
     year_lst = list(set(result['Year']))
     if ((post in post_lst) & (year_crime in year_lst)):
@@ -109,8 +109,8 @@ def predict_income():
         sa2 = int(features[0][1])
     else:
         return render_template('index.html', error5='Please enter valid values.')
-    result = pd.read_csv('../data/curated/feature_prediction/20_27_income_per_person_2016sa2.csv')
-    sa2_df = pd.read_csv('../data/curated/sa2_vic_2016.csv')
+    result = pd.read_csv('data/20_27_income_per_person_2016sa2.csv')
+    sa2_df = pd.read_csv('data/sa2_vic_2016.csv')
     suburb = sa2_df.loc[sa2_df.SA2_MAIN16 == sa2].SA2_NAME16.values
     if suburb:
         suburb = suburb[0]
@@ -130,7 +130,7 @@ def predict_income():
 
 @app.route('/liveability',methods=['POST'])
 def liveability():
-    df = pd.read_csv('../data/curated/merged_dataset/2022_merged_data.csv')
+    df = pd.read_csv('data/2022_merged_data.csv')
     type = request.form['residence_type']
     budget = request.form['budget']
     if type != 'idm':
@@ -171,23 +171,13 @@ def liveability():
     score = ranking
     def liveability_scoring(scores, cols, weights):
         """Takes score data, list of weights and column names, return the total liveability score based on the weights"""
-        # check the validation of weight list
-        if len(weights) != len(cols):
-            return np.nan
-        #if sum(weights) != 1:
-            #return np.nan
-        
-        # initialize the values
-        scores["total_liveability_score"] = 0
-
-        # calculate the total liveability
-        for i, rows in scores.iterrows():
-            list_sum = 0
-            for n in range(0, len(cols)):
-                if not np.isnan(scores.loc[i, cols[n]]):
-                    list_sum = list_sum + (scores.loc[i, cols[n]]*weights[n])
-            scores.loc[i, "total_liveability_score"] = list_sum
-        return scores
+        score_lst = []
+        for i in range(len(cols)):
+            col_score = (1+ df[cols[i]].rank(ascending=False))/len(scores) # +1 as rank starts from 0
+            df[f'{cols[i]}_score'] = col_score * weights[i]
+            score_lst.append(f'{cols[i]}_score')
+            df['total_liveability_score'] = df[score_lst].sum(axis=1)
+        return df
     total_score = liveability_scoring(score, COL, weight)
     # liveable property
     total_score =total_score.sort_values(by=['total_liveability_score'], ascending=False)
@@ -216,7 +206,7 @@ def liveability():
     s4 = score[3]
     s5 = score[4]
     # liveable suburb
-    sa2_name = pd.read_csv('../data/curated/sa2_vic_2021.csv')
+    sa2_name = pd.read_csv('data/sa2_vic_2021.csv')
     df2 = total_score[['sa2_2021', 'total_liveability_score','address']]\
         .groupby(['sa2_2021'],as_index = False) \
         .agg(
@@ -243,9 +233,8 @@ def liveability():
     S4 = score[3]
     S5 = score[4]
 
-    with open('../data/curated/geo.json', 'r') as f:
+    with open('data/geo.json', 'r') as f:
         geoJSON = json.load(f)
-    gsdf_pd = pd.read_csv('../data/curated/gsdf_pd.csv')
     m = folium.Map(location=[-37.81, 144.96], tiles="Stamen Terrain", zoom_start=10, color='white')
     svg_style = '<style>svg {background-color: rgb(255, 255, 255,0.5);}</style>'
     m.get_root().header.add_child(folium.Element(svg_style))
