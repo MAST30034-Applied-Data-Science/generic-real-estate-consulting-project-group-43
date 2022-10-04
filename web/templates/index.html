@@ -35,15 +35,15 @@
         <p>
           Can you believe that you can forseen the future with the help of statsitcis and machine learning models? <br> <br>
 
-          With this website you can not only forseen the suburbs with the greatest rental price growth rate but also
-          know the the population, GDP rate, income rate, saving rate, crime rate for suburbs for 
-          the next 5 years in Victoria, Australia.<br> <br>
+          With <i>SmartRent.com</i> you can not only forseen the suburbs with the greatest rental price growth rate but also
+          know the the predicted population density, income rate, crime rate for suburbs of Victoria, Australia the next 5 years.<br> <br>
 
-          If you are currently looking for the most livable or affordable house or apartment to rent, this website 
+          If you are currently looking for the most liveable or affordable house or apartment to rent, this website 
           is perfect for you!<br> <br>
 
-          You can enter the rank of your prioritization in terms of education, transportation, safety, shopping followed by 
-          your budget and our system will automatically return the most liveable and affordable suburb for you. If you are
+          You can enter the type of property you are looking to rent, your budget, followed by
+          your prioritization in terms of stability, education, healthcare, wellbeing, infrastructrue, 
+          distance to CBD, shopping  nd our system will automatically return the most liveable and affordable suburb for you. If you are
           just interested in data science and machine learning models just like us, feel free to explore:)
         </p>
       </section>
@@ -5278,6 +5278,101 @@
         </tr>
       </tbody>
       </table>
+    </div>
+    <br>
+    <div class = sectionborder style = "background-color: #fff;border-color: #deeaee; font-size: small; display: flex; flex-direction: column; height: 1050px;">
+      <h3 style ="text-align: center;">If you are interested in our porject</h3>
+      <h4>Project Goals</h4>
+      <ol>
+        <li>What are the most important internal and external features in predicting rental prices?</li>
+        <li>What are the top 10 suburbs with the highest predicted growth rate?</li>
+        <li>What are the most liveable and affordable suburbs base on individual preferences.</li>
+        <li>Our models can be used and understood by the general population through website.</li>
+      </ol>
+      <h4>Project Timeline</h4>
+      <ul>
+        <dt>Week 5&6</dt>
+        <dd>Literature review Project plan</dd>
+        <dt>Week 7</dt>
+        <dd>Used API to retrieve data (15k)<br>
+          External data retrieving </dd>
+        <dt>Week 8</dt>
+        <dd>
+          Finished web scraping data (213k)<br>
+          Facility data retrieving<br>
+          Merged property dataset with facility data
+        </dd>
+        <dt>Week 9</dt>
+        <dd>
+        Property data cleaning<br>
+        Feature engineering<br>
+        Calculated distance to the closest facility
+        </dd>
+        <dt>Break</dt>
+        <dd>
+        Feature prediction for 2023 - 2027<br>
+        Feature selection by statistics (Goal 1)<br>
+        Established a website (Goal 4)<br>
+        </dd>
+
+        <dt>Week 10</dt>
+        <dd>
+          Rental price prediction 2023 - 2027 (Goal 2)<br>
+          Liveability ranking system (Goal 3)<br>
+        </dd>
+        <dt>Week 11</dt>
+        <dd>Presentation</dd>
+      </ul>
+      <h4>Data Downloading</h4>
+      <h5>Property Dataset</h5>
+      <ul>
+        <li>Web scraping from Oldlistings.com</li>
+        <li>API retrieving with Domain.com</li>
+      </ul>
+      <img src="static/datadownload.png" alt="" width = 100% >
+      <img src="static/datadownload2.png" alt="" width = 100% >
+      <h5>External Dataset</h5>
+      <ul>
+        <li>Population density(SA2)</li>
+        <li>Income per person(SA2)</li>
+        <li>Crime cases(Postcode)</li>
+        <li>GDP (Nationwide)</li>
+        <li>Saving Rate (Nationwide)</li>
+        <li>Facility dataset(locations of schools, parks, hospitals etc.)</li>
+      </ul>
+      <h4>Data Preprocessing</h4>
+      <ul>
+        <li>Rental price regular expression</li>
+        <li>Residence type classification (Logistic Regression)</li>
+      </ul>
+      <img src="static/dataprepro.png" alt="" width = 100% >
+      <img src="static/dataprepro2.png" alt="" width = 100% >
+      <ul>
+        <li>Found distances through OpenRoute Service API</li>
+        <li>Kept distance to the closest facilities (schools, parks etc.)</li>
+      </ul>
+      <h4>Modelling</h4>
+      Models we used for feature prediction are:
+      <ul>
+        <li>Linear Regression: <br>
+          crime case ~ postcode + year <br>
+          income per earner ~ SA2 + year <br>
+          population density ~ SA2 + year </li>
+        <li>Quadratic Regression: GDP ~ saving rate + year</li>
+      </ul>      
+      Models we used for rental price prediction are:
+      <ul>
+        <li>Linear Regression</li>
+        <li>XGBoost</li>
+        <li>Random Forest</li>
+      </ul>
+      <h4>Liveability Ranking System</h4>
+      <img src="static/liveability.png" alt="" width = 100% >
+      <h4>Limitations</h4>
+      <ul>
+        <li>Inefficient Web scraping techniques.</li>
+        <li>Residence type classification model may not be accurate.</li>
+      </ul>
     </div>
   </aside>
 
