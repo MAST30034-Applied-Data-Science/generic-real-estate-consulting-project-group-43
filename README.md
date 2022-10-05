@@ -55,7 +55,7 @@ We have chosen these 8 features of interest to put into our model as inputs out 
 
 ### 2.1.1 API-retrieved Data Preprocessing (rental price)
 
-0. `/notebooks/Preprocessing/API_prepro.ipynb`: this notebook will preprocess API data rental price. We kept the integer only for the rental price. This notebook also converted the API dataset to the same format as the Web Scraped dataset for future concatenation. 
+0. `/notebooks/Preprocessing/0.API_prepro.ipynb`: this notebook will preprocess API data rental price. We kept the integer only for the rental price. This notebook also converted the API dataset to the same format as the Web Scraped dataset for future concatenation. 
 
 ### 2.1.2 Web-Scraping-retrieved Data Preprocessing (rental price, outlier detection for all features)
 
@@ -85,7 +85,7 @@ For route number greater than 3500 which was prohibited by ORS, a slicing method
 
 For exception such as exceeding API quota during processing, a back up API key with a capacity of 2500 calls was switched into to handle the exception. For other keys, the individual quota of 500 was mostly sufficient to process each merged yearly dataset given there were fewer than 500 SA2 codes in each year (except for 502 in 2022).  
 
-5. `/notebooks/Preprocessing/4.ors_iteration_add_rentalDistance.ipynb`: this notebook will perform the mentioned steps iteratively to retrieve the (2013-2022) data we need. `/notebooks/Preprocessing/5.ors_add_rentalDistance.ipynb`: this notebook will retrieve 2022 data individually due to large data size.
+5. `/notebooks/Preprocessing/5.ors_iteration_add_rentalDistance.ipynb`: this notebook will perform the mentioned steps iteratively to retrieve the (2013-2022) data we need. `/notebooks/Preprocessing/5.ors_add_rentalDistance.ipynb`: this notebook will retrieve 2022 data individually due to large data size.
 
 6. `/notebooks/Preprocessing/6.get_minDistance.ipynb`: this notebook will compare distances each facility within a SA2 suburb for each property and only keep the minimal distance i.e. distance to the cloesest facility. NA value will be applied if there is no a type of facility within a SA2 suburb. These NA values will be filled later by the maximum number within a column. 
 
@@ -98,18 +98,20 @@ However, we discovered that in total 42.66% of properties (231497 property data 
 To view these steps please see `/models/classify_property_type.ipynb`.
 
 ## 2.2 External Dataset Preprocessing
-The notebook script `/notebooks/External/1.external_preprocess.ipynb` is used to do preprocessing on those external dataset (estimated resident population, total income, crime cases, GDP, saving rate), and store into the curated folder in the data folder. We calculated the population density for each sa2 region (2021), income per person for each sa2 region (2016) based on the dataset of estimated resident population and total income respectively. We tried to convert the 2016 sa2 of income to 2021 sa2, but this would lead to lots of data missing. Therefore, we decide to use 2016 sa2 for later merging.
+The notebook script `/notebooks/External/1.external_preprocess.ipynb` is used to do preprocessing on those external dataset (estimated resident population, total income, crime cases, GDP, saving rate), and store into the curated folder in the data folder. We calculated the population density for each sa2 region (2021), income per person for each sa2 region (2016) based on the dataset of estimated resident population and total income respectively. We tried to convert the 2016 sa2 of income to 2021 sa2, but this would lead to lots of data missing. Therefore, we decide to use 2016 sa2 for later merging. There are also some plots for different types of offence.
+
 **[Need to complete later] - katherine(geo & crime visualization)**
 
 ## 2.3 Data Merging
+
+### 2.3.1 Adding SA2 2016
+There were issues arised that the statistic data (including population, income, etc...) before 2021 has different SA2 code standard established at 2016. Every five year the SA2 code standard gradually changes so we need to add more SA2 code standard to the instance. As the name and area of SA2 codes change, we need stable data to match the code. The using location data is decided as an fitable method because is is stable and can be point directly what SA2 region, it was used to belong in the past.
+To view these steps please see `/notebooks/Preprocessing/7.add_SA2_2016.ipynb` and `/notebooks/Preprocessing/8.organising.ipynb`.
+
+### 2.3.1 Adding External Features
 For merging external data of 2013 to 2022, the notebook script `/notebooks/External/2.external_merge.ipynb` is used to merge external attributes (GDP and saving rate, income per person for each sa2, population density and crime cases) with the data in the min_distance_sa2_organised folder in curated folder, and also drop months to get values of all attributes based on year. If the values of external attributes (GDP and saving rate, income per person for each sa2, population density and crime cases) are missing, the predicted values for the external attributes (in the features_prediction folder in curated folder) are used to merge.
 
 For merging predicted values of external attributes of 2023 to 2027, the notebook script `/notebooks/External/3.2023_2027_merge.ipynb` is used to merge predicted values of external attributes (GDP and saving rate, income per person for each sa2, population density and crime cases) with the postcode of Local Government Area (LGA), 2016 sa2 codes and 2021 sa2 codes from 2022 dataset. Since 2022 dataset has the most values of postcode, sa2 2021 and sa2 2016, and includes all values from previous years of those attributes, postcode, sa2 2021 and sa2 2016 from 2022 dataset will be used for further prediction. The predicted values of the external attributes, that used for merging, are from the features_prediction folder in curated folder.
-
-### 2.3.X Adding SA2 2016
-There were issues arised that the statistic data (including population, income, etc...) before 2021 has different SA2 code standard established at 2016. Every five year the SA2 code standard gradually changes so we need to add more SA2 code standard to the instance. As the name and area of SA2 codes change, we need stable data to match the code. The using location data is decided as an fitable method because is is stable and can be point directly what SA2 region, it was used to belong in the past.
-
-
 
 # 3. Data Analysis
 
