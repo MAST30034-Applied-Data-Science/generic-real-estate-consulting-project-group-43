@@ -36,6 +36,18 @@ It will generate the historical data retrieved from the first 100 URLs for examp
 ## 1.2 External Dataset Downloading
 We retrieved data of external attribute by urls, such as crime cases, total personal income, estimated resident population, GDP, saving rate from `abs.gov.au`, `hcrimestatistics.vic.gov.au` and `data.oecd.org/natincome/saving-rate.htm`. The notebook script `/notebooks/External/0.external_dataset_download.ipynb` is used to download those external dataset, and store into the raw folder in the data folder.
 
+## 1.3 External Dataset Downloading (Infrastructure Facility Locations Retrieved by API)
+We retreieved data of features of interest in Victoria state by retreiving query in GeoJson format through `https://services6.arcgis.com/GB33F62SbDxJjwEL/ArcGIS/rest/services/Vicmap_Features_of_Interest/FeatureServer/8/query`. The selected features of interest that we deicded to include were primary/secondary schools, parks, train stations, hospitals, market places, police stations and shopping malls. By querying them by each year with their registered data on the dataset of `https://www.arcgis.com/home/webmap/viewer.html?url=https://services6.arcgis.com/GB33F62SbDxJjwEL/ArcGIS/rest/services/Vicmap_Features_of_Interest/FeatureServer/8&source=sd`, we could retrieve each year's features of interest locations that is used to calculate the distance between a feature of interest and a rental property from the historical rental property dataset. <br/>
+### Structure of features of interest dataset for each year
+The way of producing one feature of interest for a particular year is cumulative. 
+eg) To retrieve the data for **market places in 2014**, all the market places registered before 2013 + market places registered in 2013 + market places registered in 2014 are combined. <br/>
+### The reasons of choosing these particular features
+We have chosen these 8 features of interest to put into our model as inputs out of many other features of interest in Victoria, since we consider them to have a significant relevant to livability, which is one of the main topic questions. According to Global livability Index 2021 Report `https://www.eiu.com/n/campaigns/global-liveability-index-2021/`, they stated 5 factors that compose liveability as "stability, healthcare, culture and environment, education and infrastructure". 
+**By referring to these five factors, we have chosen the 8 features with the following reasons:** <br/>
+- Primary/secondary schools: Education
+- Parks, Shopping malls: Culture and environment
+- Hospitals: Healthcare
+- Markets, Police stations, Train stations: Stability, Infrastructure
 
 # 2. Data Preprocessing
 
@@ -73,7 +85,7 @@ For route number greater than 3500 which was prohibited by ORS, a slicing method
 
 For exception such as exceeding API quota during processing, a back up API key with a capacity of 2500 calls was switched into to handle the exception. For other keys, the individual quota of 500 was mostly sufficient to process each merged yearly dataset given there were fewer than 500 SA2 codes in each year (except for 502 in 2022).  
 
-5. `/notebooks/Preprocessing/4.ors_iteration_add_rentalDistance.ipynb`: this notebook will perform the mentioned steps iteratively to retrieve all the data we need.
+5. `/notebooks/Preprocessing/4.ors_iteration_add_rentalDistance.ipynb`: this notebook will perform the mentioned steps iteratively to retrieve the (2013-2022) data we need. `/notebooks/Preprocessing/5.ors_add_rentalDistance.ipynb`: this notebook will retrieve 2022 data individually due to large data size.
 
 6. `/notebooks/Preprocessing/6.get_minDistance.ipynb`: this notebook will compare distances each facility within a SA2 suburb for each property and only keep the minimal distance i.e. distance to the cloesest facility. NA value will be applied if there is no a type of facility within a SA2 suburb. These NA values will be filled later by the maximum number within a column. 
 
