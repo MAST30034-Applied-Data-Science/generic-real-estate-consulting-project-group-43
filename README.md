@@ -85,7 +85,7 @@ For route number greater than 3500 which was prohibited by ORS, a slicing method
 
 For exception such as exceeding API quota during processing, a back up API key with a capacity of 2500 calls was switched into to handle the exception. For other keys, the individual quota of 500 was mostly sufficient to process each merged yearly dataset given there were fewer than 500 SA2 codes in each year (except for 502 in 2022).  
 
-5. `/notebooks/Preprocessing/4.ors_iteration_add_rentalDistance.ipynb`: this notebook will perform the mentioned steps iteratively to retrieve all the data we need.
+5. `/notebooks/Preprocessing/4.ors_iteration_add_rentalDistance.ipynb`: this notebook will perform the mentioned steps iteratively to retrieve the (2013-2022) data we need. `/notebooks/Preprocessing/5.ors_add_rentalDistance.ipynb`: this notebook will retrieve 2022 data individually due to large data size.
 
 6. `/notebooks/Preprocessing/6.get_minDistance.ipynb`: this notebook will compare distances each facility within a SA2 suburb for each property and only keep the minimal distance i.e. distance to the cloesest facility. NA value will be applied if there is no a type of facility within a SA2 suburb. These NA values will be filled later by the maximum number within a column. 
 
