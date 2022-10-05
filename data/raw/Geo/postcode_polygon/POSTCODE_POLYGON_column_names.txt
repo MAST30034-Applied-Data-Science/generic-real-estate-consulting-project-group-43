@@ -1,0 +1,10 @@
+﻿The column names in a Shape file are limited to 10 characters
+This lists the short column name and the original column name in the database table
+-----------------------------------------------------------------------------------------------------
+
+PFI = PFI
+PFI_CR = PFI_CREATED
+POSTCODE = POSTCODE
+UFI = UFI
+UFI_CR = UFI_CREATED
+UFI_OLD = UFI_OLD
