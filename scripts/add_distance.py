@@ -2,12 +2,15 @@ from operator import index
 import openrouteservice as ors
 import numpy as np
 import time
+import os
+from dotenv import load_dotenv
+load_dotenv()
 
 """This function accepts a property-place merged csv, and compute the distance/time travelled by car from each property to the parks/schools/stations, 
-and to Melbourne Central"""
+and to Melbourne Central. ORS Based"""
 
 def add_distance_time(property_place_csv, year, client, mode):
-    #client = ors.Client('5b3ce3597851110001cf6248ce6c95ac96814219a4c3a7741f323b73') # Phikho-caz's api key 2500
+
     to_place_distances = []
     to_place_times = []
     to_cbd_distances = []
@@ -35,15 +38,7 @@ def add_distance_time(property_place_csv, year, client, mode):
         locations_coor += [(144.962379, -37.810454)] # add melbourne central coordinates to the end
 
         destinations_index += [x for x in range(i, i+count_places+1)] # destination indices right after origin indices, add uptil all places have been added 
-        
-        #print("locations coordinates = ", flush=True)
-        #time.sleep(0.5) # wait for 1.3 sec
-        #print(locations_coor, flush=True)
-        #time.sleep(0.5) # wait for 1.3 sec
-        #print("destination index = ", flush=True)
-        #time.sleep(0.5) # wait for 1.3 sec
-        #print(destinations_index, flush=True)
-        #time.sleep(0.5) # wait for 1.3 sec
+
         # Less than the maximum allowed routes in one request, normal execution
         if (i * (count_places+1) < 3500):
             success = False
@@ -70,10 +65,6 @@ def add_distance_time(property_place_csv, year, client, mode):
                         to_cbd_distances += list(np.repeat(temp_list1, count_places))  # repeat N (place count) times for each property to keep the format
                         to_cbd_times += list(np.repeat(temp_list2, count_places))
                         print(f"To Place Distance Grand List, Normal Branch, length = {len(to_place_distances)}", flush=True)
-                        #time.sleep(2.5)
-                        #print(to_place_distances)
-                        #print(f"To CBD Distance Grand List, Normal Branch, length = {len(to_cbd_distances)}")
-                        #print(to_cbd_distances)
                     
                     else:
                         print(f"Normal branch failed to match dimension due to random error, matrix size = {len(matrix_checker)}")
@@ -85,7 +76,8 @@ def add_distance_time(property_place_csv, year, client, mode):
                                                 
                 except:
                     if(retried_original_key):
-                        client = ors.Client('5b3ce3597851110001cf6248ce6c95ac96814219a4c3a7741f323b73') # Phikho-caz's api key 2500
+                        backup_api = os.getenv('CLIENT_ORS9') # Phikho-caz's api key 2500, back up for at least 4 full year
+                        client = ors.Client(backup_api)
                         backup_failed = True
                         print('Quota Exceeded daily limit or (less than 3500 branch) timeout')
                     retried_original_key = True
@@ -118,16 +110,7 @@ def add_distance_time(property_place_csv, year, client, mode):
                 try:
                     distance_matrix = ors.distance_matrix.distance_matrix(client=client, locations=locations_coor, 
                     profile='driving-car', sources=partial_sources_index, destinations=destinations_index, metrics=['distance', 'duration'])
-                    time.sleep(1.2)
-                    
-                    #print("partial sources index = ", flush=True)
-                    #time.sleep(0.5) # wait for 1.3 sec
-                    #print(partial_sources_index, flush=True)
-                    #time.sleep(0.5) # wait for 1.3 sec
-                    #print("destination index = ", flush=True)
-                    #time.sleep(0.5) # wait for 1.3 sec
-                    #print(destinations_index, flush=True)
-                    #time.sleep(0.5) # wait for 1.3 sec                    
+                    time.sleep(1.2)                
                     
                     matrix_checker = [each for sublist in distance_matrix['distances'] for each in sublist[:-1]]
                     if (len(matrix_checker) == slicer*count_places or len(matrix_checker) == (i-j*slicer)*count_places):
@@ -138,10 +121,6 @@ def add_distance_time(property_place_csv, year, client, mode):
                         to_cbd_distances += list(np.repeat(temp_list1, count_places))  # repeat N (place count) times for each property to keep the format
                         to_cbd_times += list(np.repeat(temp_list2, count_places))
                         print(f"To Place Distance Grand List, Slice Branch, length = {len(to_place_distances)}", flush=True)
-                        #time.sleep(2.5)
-                        #print(to_place_distances)
-                        #print(f"To CBD Distance Grand List, Slice, Branch, length = {len(to_cbd_distances)}")
-                        #print(to_cbd_distances)   
 
                     # dimension unmatched due to random error
                     else:
@@ -155,7 +134,8 @@ def add_distance_time(property_place_csv, year, client, mode):
                 except:
                     # retried the original key, confirm its quota has been exceeded
                     if(retried_original_key):
-                        client = ors.Client('5b3ce3597851110001cf6248ce6c95ac96814219a4c3a7741f323b73') # Phikho-caz's api key 2500
+                        backup_api = os.getenv('CLIENT_ORS9') # Phikho-caz's api key 2500, back up for at least 4 full year
+                        client = ors.Client(backup_api)
                         backup_failed = True
                         print('Quota Exceeded daily limit or (greater than 3500 branch) timeout')
                     retried_original_key = True
@@ -215,7 +195,7 @@ import googlemaps
 import re
 
 '''This function takes in a property csv (pandas dataframe) file, and compute distance, time for each property location to Melbourne CBD, using 
-the latitude and longitude of each property, and return the imputed csv file'''
+the latitude and longitude of each property, and return the imputed csv file. Google API based'''
 def add_distance_time(property_csv):
     # convert to dict for faster computation
     #property_dict = property_csv[['latitude', 'longitude', 'street_address']].to_dict('records')
