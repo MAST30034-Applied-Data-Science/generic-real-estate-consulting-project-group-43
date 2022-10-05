@@ -100,18 +100,18 @@ To view these steps please see `/models/classify_property_type.ipynb`.
 ## 2.2 External Dataset Preprocessing
 The notebook script `/notebooks/External/1.external_preprocess.ipynb` is used to do preprocessing on those external dataset (estimated resident population, total income, crime cases, GDP, saving rate), and store into the curated folder in the data folder. We calculated the population density for each sa2 region (2021), income per person for each sa2 region (2016) based on the dataset of estimated resident population and total income respectively. We tried to convert the 2016 sa2 of income to 2021 sa2, but this would lead to lots of data missing. Therefore, we decide to use 2016 sa2 for later merging. There are also some plots for different types of offence.
 
-**[Need to complete later] - katherine(geo & crime visualization)**
-
 ## 2.3 Data Merging
 
 ### 2.3.1 Adding SA2 2016
 There were issues arised that the statistic data (including population, income, etc...) before 2021 has different SA2 code standard established at 2016. Every five year the SA2 code standard gradually changes so we need to add more SA2 code standard to the instance. As the name and area of SA2 codes change, we need stable data to match the code. The using location data is decided as an fitable method because is is stable and can be point directly what SA2 region, it was used to belong in the past.
 To view these steps please see `/notebooks/Preprocessing/7.add_SA2_2016.ipynb` and `/notebooks/Preprocessing/8.organising.ipynb`.
 
-### 2.3.1 Adding External Features
+### 2.3.2 Adding External Features
 For merging external data of 2013 to 2022, the notebook script `/notebooks/External/2.external_merge.ipynb` is used to merge external attributes (GDP and saving rate, income per person for each sa2, population density and crime cases) with the data in the min_distance_sa2_organised folder in curated folder, and also drop months to get values of all attributes based on year. If the values of external attributes (GDP and saving rate, income per person for each sa2, population density and crime cases) are missing, the predicted values for the external attributes (in the features_prediction folder in curated folder) are used to merge.
 
 For merging predicted values of external attributes of 2023 to 2027, the notebook script `/notebooks/External/3.2023_2027_merge.ipynb` is used to merge predicted values of external attributes (GDP and saving rate, income per person for each sa2, population density and crime cases) with the postcode of Local Government Area (LGA), 2016 sa2 codes and 2021 sa2 codes from 2022 dataset. Since 2022 dataset has the most values of postcode, sa2 2021 and sa2 2016, and includes all values from previous years of those attributes, postcode, sa2 2021 and sa2 2016 from 2022 dataset will be used for further prediction. The predicted values of the external attributes, that used for merging, are from the features_prediction folder in curated folder.
+
+`/notebooks/External/4.external_geo.ipynb`: this notebook visualize the population density of sa2 (2021) regions with geo plots.
 
 # 3. Data Analysis
 
