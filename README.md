@@ -122,19 +122,22 @@ There were issues arised that the statistic data (including population, income, 
 # 4. Modeling
 
 ## 4.1 Prediction Model for External Features
-All models mentioned below are in `\models` file, and store into the features_prediction folder in curated folder.
+All feature prediction models mentioned below are in `\models` file. The output of predicted features' values will be stored into the features_prediction folder in curated folder.
 
 ### 4.1.1 Population
-`/models/bootstrap-population.ipynb`: this notebook predicts populatino from 2023 to 2027 using bootstrapping and linear regression, with `population density  ~ year + sa2 code(2021)`.
+`/models/1.bootstrap-population.ipynb`: this notebook predicts population from 2022 to 2027 using bootstrapping and linear regression, with `population density  ~ year + sa2 code(2021)`.
 
 ### 4.1.2 Averaged income per person for each SA2
-The notebook script `/models/income_predict.ipynb` is used to model the income per person for each sa2 (2016) with a linear regression model, and it is used to predict the income per person for each sa2 (2016) region from 2020 to 2027, with `income per person ~ year + sa2 code(2016)`.
+The notebook script `/models/1.income_predict.ipynb` is used to model the income per person for each sa2 (2016) with a linear regression model, and it is used to predict the income per person for each sa2 (2016) region from 2020 to 2027, with `income per person ~ year + sa2 code(2016)`.
 `year` is considered as numerical value and `sa2 code(2016)` is considered as categorical value.
 
 ### 4.1.3 Crime cases per each postcode region
-A linear regression model was used to predict the crime cases per each postcode region from 2023 to 2027. 
+`/models/1.crimecase_predict.ipynb`:A linear regression model was used to predict the crime cases per each postcode region from 2023 to 2027. 
 prediction formula: `crime cases ~ year + postcode`
 `year` was considered as numerical value and `postcode` was considered as categorical value
+
+### 4.1.4 GDP and Saving rate
+`/models/1.gdp_saving_predict.ipynb`: this notebook predicts the GDP and saving rate from 2021 to 2027. The GDP is predicted by a linear regression model with `log(GDP) ~ log(year)`. And the saving rate is predicted by a quadratic regression model with `Saving rate ~ year^2`
 
 ## 4.2 Rental Price Prediction
 **[Need to complete later] philip, jin, katherine**
