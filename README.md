@@ -146,14 +146,14 @@ prediction formula: `crime cases ~ year + postcode`
 ### 4.2.1 OLS Model
 
 ### 4.2.2 XGboost Model
-Due to the lack of historical data, the dataset is biased. Therefore, the XGboost model is used for the rent price prediction, referring to the `/models/ren_price_xgboost.ipynb`
+Due to the lack of historical data, the dataset is biased. Therefore, the XGboost model is used for the rent price prediction, referring to the `/models/ren_price_xgboost.ipynb`. With using holdout method for train test split, the XGboost regression model is trained, and the training accuracy is 0.718 while the test accuracy is 0.688. A feature importance graph is also plotted by XGboost built-in function. Further, this notebook predicts the rent prices for 2023 - 2027. 
 
 ### 4.2.3 Random Forest
 
 ### 4.2.4 Neural Network Model
 
 
-**[Need to complete later] philip, jin, katherine**
+**[Need to complete later] philip, jin**
 
 ### 4.3 Rental Price Growth Rate Calculation
 
