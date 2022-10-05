@@ -142,9 +142,29 @@ prediction formula: `crime cases ~ year + postcode`
 `/models/1.gdp_saving_predict.ipynb`: this notebook predicts the GDP and saving rate from 2021 to 2027. The GDP is predicted by a linear regression model with `log(GDP) ~ log(year)`. And the saving rate is predicted by a quadratic regression model with `Saving rate ~ year^2`
 
 ## 4.2 Rental Price Prediction
+
+### 4.2.1 OLS Model
+
+### 4.2.2 XGboost Model
+
+
+### 4.2.3 Random Forest
+
+### 4.2.4 Neural Network Model
+
+
 **[Need to complete later] philip, jin, katherine**
 
 ### 4.3 Rental Price Growth Rate Calculation
+
+### 4.2.1 OLS Model
+
+### 4.2.2 XGboost Model
+
+### 4.2.3 Random Forest
+
+### 4.2.4 Neural Network Model
+
 **[Need to complete later] philip, jin, katherine**
 
 # 5. Liveability Scoring and Ranking Algorithm
