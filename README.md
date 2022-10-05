@@ -146,7 +146,7 @@ prediction formula: `crime cases ~ year + postcode`
 ### 4.2.1 OLS Model
 
 ### 4.2.2 XGboost Model
-
+Due to the lack of historical data, the dataset is biased. Therefore, the XGboost model is used for the rent price prediction, referring to the `/models/ren_price_xgboost.ipynb`
 
 ### 4.2.3 Random Forest
 
@@ -156,14 +156,6 @@ prediction formula: `crime cases ~ year + postcode`
 **[Need to complete later] philip, jin, katherine**
 
 ### 4.3 Rental Price Growth Rate Calculation
-
-### 4.2.1 OLS Model
-
-### 4.2.2 XGboost Model
-
-### 4.2.3 Random Forest
-
-### 4.2.4 Neural Network Model
 
 **[Need to complete later] philip, jin, katherine**
 
