@@ -152,10 +152,10 @@ Due to the lack of historical data, the dataset is biased. Therefore, the XGboos
 ### 4.2.3 Random Forest
 
 
-**[Need to complete later] philip, jin**
+**[Need to complete later] jin**
 
 ### 4.3 Rental Price Growth Rate Calculation
-Based on prediction results from 2023-2027, rental prices are aggregated to average per SA2 district per year. The same aggregation is applied to year 2022 rental dataset, which is then concatenated to prediction set. Growth rate of a district in current year is calculated by (average rental price of district in current year)-(average rental price of district in past year) / (average rental price of district in past year). The average future growth rate for a district is then calculated by sum of yearly growth rates from 2023 to 2027 of the district / 5. 
+Based on prediction results from 2023-2027, rental prices are aggregated to average per SA2 district per year. The same aggregation is applied to year 2022 rental dataset, which is then concatenated to the prediction set. Growth rate of a district in current year is calculated by (average rental price of district in current year)-(average rental price of district in past year) / (average rental price of district in past year). The average future growth rate for a district is then calculated by sum of yearly growth rates from 2023 to 2027 of the district / 5. 
 
 # 5. Liveability Scoring and Ranking Algorithm
 `notebooks/Liveability/scoring.ipynb`: this notebook developed a ranking system for liveability scoring (0-100). The notebook firstly checked distribution of each feature to see whether standardisation can be applied. Unfortunately, data were not normally distributed. Hence we used score = rank / len(df) to perform the score for each liveability criterion and sum them with weight specified by our user. 
