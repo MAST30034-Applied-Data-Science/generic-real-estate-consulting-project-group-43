@@ -23,7 +23,7 @@
 <!-- content of webpage begins here -->
 <body>
     <header>
-      <h2>Data Science With Realestate<br></h2>
+      <h2>SmartRenting App<br></h2>
       
     </header>
 
@@ -35,7 +35,7 @@
         <p>
           Can you believe that you can forseen the future with the help of statsitcis and machine learning models? <br> <br>
 
-          With <i>SmartRent.com</i> you can not only forseen the suburbs with the greatest rental price growth rate but also
+          With <i>SmartRenting.com</i> you can not only forseen the suburbs with the greatest rental price growth rate but also
           know the the predicted population density, income rate, crime rate for suburbs of Victoria, Australia the next 5 years.<br> <br>
 
           If you are currently looking for the most liveable or affordable house or apartment to rent, this website 
@@ -111,9 +111,9 @@
             <img src="./static/vic_rent.gif" alt="this slowpoke moves"  width="370">
             <p>The suburbs with the highest growth rate in the next five years will be:<a name="title1"></a><br /><br />
               
-              <div class = sectionborder style = "background-color: #fff;border-color: #deeaee; font-size: small; width: 50%;">
+              <div class = sectionborder style = "background-color: #fff;border-color: #deeaee; font-size: small; width: 100%;">
                 <h3 style = "text-align:center;">Most Rent-growing Suburbs</h3>
-                <table id="myTable" style=" height:200px; left: 50%; display: flex; flex-direction: column;text-align: center;">
+                <table id="myTable" style="position: relative; left:30%; height:200px; display: flex; flex-direction: column;text-align: center;">
                     <tbody style="text-align: center;">
                       <tr >
                         <th>Rank</th>
@@ -430,7 +430,11 @@
                   </tbody>
                   </table>
             </p></section></div>
-
+            <form action="{{ url_for('growthrate')}}"method="post">
+              <button type="submit" class="btn btn-primary btn-block btn-large"style='position: relative; width:100%'>click to view geo visualisation for growth rate</button></p>
+              <p>{{ growth_map | safe }}</p>
+              <p>{{map_name}}</p>
+            </form>
         </section>
             <a name="The Most Liveable Suburb"></a>
             <h2>The Most Liveable & Affordable Suburb for You</h2>
@@ -5696,6 +5700,24 @@
         <li>Inefficient Web scraping techniques.</li>
         <li>Residence type classification model may not be accurate.</li>
       </ul>
+    </div><br>
+    <div class = sectionborder style = "background-color: #fff;border-color: #deeaee; font-size: small; display: flex; flex-direction: column; height: 700px;">
+      <h3 style ="text-align: center;">To Our Dearest Real Estate Companies: </h3>
+      <h4>Why you should invest and collaborate with us</h4>
+      <p>
+        Our website will assist you generate greater profit with clear future vision.<br><br>
+         We will be providing you with customer's direct expectations and future needs. <br><br>Our website will record
+         customer's expectations on liveability and the mostly searched SA2 areas. These data indicates future
+         vision and you can make more profits as you satisfy customer need better.<br><br>
+         <img src="static/collab.png" alt="" width = 100% >
+         To achieve this, we need your fund in terms of building the database system to manage our customer input data.
+
+         <br><br>Moreover, we strongly encourage you to share your database of historical rental records with us, 
+         so that we can make more accurate predictions in order to attratct more customers to use our website and provide
+         more customer data.
+         <img src="static/collab2.png" alt="" width = 100% >
+         <br>Thank you for your viewing, we wish your business great success.  --- SmartRenting Team
+      </p>
     </div>
   </aside>
 
@@ -5726,7 +5748,7 @@
             Particularly, we hope that non-data-science background people can enjoy using and exploring this website. So that models constructed by us, the
             future data scientsts, are being applied and realised on a larger scale. 
             <br><br>
-            <p>Copyright 2022 by Data Science With Realestate @ The University of Melbourne All Rights Reserved.</p>
+            <p>Copyright 2022 by SmartRenting @ The University of Melbourne All Rights Reserved.</p>
           </p>
         </footer>
 </body>
