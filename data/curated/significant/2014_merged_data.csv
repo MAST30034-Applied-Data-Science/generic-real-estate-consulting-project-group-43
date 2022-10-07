@@ -1,8 +1,10 @@
-Significant External predictors,Significant Internal predictors
-min_distance_to_cbd,residence_type
-min_distance_to_prim,nbed
-min_distance_to_train,nbath
-min_distance_to_shop,ncar
-income_per_person,
-crime_cases,
-population_density,
+,Significant External predictors,Significant Internal predictors
+0,sa2_2021,residence_type
+1,sa2_2021,nbed
+2,sa2_2021,nbath
+3,sa2_2021,ncar
+4,sa2_2021,
+5,sa2_2021,
+6,min_distance_to_prim,
+7,min_distance_to_poli,
+8,min_distance_to_shop,
