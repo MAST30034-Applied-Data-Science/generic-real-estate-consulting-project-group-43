@@ -100,7 +100,7 @@ However, we discovered that in total 42.66% of properties (231497 property data 
 To view these steps please see `/models/classify_property_type.ipynb`.
 
 ## 2.2 External Dataset Preprocessing
-The notebook script `/notebooks/External/1.external_preprocess.ipynb` is used to do preprocessing on those external dataset (estimated resident population, total income, crime cases, GDP, saving rate), and store into the curated folder in the data folder. We calculated the population density for each sa2 region (2021), income per person for each sa2 region (2016) based on the dataset of estimated resident population and total income respectively. We tried to convert the 2016 sa2 of income to 2021 sa2, but this would lead to lots of data missing. Therefore, we decide to use 2016 sa2 for later merging. There are also some plots for different types of offence.
+The notebook script `/notebooks/External/1.external_preprocess.ipynb` is used to do preprocessing on those external dataset (estimated resident population, total income, crime cases, GDP, saving rate), and store into the curated folder in the data folder. We calculated the population density for each sa2 region (2021), income per person per year for each sa2 region (2016) based on the dataset of estimated resident population and total income respectively. We tried to convert the 2016 sa2 of income to 2021 sa2, but this would lead to lots of data missing. Therefore, we decide to use 2016 sa2 for later merging. There are also some plots for different types of offence.
 
 ## 2.3 Data Merging
 
