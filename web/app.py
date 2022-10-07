@@ -128,6 +128,28 @@ def predict_income():
         return render_template('index.html', prediction_text3='In {}, the income of {} is predicted to be {} AUD per year'.format(year_income, suburb,output_crime))
     return render_template('index.html', error6='Sorry, we do not have enough information to make the prediction.')
 
+@app.route('/growthrate',methods=['POST'])
+def growthrate():
+    df = pd.read_csv('data/final_growing_rates_rf.csv')
+    with open('data/geo.json', 'r') as f:
+        geoJSON = json.load(f)
+    m = folium.Map(location=[-37.81, 144.96], tiles="Stamen Terrain", zoom_start=10, color='white')
+    svg_style = '<style>svg {background-color: rgb(255, 255, 255,0.5);}</style>'
+    m.get_root().header.add_child(folium.Element(svg_style))
+
+    c = folium.Choropleth(
+        geo_data=geoJSON,
+        name='choropleth',
+        data=df.reset_index(), 
+        columns=['Suburb_Name','Growth_Rate'],
+        key_on='properties.SA2_NAME21', 
+        fill_color='PiYG', 
+        nan_fill_color='black',
+        legend_name='Averaged Growth Rate 2023-2027 by Random Forest',
+    )
+    c.add_to(m)
+    return render_template('index.html', growth_map=m._repr_html_(),map_name = 'Averaged Growth Rate 2023-2027 by Random Forest')
+
 @app.route('/liveability',methods=['POST'])
 def liveability():
     df = pd.read_csv('data/2022_merged_data.csv')

@@ -79,6 +79,8 @@ Second, we use location data to add SA2. This approach is genuine method as the 
 ### 2.1.4 Adding Distance/Time to Places/CBD from Clean Property Data (Open Route Servive API)
 4. `/notebooks/Preprocessing/4.ors_add_rentalDistance.ipynb`. At each iteration, a yearly subset of places csv and a year subset of property csv between 2013-2021 were called out and merged based on SA2 Code. Then, a list of clients registered with unique API keys was used to request distance/time for each merged yearly dataset. 
 
+This section uses private API keys, which can be requested on https://openrouteservice.org/plans/. 
+
 In the add_distance_time function, the requests were conducted by iterating SA2 codes. All properties in current SA2 code were computed as sources, each of which was mapped to all places defined by this SA2 code. So in total, (size of sources * count of places) routes of distances/time were computed for each SA2 district. 
 
 For route number greater than 3500 which was prohibited by ORS, a slicing method that divided sources into smaller subsets based on the factor, by which route number exceeded 3500, replaced the original requests. Through this, the restriction could be solved by making additional calls for reduced sublists. For example for 206 sources * 35 places = 7210 > 3500, exceeding by a factor of 2, sources list was divided into \[0-68), \[68-136) and \[136-206) sublists, and 3 requests with route number 68 * 35, 68 * 35 and 70 * 35 were called to ensure all 7210 data was retrieved.
@@ -127,37 +129,39 @@ For merging predicted values of external attributes of 2023 to 2027, the noteboo
 All feature prediction models mentioned below are in `\models` file. The output of predicted features' values will be stored into the features_prediction folder in curated folder.
 
 ### 4.1.1 Population
-`/models/1.bootstrap-population.ipynb`: this notebook predicts population from 2022 to 2027 using bootstrapping and linear regression, with `population density  ~ year + sa2 code(2021)`.
+`/models/1a.bootstrap-population.ipynb`: this notebook predicts population from 2022 to 2027 using bootstrapping and linear regression, with `population density  ~ year + sa2 code(2021)`.
 
 ### 4.1.2 Averaged income per person for each SA2
-The notebook script `/models/1.income_predict.ipynb` is used to model the income per person for each sa2 (2016) with a linear regression model, and it is used to predict the income per person for each sa2 (2016) region from 2020 to 2027, with `income per person ~ year + sa2 code(2016)`.
+The notebook script `/models/1b.income_predict.ipynb` is used to model the income per person for each sa2 (2016) with a linear regression model, and it is used to predict the income per person for each sa2 (2016) region from 2020 to 2027, with `income per person ~ year + sa2 code(2016)`.
 `year` is considered as numerical value and `sa2 code(2016)` is considered as categorical value.
 
 ### 4.1.3 Crime cases per each postcode region
-`/models/1.crimecase_predict.ipynb`:A linear regression model was used to predict the crime cases per each postcode region from 2023 to 2027. 
+`/models/1c.crimecase_predict.ipynb`:A linear regression model was used to predict the crime cases per each postcode region from 2023 to 2027. 
 prediction formula: `crime cases ~ year + postcode`
 `year` was considered as numerical value and `postcode` was considered as categorical value
 
 ### 4.1.4 GDP and Saving rate
-`/models/1.gdp_saving_predict.ipynb`: this notebook predicts the GDP and saving rate from 2021 to 2027. The GDP is predicted by a linear regression model with `log(GDP) ~ log(year)`. And the saving rate is predicted by a quadratic regression model with `Saving rate ~ year^2`
+`/models/1d.gdp_saving_predict.ipynb`: this notebook predicts the GDP and saving rate from 2021 to 2027. The GDP is predicted by a linear regression model with `log(GDP) ~ log(year)`. And the saving rate is predicted by a quadratic regression model with `Saving rate ~ year^2`
 
 ## 4.2 Rental Price Prediction
 
 ### 4.2.1 OLS Model
+Ordinary Least Square Regression is implemented in `/models/LR_prediction_all.ipynb`. In this notebook, forward selection based on lowest AIC is first conducted, which takes around an hour to run. Then the resulting features are selected from the training set to train and test the model at a ratio of 7:3. Subsequently, the Linear Regression model in `/models/LR_future_prediction.ipynb` is trained by the full 2013-2022 merged dataset containing the selected features, which is then used to make future 2023-2027 predictions.
 
 ### 4.2.2 XGboost Model
-Due to the lack of historical data, the dataset is biased. Therefore, the XGboost model is used for the rent price prediction, referring to the `/models/ren_price_xgboost.ipynb`. With using holdout method for train test split, the XGboost regression model is trained, and the training accuracy is 0.718 while the test accuracy is 0.688. A feature importance graph is also plotted by XGboost built-in function. Further, this notebook predicts the rent prices for 2023 - 2027. 
+Due to the lack of historical data, the dataset is biased. Therefore, the XGboost model is used for the rent price prediction, referring to the `/models/rent_price_xgboost.ipynb`. With using holdout method for train test split, the XGboost regression model is trained, and the training accuracy is 0.718 while the test accuracy is 0.688. A feature importance graph is also plotted by XGboost built-in function. Further, this notebook predicts the rent prices for 2023 - 2027. 
 
 ### 4.2.3 Random Forest
 
-### 4.2.4 Neural Network Model
 
-
-**[Need to complete later] philip, jin**
+**[Need to complete later] jin**
 
 ### 4.3 Rental Price Growth Rate Calculation
+Based on prediction results from 2023-2027, rental prices are aggregated to average per SA2 district per year. The same aggregation is applied to year 2022 rental dataset, which is then concatenated to the prediction set. Growth rate of a district in current year is calculated by (average rental price of district in current year)-(average rental price of district in past year) / (average rental price of district in past year). The average future growth rate for a district is then calculated by sum of yearly growth rates from 2023 to 2027 of the district / 5. 
+To view these steps please see `/models/growthRateCalc.ipynb`. 
 
-**[Need to complete later] philip, jin, katherine**
+`/models/growth_rate.ipynb` presents a geo visualization of rent growth rate calculated by random forest model and xgboost model.
+
 
 # 5. Liveability Scoring and Ranking Algorithm
 `notebooks/Liveability/scoring.ipynb`: this notebook developed a ranking system for liveability scoring (0-100). The notebook firstly checked distribution of each feature to see whether standardisation can be applied. Unfortunately, data were not normally distributed. Hence we used score = rank / len(df) to perform the score for each liveability criterion and sum them with weight specified by our user. 
