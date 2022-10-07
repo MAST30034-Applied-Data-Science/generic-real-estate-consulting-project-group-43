@@ -79,7 +79,7 @@ Second, we use location data to add SA2. This approach is genuine method as the 
 ### 2.1.4 Adding Distance/Time to Places/CBD from Clean Property Data (Open Route Servive API)
 4. `/notebooks/Preprocessing/4.ors_add_rentalDistance.ipynb`. At each iteration, a yearly subset of places csv and a year subset of property csv between 2013-2021 were called out and merged based on SA2 Code. Then, a list of clients registered with unique API keys was used to request distance/time for each merged yearly dataset. 
 
-This section uses private API keys, which can be applied on https://openrouteservice.org/plans/. 
+This section uses private API keys, which can be requested on https://openrouteservice.org/plans/. 
 
 In the add_distance_time function, the requests were conducted by iterating SA2 codes. All properties in current SA2 code were computed as sources, each of which was mapped to all places defined by this SA2 code. So in total, (size of sources * count of places) routes of distances/time were computed for each SA2 district. 
 
