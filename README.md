@@ -153,9 +153,8 @@ Ordinary Least Square Regression is implemented in `/models/LR_prediction_all.ip
 Due to the lack of historical data, the dataset is biased. Therefore, the XGboost model is used for the rent price prediction, referring to the `/models/rent_price_xgboost.ipynb`. With using holdout method for train test split, the XGboost regression model is trained, and the training accuracy is 0.718 while the test accuracy is 0.688. A feature importance graph is also plotted by XGboost built-in function. Further, this notebook predicts the rent prices for 2023 - 2027. 
 
 ### 4.2.3 Random Forest
-
-
-**[Need to complete later] jin**
+The random forest regression was hired, hoping to have a better performance to predict the weekly rental price for each suburb. Since random forest regression also contains feature importance function that shows how each predictor contributes to the prediction of our target class, our team used random forest regression. The strength of random forest regressor that can be trained on both categorical and continuous values, was anothe reason to choose to use this model as we have 2 categorical variables, residence type and SA2 codes. <br/>
+However, since we are not entirely sure if the random forest regression will work fine with our dataset, we still had to test the model before train the model with the dataset. To see the testings on random forest regression in terms of testing and training accuracies, please refer to `/models/randomForest.ipynb`. To see the implementation of the random forest regression and its predictions, please refer to `/models/pred_w_random_forest.ipynb`.
 
 ### 4.3 Rental Price Growth Rate Calculation
 Based on prediction results from 2023-2027, rental prices are aggregated to average per SA2 district per year. The same aggregation is applied to year 2022 rental dataset, which is then concatenated to the prediction set. Growth rate of a district in current year is calculated by (average rental price of district in current year)-(average rental price of district in past year) / (average rental price of district in past year). The average future growth rate for a district is then calculated by sum of yearly growth rates from 2023 to 2027 of the district / 5. 
