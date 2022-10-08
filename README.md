@@ -146,6 +146,7 @@ prediction formula: `crime cases ~ year + postcode`
 ## 4.2 Rental Price Prediction
 
 ### 4.2.1 OLS Model
+The basic testing on Ordinary Least Square Regression is performed in `models/randomForest.ipynb`. Please refer to this notebook in order to see what kind of testing we have gone through which result in our futher implementations in the following LR notebooks. </br>
 Ordinary Least Square Regression is implemented in `/models/LR_prediction_all.ipynb`. In this notebook, forward selection based on lowest AIC is first conducted, which takes around an hour to run. Then the resulting features are selected from the training set to train and test the model at a ratio of 7:3. Subsequently, the Linear Regression model in `/models/LR_future_prediction.ipynb` is trained by the full 2013-2022 merged dataset containing the selected features, which is then used to make future 2023-2027 predictions.
 
 ### 4.2.2 XGboost Model
