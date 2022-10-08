@@ -31,7 +31,7 @@ It will generate the historical data retrieved from the first 100 URLs for examp
 
 4. `/notebooks/Scraping/4.Scraping_whole.ipynb`: this notebook will using api-rotator through AWSAs to prevent web scrapping from being blocked. The historical web site monitor ip address with high levels of activity, we assume the website counts the number of access by trying many access with reasonable breaks and check when it gets block. So there are few solution options and one of them is using api-rotator through AWS. It is shown in the file `/scripts/aws-scraping-tool.py`. AWS API key will be hidden in .env file.
 
-5. `/notebooks/Scraping/5.facility_data_retreiving`: this notebook will retrieve facility data using API. Facility dataset include the facility name, location, year in which these facilitie exist. Facilities include primary and secondary schools, hospital, train station, police station, market, shopping mall.
+5. `/notebooks/Scraping/5.facility_data_retreiving`: this notebook will retrieve facility data using API queries. Facility dataset include the facility name, location, year in which these facilitie exist. Facilities include primary and secondary schools, hospital, train station, police station, market, shopping mall.
 
 ## 1.2 External Dataset Downloading
 We retrieved data of external attribute by urls, such as crime cases, total personal income, estimated resident population, GDP, saving rate from `abs.gov.au`, `hcrimestatistics.vic.gov.au` and `data.oecd.org/natincome/saving-rate.htm`. The notebook script `/notebooks/External/0.external_dataset_download.ipynb` is used to download those external dataset, and store into the raw folder in the data folder.
@@ -146,7 +146,7 @@ prediction formula: `crime cases ~ year + postcode`
 ## 4.2 Rental Price Prediction
 
 ### 4.2.1 OLS Model
-The basic testing on Ordinary Least Square Regression is performed in `models/randomForest.ipynb`. Please refer to this notebook in order to see what kind of testing we have gone through which result in our futher implementations in the following LR notebooks. </br>
+The basic testing on Ordinary Least Square Regression is performed in `notebooks/dataAnalysis.ipynb`. Please refer to this notebook in order to see what kind of testing we have gone through which result in our futher implementations in the following LR notebooks. </br>
 Ordinary Least Square Regression is implemented in `/models/LR_prediction_all.ipynb`. In this notebook, forward selection based on lowest AIC is first conducted, which takes around an hour to run. Then the resulting features are selected from the training set to train and test the model at a ratio of 7:3. Subsequently, the Linear Regression model in `/models/LR_future_prediction.ipynb` is trained by the full 2013-2022 merged dataset containing the selected features, which is then used to make future 2023-2027 predictions.
 
 ### 4.2.2 XGboost Model
@@ -157,7 +157,7 @@ The random forest regression was hired, hoping to have a better performance to p
 However, since we are not entirely sure if the random forest regression will work fine with our dataset, we still had to test the model before train the model with the dataset. To see the testings on random forest regression in terms of testing and training accuracies, please refer to `/models/randomForest.ipynb`. To see the implementation of the random forest regression and its predictions, please refer to `/models/pred_w_random_forest.ipynb`.
 
 ### 4.3 Rental Price Growth Rate Calculation
-Based on prediction results from 2023-2027, rental prices are aggregated to average per SA2 district per year. The same aggregation is applied to year 2022 rental dataset, which is then concatenated to the prediction set. Growth rate of a district in current year is calculated by (average rental price of district in current year)-(average rental price of district in past year) / (average rental price of district in past year). The average future growth rate for a district is then calculated by sum of yearly growth rates from 2023 to 2027 of the district / 5. 
+Based on prediction results from 2023-2027, rental prices are aggregated to average per SA2 district per year. The same aggregation is applied to year 2022 rental dataset, which is then concatenated to the prediction set. Growth rate of a district in current year is calculated by (average rental price of district in current year)-(average rental price of district in past year) / (average rental price of district in past year). The average future growth rate for a district is then calculated by (sum of yearly growth rates from 2023 to 2027 of the district) / (5). At the end of this notebook, it returns a csv file such as `/data/curated/final_growing_rates_rf.csv` that shows the average growing rate predicted for the next 5 years of each suburb, sorted in an descending order of average growing rate.
 To view these steps please see `/models/growthRateCalc.ipynb`. 
 
 `/models/growth_rate.ipynb` presents a geo visualization of rent growth rate calculated by random forest model and xgboost model.
