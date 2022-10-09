@@ -146,7 +146,7 @@ prediction formula: `crime cases ~ year + postcode`
 ## 4.2 Rental Price Prediction
 
 ### 4.2.1 OLS Model
-The basic testing on Ordinary Least Square Regression is performed in `notebooks/dataAnalysis.ipynb`. Please refer to this notebook in order to see what kind of testing we have gone through which result in our futher implementations in the following LR notebooks. </br>
+The basic testing on Ordinary Least Square Regression is performed in `notebooks/0.dataAnalysis.ipynb`. Please refer to this notebook in order to see what kind of testing we have gone through which result in our futher implementations in the following LR notebooks. </br>
 Ordinary Least Square Regression is implemented in `/models/LR_prediction_all.ipynb`. In this notebook, forward selection based on lowest AIC is first conducted, which takes around an hour to run. Then the resulting features are selected from the training set to train and test the model at a ratio of 7:3. Subsequently, the Linear Regression model in `/models/LR_future_prediction.ipynb` is trained by the full 2013-2022 merged dataset containing the selected features, which is then used to make future 2023-2027 predictions.
 
 ### 4.2.2 XGboost Model
@@ -160,7 +160,7 @@ However, since we are not entirely sure if the random forest regression will wor
 Based on prediction results from 2023-2027, rental prices are aggregated to average per SA2 district per year. The same aggregation is applied to year 2022 rental dataset, which is then concatenated to the prediction set. Growth rate of a district in current year is calculated by (average rental price of district in current year)-(average rental price of district in past year) / (average rental price of district in past year). The average future growth rate for a district is then calculated by (sum of yearly growth rates from 2023 to 2027 of the district) / (5). At the end of this notebook, it returns a csv file such as `/data/curated/final_growing_rates_rf.csv` that shows the average growing rate predicted for the next 5 years of each suburb, sorted in an descending order of average growing rate.
 To view these steps please see `/models/growthRateCalc.ipynb`. 
 
-`/models/growth_rate.ipynb` presents a geo visualization of rent growth rate calculated by random forest model and xgboost model.
+`/models/3.growth_rate_geo.ipynb` presents a geo visualization of rent growth rate calculated by random forest model and xgboost model.
 
 
 # 5. Liveability Scoring and Ranking Algorithm
@@ -171,7 +171,10 @@ To put our model into practice and bridge the gap between the general population
 
 `/web/app.py` is an app object created using the Flask class. We have rendered our models including population density prediction, crime case prediction, income rate prediction, and rental price prediction models on our website. We also created a client-oriented section for our users get recommendations on the mostly liveable and affordable suburbs and properties based on their needs. Users can input the year and SA2 code in order to view the corresponding prediction result by our models.
 
-We also included Suburb Name and SA2 code lookup tables for our users to get the SA2 code by suburb name. The html lookup table was transfered from the csv lookup table. The transferring process is included at the end of `/notebooks/preliminary_property.ipynb`.
+We also included Suburb Name and SA2 code lookup tables for our users to get the SA2 code by suburb name. The html lookup table was transfered from the csv lookup table. The transferring process is included at the end of `/notebooks/1.preliminary_property_with_geo.ipynb`.
+
+`/notebooks/2.slideBar_rentalVisual_geo.ipynb`.
+This notebook visualises the averaged rental prices for all properties in our dataset from 2013 - 2022. The generated geo visual plot with a slide bar will easily demonstrate the trend of overall rental price value from 2013 - 2022
 
 To view the models, please visit the corresponidng notebooks in `/models`. At the end of each notebook, the model will be saved with `.pkl` format for the use of Flask. The `.pkl` model files are saved under `/web/models`.
 
