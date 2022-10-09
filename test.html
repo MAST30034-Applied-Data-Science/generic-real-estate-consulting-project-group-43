@@ -7,21 +7,35 @@ test.html
     <th> Filtering for residential property data, Number of outlier removed</th>
     <td>API Retrieving</td>
 
-
+    2006: 11 (2.1%) instances were dropped from 523, 512 remaining
+    2007: 75 (1.59%) instances were dropped from 4708, 4633 remaining
+    2008: 98 (1.78%) instances were dropped from 5494, 5396 remaining
+    2009: 94 (1.82%) instances were dropped from 5172, 5078 remaining
+    2010: 99 (1.59%) instances were dropped from 6232, 6133 remaining
+    2011: 135 (1.53%) instances were dropped from 8815, 8680 remaining
+    2012: 200 (1.8%) instances were dropped from 11117, 10917 remaining
+    2013: 270 (2.28%) instances were dropped from 11839, 11569 remaining
+    2014: 251 (1.96%) instances were dropped from 12789, 12538 remaining
+    2015: 260 (1.97%) instances were dropped from 13188, 12928 remaining
+    2016: 340 (2.18%) instances were dropped from 15606, 15266 remaining
+    2017: 420 (2.37%) instances were dropped from 17751, 17331 remaining
+    2018: 443 (2.18%) instances were dropped from 20320, 19877 remaining
+    2019: 549 (2.45%) instances were dropped from 22400, 21851 remaining
+    2020: 607 (2.69%) instances were dropped from 22594, 21987 remaining
+    2021: 770 (2.77%) instances were dropped from 27805, 27035 remaining
+    2022: 2360 (3.11%) instances were dropped from 75999, 73639 remaining
 <table>
     <tr>
-        <th></th>
-        <td>Initial number of data</td>
-        <td>Dropping duplicates & non weekly-rent data</td>
-        <td>Filtering for residential property data</td>
-        <td>Number of outlier removed</td>
+        <th>Year</th>
+        <td>Instance dropped</td>
+        <td>Instance remained</td>
+
     </tr>
     <tr>
-      <th>API Retrieving</th>
-      <td>15k</td>
-      <td>15k → 14.6k (2.6% removed)</td>
-      <td>345k → 282k (18.2% removed)</td>
-      <td>282k ->231k (18% removed; 1-3% removed per year)</td>
+      <th>OLS</th>
+      <td>'min_distance_to_cbd','min_distance_to_poli', 'min_distance_to_shop', 'min_distance_to_hosp', 'min_distance_to_park', 'min_distance_to_prim', 'min_distance_to_second', 'min_distance_to_train', 'nbath', 'nbed', 'ncar', GDP, crime cases, saving rate, population density, income per person, residence type, sa2 code and year.</td>
+      <td>distance to secondary school excluded by the forward selection with lowest AIC.</td>
+
     </tr>
     <tr>
       <th>Web Scraping</th>
